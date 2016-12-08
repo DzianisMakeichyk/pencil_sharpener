@@ -1,0 +1,406 @@
+/***  Map  ***/
+
+#map {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+// Thanks to: http://www.antimath.info/css/sass-sqrt-function/
+// Using sqrt to get the size of the map pin. You could do this manually,
+// if your pin is a different shape.
+@function sqrt($r) {
+    $x0: 1;
+    $x1: $x0;
+    @for $i from 1 through 10 {
+        $x1: $x0 - ($x0 * $x0 - abs($r)) / (2 * $x0);
+        $x0: $x1;
+    }
+    @return $x1;
+}
+$pinWidth: 100px;
+$pinHeightFactor: ((1 + sqrt(2))/2);
+$pinHeight: $pinHeightFactor * $pinWidth;
+$pinColor: #dd1d35;
+$shadowOpacity: .5;
+$shadow-size: 50px;
+$pulseSize: 100px;
+.pin-wrap {
+    position: absolute;
+    width: $pinWidth;
+    height: $pinWidth;
+    margin-top: -$pinHeight;
+    margin-left: -$pinWidth/2;
+    transform-origin: 50% ($pinHeightFactor * 100%) 0;
+}
+.pin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: $pinWidth;
+    height: $pinWidth;
+    margin-top: -$pinWidth/2;
+    margin-left: -$pinWidth/2;
+    transform-origin: 50% ($pinHeightFactor * 100%) 0;
+}
+.pin::after {
+    position: absolute;
+    display: block;
+    box-sizing: border-box;
+    width: $pinWidth;
+    height: $pinWidth;
+    content: '';
+    transform: rotateZ(-45deg);
+    border: 20px solid $pinColor;
+    border-radius: 50% 50% 50% 50%;
+}
+.pin::before {
+    position: absolute;
+    display: block;
+    box-sizing: border-box;
+    width: $pinWidth;
+    height: $pinWidth;
+    content: '';
+    transform: rotateZ(-45deg);
+    border: 18px solid darken($pinColor, 10%);
+    border-radius: 50% 50% 50% 0;
+    ;
+}
+.shadow {
+    position: absolute;
+}
+.shadow::after {
+    position: absolute;
+    left: -100px - $shadow-size/2;
+    display: block;
+    width: $shadow-size;
+    height: $shadow-size;
+    margin-top: -$shadow-size/2;
+    content: '';
+    transform: rotateX(55deg);
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, $shadowOpacity) 100px 0 20px;
+}
+.pulse {
+    position: absolute;
+    margin-top: -$pulseSize/2;
+    margin-left: -$pulseSize/2;
+    transform: rotateX(55deg);
+}
+.pulse::after {
+    display: block;
+    width: $pulseSize;
+    height: $pulseSize;
+    content: '';
+    animation: pulsate 1s ease-out;
+    animation-delay: 1.1s;
+    animation-iteration-count: infinite;
+    opacity: 0;
+    border-radius: 50%;
+    box-shadow: 0 0 1px 2px rgba(0, 0, 0, $shadowOpacity);
+    box-shadow: 0 0 6px 3px rgba($pinColor, 1.0);
+}
+@keyframes pulsate {
+    0% {
+        transform: scale(.1, .1);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.2, 1.2);
+        opacity: 0;
+    }
+}
+
+
+
+
+$white: #fff;
+
+
+
+@mixin perspective($pixels) {
+	-webkit-perspective: $pixels;
+	-moz-perspective: $pixels;
+	-o-perspective: $pixels;
+	perspective: $pixels;
+}
+
+@mixin transition($speed) {
+	-webkit-transition: -webkit-transform $speed;
+	-moz-transition: -moz-transform $speed;
+	-o-transition: -o-transform $speed;
+	transition: transform $speed;
+}
+
+@mixin transform-style() {
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+@mixin transform($degrees) {
+	-webkit-transform: rotateX( $degrees + deg);
+	-moz-transform: rotateX( $degrees + deg);
+	-o-transform: rotateX( $degrees + deg);
+	transform: rotateX( $degrees + deg);
+}
+
+@mixin backface-visibility() {
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.cont-contactInfo {
+	float: left;
+	padding-right: 5%;
+	width: 45%;
+
+	h3 {
+		font-size: 28px;
+	}
+
+	h4 {
+		font-size: 22px;
+		font-weight: normal;
+		text-transform: uppercase;
+	}
+
+	h4.section {
+		margin: 30px 0 0;
+	}
+
+	p {
+		margin: 0;
+	}
+
+	p > a {
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+
+	.social-icons {
+		list-style: none;
+		margin: 5px 0 0;
+		padding: 0;
+
+		li {
+			float: left;
+			margin-right: 3px;
+
+			a {
+				background-image: url("../images/sprite_social_icons.png");
+				background-repeat: no-repeat;
+				display: block;
+				height: 28px;
+				width: 29px;
+			}
+
+			a:hover {
+				opacity: .8;
+			}
+
+			a.icon_twitter {
+				background-position: -33px 0;
+			}
+
+			a.icon_linkedin {
+				background-position: -68px 0;
+			}
+
+			a.icon_youtube {
+				background-position: -102px 0;
+			}
+
+			a.icon_pinterest {
+				background-position: -135px 0;
+			}
+
+			a.icon_vimeo {
+				background-position: -169px 0;
+			}
+
+			a.icon_instagram {
+				background-position: -204px 0;
+			}
+		}
+	}
+}
+
+.cont-contactBtn {
+	height: 100vh;
+  margin: 0 auto;
+	width: 100%;
+	position: relative;
+
+	@include perspective(800px);
+
+	.cont-flip {
+		position: absolute;
+		@include transition(.5s);
+		@include transform-style();
+		height: 100%;
+		width: 100%;
+
+		.front, .back {
+			display: block;
+			margin: 0;
+			height: 100%;
+			width: 100%;
+			position: absolute;
+
+			@include backface-visibility;
+		}
+
+		.front {
+			background-color: transparent;
+		}
+
+		.back {
+			background-color: #252627;
+			@include transform(180);
+		}
+	}
+
+	.btn {
+		position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        -webkit-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out;
+	}
+    .btn:hover {
+        background: #dd1d35;
+        color: white;
+        border: 3px solid #dd1d35
+    }
+
+	.cont-flip.flipped {
+		@include transform(180);
+	}
+
+	.contact-form {
+		padding-left: 12%;
+		width: 100%;
+        transform: translateY(-50%);
+      
+		input, textarea {
+			border: 1px solid #808080;
+			font-size: 12px;
+			padding: 10px 0;
+			text-transform: uppercase;
+            border: none;
+            border-bottom: 1px solid #dd1d35;
+            background-color: #dd1d35
+		}
+
+		input[type="text"], input[type="email"] {
+			float: left;
+			margin-bottom: 8px;
+			padding-left: 3%;
+			width: 96.2%;
+		}
+        input:focus, textarea:focus {
+              outline-color: transparent;
+              color: #fafafa
+        }
+
+		.gutter {
+			margin-right: 2.8%;
+		}
+
+		textarea {
+			height: 106px;
+			padding-left: 3%;
+			margin-bottom: 22px;
+			width: 96.2%;
+            border: none;
+            border-bottom: 2px solid #dd1d35;
+		}
+
+		input[type="submit"] {
+			background-color: transparent;
+			border: 2px solid #fafafa;
+			color: #fafafa;
+			height: 45px;
+			width: 96.2%;
+			text-align: center;
+            -webkit-transition: all 0.3s ease-out;
+            transition: all 0.3s ease-out;
+		}
+        input[type="submit"]:hover {
+            background-color: #dd1d35;
+			color: #fafafa;
+			border: 2px solid #dd1d35;
+        }
+	}
+
+	.close {
+		display: block;
+		height: 19px;
+		width: 19px;/*
+		background-image: url('http://i.imgur.com/WoKg12q.png');
+		background-repeat: no-repeat;
+		background-position: center;*/
+		position: absolute;
+		top: 15px;
+		right: 3%;
+        color: #fafafa
+	}
+}
+
+.btn {
+	border: 3px $white solid;
+  color: $white;
+	display: block;
+	font-size: 15px;
+	font-weight: normal;
+	margin: 0 auto;
+	max-width: 280px;
+	padding: 15px 0;
+	text-align: center;
+	text-transform: uppercase;
+  text-decoration: none;
+	width: 100%;
+}
+::-webkit-input-placeholder {
+   color: #fafafa;
+   font-family: 'Lato';
+   font-weight: 100;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #fafafa; 
+   font-family: 'Lato';
+   font-weight: 100 
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #fafafa;  
+   font-family: 'Lato';
+   font-weight: 100
+}
+
+:-ms-input-placeholder {  
+   color: #fafafa;  
+   font-family: 'Lato';
+   font-weight: 100
+}
+@media screen and (max-width:933px) {
+  .cont-contactBtn {
+    top: 7%
+  }
+  .cont-contactBtn .contact-form {
+    padding-left: 3%
+  }
+  .text {
+    display: none
+  }
+}

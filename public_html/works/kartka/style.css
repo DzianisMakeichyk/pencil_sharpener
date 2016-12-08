@@ -1,0 +1,248 @@
+@font-face {
+	font-family: 'Museo 100';
+	src: url('fonts/Museo100-Regular.eot');
+	src: url('fonts/Museo100-Regular.eot?#iefix') format('embedded-opentype'),
+		url('fonts/Museo100-Regular.woff') format('woff'),
+		url('fonts/Museo100-Regular.ttf') format('truetype'),
+		url('fonts/Museo100-Regular.svg#Museo100-Regular') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'Museo 300';
+	src: url('Museo300-Regular.eot');
+	src: url('Museo300-Regular.eot?#iefix') format('embedded-opentype'),
+		url('Museo300-Regular.woff') format('woff'),
+		url('Museo300-Regular.ttf') format('truetype'),
+		url('Museo300-Regular.svg#Museo300-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+hr.bh {
+	border-top: 3px solid #fab431;
+	margin: 12px 0 0 0;}
+	
+body {
+height:100%;
+width:100%;
+background: url("images/1.png");
+background-repeat:no-repeat;
+background-position: 50% 50%;
+background-attachment: inherit;
+-o-background-size: auto 100%, auto;
+-moz-background-size: auto 100%, auto;
+-webkit-background-size: auto 100%, auto;
+background-size: cover;
+background-color:#404040;
+margin:0
+
+}
+
+.parallax-viewport {
+    position: relative;  
+    overflow: hidden;
+}
+.parallax-layer {
+    position: absolute;
+	text-align:center
+}
+.site_wrap {
+min-width:292px;
+width:100%;
+margin: 0px;}
+
+.layer, .layerlogo {
+	text-align:center;
+	z-index:2}
+	
+.parallax-layer img {
+	padding: 0;
+	z-index:1}
+.bird{
+	z-index:4}
+
+.eggs, .eggslogo {
+	 text-align:center;
+	position:relative;
+	z-index:3;
+	top:-85px;
+	max-height: 290px;}
+.layer-egg {
+	position:relative;
+	top:-250px;
+	text-align: center;}
+	
+
+ p{font-size:22.5px;
+   color:#e5e5e5;
+   text-align:center;
+   font-family: 'Museo 100';
+			  }
+.words{
+	text-align:center}
+.word {
+	max-width: 650px;
+    text-align: center;
+	margin: 0 auto;
+	float:none;
+	top: -75px;}
+	
+.ide p {font-size: 13.5px;
+	text-decoration:none;
+	float: right;
+    margin: 0;}
+.ide p{
+	float:right}
+img.idealia { transform-origin: bottom center;}	
+
+@media screen and (max-width:640px){
+	.parallax-layer img, .layer img   {
+		width:100%}
+	.layer-egg img {
+		width:40%;}
+	.layer-egg {
+		top:-133px}
+	.eggs {
+		top:0px}
+.idealia img {
+		top:100px}
+    body {
+		background-position-y:-90px;
+		-moz-background-position-y:-90px;
+		-webkit-background-position-y:-90px;
+		-ms-background-position-y:-90px;
+		}
+	p {font-size:18px}	
+	} 
+		@media screen and (max-width:603px){
+	img.pol{
+			position: relative;
+    top: -60px;}
+	    .eggslogo {
+		margin:10px;
+		}
+		.layer-egg {
+    top: -285px;	}}
+	
+		@media screen and (max-width:533px){
+	
+		.layer-egg {
+    top: -255px;	}}
+	
+	@media screen and (max-width:480px){
+	img.pol{
+			position: relative;
+    top: -35px;}
+	    .eggslogo {
+		margin:10px;
+		}
+		.layer-egg {
+    top: -205px;	}}
+	
+@media screen and (max-width:414px){
+	img.pol{
+			position: relative;
+    top: -15px;}
+	    .eggslogo {
+		margin:10px;
+		}
+		.layer-egg {
+    top: -165px;	}}
+	
+	@media screen and (max-width:384px){
+	img.pol{
+			position: relative;
+    top: 15px;}
+	    .eggslogo {
+		margin:10px;
+		}
+		.layer-egg {
+    top: -115px;	}}
+	
+	@media screen and (max-width:375px){
+	img.pol{
+			position: relative;
+    top: 15px;}
+	  
+		.layer-egg {
+    top: -120px;	}}
+	
+	@media screen and (max-width:360px){
+	img.pol{
+			position: relative;
+    top: 10px;}
+	    .eggslogo {
+		margin:10px;
+		}
+		.layer-egg {
+    top: -120px;	}}
+	
+@media screen and (max-width:320px){
+	  body {
+		background-position-y:-105px;
+		-moz-background-position-y:-105px;
+		-webkit-background-position-y:-105px;
+		-ms-background-position-y:-105px;
+		}
+	   p {font-size:16px}
+	   img.pol{
+			position: relative;
+            top: -10px;}
+	   .eggslogo {
+		margin:10px;
+		}
+	    .layer-egg {
+    top: -122px;	}}
+		
+		
+	@media screen and (max-width:303px){
+		.eggs {top:5px}
+		img.pol{
+			position: relative;
+    top: -20px;}
+	    .eggslogo {
+		margin:10px;
+		}
+		.layer-egg {
+    top: -112px;	}}	
+		
+		
+	/****************************************** Animation *************************/
+	
+.idealia {
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 2500ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 2500ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 2500ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: ease;
+ 
+    animation-name: spin;
+    animation-duration: 2500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+@keyframes spin{
+    0% {
+         transform: rotateZ(4deg);
+    }
+
+    50% {
+        transform: rotateZ(-4deg);
+    }
+
+    100% {
+        transform: rotateZ(4deg);   
+    }
+}
