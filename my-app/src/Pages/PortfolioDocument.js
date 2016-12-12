@@ -11,7 +11,7 @@ class App extends Component {
                     <div className="homepage-hero-module">
                         <div className="video-container">
                             <div className="filter"></div>
-                            <video autoplay loop className="fillHeight">
+                            <video autoPlay loop className="fillHeight">
                                 <source src="video/MP4/Inbox-Zero.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
                                 <source src="video/WEBM/Inbox-Zero.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
                             </video>

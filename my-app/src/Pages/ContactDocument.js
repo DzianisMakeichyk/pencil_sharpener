@@ -8,17 +8,19 @@ var map = {
 var send = {
     display: 'none',
     margin: '0 0 0 5px'
-}
+};
+
 class App extends Component {
 
     componentWillMount() {
         const script = document.createElement("script");
 
-        script.src = "http://maps.google.com/maps/api/js?sensor=false";
+        script.src = "http://maps.google.com/maps/api/js?key=AIzaSyCwEpRbCdcngylFY88eAvkxWr70F9wR53E&sensor=false";
         script.async = true;
 
         document.body.appendChild(script);
     };
+
 
     render() {
         return (
@@ -29,7 +31,7 @@ class App extends Component {
                     <div className="homepage-hero-module">
                         <div className="video-container">
                             <div className="filter"></div>
-                            <video autoplay loop class="fillHeight">
+                            <video autoPlay loop className="fillHeight">
                                 <source src="video/MP4/Ground-Zero.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
                                 <source src="video/WEBM/Ground-Zero.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
                             </video>

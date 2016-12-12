@@ -118,16 +118,36 @@ class App extends Component {
 
                                 <ul className="footer-menu clearfix">
                                     <li>
-                                        <a href="portfolio.html" className="animsition-link">Portfolio</a>
+                                        <Link
+                                            className="animsition-link"
+                                            to={routeMap.portfolio}
+                                        >
+                                            Portfolio
+                                        </Link>
                                     </li>
                                     <li>
-                                        <a href="o-mnie.html" className="animsition-link">O mnie</a>
+                                        <Link
+                                            className="animsition-link"
+                                            to={routeMap.about}
+                                        >
+                                            O mnie
+                                        </Link>
                                     </li>
                                     <li>
-                                        <a href="blog.html" className="animsition-link">Blog</a>
+                                        <Link
+                                            className="animsition-link"
+                                            to={routeMap.blog}
+                                        >
+                                            Blog
+                                        </Link>
                                     </li>
                                     <li>
-                                        <a href="kontakt.html" className="animsition-link">Kontakt</a>
+                                        <Link
+                                            className="animsition-link"
+                                            to={routeMap.contact}
+                                        >
+                                            Kontakt
+                                        </Link>
                                     </li>
                                 </ul>
 

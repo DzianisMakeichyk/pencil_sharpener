@@ -329,7 +329,7 @@ $(document).ready(function() {
             loading: true,
             loadingParentElement: 'body',
             loadingClass: 'animsition-loading',
-            loadingInner: '<div class="preloader"></div>',
+            loadingInner: '<div class="container service-graphic sg1"><div class="drawing"><span class="side1"><span></span></span><span class="side2"><span></span></span><span class="side3"><span></span></span></div><div class="tlogo"><span class="side1"><span></span></span><span class="side2"><span></span></span><span class="side3"><span></span></span></div></div>',
             timeout: false,
             timeoutCountdown: 5000,
             onLoadEvent: true,
@@ -508,7 +508,7 @@ $(document).ready(function() {
             var marker = new google.maps.Marker({
                 position: myLatLng,
                 map: map,
-                tittle: 'Vinero',
+                tittle: 'Pencil Sharpener',
                 icon: 'img/map_marker.png',
                 animation: google.maps.Animation.DROP
             });
@@ -656,7 +656,7 @@ $(document).ready(function() {
 });
 
 //jQuery is required to run this code
-$( document ).ready(function() {
+jQuery(function($) {
 
     scaleVideoContainer();
 
@@ -675,17 +675,17 @@ $( document ).ready(function() {
 
 function scaleVideoContainer() {
 
-    var height = $(window).height() + 5;
+    var height = jQuery(window).height() + 5;
     var unitHeight = parseInt(height) + 'px';
-    $('.homepage-hero-module').css('height',unitHeight);
+    jQuery('.homepage-hero-module').css('height',unitHeight);
 
 }
 
 function initBannerVideoSize(element){
 
-    $(element).each(function(){
-        $(this).data('height', $(this).height());
-        $(this).data('width', $(this).width());
+    jQuery(element).each(function(){
+        jQuery(this).data('height', jQuery(this).height());
+        jQuery(this).data('width', jQuery(this).width());
     });
 
     scaleBannerVideoSize(element);
@@ -694,27 +694,27 @@ function initBannerVideoSize(element){
 
 function scaleBannerVideoSize(element){
 
-    var windowWidth = $(window).width(),
-        windowHeight = $(window).height() + 5,
+    var windowWidth = jQuery(window).width(),
+        windowHeight = jQuery(window).height() + 5,
         videoWidth,
         videoHeight;
 
     console.log(windowHeight);
 
-    $(element).each(function(){
-        var videoAspectRatio = $(this).data('height')/$(this).data('width');
+    jQuery(element).each(function(){
+        var videoAspectRatio = jQuery(this).data('height')/jQuery(this).data('width');
 
-        $(this).width(windowWidth);
+        // jQuery(this).width(windowWidth);
 
-        if(windowWidth < 1000){
-            videoHeight = windowHeight;
-            videoWidth = videoHeight / videoAspectRatio;
-            $(this).css({'margin-top' : 0, 'margin-left' : -(videoWidth - windowWidth) / 2 + 'px'});
+        //if(windowWidth < 1000){
+        //    videoHeight = windowHeight;
+        //    videoWidth = videoHeight / videoAspectRatio;
+        //    jQuery(this).css({'margin-top' : 0, 'margin-left' : -(videoWidth - windowWidth) / 2 + 'px'});
+//
+  //          jQuery(this).width(videoWidth).height(videoHeight);
+    //    }
 
-            $(this).width(videoWidth).height(videoHeight);
-        }
-
-        $('.homepage-hero-module .video-container video').addClass('fadeIn animated');
+        jQuery('.homepage-hero-module .video-container video').addClass('fadeIn animated');
 
     });
 }
