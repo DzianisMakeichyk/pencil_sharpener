@@ -265,7 +265,7 @@ jQuery.noConflict()(function ($) {
     }
 
 
-$(document).ready(function() {
+jQuery(document).ready(function() {
 
 
     // ******************************//
@@ -318,9 +318,9 @@ $(document).ready(function() {
     // Animsition
     // ******************************//
     
-    if($('.animsition').length) {
+    if(jQuery('.animsition').length) {
 
-        $('.animsition').animsition({
+        jQuery('.animsition').animsition({
             inClass: 'fade-in',
             outClass: 'fade-out',
             inDuration: 1200,
@@ -345,8 +345,8 @@ $(document).ready(function() {
             }
         });
 
-        $('.animsition').on('animsition.outStart', function(){
-            $('body').removeClass('fullscreen-nav-open');
+        jQuery('.animsition').on('animsition.outStart', function(){
+            jQuery('body').removeClass('fullscreen-nav-open');
         });
 
     }

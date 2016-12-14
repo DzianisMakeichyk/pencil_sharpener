@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from '../logo.svg';
 
 class App extends Component {
     render() {
@@ -20,7 +19,7 @@ class App extends Component {
                                 <div className="aligner">
                                     <div className="aligner-item page-title">
                                         <h1>Pencil Sharpener</h1>
-                                        <img className="logotype" src="img/pencil_wolf_white.svg" />
+                                        <img className="logotype" src="img/pencil_wolf_white.svg" alt="Pencil Sharperner Wolf"/>
                                         <p>Front-End Developer</p>
                                     </div>
                                 </div>

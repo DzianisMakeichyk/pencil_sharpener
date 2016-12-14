@@ -4,5 +4,6 @@
   "portfolio": "/portfolio",
   "about": "/o-mnie",
   "blog": "/blog",
-  "contact": "/kontakt"
+  "contact": "/kontakt",
+  "project_details": "/portfolio/:slug"
 }

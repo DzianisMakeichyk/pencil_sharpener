@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import logo from '../logo.svg';
+import { Link } from 'react-router';
+import routeMap from '../../routeMap.json';
 
 class App extends Component {
     render() {
@@ -147,7 +148,12 @@ class App extends Component {
                                         <div className="portfolio-content-wrap">
                                             <div className="potfolio-content">
                                                 <h6 className="portfolio-title">
-                                                    <a href="portfolio/agencja-interaktywna.html" className="animsition-link">Agencja kreatywna</a>
+                                                    <Link
+                                                        to={routeMap.project_details.replace(':slug', 'agencja')}
+                                                        className="animsition-link"
+                                                    >
+                                                        Agencja kreatywna
+                                                    </Link>
                                                 </h6>
                                             </div>
                                         </div>

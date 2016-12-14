@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
-import routeMap from '../routeMap.json';
+import ProjectDetails from './ProjectDetails';
+import routeMap from '../../../routeMap.json';
+import fb_icon from "img/social/facebook.svg";
 
 
 class App extends Component {
@@ -83,7 +85,7 @@ class App extends Component {
                             <div className="socials">
 
                                 <a href="https://www.facebook.com/dzianismakeichyk" target="_blank" data-toggle="tooltip" data-placement="top" title="facebook">
-                                    <img className="icon-item" src="img/social/facebook.svg" alt="facebook" />
+                                    <img className="icon-item" src={fb_icon} alt="facebook" />
                                 </a>
                                 <a href="https://pl.linkedin.com/in/dzianis-makeichyk-81664a127" target="_blank" data-toggle="tooltip" data-placement="top" title="linkedin">
                                     <img className="icon-item" src="img/social/linkedin.svg" alt="linkedin" />
@@ -99,7 +101,7 @@ class App extends Component {
 
 
                     <main>
-                        {this.props.children}
+                        <ProjectDetails />
                     </main>
 
                     <a href="#top" className="scroll-top scroll-top-hidden">
