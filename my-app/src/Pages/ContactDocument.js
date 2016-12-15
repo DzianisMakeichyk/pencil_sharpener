@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Grid, container, row, Col } from 'react-bootstrap';
 
 // const MY_API_KEY = "AIzaSyCwEpRbCdcngylFY88eAvkxWr70F9wR53E";
 var map = {
@@ -38,27 +39,27 @@ class App extends Component {
 
 
 
-                            <div className="container">
+                            <Grid bsClass={container}>
                                 <div className="aligner">
                                     <div className="aligner-item page-title">
                                         <h1>Kontakt</h1>
                                     </div>
                                 </div>
-                            </div>
+                            </Grid>
 
                         </div>
                     </div>
                 </section>
 
                 <section className="section">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-sm-10 col-sm-offset-1">
+                    <Grid bsClass={container}>
+                        <Grid bsClass={row}>
+                            <Col sm={10} smOffset={1}>
 
 
 
-                                <div className="row">
-                                    <div className="col-md-6">
+                                <Grid bsClass={row}>
+                                    <Col md={6}>
                                         <h5 className="mb10">Kontakt</h5>
                                         <dl>
                                             <dt>Email</dt>
@@ -77,9 +78,9 @@ class App extends Component {
                                             <li><a className="icon-style" href="https://www.vk.com/road66" target="_blank" ><i className="fa fa-vk"></i></a></li>
                                         </ul>
 
-                                    </div>
+                                    </Col>
 
-                                    <div className="col-md-6">
+                                    <Col md={6}>
                                         <div
                                             className="map mb50 sm-mt60"
                                             id="map"
@@ -117,21 +118,23 @@ class App extends Component {
                                                         <button className="btn btn-md btn-black">
             														<span>Wyślij
             															<i
-                                                                            className="fa fa-spin fa-spinner ajax-loader"
-                                                                            style={send}></i>
+                                            className="fa fa-spin fa-spinner ajax-loader"
+                                            style={send}>
+
+                                          </i>
             														</span>
                                                         </button>
                                                     </div>
 
                                         </form>
 
-                                    </div>
-                                </div>
+                                    </Col>
+                                </Grid>
 
-                            </div>
-                        </div>
+                            </Col>
+                        </Grid>
 
-                    </div>
+                    </Grid>
 
                 </section>        </div>
         );

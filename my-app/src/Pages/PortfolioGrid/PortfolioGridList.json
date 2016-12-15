@@ -1,0 +1,62 @@
+[
+  {
+    "name": "stypendium-z-wyboru",
+    "title": "Stypendium z wyboru",
+    "categories": "Absolvent.pl",
+    "filters": "page"
+  },
+  {
+    "name": "animowany-baner",
+    "title": "Baner",
+    "categories": "",
+    "filters": "little"
+  },
+  {
+    "name": "pierwsza-strona",
+    "title": "Pierwsza strona",
+    "categories": "Mini blog",
+    "filters": "page"
+  },
+  {
+    "name": "zaslepka",
+    "title": "Zaślepka",
+    "categories": "",
+    "filters": "page"
+  },
+  {
+    "name": "portal-pracy",
+    "title": "Portal pracy",
+    "categories": "",
+    "filters": "page"
+  },
+  {
+    "name": "agencja-interaktywna",
+    "title": "Agencja kreatywna",
+    "categories": "",
+    "filters": "page"
+  },
+  {
+    "name": "baner",
+    "title": "Baner zegarkowy",
+    "categories": "Z aktualną godziną",
+    "filters": "little"
+  },
+  {
+    "name": "dzianis",
+    "title": "Portfolio",
+    "categories": "",
+    "filters": "page"
+  },
+  {
+    "name": "facebook-tab",
+    "title": "Facebook Tab",
+    "categories": "",
+    "filters": "little"
+  },
+  {
+    "name": "warsztat-samochodowy",
+    "title": "Warsztat samochodowy",
+    "categories": "W trakcie realizacji..",
+    "filters": "page"
+  }
+]

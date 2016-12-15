@@ -2,12 +2,20 @@ import React, { Component } from 'react';
 import { Link } from 'react-router';
 import routeMap from '../routeMap.json';
 
+// Images
+import fb_icon from './img/social/facebook.svg';
+import linkedin_icon from './img/social/linkedin.svg';
+import vk_icon from './img/social/vk.svg';
+import pencil_wolf from './img/pencil_wolf_white.svg';
 
 class App extends Component {
     render() {
         return (
         <div className="App">
-            <body id="top" className="stickyfooter header-fixed">
+            <body
+                id="top"
+                className="stickyfooter header-fixed"
+            >
             <div className="animsition">
 
                 <div className="content">
@@ -17,13 +25,18 @@ class App extends Component {
                             <div className="container clearfix">
 
                                 <div className="pull-left">
-                                    <a href="./" className="logo clearfix">Dzianis Makeichyk
-                                    </a>
+                                    <Link
+                                      to="/"
+                                      className="logo clearfix">Dzianis Makeichyk
+                                    </Link>
                                 </div>
 
                                 <div className="pull-right">
 
-                                    <a href="#" className="fullscreen-menu-toggle">
+                                    <a
+                                        href="#"
+                                        className="fullscreen-menu-toggle"
+                                    >
                                         <span>Menu</span>
                                         <i className="menu-bars">
                                             <i></i>
@@ -82,14 +95,44 @@ class App extends Component {
 
                             <div className="socials">
 
-                                <a href="https://www.facebook.com/dzianismakeichyk" target="_blank" data-toggle="tooltip" data-placement="top" title="facebook">
-                                    <img className="icon-item" src="img/social/facebook.svg" alt="facebook" />
+                                <a
+                                    href="https://www.facebook.com/dzianismakeichyk"
+                                    target="_blank"
+                                    data-toggle="tooltip"
+                                    data-placement="top"
+                                    title="facebook"
+                                >
+                                    <img
+                                        className="icon-item"
+                                        src={fb_icon}
+                                        alt="facebook"
+                                    />
                                 </a>
-                                <a href="https://pl.linkedin.com/in/dzianis-makeichyk-81664a127" target="_blank" data-toggle="tooltip" data-placement="top" title="linkedin">
-                                    <img className="icon-item" src="img/social/linkedin.svg" alt="linkedin" />
+                                <a
+                                    href="https://pl.linkedin.com/in/dzianis-makeichyk-81664a127"
+                                    target="_blank"
+                                    data-toggle="tooltip"
+                                    data-placement="top"
+                                    title="linkedin"
+                                >
+                                    <img
+                                        className="icon-item"
+                                        src={linkedin_icon}
+                                        alt="linkedin"
+                                    />
                                 </a>
-                                <a href="https://www.vk.com/road66" target="_blank" data-toggle="tooltip" data-placement="top" title="vk">
-                                    <img className="icon-item" src="img/social/vk.svg" alt="Dzianis Makeichyk" />
+                                <a
+                                    href="https://www.vk.com/road66"
+                                    target="_blank"
+                                    data-toggle="tooltip"
+                                    data-placement="top"
+                                    title="vk"
+                                >
+                                    <img
+                                        className="icon-item"
+                                        src={vk_icon}
+                                        alt="Dzianis Makeichyk"
+                                    />
                                 </a>
 
                             </div>
@@ -107,13 +150,12 @@ class App extends Component {
                     </a>
 
                 </div>
-
                 <footer>
                     <div className="footer">
                         <div className="container">
                             <div className="text-center">
                                 <a href="./" className="logo clearfix">
-                                    <img className="logotype small" src="img/pencil_wolf_white.svg" alt="Pencil Sharperner Wolf"/>
+                                    <img className="logotype small" src={pencil_wolf} alt="Pencil Sharperner Wolf"/>
                                 </a>
 
                                 <ul className="footer-menu clearfix">

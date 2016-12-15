@@ -2,7 +2,13 @@ import React, { Component } from 'react';
 import { Link } from 'react-router';
 import ProjectDetails from './ProjectDetails';
 import routeMap from '../../../routeMap.json';
-import fb_icon from "img/social/facebook.svg";
+
+// Images
+import fb_icon from '../../img/social/facebook.svg';
+import linkedin_icon from '../../img/social/linkedin.svg';
+import vk_icon from '../../img/social/vk.svg';
+import pencil_wolf from '../../img/pencil_wolf_white.svg';
+
 
 
 class App extends Component {
@@ -19,8 +25,10 @@ class App extends Component {
                             <div className="container clearfix">
 
                                 <div className="pull-left">
-                                    <a href="./" className="logo clearfix">Dzianis Makeichyk
-                                    </a>
+                                    <Link
+                                        to="/"
+                                        className="logo clearfix">Dzianis Makeichyk
+                                    </Link>
                                 </div>
 
                                 <div className="pull-right">
@@ -88,10 +96,10 @@ class App extends Component {
                                     <img className="icon-item" src={fb_icon} alt="facebook" />
                                 </a>
                                 <a href="https://pl.linkedin.com/in/dzianis-makeichyk-81664a127" target="_blank" data-toggle="tooltip" data-placement="top" title="linkedin">
-                                    <img className="icon-item" src="img/social/linkedin.svg" alt="linkedin" />
+                                    <img className="icon-item" src={linkedin_icon} alt="linkedin" />
                                 </a>
                                 <a href="https://www.vk.com/road66" target="_blank" data-toggle="tooltip" data-placement="top" title="vk">
-                                    <img className="icon-item" src="img/social/vk.svg" alt="Dzianis Makeichyk" />
+                                    <img className="icon-item" src={vk_icon} alt="Dzianis Makeichyk" />
                                 </a>
 
                             </div>
@@ -115,7 +123,7 @@ class App extends Component {
                         <div className="container">
                             <div className="text-center">
                                 <a href="./" className="logo clearfix">
-                                    <img className="logotype small" src="img/pencil_wolf_white.svg" alt="Pencil Sharperner Wolf"/>
+                                    <img className="logotype small" src={pencil_wolf} alt="Pencil Sharperner Wolf"/>
                                 </a>
 
                                 <ul className="footer-menu clearfix">

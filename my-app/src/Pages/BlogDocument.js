@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Grid, container } from 'react-bootstrap';
 
 class App extends Component {
     render() {
@@ -17,13 +18,13 @@ class App extends Component {
 
 
 
-                            <div className="container">
+                            <Grid bsClass={container}>>
                                 <div className="aligner">
                                     <div className="aligner-item page-title">
                                         <h1>Już niedługo</h1>
                                     </div>
                                 </div>
-                            </div>
+                            </Grid>
 
                         </div>
                     </div>
