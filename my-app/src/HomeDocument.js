@@ -9,10 +9,11 @@ import vk_icon from './img/social/vk.svg';
 import pencil_wolf from './img/pencil_wolf_white.svg';
 
 class App extends Component {
+
     render() {
         return (
         <div className="App">
-            <body
+            <div
                 id="top"
                 className="stickyfooter header-fixed"
             >
@@ -154,9 +155,9 @@ class App extends Component {
                     <div className="footer">
                         <div className="container">
                             <div className="text-center">
-                                <a href="./" className="logo clearfix">
+                                <Link to="/" className="logo clearfix">
                                     <img className="logotype small" src={pencil_wolf} alt="Pencil Sharperner Wolf"/>
-                                </a>
+                                </Link>
 
                                 <ul className="footer-menu clearfix">
                                     <li>
@@ -202,7 +203,8 @@ class App extends Component {
                 </footer>
 
             </div>
-            </body>
+            </div>
+            <script src="/test.js"></script>
         </div>
         );
     }

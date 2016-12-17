@@ -14,7 +14,8 @@ jQuery.noConflict()(function ($) {
                 });
 
                 $item.css({
-                    'padding': $gut +'px'
+                    'padding': $gut +'px',
+                    'padding-bottom': $gut*3 +'px'
                 });
 
         }
@@ -206,28 +207,7 @@ jQuery.noConflict()(function ($) {
 
             return false;
         });
-
-
-
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 });
 
 });
