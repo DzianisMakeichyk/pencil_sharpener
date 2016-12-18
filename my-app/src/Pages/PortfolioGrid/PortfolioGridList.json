@@ -2,61 +2,61 @@
   {
     "name": "stypendium-z-wyboru",
     "title": "Stypendium z wyboru",
-    "categories": "Absolvent.pl kjkjkjk jk jk jk jkj kj kj kjk jk jk jk jk jk jk jkj kj kj kj k hjk gkj gkj hkj hjkh  k hjk gkj gkj hkj hjkh  k hjk gkj gkj hkj hjkh  k hjk gkj gkj hkj hjkh j",
+    "short_description": "Absolvent.pl",
     "filters": "page"
   },
   {
     "name": "animowany-baner",
     "title": "Baner",
-    "categories": "",
+    "short_description": "Animowana kartka z okazji świeta Bożego urodzenia",
     "filters": "little"
   },
   {
     "name": "pierwsza-strona",
     "title": "Pierwsza strona",
-    "categories": "Mini blog",
+    "short_description": "Mini blog",
     "filters": "page"
   },
   {
     "name": "zaslepka",
     "title": "Zaślepka",
-    "categories": "",
+    "short_description": "Zaślepka dla strony internetowej. Z aktualnym czasem przed rozpoczęciem działania oraz możliwością ...",
     "filters": "page"
   },
   {
     "name": "portal-pracy",
     "title": "Portal pracy",
-    "categories": "",
+    "short_description": "Front dla portala poszukiwania pracy",
     "filters": "page"
   },
   {
     "name": "agencja-interaktywna",
     "title": "Agencja kreatywna",
-    "categories": "",
+    "short_description": "Agencja interaktywna łącząca kompetencje digital, performance marketing i Social Media",
     "filters": "page"
   },
   {
     "name": "baner",
     "title": "Baner zegarkowy",
-    "categories": "Z aktualną godziną",
+    "short_description": "Z aktualną godziną",
     "filters": "little"
   },
   {
     "name": "dzianis",
     "title": "Portfolio",
-    "categories": "",
+    "short_description": "Strona portfolio",
     "filters": "page"
   },
   {
     "name": "facebook-tab",
     "title": "Facebook Tab",
-    "categories": "",
+    "short_description": "Tab Facebookowy",
     "filters": "little"
   },
   {
     "name": "warsztat-samochodowy",
     "title": "Warsztat samochodowy",
-    "categories": "W trakcie realizacji..",
+    "short_description": "W trakcie realizacji..",
     "filters": "page"
   }
 ]

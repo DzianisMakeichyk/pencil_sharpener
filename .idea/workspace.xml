@@ -2,12 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae70fbcf-6836-4fe7-8551-c540eac68b5b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/my-app/public/test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public_html/css/preloader.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/my-app/src/scss/style/_style.scss" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/public/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/App.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/App.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/App.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/scss/plugins/_animate.mini.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/scss/plugins/_animate.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/scss/plugins/_flexslider.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/scss/plugins/_font_awesome.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/scss/plugins/_pe_icon_stroke.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/scss/plugins/_swiper.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/scss/plugins/_tooltipster.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/scss/style/style.scss" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/my-app/src/HomeDocument.js" afterPath="$PROJECT_DIR$/my-app/src/HomeDocument.jsx" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/my-app/src/Pages/AboutDocument.js" afterPath="$PROJECT_DIR$/my-app/src/Pages/AboutDocument.jsx" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/my-app/src/Pages/BlogDocument.js" afterPath="$PROJECT_DIR$/my-app/src/Pages/BlogDocument.jsx" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/my-app/src/Pages/ContactDocument.js" afterPath="$PROJECT_DIR$/my-app/src/Pages/ContactDocument.jsx" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/my-app/src/Pages/IndexDocument.js" afterPath="$PROJECT_DIR$/my-app/src/Pages/IndexDocument.jsx" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/my-app/src/Pages/PortfolioDocument.js" afterPath="$PROJECT_DIR$/my-app/src/Pages/PortfolioDocument.jsx" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/my-app/src/Pages/PortfolioGrid/PortfolioGrid.js" afterPath="$PROJECT_DIR$/my-app/src/Pages/PortfolioGrid/PortfolioGrid.jsx" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/my-app/src/Pages/Project/Index.js" afterPath="$PROJECT_DIR$/my-app/src/Pages/Project/Index.jsx" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/my-app/src/Pages/Project/ProjectDetails.js" afterPath="$PROJECT_DIR$/my-app/src/Pages/Project/ProjectDetails.jsx" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/my-app/src/Pages/Skills/SkillsItem.js" afterPath="$PROJECT_DIR$/my-app/src/Pages/Skills/SkillsItem.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/gulpfile.js" afterPath="$PROJECT_DIR$/my-app/gulpfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/package.json" afterPath="$PROJECT_DIR$/my-app/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/public/css/style.css" afterPath="$PROJECT_DIR$/my-app/public/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/public/index.html" afterPath="$PROJECT_DIR$/my-app/public/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/public/scripts/libs.js" afterPath="$PROJECT_DIR$/my-app/public/scripts/libs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/src/Pages/PortfolioGrid/PortfolioGridList.json" afterPath="$PROJECT_DIR$/my-app/src/Pages/PortfolioGrid/PortfolioGridList.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/src/Pages/Project/ProjectsList.json" afterPath="$PROJECT_DIR$/my-app/src/Pages/Project/ProjectsList.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/src/scss/main.scss" afterPath="$PROJECT_DIR$/my-app/src/scss/main.scss" />
     </list>
     <ignored path="pencil_sharpener.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,21 +55,65 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/my-app/public/index.html">
+      <file leaf-file-name="HomeDocument.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/my-app/src/HomeDocument.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" column="3" selection-start-line="32" selection-start-column="3" selection-end-line="35" selection-end-column="46" />
+            <state relative-caret-position="1119">
+              <caret line="212" column="19" selection-start-line="212" selection-start-column="19" selection-end-line="212" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PortfolioGrid.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/my-app/src/Pages/PortfolioGrid/PortfolioGrid.js">
+      <file leaf-file-name="IndexDocument.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/my-app/src/Pages/IndexDocument.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+            <state relative-caret-position="75">
+              <caret line="5" column="2" selection-start-line="5" selection-start-column="0" selection-end-line="6" selection-end-column="45" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Index.jsx" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/my-app/src/Pages/Project/Index.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="41" column="44" selection-start-line="41" selection-start-column="44" selection-end-line="41" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="libs.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/my-app/public/scripts/libs.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="183">
+              <caret line="1" column="24525" selection-start-line="1" selection-start-column="24525" selection-end-line="1" selection-end-column="24525" />
+              <folding>
+                <marker date="1482060635000" expanded="true" signature="91962:91998" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProjectDetails.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/my-app/src/Pages/Project/ProjectDetails.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="14" column="97" selection-start-line="14" selection-start-column="97" selection-end-line="14" selection-end-column="97" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PortfolioGrid.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/my-app/src/Pages/PortfolioGrid/PortfolioGrid.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -50,31 +121,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/my-app/gulpfile.js">
+      <file leaf-file-name="_style.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/my-app/src/scss/style/_style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="97" column="0" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
+            <state relative-caret-position="90">
+              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/my-app/package.json">
+      <file leaf-file-name="_variables.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/my-app/src/scss/style/_variables.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PortfolioGridList.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/my-app/src/Pages/PortfolioGrid/PortfolioGridList.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="4" column="189" selection-start-line="4" selection-start-column="189" selection-end-line="4" selection-end-column="189" />
+            <state relative-caret-position="15">
+              <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -83,30 +144,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/my-app/public/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="0" column="13395" selection-start-line="0" selection-start-column="13395" selection-end-line="0" selection-end-column="13395" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AboutDocument.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/my-app/src/Pages/AboutDocument.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="vl_portfolio.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/my-app/public/scripts/vl_portfolio.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
+            <state relative-caret-position="172">
+              <caret line="0" column="13472" selection-start-line="0" selection-start-column="13472" selection-end-line="0" selection-end-column="13472" />
               <folding />
             </state>
           </provider>
@@ -116,16 +155,6 @@
   </component>
   <component name="FrameworkCommandLineHistory">
     <commandsHistory>
-      <command text="npm install --save-dev gulp-sourcemaps" />
-      <command text="npm install --save-dev bootstrap" />
-      <command text="npm install react-bootstrap --save-dev" />
-      <command text="npm install --save-dev react-google-maps@beta" />
-      <command text="npm install --save-dev react-google-map" />
-      <command text="npm i react-google-maps --save-dev" />
-      <command text="npm i react-google-map --save-dev" />
-      <command text="npm install --save-dev react-google-maps-loader" />
-      <command text="npm i react-google-maps --save-dev" />
-      <command text="git add ." />
       <command text="npm start" />
       <command text="cd my-app/" />
       <command text="npm start" />
@@ -141,37 +170,24 @@
       <command text="npm install react-autobind --save-dev" />
       <command text="npm install core-decorators --save-dev" />
       <command text="git add ." />
+      <command text="npm install classnames --save-dev" />
+      <command text="npm i react-responsive --save-dev" />
+      <command text="npm i react-responsive --save" />
+      <command text="ls" />
+      <command text="cd my-app" />
+      <command text="npm i react-responsive --save-dev" />
+      <command text="ls" />
+      <command text="npm i --save-dev react-responsive " />
+      <command text="npm i -dev" />
+      <command text="npm i --dev" />
     </commandsHistory>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Dummy.txt" root0="SKIP_INSPECTION" />
-  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/gulpfile.js" />
-        <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/my-app/src/App.js" />
-        <option value="$PROJECT_DIR$/my-app/src/scss/plugins/animate.scss" />
-        <option value="$PROJECT_DIR$/my-app/src/scss/plugins/_animate.scss" />
-        <option value="$PROJECT_DIR$/my-app/src/scss/plugins/_flexslider.scss" />
-        <option value="$PROJECT_DIR$/my-app/src/scss/plugins/_font_awesome.scss" />
-        <option value="$PROJECT_DIR$/my-app/src/scss/plugins/_pe_icon_stroke.scss" />
-        <option value="$PROJECT_DIR$/my-app/src/scss/plugins/_swiper.scss" />
-        <option value="$PROJECT_DIR$/my-app/src/scss/plugins/_tooltipster.scss" />
-        <option value="$PROJECT_DIR$/my-app/gulpfile.js" />
-        <option value="$PROJECT_DIR$/my-app/src/scss/main.scss" />
-        <option value="$PROJECT_DIR$/my-app/src/scss/plugins/_animate.mini.scss" />
-        <option value="$PROJECT_DIR$/my-app/src/App.css" />
-        <option value="$PROJECT_DIR$/my-app/public/css/bootstrap.css" />
-        <option value="$PROJECT_DIR$/my-app/package.json" />
-        <option value="$PROJECT_DIR$/my-app/src/scss/style/style.scss" />
-        <option value="$USER_HOME$/Downloads/optimised.svg" />
-        <option value="$PROJECT_DIR$/public_html/css/preloader.css" />
-        <option value="$USER_HOME$/Desktop/malling/REK/index_rek_1556.html" />
         <option value="$PROJECT_DIR$/my-app/public/css/preloader.css" />
         <option value="$PROJECT_DIR$/my-app/src/Pages/Project/IndexDocument.js" />
         <option value="$PROJECT_DIR$/my-app/src/Pages/Project/Projects.json" />
@@ -192,17 +208,37 @@
         <option value="$PROJECT_DIR$/my-app/src/Pages/BlogDocument.js" />
         <option value="$PROJECT_DIR$/my-app/src/Pages/ContactDocument.js" />
         <option value="$PROJECT_DIR$/my-app/src/Pages/Project/ProjectDetails.js" />
-        <option value="$PROJECT_DIR$/my-app/src/Pages/Project/ProjectsList.json" />
         <option value="$PROJECT_DIR$/my-app/public/test.js" />
         <option value="$PROJECT_DIR$/my-app/src/HomeDocument.js" />
         <option value="$PROJECT_DIR$/my-app/src/Pages/IndexDocument.js" />
-        <option value="$PROJECT_DIR$/my-app/public/index.html" />
-        <option value="$PROJECT_DIR$/my-app/public/css/style.css" />
-        <option value="$PROJECT_DIR$/my-app/src/Pages/PortfolioGrid/PortfolioGridList.json" />
         <option value="$PROJECT_DIR$/my-app/public/scripts/vl_portfolio.js" />
         <option value="$PROJECT_DIR$/my-app/src/Pages/PortfolioDocument.js" />
         <option value="$PROJECT_DIR$/my-app/src/Pages/AboutDocument.js" />
+        <option value="$PROJECT_DIR$/my-app/gulpfile.js" />
         <option value="$PROJECT_DIR$/my-app/src/Pages/PortfolioGrid/PortfolioGrid.js" />
+        <option value="$PROJECT_DIR$/my-app/src/index.jsx" />
+        <option value="$PROJECT_DIR$/my-app/node_modules/gulp-sourcemaps/package.json" />
+        <option value="$PROJECT_DIR$/my-app/node_modules/gulp/package.json" />
+        <option value="$PROJECT_DIR$/my-app/node_modules/react-dom/package.json" />
+        <option value="$PROJECT_DIR$/my-app/public/index.html" />
+        <option value="$PROJECT_DIR$/my-app/src/scss/varibals.scss" />
+        <option value="$PROJECT_DIR$/my-app/src/scss/main.scss" />
+        <option value="$PROJECT_DIR$/my-app/src/scss/style/style.scss" />
+        <option value="$PROJECT_DIR$/my-app/src/scss/style/_variables.scss" />
+        <option value="$PROJECT_DIR$/my-app/src/Pages/Project/ProjectsList.json" />
+        <option value="$PROJECT_DIR$/my-app/src/Pages/PortfolioGrid/PortfolioGridList.json" />
+        <option value="$PROJECT_DIR$/my-app/node_modules/react-responsive/dist/react-responsive.js" />
+        <option value="$PROJECT_DIR$/my-app/src/scss/style/_style.scss" />
+        <option value="$PROJECT_DIR$/my-app/src/HomeDocument.jsx" />
+        <option value="$PROJECT_DIR$/my-app/src/Pages/PortfolioGrid/PortfolioGrid.jsx" />
+        <option value="$PROJECT_DIR$/my-app/package.json" />
+        <option value="$PROJECT_DIR$/my-app/public/css/style.css" />
+        <option value="$PROJECT_DIR$/my-app/public/scripts/jarallax.js" />
+        <option value="$PROJECT_DIR$/my-app/src/scripts/jarallax.js" />
+        <option value="$PROJECT_DIR$/my-app/src/Pages/IndexDocument.jsx" />
+        <option value="$PROJECT_DIR$/my-app/src/Pages/Project/ProjectDetails.jsx" />
+        <option value="$PROJECT_DIR$/my-app/public/scripts/libs.js" />
+        <option value="$PROJECT_DIR$/my-app/src/Pages/Project/Index.jsx" />
       </list>
     </option>
   </component>
@@ -308,7 +344,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -341,6 +376,68 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="public_html" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pencil_sharpener" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pencil_sharpener" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public_html" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="portfolio" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pencil_sharpener" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pencil_sharpener" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public_html" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="color" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pencil_sharpener" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pencil_sharpener" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="my-app" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -407,7 +504,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="PortfolioGrid" />
+              <option name="myItemId" value="Project" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -426,33 +523,12 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pencil_sharpener" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pencil_sharpener" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my-app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -465,18 +541,20 @@
     <property name="FullScreen" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JavaScript" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="nodejs.mocha.mocha_node_package_dir" value="$PROJECT_DIR$/my-app/node_modules/mocha" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/my-app/src/scss/style" />
       <recent name="$PROJECT_DIR$/my-app/src/Pages" />
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/my-app/public/img/portfolio" />
       <recent name="$PROJECT_DIR$/my-app/src" />
       <recent name="$PROJECT_DIR$/my-app/src/Pages/Project" />
       <recent name="$PROJECT_DIR$/my-app/public/css" />
       <recent name="$PROJECT_DIR$/my-app" />
-      <recent name="$PROJECT_DIR$/my-app/src/Pages" />
     </key>
   </component>
   <component name="RunManager">
@@ -540,7 +618,8 @@
       <workItem from="1481278821758" duration="1345000" />
       <workItem from="1481281607993" duration="30229000" />
       <workItem from="1481534927566" duration="68790000" />
-      <workItem from="1481902582652" duration="8153000" />
+      <workItem from="1481902582652" duration="24834000" />
+      <workItem from="1482055922593" duration="3785000" />
     </task>
     <task id="LOCAL-00001" summary="react">
       <created>1481294817238</created>
@@ -591,11 +670,18 @@
       <option name="project" value="LOCAL" />
       <updated>1481968120384</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="gsap">
+      <created>1481968145144</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1481968145144</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108517000" />
+    <option name="totallyTimeSpent" value="128983000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -610,22 +696,22 @@
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27786753" sideWeight="0.2682927" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27786753" sideWeight="0.73170733" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2819063" sideWeight="0.27209705" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2819063" sideWeight="0.72790295" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970297" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3260274" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970297" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970297" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21089108" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20958903" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970297" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3260274" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -658,194 +744,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public_html/o-mnie.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2205">
-          <caret line="235" column="30" selection-start-line="107" selection-start-column="14" selection-end-line="235" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/blog.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="133" column="0" selection-start-line="109" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/public/scripts/jquery-1.12.0.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="1" column="21772" selection-start-line="1" selection-start-column="21772" selection-end-line="1" selection-end-column="21772" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/public/scripts/libs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="2" column="1553" selection-start-line="2" selection-start-column="1545" selection-end-line="2" selection-end-column="1553" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/scss/style/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="1792" column="10" selection-start-line="1792" selection-start-column="1" selection-end-line="1792" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/img/pencil_wolf_white.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="76" selection-start-line="0" selection-start-column="0" selection-end-line="11960" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/optimised.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="605">
-          <caret line="0" column="470876" selection-start-line="0" selection-start-column="470876" selection-end-line="0" selection-end-column="470876" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/css/preloader.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/kontakt.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3780">
-          <caret line="277" column="13" selection-start-line="277" selection-start-column="13" selection-end-line="277" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/malling/REK/index_rek_1556.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="93" column="25" selection-start-line="93" selection-start-column="25" selection-end-line="93" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/Pages/Project/Projects.json" />
-    <entry file="file://$PROJECT_DIR$/my-app/src/Pages/Project/Projects.js" />
-    <entry file="file://$PROJECT_DIR$/my-app/routeMap.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="34" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/Pages/Project/ProjectsList.js" />
-    <entry file="file://$PROJECT_DIR$/my-app/public/css/themes.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/public/css/plugins/animsition.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/portfolio/stypendium-z-wyboru.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="154" column="52" selection-start-line="154" selection-start-column="37" selection-end-line="154" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/portfolio/animowany-baner.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="154" column="37" selection-start-line="154" selection-start-column="37" selection-end-line="154" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/portfolio/pierwsza-strona.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="154" column="37" selection-start-line="154" selection-start-column="37" selection-end-line="154" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/portfolio/portal-pracy.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="154" column="37" selection-start-line="154" selection-start-column="37" selection-end-line="154" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/portfolio/agencja-interaktywna.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="154" column="45" selection-start-line="154" selection-start-column="37" selection-end-line="154" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/portfolio/zaslepka.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="154" column="37" selection-start-line="154" selection-start-column="37" selection-end-line="154" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/portfolio/facebook-tab.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="154" column="44" selection-start-line="154" selection-start-column="37" selection-end-line="154" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/portfolio/dzianis.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="154" column="42" selection-start-line="154" selection-start-column="37" selection-end-line="154" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/portfolio/baner.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="154" column="37" selection-start-line="154" selection-start-column="37" selection-end-line="154" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/portfolio/warsztat-samochodowy.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-15">
-          <caret line="123" column="50" selection-start-line="123" selection-start-column="42" selection-end-line="123" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public_html/portfolio.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-97">
           <caret line="172" column="70" selection-start-line="172" selection-start-column="64" selection-end-line="172" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/Pages/Project/Index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-450">
-          <caret line="28" column="46" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-            <element signature="e#184#236#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -864,30 +766,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/Pages/Project/ProjectsList.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="56" column="62" selection-start-line="56" selection-start-column="57" selection-end-line="56" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/Pages/Project/ProjectDetails.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="41" column="54" selection-start-line="41" selection-start-column="54" selection-end-line="41" selection-end-column="54" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/Pages/BlogDocument.js">
+    <entry file="file://$PROJECT_DIR$/my-app/src/Pages/BlogDocument.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -898,35 +780,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/public/test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="17" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/my-app/public/css/preloader.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="1450" selection-start-line="0" selection-start-column="1445" selection-end-line="0" selection-end-column="1450" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/Pages/IndexDocument.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="6" column="43" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/Pages/Skills/SkillsItem.js">
+    <entry file="file://$PROJECT_DIR$/my-app/src/Pages/Skills/SkillsItem.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="19" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -934,52 +798,38 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="58">
           <caret line="520" column="27" selection-start-line="520" selection-start-column="27" selection-end-line="520" selection-end-column="27" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <marker date="1481723034000" expanded="true" signature="9803:9931" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/Pages/ContactDocument.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="22" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/Pages/PortfolioGrid/PortfolioGridList.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="4" column="189" selection-start-line="4" selection-start-column="189" selection-end-line="4" selection-end-column="189" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/Pages/PortfolioDocument.js">
+    <entry file="file://$PROJECT_DIR$/my-app/src/Pages/PortfolioDocument.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
           <caret line="32" column="14" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/public/css/style.css">
+    <entry file="file://$PROJECT_DIR$/my-app/src/index.css" />
+    <entry file="file://$PROJECT_DIR$/my-app/src/App.js" />
+    <entry file="file://$PROJECT_DIR$/my-app/src/App.test.js" />
+    <entry file="file://$PROJECT_DIR$/my-app/public/test.js" />
+    <entry file="file://$PROJECT_DIR$/my-app/node_modules/react-scripts/config/webpack.config.dev.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="0" column="13395" selection-start-line="0" selection-start-column="13395" selection-end-line="0" selection-end-column="13395" />
-          <folding />
+        <state relative-caret-position="-948">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/HomeDocument.js">
+    <entry file="file://$PROJECT_DIR$/my-app/node_modules/gulp-sass/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-          <folding />
+        <state relative-caret-position="234">
+          <caret line="87" column="11" selection-start-line="87" selection-start-column="11" selection-end-line="87" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/Pages/AboutDocument.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -987,50 +837,254 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/Pages/AboutDocument.js">
+    <entry file="file://$PROJECT_DIR$/my-app/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/package.json">
+    <entry file="file://$PROJECT_DIR$/my-app/node_modules/gulp-sass-lint/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
-          <folding />
+        <state relative-caret-position="1155">
+          <caret line="77" column="11" selection-start-line="77" selection-start-column="11" selection-end-line="77" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="77" selection-start-line="16" selection-start-column="77" selection-end-line="16" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/npm-debug.log" />
+    <entry file="file://$PROJECT_DIR$/my-app/node_modules/react-scripts/scripts/init.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="12" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/yarn.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="1466" column="18" selection-start-line="1466" selection-start-column="13" selection-end-line="1466" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-11685">
+            <caret line="102" column="4" selection-start-line="102" selection-start-column="4" selection-end-line="102" selection-end-column="4" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/node_modules/gulp-sourcemaps/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="92" column="14" selection-start-line="92" selection-start-column="14" selection-end-line="92" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/node_modules/gulp/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-507">
+          <caret line="53" column="10" selection-start-line="53" selection-start-column="10" selection-end-line="53" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/node_modules/react-dom/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/my-app/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="3" selection-start-line="32" selection-start-column="3" selection-end-line="35" selection-end-column="46" />
+        <state relative-caret-position="357">
+          <caret line="27" column="47" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/scss/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="48" column="34" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/Pages/Project/ProjectsList.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="74" column="36" selection-start-line="74" selection-start-column="36" selection-end-line="74" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/Pages/PortfolioGrid/PortfolioGridList.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="52" column="41" selection-start-line="52" selection-start-column="41" selection-end-line="52" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/node_modules/react-responsive/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1065">
+          <caret line="155" column="16" selection-start-line="155" selection-start-column="11" selection-end-line="155" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/node_modules/react-responsive/dist/react-responsive.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/Pages/PortfolioGrid/PortfolioGrid.js">
+    <entry file="file://$PROJECT_DIR$/my-app/src/scss/style/_variables.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+        <state relative-caret-position="15">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/scss/style/_style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/public/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="0" column="13472" selection-start-line="0" selection-start-column="13472" selection-end-line="0" selection-end-column="13472" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/Pages/ContactDocument.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/scripts/jarallax.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="6" column="3460" selection-start-line="6" selection-start-column="3456" selection-end-line="6" selection-end-column="3460" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/public/scripts/jarallax.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="6" column="3460" selection-start-line="6" selection-start-column="3456" selection-end-line="6" selection-end-column="3460" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/Pages/PortfolioGrid/PortfolioGrid.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/gulpfile.js">
+    <entry file="file://$PROJECT_DIR$/my-app/src/Pages/Project/ProjectDetails.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="97" column="0" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
+        <state relative-caret-position="135">
+          <caret line="14" column="97" selection-start-line="14" selection-start-column="97" selection-end-line="14" selection-end-column="97" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/img/portfolio/5.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/img/portfolio/7.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/img/portfolio/2.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/public/scripts/libs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="1" column="24525" selection-start-line="1" selection-start-column="24525" selection-end-line="1" selection-end-column="24525" />
+          <folding>
+            <marker date="1482060635000" expanded="true" signature="91962:91998" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/HomeDocument.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1119">
+          <caret line="212" column="19" selection-start-line="212" selection-start-column="19" selection-end-line="212" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/Pages/IndexDocument.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="2" selection-start-line="5" selection-start-column="0" selection-end-line="6" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/routeMap.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/Pages/Project/Index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="41" column="44" selection-start-line="41" selection-start-column="44" selection-end-line="41" selection-end-column="44" />
           <folding />
         </state>
       </provider>

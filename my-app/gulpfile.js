@@ -1,8 +1,3 @@
-/**
- * @license Copyright (c) 2016-present, Absolvent.pl
- * For licensing, see LICENSE
- */
-
 'use strict';
 
 
@@ -92,7 +87,7 @@ gg(__dirname).setup(gulp);
 gulp.task('lint', function () {
     return eslint([
         __filename,
-        'web_modules/**/*.{js,jsx}',
+        'src/**/*.{js,jsx}',
     ]);
 });
 

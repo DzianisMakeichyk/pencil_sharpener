@@ -3,8 +3,8 @@ import { Grid, container } from 'react-bootstrap';
 import PortfolioGrid from './PortfolioGrid/PortfolioGrid';
 import PortfolioGridList from './PortfolioGrid/PortfolioGridList.json';
 import map from 'lodash/map';
-import { Link } from 'react-router';
-import routeMap from '../../routeMap.json';
+/*import { Link } from 'react-router';
+import routeMap from '../../routeMap.json';*/
 
 
 class App extends Component {
@@ -25,10 +25,10 @@ class App extends Component {
         script_3.async = true;
         document.body.appendChild(script_3);
 
-        const script_4 = document.createElement("script");
+        /*const script_4 = document.createElement("script");
         script_4.src = "../scripts/script.js";
         script_4.async = true;
-        document.body.appendChild(script_4);
+        document.body.appendChild(script_4);*/
     };
 
 
@@ -95,6 +95,7 @@ class App extends Component {
                                     ))}
                                 </div>
 
+{/*
                                 <div className="classic-load-button text-center">
                                     <p className="end">Ooops..</p>
                                     <Link
@@ -104,6 +105,7 @@ class App extends Component {
                                         Więcej
                                     </Link>
                                 </div>
+*/}
 
                             </div>
 
