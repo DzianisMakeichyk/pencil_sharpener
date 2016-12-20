@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
 import routeMap from '../routeMap.json';
+import { TimelineLite } from "gsap";
+import menu from './Menu'
 
 // Images
 import fb_icon from './img/social/facebook.svg';
@@ -10,6 +12,60 @@ import pencil_wolf from './img/pencil_wolf_white.svg';
 
 class App extends Component {
 
+
+ /* componentWillUpdate() {
+    const script = document.createElement("script");
+    script.src = "/scripts/jquery-1.12.0.min.js";
+    script.async = true;
+    document.body.appendChild(script);
+
+    const script_2 = document.createElement("script");
+    script_2.src = "/scripts/libs.js";
+    script_2.async = true;
+    document.body.appendChild(script_2);
+
+    const script_3 = document.createElement("script");
+    script_3.src = "/scripts/vl_portfolio.js";
+    script_3.async = true;
+    document.body.appendChild(script_3);
+
+    const script_4 = document.createElement("script");
+    script_4.src = "/scripts/script.js";
+    script_4.async = true;
+    document.body.appendChild(script_4);
+  };*/
+
+ constructor(props) {
+    super(props);
+    this.state = {
+        menuVisible: false,
+        currentMedia: '',
+    };
+}
+
+    handleClick = () => {
+        const menuAnimation = new TimelineLite();
+        if (!this.state.menuVisible) {
+            menuAnimation.to(this.refs.topLine, .3, { scaleX: 0 }, 'firstStep')
+              .to(this.refs.bottomLine, .3, { width: 0 }, 'firstStep')
+               .to(this.refs.otherLine, .3, { x: 16, y: -21 }, 'firstStep')
+               .to(this.refs.otherLine, .2, { height: 34 }, 'secondStep')
+               .to(this.refs.middleLine, .2, { rotation: 45 }, 'thirdStep')
+               .to(this.refs.otherLine, .2, { rotation: 45 }, 'thirdStep')
+
+        } else {
+            menuAnimation.to(this.refs.middleLine, .2, { rotation: 0 }, 'firstStep')
+              .to(this.refs.otherLine, .2, { rotation: 0 }, 'firstStep')
+              .to(this.refs.otherLine, .2, { height: 0 }, 'secondStep')
+              .to(this.refs.otherLine, .3, { x: 0, y: 0 }, 'thirdStep')
+              .to(this.refs.topLine, .3, { scaleX: 1 }, 'thirdStep')
+              .to(this.refs.bottomLine, .3, { width: 20 }, 'thirdStep')
+        }
+        this.setState({
+            menuVisible: !this.state.menuVisible,
+        });
+    };
+
     render() {
         return (
         <div className="App">
@@ -17,7 +73,7 @@ class App extends Component {
                 id="top"
                 className="stickyfooter header-fixed"
             >
-            <div className="animsition">
+            <div className="">
 
                 <div className="content">
 
@@ -34,17 +90,31 @@ class App extends Component {
 
                                 <div className="pull-right">
 
-                                    <a
-                                        href="#"
-                                        className="fullscreen-menu-toggle"
+                                    <div
+                                      ref="myMenu"
+                                      onClick={this.handleClick}
+                                      className="burger-click-region"
                                     >
-                                        <span>Menu</span>
-                                        <i className="menu-bars">
-                                            <i></i>
-                                            <i></i>
-                                            <i></i>
-                                        </i>
-                                    </a>
+                                        <div className="menu-burger">
+                                            <span
+                                              ref="topLine"
+                                              className="burger-menu-piece"
+                                            ></span>
+                                            <span
+                                              ref="middleLine"
+                                              className="burger-menu-piece"
+                                            ></span>
+                                            <span
+                                              ref="bottomLine"
+                                              className="burger-menu-piece"
+                                            ></span>
+                                            <span
+                                              ref="otherLine"
+                                              className="burger-menu-other"
+                                            ></span>
+                                        </div>
+                                    </div>
+
                                 </div>
 
                             </div>
@@ -143,7 +213,7 @@ class App extends Component {
 
 
                     <main>
-                        {this.props.children}
+                        <menu />
                     </main>
 
                     <a href="#top" className="scroll-top scroll-top-hidden">

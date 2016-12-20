@@ -1,6 +1,5 @@
 jQuery.noConflict()(function ($) {
 
-
     $(document).ready(function() {
 
         function portfolio_item_gutter(){

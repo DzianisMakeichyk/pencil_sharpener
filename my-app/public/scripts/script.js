@@ -6,6 +6,10 @@ jQuery.noConflict()(function ($) {
 
     'use strict';
 
+    jQuery(".toggle-icon").click(function() {
+        jQuery('.menu-bars').toggleClass("pushed");
+    });
+
     var isMobile = {
         Android: function() {
             return navigator.userAgent.match(/Android/i);

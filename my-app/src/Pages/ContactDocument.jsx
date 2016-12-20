@@ -13,16 +13,6 @@ var send = {
 
 class App extends Component {
 
-    componentWillMount() {
-        const script = document.createElement("script");
-
-        script.src = "http://maps.google.com/maps/api/js?key=AIzaSyCwEpRbCdcngylFY88eAvkxWr70F9wR53E&sensor=false";
-        script.async = true;
-
-        document.body.appendChild(script);
-    };
-
-
     render() {
         return (
             <div>

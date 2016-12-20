@@ -6,29 +6,10 @@ import { Grid, container } from 'react-bootstrap';
 
 class App extends Component {
 
-/*    componentDidMount() {
-        const script = document.createElement("script");
-
-        script.src = "/scripts/jquery-1.12.0.min.js";
-        script.async = true;
-
-        document.body.appendChild(script);
-
-        const script_2 = document.createElement("script");
-        script_2.src = "/scripts/libs.js";
-        script_2.async = true;
-        document.body.appendChild(script_2);
-
-        const script_3 = document.createElement("script");
-        script_3.src = "/scripts/vl_portfolio.js";
-        script_3.async = true;
-        document.body.appendChild(script_3);
-
-        const script_4 = document.createElement("script");
-        script_4.src = "/scripts/script.js";
-        script_4.async = true;
-        document.body.appendChild(script_4);
-    };*/
+    /*componentDidMount() {
+        isPortfolio();
+        isScript();
+    }*/
 
     render() {
         return (

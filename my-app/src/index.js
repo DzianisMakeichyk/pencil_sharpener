@@ -20,7 +20,6 @@ ReactDOM.render((
             <Route path={routeMap.contact} component={ContactDocument} />
             <Route path={routeMap.project_details} component={Index} />
             /* <Route path={routeMap.index} component={IndexDocument} /> */
-            {/* Phase 1 */}
         </Route>
     </Router>
     ),document.getElementById('root')

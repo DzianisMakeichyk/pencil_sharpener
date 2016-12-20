@@ -5,8 +5,6 @@ import projects from './ProjectsList.json';
 import routeMap from '../../../routeMap.json';
 import { Grid, container } from 'react-bootstrap';
 
-
-
 export default function ProjectDetails(props, context) {
     const currentProject = find(projects, (project) => (
         project.slug === context.router.params.slug

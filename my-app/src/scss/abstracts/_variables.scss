@@ -1,0 +1,36 @@
+$clear_white: #fff;
+$clear_gray: #222;
+$clear_black: #000;
+$light_gray: rgba(17, 21, 23, .1);
+
+/* Font Weights  */
+$light: 100 !default;
+$ease-font: 300 !default;
+$normal: 400 !default;
+$medium: 500 !default;
+$semibold: 600 !default;
+$bold: 800 !default;
+
+
+$base-size: 16 !default;
+
+/* Rem Calculation */
+@function remcalc($size) {
+  @return (($size / $base-size) * 1rem);
+}
+
+/* Typography Map */
+$fonts: (
+  48: remcalc(54),
+  36: remcalc(42),
+  30: remcalc(36),
+  26: remcalc(32),
+  24: remcalc(30),
+  21: remcalc(28),
+  20: remcalc(28),
+  18: remcalc(24),
+  16: remcalc(24),
+  14: remcalc(24),
+  12: remcalc(20),
+  10: remcalc(20)
+);

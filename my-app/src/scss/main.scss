@@ -1,5 +1,6 @@
 @charset "utf-8";
 // Styles
 
-@import 'style/variables';
+@import 'abstracts/variables';
+@import 'abstracts/functions';
 @import 'style/style';

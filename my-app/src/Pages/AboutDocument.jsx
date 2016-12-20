@@ -5,6 +5,7 @@ import SkillsItem from './Skills/SkillsItem'
 import { Col, Grid, container, row } from 'react-bootstrap';
 
 class App extends Component {
+
     render() {
         return (
             <div>

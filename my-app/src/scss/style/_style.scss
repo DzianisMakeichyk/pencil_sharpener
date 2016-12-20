@@ -1,6 +1,44 @@
 .is-hover {
   box-shadow: 0 20px 30px 0 $light_gray;
-  transform: translate3d(0, -8px, 0);
-  transition: transform .3s, box-shadow .3s, background-color .3s;
   padding: -15px;
+  transform: translate3d(0, -8px, 0);
+}
+
+.burger-click-region {
+  cursor: pointer;
+  height: remcalc(20);
+  position: relative;
+  width: remcalc(20);
+}
+
+.menu-burger {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  .burger-menu-piece {
+    background: $clear_black;
+    display: block;
+    height: remcalc(3);
+    position: relative;
+    width: remcalc(35);
+
+    &:nth-child(1) {
+      top: -5px;
+
+    }
+
+    &:nth-child(3) {
+      top: 5px;
+      width: remcalc(20);
+    }
+  }
+
+  .burger-menu-other {
+    background: $clear_black;
+    display: block;
+    position: absolute;
+    width: remcalc(3);
+  }
 }
