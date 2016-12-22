@@ -1,16 +1,11 @@
 $clear_white: #fff;
 $clear_gray: #222;
 $clear_black: #000;
+$middle_black: #242424;
 $light_gray: rgba(17, 21, 23, .1);
-
-/* Font Weights  */
-$light: 100 !default;
-$ease-font: 300 !default;
-$normal: 400 !default;
-$medium: 500 !default;
-$semibold: 600 !default;
-$bold: 800 !default;
-
+$gradi_blue: #00e1d9;
+$gradi_green: #01e6ae;
+$gradient_blue_green: linear-gradient(135deg, $gradi_blue 23%, $gradi_green 65%);
 
 $base-size: 16 !default;
 
@@ -34,3 +29,37 @@ $fonts: (
   12: remcalc(20),
   10: remcalc(20)
 );
+
+/* Font Weights  */
+$font-thin: 100 !default;
+$font-light: 300 !default;
+$font-regular: 400 !default;
+$font-semi-bold: 600 !default;
+$font-bold: 700 !default;
+
+$skew_minus: skew(-25deg, 0deg);
+$skew_plus: skew(25deg, 0deg);
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  margin: auto 0;
+  padding: 0;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style-type: none;
+  margin: 0;
+}
+
+span,
+p,
+a {
+  color: $middle_black;
+}

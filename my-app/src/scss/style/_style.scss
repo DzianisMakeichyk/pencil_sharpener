@@ -1,6 +1,6 @@
 .is-hover {
-  box-shadow: 0 20px 30px 0 $light_gray;
-  padding: -15px;
+  box-shadow: remcalc(15) remcalc(30) 0 $light_gray;
+  padding: remcalc(-15);
   transform: translate3d(0, -8px, 0);
 }
 
@@ -18,11 +18,11 @@
   transform: translate(-50%, -50%);
 
   .burger-menu-piece {
-    background: $clear_black;
+    background: $middle_black;
     display: block;
-    height: remcalc(3);
+    height: remcalc(2);
     position: relative;
-    width: remcalc(35);
+    width: remcalc(30);
 
     &:nth-child(1) {
       top: -5px;
@@ -36,9 +36,51 @@
   }
 
   .burger-menu-other {
-    background: $clear_black;
+    background: $middle_black;
     display: block;
     position: absolute;
-    width: remcalc(3);
+    width: remcalc(2);
+    transition: background 1s ease;
+  }
+}
+
+.burger-menu-piece,
+.burger-menu-other {
+  &.is-click {
+    background: $gradient_blue_green;
+  }
+}
+
+.logo-name {
+  &.is-click {
+    color: $clear_white;
+  }
+}
+
+.header-wrap {
+  position: relative;
+
+  .header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+
+    .pull-left {
+      margin: remcalc(15) auto auto remcalc(15);
+    }
+
+    .pull-right {
+      margin: remcalc(15) remcalc(15) auto auto;
+    }
+  }
+}
+
+.pull-left {
+  .logo-name {
+    font-weight: $font-light;
+    transition: color 1s ease;
   }
 }

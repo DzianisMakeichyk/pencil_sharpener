@@ -1,17 +1,11 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
-import routeMap from '../routeMap.json';
 import { TimelineLite } from "gsap";
-import menu from './Menu'
-
-// Images
-import fb_icon from './img/social/facebook.svg';
-import linkedin_icon from './img/social/linkedin.svg';
-import vk_icon from './img/social/vk.svg';
-import pencil_wolf from './img/pencil_wolf_white.svg';
+import Menu from './Menu'
+import MediaQuery from 'react-responsive';
+import routeMap from '../routeMap.json';
 
 class App extends Component {
-
 
  /* componentWillUpdate() {
     const script = document.createElement("script");
@@ -48,8 +42,8 @@ class App extends Component {
         if (!this.state.menuVisible) {
             menuAnimation.to(this.refs.topLine, .3, { scaleX: 0 }, 'firstStep')
               .to(this.refs.bottomLine, .3, { width: 0 }, 'firstStep')
-               .to(this.refs.otherLine, .3, { x: 16, y: -21 }, 'firstStep')
-               .to(this.refs.otherLine, .2, { height: 34 }, 'secondStep')
+               .to(this.refs.otherLine, .3, { x: 14, y: -19 }, 'firstStep')
+               .to(this.refs.otherLine, .2, { height: 31 }, 'secondStep')
                .to(this.refs.middleLine, .2, { rotation: 45 }, 'thirdStep')
                .to(this.refs.otherLine, .2, { rotation: 45 }, 'thirdStep')
 
@@ -67,29 +61,30 @@ class App extends Component {
     };
 
     render() {
+        var is_click = this.state.menuVisible ? 'is-click' : '';
+        var classNameLogo = is_click + ' logo-name';
+        var classNamePiece = is_click + ' burger-menu-piece';
+        var classNameOther = is_click + ' burger-menu-other';
         return (
         <div className="App">
-            <div
-                id="top"
-                className="stickyfooter header-fixed"
-            >
-            <div className="">
-
-                <div className="content">
-
-                    <header className="header-wrap no-transparent">
-                        <div className="header-container">
-                            <div className="container clearfix">
-
+                    <header className="header-wrap">
+                        <nav>
+                            <div className="header-container">
                                 <div className="pull-left">
-                                    <Link
-                                      to="/"
-                                      className="logo clearfix">Dzianis Makeichyk
-                                    </Link>
+                                    <MediaQuery maxDeviceWidth={767}>
+                                        <Link
+                                          to="/"
+                                          className={classNameLogo}>Dzianis Makeichyk
+                                        </Link>
+                                    </MediaQuery>
+                                    <MediaQuery minDeviceWidth={768}>
+                                        <Link
+                                          to="/"
+                                          className="logo-name">Dzianis Makeichyk
+                                        </Link>
+                                    </MediaQuery>
                                 </div>
-
                                 <div className="pull-right">
-
                                     <div
                                       ref="myMenu"
                                       onClick={this.handleClick}
@@ -98,130 +93,43 @@ class App extends Component {
                                         <div className="menu-burger">
                                             <span
                                               ref="topLine"
-                                              className="burger-menu-piece"
+                                              className={classNamePiece}
                                             ></span>
                                             <span
                                               ref="middleLine"
-                                              className="burger-menu-piece"
+                                              className={classNamePiece}
                                             ></span>
                                             <span
                                               ref="bottomLine"
-                                              className="burger-menu-piece"
+                                              className={classNamePiece}
                                             ></span>
                                             <span
                                               ref="otherLine"
-                                              className="burger-menu-other"
+                                              className={classNameOther}
                                             ></span>
                                         </div>
                                     </div>
-
                                 </div>
-
                             </div>
-                        </div>
-
-                    </header>
-
-                    <div id="fullscreen-navigation">
-                        <div className="inner-wrap">
-                            <nav>
-
-                                <ul className="nav_menu">
-                                    <li className="current-menu-item">
-                                        <Link
-                                            to={routeMap.portfolio}
-                                        >
-                                            Portfolio
-                                        </Link>
-                                    </li>
-
-                                    <li>
-                                        <Link
-                                            className="animsition-link"
-                                            to={routeMap.about}
-                                        >
-                                            O mnie
-                                        </Link>
-                                    </li>
-
-                                    <li>
-                                        <Link
-                                            className="animsition-link"
-                                            to={routeMap.blog}
-                                        >
-                                            Blog
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link
-                                            className="animsition-link"
-                                            to={routeMap.contact}
-                                        >
-                                            Kontakt
-                                        </Link>
-                                    </li>
-                                </ul>
-
+                            {(this.state.menuVisible &&
+                                <Menu
+                                  routeMap={routeMap}
+                                  location={this.props.location}
+                                />
+                            )}
                             </nav>
-
-                            <div className="socials">
-
-                                <a
-                                    href="https://www.facebook.com/dzianismakeichyk"
-                                    target="_blank"
-                                    data-toggle="tooltip"
-                                    data-placement="top"
-                                    title="facebook"
-                                >
-                                    <img
-                                        className="icon-item"
-                                        src={fb_icon}
-                                        alt="facebook"
-                                    />
-                                </a>
-                                <a
-                                    href="https://pl.linkedin.com/in/dzianis-makeichyk-81664a127"
-                                    target="_blank"
-                                    data-toggle="tooltip"
-                                    data-placement="top"
-                                    title="linkedin"
-                                >
-                                    <img
-                                        className="icon-item"
-                                        src={linkedin_icon}
-                                        alt="linkedin"
-                                    />
-                                </a>
-                                <a
-                                    href="https://www.vk.com/road66"
-                                    target="_blank"
-                                    data-toggle="tooltip"
-                                    data-placement="top"
-                                    title="vk"
-                                >
-                                    <img
-                                        className="icon-item"
-                                        src={vk_icon}
-                                        alt="Dzianis Makeichyk"
-                                    />
-                                </a>
-
-                            </div>
-
-                        </div>
-                    </div>
+                    </header>
 
 
                     <main>
-                        <menu />
+                        {this.props.children}
                     </main>
 
-                    <a href="#top" className="scroll-top scroll-top-hidden">
+                  {/*  <a href="#top" className="scroll-top scroll-top-hidden">
                         <i className="fa fa-angle-up"></i>
-                    </a>
+                    </a>*/}
 
-                </div>
-                <footer>
+              {/*  <footer>
                     <div className="footer">
                         <div className="container">
                             <div className="text-center">
@@ -270,11 +178,7 @@ class App extends Component {
                             </div>
                         </div>
                     </div>
-                </footer>
-
-            </div>
-            </div>
-            <script src="/test.js"></script>
+                </footer>*/}
         </div>
         );
     }
