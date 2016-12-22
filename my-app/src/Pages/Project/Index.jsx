@@ -3,6 +3,7 @@ import { Link } from 'react-router';
 import ProjectDetails from './ProjectDetails';
 import routeMap from '../../../routeMap.json';
 
+
 // Images
 import fb_icon from '../../img/social/facebook.svg';
 import linkedin_icon from '../../img/social/linkedin.svg';

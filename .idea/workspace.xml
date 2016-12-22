@@ -2,9 +2,94 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae70fbcf-6836-4fe7-8551-c540eac68b5b" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/01.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/02.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/03.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/04.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/05.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/06.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/08.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/09.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/10.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/avatar-primary.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/avatar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/background.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/black/1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/black/10.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/black/2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/black/3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/black/4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/black/5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/black/6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/black/7.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/black/8.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/black/9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/blog/1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/blog/1m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/blog/1sm.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/blog/2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/blog/2m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/blog/2sm.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/blog/3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/blog/3m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/blog/3sm.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/blog/4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/blog/4m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/blog/5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/blog/5m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/blog/6m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/color/1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/color/10.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/color/2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/color/3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/color/4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/color/5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/color/6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/color/7.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/color/8.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/color/9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/error.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/map_marker.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/pencil_wolf_white.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/portfolio/2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/portfolio/5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/portfolio/7.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/portfolio/9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/portfolio/agency.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/portfolio/car.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/portfolio/cat.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/portfolio/self.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/portfolio/stypa.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/portfolio/wait.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/portfolio/work.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/ptf/1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/ptf/10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/ptf/11.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/ptf/2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/ptf/3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/ptf/4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/ptf/5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/ptf/6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/ptf/7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/ptf/8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/ptf/9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/select_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/social/facebook-black.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/social/facebook.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/social/linkedin-black.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/social/linkedin.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/social/vk-black.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/social/vk.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/team/team1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/team/team2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/img/team/team3.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/public/css/main.css" afterPath="$PROJECT_DIR$/my-app/public/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/src/scss/abstracts/_variables.scss" afterPath="$PROJECT_DIR$/my-app/src/scss/abstracts/_variables.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/src/Menu.jsx" afterPath="$PROJECT_DIR$/my-app/src/Menu.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/src/Pages/IndexDocument.jsx" afterPath="$PROJECT_DIR$/my-app/src/Pages/IndexDocument.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/src/Pages/Project/Index.jsx" afterPath="$PROJECT_DIR$/my-app/src/Pages/Project/Index.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/src/index.js" afterPath="$PROJECT_DIR$/my-app/src/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/src/scss/components/_menu.scss" afterPath="$PROJECT_DIR$/my-app/src/scss/components/_menu.scss" />
     </list>
     <ignored path="pencil_sharpener.iws" />
@@ -29,7 +114,7 @@
       <file leaf-file-name="HomeDocument.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/my-app/src/HomeDocument.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
+            <state relative-caret-position="1155">
               <caret line="116" column="63" selection-start-line="116" selection-start-column="63" selection-end-line="116" selection-end-column="63" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
@@ -48,21 +133,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_style.scss" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/my-app/src/scss/style/_style.scss">
+      <file leaf-file-name="_menu.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/my-app/src/scss/components/_menu.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="63" column="18" selection-start-line="63" selection-start-column="18" selection-end-line="63" selection-end-column="18" />
+            <state relative-caret-position="455">
+              <caret line="142" column="28" selection-start-line="142" selection-start-column="28" selection-end-line="142" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/my-app/src/index.js">
+      <file leaf-file-name="_style.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/my-app/src/scss/style/_style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="40" />
+            <state relative-caret-position="500">
+              <caret line="63" column="18" selection-start-line="63" selection-start-column="18" selection-end-line="63" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -71,8 +156,8 @@
       <file leaf-file-name="_variables.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/my-app/src/scss/abstracts/_variables.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+            <state relative-caret-position="90">
+              <caret line="6" column="12" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -81,10 +166,21 @@
       <file leaf-file-name="IndexDocument.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/my-app/src/Pages/IndexDocument.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="90">
+              <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/my-app/src/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="2" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="62" />
               <folding>
-                <element signature="e#0#41#0" expanded="true" />
+                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#218#266#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -151,9 +247,7 @@
         <option value="$PROJECT_DIR$/my-app/public/css/main.css" />
         <option value="$PROJECT_DIR$/my-app/src/scss/style/_variables.scss" />
         <option value="$PROJECT_DIR$/my-app/src/Pages/AboutDocument.jsx" />
-        <option value="$PROJECT_DIR$/my-app/src/index.js" />
         <option value="$PROJECT_DIR$/my-app/src/Pages/ContactDocument.jsx" />
-        <option value="$PROJECT_DIR$/my-app/src/Pages/Project/Index.jsx" />
         <option value="$PROJECT_DIR$/my-app/src/scripts/Portfolio.js" />
         <option value="$PROJECT_DIR$/my-app/src/scripts/vl_portfolio.js" />
         <option value="$USER_HOME$/Desktop/malling/SZW/index_szw_948.html" />
@@ -162,7 +256,6 @@
         <option value="$PROJECT_DIR$/my-app/src/scripts/isScript.js" />
         <option value="$PROJECT_DIR$/my-app/public/css/style.css" />
         <option value="$PROJECT_DIR$/my-app/src/Pages/PortfolioDocument.jsx" />
-        <option value="$PROJECT_DIR$/my-app/src/Pages/IndexDocument.jsx" />
         <option value="$PROJECT_DIR$/my-app/src/scss/abstracts/_functions.scss" />
         <option value="$PROJECT_DIR$/my-app/package.json" />
         <option value="$PROJECT_DIR$/my-app/src/Pages/Menu.jsx" />
@@ -175,8 +268,11 @@
         <option value="$PROJECT_DIR$/my-app/src/scss/style/_style.scss" />
         <option value="$PROJECT_DIR$/my-app/src/scss/main.scss" />
         <option value="$PROJECT_DIR$/my-app/src/HomeDocument.jsx" />
-        <option value="$PROJECT_DIR$/my-app/src/Menu.jsx" />
         <option value="$PROJECT_DIR$/my-app/src/scss/abstracts/_variables.scss" />
+        <option value="$PROJECT_DIR$/my-app/src/Pages/IndexDocument.jsx" />
+        <option value="$PROJECT_DIR$/my-app/src/index.js" />
+        <option value="$PROJECT_DIR$/my-app/src/Pages/Project/Index.jsx" />
+        <option value="$PROJECT_DIR$/my-app/src/Menu.jsx" />
         <option value="$PROJECT_DIR$/my-app/src/scss/components/_menu.scss" />
       </list>
     </option>
@@ -502,11 +598,33 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Pages" />
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pencil_sharpener" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pencil_sharpener" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="PortfolioGrid" />
+              <option name="myItemId" value="my-app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="social" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -545,19 +663,19 @@
     <property name="FullScreen" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/my-app/public/img/portfolio" />
-      <recent name="$PROJECT_DIR$/my-app/src" />
-      <recent name="$PROJECT_DIR$/my-app/src/Pages/Project" />
-      <recent name="$PROJECT_DIR$/my-app/public/css" />
-      <recent name="$PROJECT_DIR$/my-app" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/my-app/src" />
       <recent name="$PROJECT_DIR$/my-app/src/scss/abstracts" />
       <recent name="$PROJECT_DIR$/my-app/src/scss/style" />
       <recent name="$PROJECT_DIR$/my-app/src/Pages" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/my-app/src/img" />
+      <recent name="$PROJECT_DIR$/my-app/public/img/portfolio" />
+      <recent name="$PROJECT_DIR$/my-app/src" />
+      <recent name="$PROJECT_DIR$/my-app/src/Pages/Project" />
+      <recent name="$PROJECT_DIR$/my-app/public/css" />
     </key>
   </component>
   <component name="RunManager">
@@ -628,7 +746,7 @@
       <workItem from="1482248796199" duration="75000" />
       <workItem from="1482316737118" duration="24162000" />
       <workItem from="1482396584179" duration="439000" />
-      <workItem from="1482400432758" duration="2072000" />
+      <workItem from="1482400432758" duration="5155000" />
     </task>
     <task id="LOCAL-00001" summary="react">
       <created>1481294817238</created>
@@ -707,11 +825,18 @@
       <option name="project" value="LOCAL" />
       <updated>1482401507037</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="menu large">
+      <created>1482402557204</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1482402557204</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="190970000" />
+    <option name="totallyTimeSpent" value="194053000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -770,7 +895,8 @@
     <MESSAGE value="fix img" />
     <MESSAGE value="pencil sharpener v.2" />
     <MESSAGE value="menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="menu" />
+    <MESSAGE value="menu large" />
+    <option name="LAST_COMMIT_MESSAGE" value="menu large" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -779,28 +905,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/my-app/node_modules/react-dom/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/node_modules/react-responsive/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1065">
-          <caret line="155" column="16" selection-start-line="155" selection-start-column="11" selection-end-line="155" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/node_modules/react-responsive/dist/react-responsive.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/scripts/jarallax.js" />
     <entry file="file://$PROJECT_DIR$/my-app/public/scripts/jarallax.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -958,13 +1062,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/Pages/Project/Index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-120">
-          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/my-app/src/Pages/PortfolioDocument.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-30">
@@ -1001,47 +1098,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="100" selection-start-line="22" selection-start-column="100" selection-end-line="22" selection-end-column="100" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/Pages/IndexDocument.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/my-app/routeMap.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/HomeDocument.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="116" column="63" selection-start-line="116" selection-start-column="63" selection-end-line="116" selection-end-column="63" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1053,17 +1114,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/Menu.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="43" column="21" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-            <element signature="e#196#244#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/my-app/src/scss/abstracts/_functions.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="675">
@@ -1072,26 +1122,115 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/scss/abstracts/_variables.scss">
+    <entry file="file://$PROJECT_DIR$/my-app/src/scss/style/_style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="63" column="18" selection-start-line="63" selection-start-column="18" selection-end-line="63" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="100" selection-start-line="22" selection-start-column="100" selection-end-line="22" selection-end-column="100" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/Pages/IndexDocument.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/img/pencil_wolf_white.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/Pages/Project/Index.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <element signature="e#185#237#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="2" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="62" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#218#266#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/img/social/facebook.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="3" selection-start-line="0" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/img/social/linkedin.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="4" selection-start-line="0" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/img/social/vk.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="4" selection-start-line="0" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/scss/abstracts/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="12" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/Menu.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="617">
+          <caret line="109" column="17" selection-start-line="109" selection-start-column="17" selection-end-line="109" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/HomeDocument.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1155">
+          <caret line="116" column="63" selection-start-line="116" selection-start-column="63" selection-end-line="116" selection-end-column="63" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/my-app/src/scss/components/_menu.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/scss/style/_style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="63" column="18" selection-start-line="63" selection-start-column="18" selection-end-line="63" selection-end-column="18" />
+        <state relative-caret-position="455">
+          <caret line="142" column="28" selection-start-line="142" selection-start-column="28" selection-end-line="142" selection-end-column="28" />
           <folding />
         </state>
       </provider>

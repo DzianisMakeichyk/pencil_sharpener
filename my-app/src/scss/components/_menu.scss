@@ -12,36 +12,6 @@
     width: 40%;
     right: 0;
   }
-
-  .socials {
-    a {
-      padding: 0 remcalc(10);
-
-      @include breakpoint(large) {
-        padding: 0 remcalc(15);
-      }
-
-      .icon-item {
-        width: remcalc(15);
-
-        @include breakpoint(small) {
-          width: remcalc(16);
-        }
-
-        @include breakpoint(large) {
-          width: remcalc(22);
-        }
-      }
-
-      &:nth-child(1) {
-        padding-left: 0;
-      }
-    }
-
-    @include breakpoint(small) {
-      margin-left: remcalc(15);
-    }
-  }
 }
 
 .list-menu{
@@ -149,5 +119,43 @@
         line-height: remcalc(50);
       }
     }
+  }
+}
+
+.socials {
+  a {
+    padding: 0 remcalc(10);
+
+    @include breakpoint(large) {
+      padding: 0 remcalc(15);
+    }
+
+    .icon-item {
+      width: remcalc(15);
+      height: remcalc(15);
+      fill: $clear_white;
+
+      @include breakpoint(small) {
+        width: remcalc(16);
+        height: remcalc(16);
+
+        &:hover {
+          fill: $gradi_green;
+        }
+      }
+
+      @include breakpoint(large) {
+        width: remcalc(22);
+        height: remcalc(22);
+      }
+    }
+
+    &:nth-child(1) {
+      padding-left: 0;
+    }
+  }
+
+  @include breakpoint(small) {
+    margin-left: remcalc(15);
   }
 }
