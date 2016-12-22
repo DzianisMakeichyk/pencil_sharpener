@@ -5,8 +5,8 @@
   justify-content: flex-end;
   width: 100%;
   height: 100vh;
-  position: absolute;
   overflow: hidden;
+  position: fixed;
 
   @include breakpoint(small) {
     width: 40%;
@@ -17,11 +17,19 @@
     a {
       padding: 0 remcalc(10);
 
+      @include breakpoint(large) {
+        padding: 0 remcalc(15);
+      }
+
       .icon-item {
         width: remcalc(15);
 
         @include breakpoint(small) {
           width: remcalc(16);
+        }
+
+        @include breakpoint(large) {
+          width: remcalc(22);
         }
       }
 
@@ -117,6 +125,10 @@
 
     &:nth-last-child(2) {
       margin-bottom: remcalc(40);
+
+      @include breakpoint(large) {
+        margin-bottom: remcalc(56);
+      }
     }
 
     .text-menu {
@@ -130,6 +142,11 @@
         display: block;
         transform: $skew_plus;
         margin-left: remcalc(15);
+      }
+
+      @include breakpoint(large) {
+        @include just-rythm(40);
+        line-height: remcalc(50);
       }
     }
   }
