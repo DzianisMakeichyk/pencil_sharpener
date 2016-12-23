@@ -14,6 +14,8 @@ $base-size: 16 !default;
   @return (($size / $base-size) * 1rem);
 }
 
+$SourceSansPro: 'Source Sans Pro', sans-serif;
+
 /* Typography Map */
 $fonts: (
   48: remcalc(54),
@@ -44,7 +46,7 @@ $skew_plus: skew(25deg, 0deg);
 body {
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
-  margin: auto 0;
+  margin: 0;
   padding: 0;
 
 }
@@ -64,3 +66,9 @@ p,
 a {
   color: $middle_black;
 }
+
+h1,
+h2,
+h3,
+h4
+{margin: 0}

@@ -62,7 +62,7 @@ class App extends Component {
 
     render() {
         var is_click = this.state.menuVisible ? 'is-click' : '';
-        var classNameLogo = is_click + ' logo-name';
+        var classNameLogo = 'logo-name ' + is_click ;
         var classNamePiece = is_click + ' burger-menu-piece';
         var classNameOther = is_click + ' burger-menu-other';
         return (
