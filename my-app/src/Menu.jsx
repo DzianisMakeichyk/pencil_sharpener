@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 import routeMap from '../routeMap.json';
-import MediaQuery from 'react-responsive';
+/*import MediaQuery from 'react-responsive';*/
 import classnames from 'classnames';
 
 export default class App extends React.Component {
@@ -15,15 +15,6 @@ export default class App extends React.Component {
     console.log(this.routeMap);
     return (
        <div className="show-menu">
-         <MediaQuery maxDeviceWidth={767}>
-           <div className="lines">
-             <div className="vertical-line"></div>
-             <div className="vertical-line"></div>
-             <div className="vertical-line"></div>
-             <div className="horizontal-line"></div>
-             <div className="horizontal-line"></div>
-           </div>
-         </MediaQuery>
          <ul className="list-menu">
            <li
              className={classnames('item-menu', {
