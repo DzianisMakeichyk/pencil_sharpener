@@ -2,61 +2,51 @@
   {
     "name": "stypendium-z-wyboru",
     "title": "Stypendium z wyboru",
-    "short_description": "Absolvent.pl",
-    "filters": "page"
+    "short_description": "Absolvent.pl"
   },
   {
     "name": "animowany-baner",
     "title": "Baner",
-    "short_description": "Animowana kartka z okazji świeta Bożego urodzenia",
-    "filters": "little"
+    "short_description": "Animowana kartka z okazji świeta Bożego urodzenia"
   },
   {
     "name": "pierwsza-strona",
     "title": "Pierwsza strona",
-    "short_description": "Mini blog",
-    "filters": "page"
+    "short_description": "Mini blog"
   },
   {
     "name": "zaslepka",
     "title": "Zaślepka",
-    "short_description": "Zaślepka dla strony internetowej. Z aktualnym czasem przed rozpoczęciem działania oraz możliwością ...",
-    "filters": "page"
+    "short_description": "Zaślepka dla strony internetowej. Z aktualnym czasem przed rozpoczęciem działania oraz możliwością ..."
   },
   {
     "name": "portal-pracy",
     "title": "Portal pracy",
-    "short_description": "Front dla portala poszukiwania pracy",
-    "filters": "page"
+    "short_description": "Front dla portala poszukiwania pracy"
   },
   {
     "name": "agencja-interaktywna",
     "title": "Agencja kreatywna",
-    "short_description": "Agencja interaktywna łącząca kompetencje digital, performance marketing i Social Media",
-    "filters": "page"
+    "short_description": "Agencja interaktywna łącząca kompetencje digital, performance marketing i Social Media"
   },
   {
     "name": "baner",
     "title": "Baner zegarkowy",
-    "short_description": "Z aktualną godziną",
-    "filters": "little"
+    "short_description": "Z aktualną godziną"
   },
   {
     "name": "dzianis",
     "title": "Portfolio",
-    "short_description": "Strona portfolio",
-    "filters": "page"
+    "short_description": "Strona portfolio"
   },
   {
     "name": "facebook-tab",
     "title": "Facebook Tab",
-    "short_description": "Tab Facebookowy",
-    "filters": "little"
+    "short_description": "Tab Facebookowy"
   },
   {
     "name": "warsztat-samochodowy",
     "title": "Warsztat samochodowy",
-    "short_description": "W trakcie realizacji..",
-    "filters": "page"
+    "short_description": "W trakcie realizacji.."
   }
 ]

@@ -1,0 +1,7 @@
+@mixin back_box_shadow {
+  box-shadow: remcalc(15) remcalc(30) 0 $lightGray;
+}
+
+@mixin box_shadow {
+  box-shadow: 0px remcalc(12) remcalc(40) remcalc(-15) $easeGray;
+}

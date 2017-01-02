@@ -1,26 +1,49 @@
-$clear_white: #fff;
-$clear_gray: #222;
-$clear_black: #000;
-$middle_black: #242424;
-$light_gray: rgba(17, 21, 23, .1);
-$gradi_blue: #00e1d9;
-$gradi_green: #01e6ae;
-$gradient_blue_green: linear-gradient(135deg, $gradi_blue 23%, $gradi_green 65%);
+$clearWhite: #fff;
+$clearGray: #222;
+$easeGray: #848484;
+$clearBlack: #000;
+$middleBlack: #242424;
+$lightGray: rgba(17, 21, 23, .1);
+$gradiBlue: #00e1d9;
+$gradiGreen: #01e6ae;
+$gradientBlueGreen: linear-gradient(135deg, $gradiBlue 23%, $gradiGreen 65%);
 
 $base-size: 16 !default;
+
+@font-face {
+  font-family: 'qanelas_bold';
+  src: url('../fonts/qanelassoft_extrabold.woff2') format('woff2'),
+  url('../fonts/qanelassoft_extrabold.woff') format('woff'),
+  url('../fonts/qanelassoft_extrabold.svg#qanelas_soft_demoextrabold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'qanelas_light';
+  src: url('../fonts/qanelassoft_ultralight.woff2') format('woff2'),
+  url('../fonts/qanelassoft_ultralight.woff') format('woff'),
+  url('../fonts/qanelassoft_ultralight.svg#qanelas_soft_demoextrabold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 
 /* Rem Calculation */
 @function remcalc($size) {
   @return (($size / $base-size) * 1rem);
 }
 
-$SourceSansPro: 'Source Sans Pro', sans-serif;
+$GanelasBold: 'qanelas_bold', sans-serif;
+$GanelasLight: 'qanelas_light', sans-serif;
+$RobotThin: 'Roboto', sans-serif;
+
 
 /* Typography Map */
 $fonts: (
   48: remcalc(54),
   40: remcalc(46),
   36: remcalc(42),
+  32: remcalc(40),
   30: remcalc(36),
   26: remcalc(32),
   24: remcalc(30),
@@ -34,17 +57,17 @@ $fonts: (
 );
 
 /* Font Weights  */
-$font-thin: 100 !default;
-$font-light: 300 !default;
-$font-regular: 400 !default;
-$font-semi-bold: 600 !default;
-$font-bold: 700 !default;
+$fontThin: 100 !default;
+$fontLight: 300 !default;
+$fontRegular: 400 !default;
+$fontSemiBold: 600 !default;
+$fontBold: 700 !default;
 
-$skew_minus: skew(-25deg, 0deg);
-$skew_plus: skew(25deg, 0deg);
+$skewMinus: skew(-25deg, 0deg);
+$skewPlus: skew(25deg, 0deg);
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: $GanelasLight;
   font-weight: 400;
   margin: 0;
   padding: 0;
@@ -59,16 +82,29 @@ ul,
 li {
   list-style-type: none;
   margin: 0;
+  padding: 0;
 }
 
 span,
 p,
 a {
-  color: $middle_black;
+  color: $middleBlack;
+
+  &.bold {
+    font-family: $GanelasBold;
+  }
 }
 
 h1,
 h2,
 h3,
-h4
+h4,
+h5,
+h6
 {margin: 0}
+
+section,
+.header-container {
+  max-width: remcalc(1600);
+  margin: auto;
+}

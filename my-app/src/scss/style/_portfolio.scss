@@ -1,0 +1,87 @@
+.hello_portfolio {
+  padding: remcalc(15);
+
+  .grid_portfolio {
+    display: flex;
+    padding-top: remcalc(60);
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    @include breakpoint(small) {
+      padding-top: remcalc(80);
+    }
+  }
+}
+
+.portfolio_item {
+  text-align: center;
+  margin-bottom: remcalc(25);
+  @include box_shadow;
+
+  @include breakpoint(small) {
+    width: remcalc(270);
+    max-width: remcalc(270);
+    margin-bottom: remcalc(45);
+  }
+
+  @include breakpoint(medium) {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  @include breakpoint(medium) {
+    position: relative;
+    flex: 1 1 25%;
+    box-shadow: none;
+    width: 25vh;
+    height: 25vh;
+    margin: 0 auto;
+  }
+
+  .portfolio_title {
+    padding: remcalc(20) 0 remcalc(15);
+    @include just-rythm(16);
+    font-family: $GanelasBold;
+
+    @include breakpoint(small) {
+      padding: remcalc(20) 0 remcalc(25);
+    }
+  }
+
+  .portfolio_categories {
+    font-family: $RobotThin;
+    padding: 0 remcalc(10) remcalc(20);
+    @include just-rythm(14)
+  }
+}
+
+.portfolio_img {
+  display: block;
+  width: 100%;
+}
+
+.portfolio_svg {
+  width: remcalc(50);
+  max-width: remcalc(50);
+  max-height: remcalc(50);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  margin: auto;
+}
+
+.portfolio_title_box {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  margin: auto;
+
+  .portfolio_box_name {
+
+  }
+}

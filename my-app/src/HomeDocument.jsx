@@ -5,7 +5,7 @@ import Menu from './Menu'
 import MediaQuery from 'react-responsive';
 import routeMap from '../routeMap.json';
 
-class App extends Component {
+class Home extends Component {
 
  /* componentWillUpdate() {
     const script = document.createElement("script");
@@ -61,16 +61,17 @@ class App extends Component {
     };
 
     render() {
-        var is_click = this.state.menuVisible ? 'is-click' : '';
-        var classNameLogo = 'logo-name ' + is_click ;
-        var classNamePiece = is_click + ' burger-menu-piece';
-        var classNameOther = is_click + ' burger-menu-other';
+        var is_click = this.state.menuVisible ? 'is_click_menu' : '';
+        var classNameLogo = 'logo_name ' + is_click ;
+        var classHeaderContainer = 'header_container ' + is_click ;
+        var classNamePiece = is_click + ' burger_menu_piece';
+        var classNameOther = is_click + ' burger_menu_other';
         return (
         <div className="App">
-                    <header className="header-wrap">
+                    <header className="header_wrap">
                         <nav>
-                            <div className="header-container">
-                                <div className="pull-left">
+                            <div className={classHeaderContainer}>
+                                <div className="pull_left">
                                     <MediaQuery maxDeviceWidth={767}>
                                         <Link
                                           to="/"
@@ -80,17 +81,17 @@ class App extends Component {
                                     <MediaQuery minDeviceWidth={768}>
                                         <Link
                                           to="/"
-                                          className="logo-name">Dzianis Makeichyk
+                                          className="logo_name">Dzianis Makeichyk
                                         </Link>
                                     </MediaQuery>
                                 </div>
-                                <div className="pull-right">
+                                <div className="pull_right">
                                     <div
                                       ref="myMenu"
                                       onClick={this.handleClick}
-                                      className="burger-click-region"
+                                      className="burger_click_region"
                                     >
-                                        <div className="menu-burger">
+                                        <div className="menu_burger">
                                             <span
                                               ref="topLine"
                                               className={classNamePiece}
@@ -184,4 +185,4 @@ class App extends Component {
     }
 }
 
-export default App;
+export default Home;

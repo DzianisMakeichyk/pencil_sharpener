@@ -1,10 +1,17 @@
 @charset "utf-8";
-// Styles
 
+// Abstracts
 @import 'abstracts/variables';
 @import 'abstracts/functions';
-@import 'style/style';
+@import 'abstracts/mixins';
 
-//Components
-@import 'components/lines';
+// Helpers
+@import 'helpers/helpers';
+
+// Styles
+@import 'style/style';
+@import 'style/portfolio';
+
+// Components
 @import 'components/menu';
+
