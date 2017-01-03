@@ -5,6 +5,7 @@
     }
   }
 }
+
 .flex-slider {
   a {
     &:hover {
@@ -12,16 +13,19 @@
     }
   }
 }
+
 .flexslider {
   margin: 0;
   padding: 0;
   position: relative;
   zoom: 1;
+
   .slides {
     >li {
       display: none;
       -webkit-backface-visibility: hidden;
     }
+
     img {
       width: 100%;
       display: block;
@@ -31,6 +35,7 @@
     zoom: 1;
   }
 }
+
 * {
   html {
     .flexslider {
@@ -40,6 +45,7 @@
     }
   }
 }
+
 .no-js {
   .flexslider {
     .slides {
@@ -51,6 +57,7 @@
     }
   }
 }
+
 .flex-viewport {
   max-height: 2000px;
   -webkit-transition: all 1s ease;

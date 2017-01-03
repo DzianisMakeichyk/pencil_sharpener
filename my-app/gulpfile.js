@@ -27,7 +27,7 @@ const supportedBrowsers = 'last 3 versions';
 // Define file sources
 const scssMain = ['src/scss/main.scss'];
 const scssSources = ['src/scss/**/*.scss'];
-const reactFiles = ['src/**/*jsx'];
+const reactFiles = ['src/**/*js'];
 
 // Production Styles w/o lint, source maps & with compression to optimize speed
 gulp.task('scss-prod', function () {
@@ -92,7 +92,7 @@ gg(__dirname).setup(gulp);
 gulp.task('lint', function () {
     return eslint([
         __filename,
-        'web_modules/**/*.{js,jsx}',
+        'src/**/*.{js,js}',
     ]);
 });
 
