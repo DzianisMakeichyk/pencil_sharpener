@@ -4,6 +4,7 @@ import { TimelineLite } from "gsap";
 import Menu from './Menu'
 import MediaQuery from 'react-responsive';
 import routeMap from '../routeMap.json';
+import classnames from 'classnames';
 
 class Home extends Component {
 
@@ -60,10 +61,16 @@ class Home extends Component {
         });
     };
 
+    static propTypes = {
+        routeMap: React.PropTypes.object,
+        location: React.PropTypes.object.isRequired,
+    };
+
     render() {
+        console.log(routeMap.portfolio);
         var is_click = this.state.menuVisible ? 'is_click_menu' : '';
         var classNameLogo = 'logo_name ' + is_click ;
-        var classHeaderContainer = 'header_container ' + is_click ;
+        var classHeaderContainer = 'header_container ' + is_click + classnames('header_wrap', { 'black': location.pathname === routeMap.portfolio });
         var classNamePiece = is_click + ' burger_menu_piece';
         var classNameOther = is_click + ' burger_menu_other';
         return (
