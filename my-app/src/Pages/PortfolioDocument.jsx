@@ -8,32 +8,35 @@ class Portfolio extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isHovering: false,
-    };
+      currentProjectBackground: 'smoke_black',
+    }
   };
-    /*componentDidMount() {
-        isPortfolio();
-        isScript();
-    }*/
+
+  handleHover(projectBackground, isHovering) {
+    console.log(projectBackground, isHovering);
+    if(isHovering) {
+      this.setState({
+        currentProjectBackground: projectBackground,
+      })
+    }
+  }
+
     render() {
+      var BackgroundProject = {backgroundImage: 'url("./img/project_grid/' + this.state.currentProjectBackground +'.png")'};
+
         return (
-            <div>
-                <section className="hello_portfolio">
-                    <ul className="grid_portfolio">
-                        {map(PortfolioGridList, (project) => (
-                            <PortfolioGrid
-                                key={project.name}
-                                project={project}
-                            />
-                        ))}
-                    </ul>
-                  <div>
-                    {map(PortfolioGrid, (this.state) && (
-                       (this.state.isHovering === false) && console.log('true'))
-                      )}
-                  </div>
-                    </section>
-                </div>
+          <section className="hello_portfolio">
+              <ul className="grid_portfolio">
+                  {map(PortfolioGridList, (project) => (
+                      <PortfolioGrid
+                          key={project.name}
+                          project={project}
+                          onHoverChange={this.handleHover.bind(this)}
+                      />
+                  ))}
+                <div className="project_img" style={BackgroundProject} ></div>
+              </ul>
+            </section>
         );
     }
 }

@@ -11,7 +11,6 @@ export default class Menu extends React.Component {
   };
 
   render() {
-    console.log(this.routeMap);
     return (
        <div className="show_menu">
          <ul className="list_menu">
@@ -28,7 +27,9 @@ export default class Menu extends React.Component {
               </Link>
            </li>
            <li
-             className="item_menu"
+             className={classnames('item_menu', {
+               'is_active_page': this.props.location.pathname === this.props.routeMap.portfolio,
+             })}
            >
                <Link
                  to={routeMap.portfolio}
@@ -38,7 +39,9 @@ export default class Menu extends React.Component {
               </Link>
            </li>
            <li
-             className="item_menu"
+             className={classnames('item_menu', {
+               'is_active_page': this.props.location.pathname === this.props.routeMap.about,
+             })}
            >
                <Link
                  to={routeMap.about}
@@ -48,7 +51,9 @@ export default class Menu extends React.Component {
               </Link>
            </li>
            <li
-             className="item_menu"
+             className={classnames('item_menu', {
+               'is_active_page': this.props.location.pathname === this.props.routeMap.blog,
+             })}
            >
                <Link
                  to={routeMap.blog}
@@ -58,7 +63,9 @@ export default class Menu extends React.Component {
               </Link>
            </li>
            <li
-             className="item_menu"
+             className={classnames('item_menu', {
+               'is_active_page': this.props.location.pathname === this.props.routeMap.contact,
+             })}
            >
                <Link
                  to={routeMap.contact}

@@ -46,7 +46,7 @@
 .burger_menu_piece,
 .burger_menu_other {
   &.is_click_menu {
-    background: $gradientBlueGreen;
+    background: $gradientBlueGreen !important;
   }
 }
 
@@ -58,6 +58,7 @@
 
   &.is_click_menu {
     color: $clearWhite;
+
   }
 
 }
@@ -67,7 +68,21 @@
 
   .header_container {
     padding-bottom: remcalc(15);
-    background: $clearWhite;
+    background: transparent;
+    
+    &.black {
+      background: $middleBlack;
+      height: 0;
+      padding: 0;
+      
+      .logo_name {
+        color: $clearWhite;
+      }
+
+      .burger_menu_piece {
+        background: $clearWhite;
+      }
+    }
 
     &.is_click_menu {
       padding-bottom: 0;
@@ -116,7 +131,7 @@
   justify-content: center;
 
   @include breakpoint(medium) {
-    height: 100vh;
+    height: 98vh;
     flex-direction: row;
     justify-content: space-between;
     padding: remcalc(25);
