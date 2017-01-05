@@ -1,0 +1,198 @@
+.show_menu {
+  background: $middleBlack;
+  font-family: $GanelasBold;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
+  z-index: 1000;
+  box-shadow: -15px 0px 20px 0px rgba(0,0,0,0.5);
+
+  @include breakpoint(small) {
+    width: 40%;
+    right: 0;
+  }
+
+  @include breakpoint(extralarge) {
+    width: 100%;
+  }
+}
+
+.list_menu{
+  width: 55%;
+  padding: 30% 0;
+
+  @include breakpoint(small) {
+    width: 80%;
+  }
+
+  @include breakpoint(extralarge) {
+    width: 30%;
+    padding: 11% 0;
+  }
+
+  .item_menu {
+    line-height: remcalc(36);
+    letter-spacing: 1px;
+
+    @include breakpoint(small) {
+      line-height: remcalc(40);
+      transform: $skewMinus;
+      margin: remcalc(10) 0;
+
+      &:before {
+        content: '';
+        position: absolute;
+        width: 15%;
+        height: 100%;
+        transition: width .5s ease;
+        top: remcalc(-2);
+
+        @include breakpoint(extralarge) {
+          width: 8%;
+        }
+      }
+
+      &:hover {
+        @include breakpoint(small) {
+          &:before {
+            content: '';
+            background: $gradientBlueGreen;
+          }
+        }
+      }
+      &.is_active_page {
+        &:before {
+          background: $gradientBlueGreen;
+        }
+      }
+
+      &:nth-child(1) {
+        &:hover {
+          &:before {
+            width: 50%;
+
+            @include breakpoint(extralarge) {
+              width: 25%;
+            }
+          }
+        }
+      }
+
+      &:nth-child(2) {
+        &:hover {
+          &:before {
+            width: 72%;
+
+            @include breakpoint(extralarge) {
+              width: 35%;
+            }
+          }
+        }
+      }
+
+      &:nth-child(3) {
+        &:hover {
+          &:before {
+            width: 55%;
+
+            @include breakpoint(extralarge) {
+              width: 25%;
+            }
+          }
+        }
+      }
+
+      &:nth-child(4) {
+        &:hover {
+          &:before {
+            width: 45%;
+
+            @include breakpoint(extralarge) {
+              width: 20%;
+            }
+          }
+        }
+      }
+
+      &:nth-child(5) {
+        &:hover {
+          &:before {
+            width: 65%;
+
+            @include breakpoint(extralarge) {
+              width: 30%;
+            }
+          }
+        }
+      }
+    }
+
+    &:nth-last-child(2) {
+      margin-bottom: remcalc(40);
+
+      @include breakpoint(large) {
+        margin-bottom: remcalc(56);
+      }
+    }
+
+    .text_menu {
+      font-weight: $fontSemiBold;
+      text-transform: uppercase;
+      color: $clearWhite;
+      @include just-rythm(24);
+
+      @include breakpoint(small) {
+        @include just-rythm(60);
+        display: block;
+        transform: $skewPlus;
+        margin-left: remcalc(15);
+      }
+
+      @include breakpoint(large) {
+        @include just-rythm(40);
+        line-height: remcalc(50);
+      }
+    }
+  }
+}
+
+.socials {
+  a {
+    padding: 0 remcalc(10);
+
+    @include breakpoint(large) {
+      padding: 0 remcalc(15);
+    }
+
+    .icon_item {
+      width: remcalc(15);
+      height: remcalc(15);
+      fill: $clearWhite;
+
+      @include breakpoint(small) {
+        width: remcalc(16);
+        height: remcalc(16);
+
+        &:hover {
+          fill: $gradiGreen;
+        }
+      }
+
+      @include breakpoint(large) {
+        width: remcalc(22);
+        height: remcalc(22);
+      }
+    }
+
+    &:nth-child(1) {
+      padding-left: 0;
+    }
+  }
+
+  @include breakpoint(small) {
+    margin-left: remcalc(15);
+  }
+}

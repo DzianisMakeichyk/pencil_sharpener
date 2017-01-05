@@ -1,0 +1,38 @@
+[
+  {
+    "name": "PhotoShop",
+    "percent": "65"
+  },
+  {
+    "name": "Illustrator",
+    "percent": "60"
+  },
+  {
+    "name": "Jade/HTML",
+    "percent": "70"
+  },
+  {
+    "name": "Jade/HTML",
+    "percent": "70"
+  },
+  {
+    "name": "SASS/SCSS",
+    "percent": "75"
+  },
+  {
+    "name": "ReactJs",
+    "percent": "45"
+  },
+  {
+    "name": "Zubr Foundation/Bootstrap",
+    "percent": "75"
+  },
+  {
+    "name": "Jquery",
+    "percent": "50"
+  },
+  {
+    "name": "WordPress",
+    "percent": "60"
+  }
+]

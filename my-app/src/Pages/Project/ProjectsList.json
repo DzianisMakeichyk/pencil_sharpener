@@ -1,0 +1,102 @@
+[
+  {
+    "slug": "stypendium-z-wyboru",
+    "name": "Stypendium z wyboru",
+    "description": "Projekt firmy Absolvent.pl. Stypendium z Wyboru to ogólnopolski program stypendialny stworzony po to, by pomagać zdolnym, kreatywnym i ambitnym studentom i młodym absolwentom w realizowaniu swoich marzeń edukacyjnych i zawodowych.",
+    "img": "stypendium-z-wyboru",
+    "button_link": "https://www.stypendiumzwyboru.pl",
+    "button_name": "SZW",
+    "button_last": "#",
+    "button_next": "animowany-baner"
+  },
+  {
+    "slug": "animowany-baner",
+    "name": "Baner",
+    "description": "Animowana kartka z okazji świeta Bożego urodzenia",
+    "img": "animowany-baner",
+    "button_link": "https://www.pencilsharpener.pl/works/kartka/index.html",
+    "button_name": "Baner",
+    "button_last": "stypendium-z-wyboru",
+    "button_next": "pierwsza-strona"
+  },
+  {
+    "slug": "pierwsza-strona",
+    "name": "Pierwsza strona www",
+    "description": "Pierwsza strona www na bootstrape",
+    "img": "pierwsza-strona",
+    "button_link": "https://www.pencilsharpener.pl/works/rus/index.html",
+    "button_name": "Strona",
+    "button_last": "animowany-baner",
+    "button_next": "portal-pracy"
+  },
+  {
+    "slug": "portal-pracy",
+    "name": "Portal Pracy",
+    "description": "Front dla portala poszukiwania pracy",
+    "img": "portal-pracy",
+    "button_link": "https://www.pencilsharpener.pl/works/portal-praca/index.html",
+    "button_name": "Strona",
+    "button_last": "pierwsza-strona",
+    "button_next": "agencja-interaktywna"
+  },
+  {
+    "slug": "agencja-interaktywna",
+    "name": "Agencja Interaktywna",
+    "description": "Agencja interaktywna łącząca kompetencje digital, performance marketing i Social Media",
+    "img": "agencja-interaktywna",
+    "button_link": "https://www.pencilsharpener.pl/works/agencja/index.html",
+    "button_name": "Agencja",
+    "button_last": "portal-pracy",
+    "button_next": "zaslepka"
+  },
+  {
+    "slug": "zaslepka",
+    "name": "Zaślepka",
+    "description": "Zaślepka dla strony internetowej. Z aktualnym czasem przed rozpoczęciem działania oraz możliwością kontaktu bądż subskrybcji na newslettera.",
+    "img": "zaslepka",
+    "button_link": "https://www.pencilsharpener.pl/works/timer/index.html",
+    "button_name": "Zaślepka",
+    "button_last": "agencja-interaktywna",
+    "button_next": "facebook-tab"
+  },
+  {
+    "slug": "facebook-tab",
+    "name": "Facebook Tab",
+    "description": "Facebook Tab",
+    "img": "facebook-tab",
+    "button_link": "#",
+    "button_name": "Facebook",
+    "button_last": "zaslepka",
+    "button_next": "dzianis"
+  },
+  {
+    "slug": "dzianis",
+    "name": "Strona portfolio",
+    "description": "Strona portfolio",
+    "img": "dzianis",
+    "button_link": "https://www.pencilsharpener.pl/works/self/index.html",
+    "button_name": "Strona",
+    "button_last": "facebook-tab",
+    "button_next": "baner"
+  },
+  {
+    "slug": "baner",
+    "name": "Epos Drift Master",
+    "description": "Animowany baner z zegarkiem pokazującym aktualną godzinę",
+    "img": "baner",
+    "button_link": "https://www.pencilsharpener.pl/works/zegar/index.html",
+    "button_name": "Zegar",
+    "button_last": "dzianis",
+    "button_next": "warsztat-samochodowy"
+  },
+  {
+    "slug": "warsztat-samochodowy",
+    "name": "Warsztat samochodowy",
+    "description": "W trakcie realizacji..",
+    "img": "warsztat-samochodowy",
+    "button_link": "https://www.pencilsharpener.pl/works/warsztat/index.html",
+    "button_name": "Warsztat",
+    "button_last": "baner",
+    "button_next": "#"
+  }
+]

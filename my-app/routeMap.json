@@ -1,4 +1,9 @@
 {
   "home": "/",
-  "index": "/index"
+  "index": "/index",
+  "portfolio": "/portfolio",
+  "about": "/o-mnie",
+  "blog": "/blog",
+  "contact": "/kontakt",
+  "project_details": "/portfolio/:slug"
 }

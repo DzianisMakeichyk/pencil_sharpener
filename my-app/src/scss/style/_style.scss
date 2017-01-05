@@ -1,0 +1,210 @@
+.header_container {
+  left: 0;
+  right: 0;
+}
+
+.burger_click_region {
+  cursor: pointer;
+  height: remcalc(20);
+  position: relative;
+  width: remcalc(20);
+}
+
+.menu_burger {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  .burger_menu_piece {
+    background: $clearGray;
+    display: block;
+    height: remcalc(2);
+    position: relative;
+    width: remcalc(30);
+
+    &:nth-child(1) {
+      top: -5px;
+
+    }
+
+    &:nth-child(3) {
+      top: 5px;
+      width: remcalc(20);
+    }
+  }
+
+  .burger_menu_other {
+    background: $middleBlack;
+    display: block;
+    position: absolute;
+    width: remcalc(2);
+    transition: background 1s ease;
+  }
+}
+
+.burger_menu_piece,
+.burger_menu_other {
+  &.is_click_menu {
+    background: $gradientBlueGreen;
+  }
+}
+
+.logo_name {
+  font-weight: $fontLight;
+  text-transform: uppercase;
+  letter-spacing: remcalc(2);
+  transition: color 1s ease;
+
+  &.is_click_menu {
+    color: $clearWhite;
+  }
+
+}
+
+.header_wrap {
+  position: relative;
+
+  .header_container {
+    padding-bottom: remcalc(15);
+    background: $clearWhite;
+
+    &.is_click_menu {
+      padding-bottom: 0;
+      background: transparent;
+    }
+  }
+
+  .header_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    z-index: 1001;
+
+    .pull_left {
+      margin: remcalc(15) auto auto remcalc(15);
+
+      @include breakpoint(small) {
+        margin: remcalc(25) auto auto remcalc(25);
+      }
+
+      @include breakpoint(large) {
+        margin: remcalc(25) auto auto remcalc(45);
+      }
+    }
+
+    .pull_right {
+      margin: remcalc(15) remcalc(15) auto auto;
+
+      @include breakpoint(small) {
+        margin: remcalc(25) remcalc(25) auto auto;
+      }
+
+      @include breakpoint(large) {
+        margin: remcalc(25) remcalc(45) auto auto;
+      }
+    }
+  }
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  padding: remcalc(15);
+  justify-content: center;
+
+  @include breakpoint(medium) {
+    height: 100vh;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: remcalc(25);
+  }
+
+  @include breakpoint(extralarge) {
+    padding: remcalc(45);
+  }
+}
+
+.hero_title {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  @include just-rythm(18);
+
+  @include breakpoint(small) {
+    @include just-rythm(32);
+  }
+
+  @include breakpoint(medium) {
+    position: relative;
+    flex: 1 1 50%;
+    transform: translateY(0%);
+    top:0;
+  }
+}
+
+.hero_name {
+  position: absolute;
+  bottom: remcalc(15);
+  right: remcalc(15);
+
+  @include breakpoint(small) {
+    bottom: remcalc(25);
+    right: remcalc(25);
+  }
+
+  @include breakpoint(medium) {
+    position: relative;
+    flex: 1 1 50%;
+    align-self: flex-end;
+    max-width: remcalc(150);
+  }
+
+  .hero_pencil {
+    text-transform: uppercase;
+    @include just-rythm(16);
+    line-height: remcalc(16);
+
+    @include breakpoint(small) {
+      @include just-rythm(18);
+      line-height: remcalc(18);
+    }
+
+    @include breakpoint(medium) {
+      @include just-rythm(20);
+      line-height: remcalc(20);
+    }
+  }
+
+  .hero_production {
+    @include just-rythm(12);
+
+    @include breakpoint(small) {
+      @include just-rythm(14);
+    }
+
+    @include breakpoint(medium) {
+      @include just-rythm(16);
+    }
+  }
+
+  .svg_wolf {
+    width: remcalc(30);
+    height: remcalc(30);
+    margin: auto auto remcalc(-35) remcalc(-35);
+
+    @include breakpoint(small) {
+      width: remcalc(35);
+      height: remcalc(35);
+      margin: auto auto remcalc(-38) remcalc(-40);
+    }
+
+    @include breakpoint(medium) {
+      width: remcalc(40);
+      height: remcalc(40);
+      margin: auto auto remcalc(-42) remcalc(-45);
+    }
+  }
+}
