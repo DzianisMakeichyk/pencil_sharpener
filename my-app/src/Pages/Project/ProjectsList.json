@@ -3,7 +3,7 @@
     "slug": "stypendium-z-wyboru",
     "name": "Stypendium z wyboru",
     "description": "Projekt firmy Absolvent.pl. Stypendium z Wyboru to ogólnopolski program stypendialny stworzony po to, by pomagać zdolnym, kreatywnym i ambitnym studentom i młodym absolwentom w realizowaniu swoich marzeń edukacyjnych i zawodowych.",
-    "img": "stypendium-z-wyboru",
+    "img": "stypendium_z_wyboru",
     "button_link": "https://www.stypendiumzwyboru.pl",
     "button_name": "SZW",
     "button_last": "#",
@@ -22,8 +22,14 @@
   {
     "slug": "pierwsza-strona",
     "name": "Pierwsza strona www",
-    "description": "Pierwsza strona www na bootstrape",
+    "description": "Pierwsza strona www na bootstrape Pierwsza strona www na bootstrape Pierwsza strona www na bootstrape Pierwsza strona www na bootstrape",
     "img": "pierwsza-strona",
+    "location": "Polska, Warszawa",
+    "year": "2015",
+    "technologies": {
+      "body": ["html", "bang"],
+      "style": ["css", "wow"]
+    },
     "button_link": "https://www.pencilsharpener.pl/works/rus/index.html",
     "button_name": "Strona",
     "button_last": "animowany-baner",

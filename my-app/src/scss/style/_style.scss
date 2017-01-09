@@ -1,3 +1,11 @@
+main {
+  @include breakpoint(large) {
+    &.black {
+      background: $middleBlack;
+    }
+  }
+}
+
 .header_container {
   left: 0;
   right: 0;
@@ -69,18 +77,20 @@
   .header_container {
     padding-bottom: remcalc(15);
     background: transparent;
-    
-    &.black {
-      background: $middleBlack;
-      height: 0;
-      padding: 0;
-      
-      .logo_name {
-        color: $clearWhite;
-      }
 
-      .burger_menu_piece {
-        background: $clearWhite;
+    @include breakpoint(medium) {
+      &.black {
+        background: $middleBlack;
+        height: 0;
+        padding: 0;
+
+        .logo_name {
+          color: $clearWhite;
+        }
+
+        .burger_menu_piece {
+          background: $clearWhite;
+        }
       }
     }
 
@@ -95,6 +105,8 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+    max-width: remcalc(1600);
+    margin: auto;
     position: fixed;
     z-index: 1001;
 

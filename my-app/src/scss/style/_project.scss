@@ -1,0 +1,134 @@
+.project_shots {
+  display: flex;
+  flex-direction: column;
+  padding: remcalc(50) 0 0;
+
+  @include breakpoint(small) {
+    flex-direction: row;
+    padding: remcalc(60) 0 0;
+    height: calc(100vh - 60px);
+  }
+}
+
+.project_shot_img {
+  height:100px; //zero height
+  box-sizing: border-box;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @include breakpoint(small) {
+    flex: 1 1 50%;
+    order: 2;
+    height: auto;
+  }
+}
+
+.project_shot_info {
+  margin: remcalc(30) remcalc(20);
+  font-family: $RobotThin;
+
+  @include breakpoint(small) {
+    flex: 1 1 50%;
+    order: 1;
+    margin: 20vh remcalc(30) 0;
+  }
+
+  .project_name {
+    @include just-rythm(22);
+    margin-bottom: remcalc(30);
+  }
+
+  @include breakpoint(small) {
+    @include just-rythm(28);
+  }
+
+  .project_location {
+    @include just-rythm(12);
+    color: $middleBlack;
+
+    .project_year {
+      color: $middleGreay;
+      font-weight: $fontSemiBold;
+    }
+  }
+
+  .project_description {
+    @include breakpoint(small) {
+      @include just-rythm(18);
+    }
+  }
+}
+
+.project_technologies {
+  display: flex;
+  flex-direction: row;
+  @include just-rythm(14);
+
+  .project_techno_body {
+    flex: 1 1 50%;
+    padding: 0 0 remcalc(35);
+
+    .techno_body_name {
+      margin: remcalc(5) 0;
+      color: $middleGreay;
+      font-weight: $fontSemiBold;
+
+    }
+
+    .body_name_shot {
+      margin: remcalc(2) 0;
+      color: $clearGray;
+      font-weight: $fontThin;
+    }
+  }
+}
+
+.project_arrows {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  @include breakpoint(small) {
+    @include just-rythm(18);
+  }
+
+  .project_arrow {
+    svg {
+      width: remcalc(60);
+      height: remcalc(38);
+
+      @include breakpoint(small) {
+        width: remcalc(64);
+        height: remcalc(48);
+      }
+    }
+
+    @include breakpoint(medium) {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+
+      &.last {
+        left: 0;
+      }
+
+      &.next {
+        right: 0;
+      }
+    }
+  }
+
+  .project_button_to {
+    width: 100%;
+    max-width: remcalc(280);
+    margin: 0 auto;
+    padding: remcalc(8) 0;
+    border: 2px solid $gradiBlue;
+    text-align: center;
+    border-radius: remcalc(30);
+    font-weight: $fontSemiBold;
+    color: $middleGreay;
+  }
+}
