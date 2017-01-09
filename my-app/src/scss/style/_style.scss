@@ -1,3 +1,9 @@
+main {
+  &.black {
+    background: $middleBlack;
+  }
+}
+
 .header_container {
   left: 0;
   right: 0;
@@ -95,6 +101,8 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+    max-width: remcalc(1600);
+    margin: auto;
     position: fixed;
     z-index: 1001;
 

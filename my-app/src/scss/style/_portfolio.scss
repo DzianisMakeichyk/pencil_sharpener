@@ -71,6 +71,12 @@
   right: 0;
   transform: translateY(-50%);
   margin: auto;
+
+  @include breakpoint(large) {
+    width: remcalc(90);
+    max-width: remcalc(90);
+    max-height: remcalc(90);
+  }
 }
 
 .portfolio_title_box {
@@ -82,6 +88,7 @@
   margin: auto;
 
   .portfolio_box_name {
+    position: relative;
     max-width: remcalc(215);
     margin: auto auto remcalc(10);
     font-family: $GanelasBold;
@@ -90,6 +97,10 @@
     background: $gradientBlueGreen;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    @include breakpoint(large) {
+      @include just-rythm(30);
+    }
   }
     
     .project_mini_categories {
@@ -98,6 +109,11 @@
       font-family: $RobotThin;
       @include just-rythm(14);
       color: $clearWhite;
+
+      @include breakpoint(large) {
+        @include just-rythm(20);
+        max-width: remcalc(220);
+      }
     }
 }
 
@@ -109,4 +125,10 @@
   background-position: center;
   background-repeat: no-repeat;
   z-index: 10;
+}
+
+.animation-link {
+  display: block;
+  width: 100%;
+  height: 100%;
 }

@@ -38,7 +38,7 @@ export default class PortfolioGrid extends React.Component {
     console.log(this.state.onHoverChange);
 
     let visible = true;
-    if (this.props.currentProjectName !== null && this.props.currentProjectName != this.props.project.name) {
+    if (this.props.currentProjectName !== null && this.props.currentProjectName !== this.props.project.name) {
       visible = false;
     }
 
