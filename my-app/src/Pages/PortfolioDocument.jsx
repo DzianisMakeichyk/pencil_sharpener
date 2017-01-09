@@ -8,16 +8,24 @@ class Portfolio extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      currentProjectName: null,
       currentProjectBackground: 'smoke_black',
     }
   };
 
-  handleHover(projectBackground, isHovering) {
+  handleHover(projectName, projectBackground, isHovering) {
     console.log(projectBackground, isHovering);
-    if(isHovering) {
+    if (isHovering) {
       this.setState({
+        currentProjectName: projectName,
         currentProjectBackground: projectBackground,
-      })
+      });
+    }
+    else {
+      this.setState({
+        currentProjectName: null,
+        currentProjectBackground: 'smoke_black',
+      });
     }
   }
 
@@ -31,6 +39,7 @@ class Portfolio extends Component {
                       <PortfolioGrid
                           key={project.name}
                           project={project}
+                          currentProjectName={this.state.currentProjectName}
                           onHoverChange={this.handleHover.bind(this)}
                       />
                   ))}
@@ -42,3 +51,4 @@ class Portfolio extends Component {
 }
 
 export default Portfolio;
+
