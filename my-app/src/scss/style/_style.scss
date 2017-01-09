@@ -1,6 +1,8 @@
 main {
-  &.black {
-    background: $middleBlack;
+  @include breakpoint(large) {
+    &.black {
+      background: $middleBlack;
+    }
   }
 }
 
@@ -75,18 +77,20 @@ main {
   .header_container {
     padding-bottom: remcalc(15);
     background: transparent;
-    
-    &.black {
-      background: $middleBlack;
-      height: 0;
-      padding: 0;
-      
-      .logo_name {
-        color: $clearWhite;
-      }
 
-      .burger_menu_piece {
-        background: $clearWhite;
+    @include breakpoint(medium) {
+      &.black {
+        background: $middleBlack;
+        height: 0;
+        padding: 0;
+
+        .logo_name {
+          color: $clearWhite;
+        }
+
+        .burger_menu_piece {
+          background: $clearWhite;
+        }
       }
     }
 

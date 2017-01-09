@@ -60,8 +60,7 @@ export default class PortfolioGrid extends React.Component {
                 {DescriptionOnHover}
                 {DescriptionOutHover}
               </MediaQuery>
-            </Link>
-            <MediaQuery maxDeviceWidth={1023}>
+              <MediaQuery maxDeviceWidth={1023}>
               <h6 className="portfolio_title">
                 {this.props.project.title}
               </h6>
@@ -69,6 +68,7 @@ export default class PortfolioGrid extends React.Component {
                 {this.props.project.short_description}
               </div>
             </MediaQuery>
+          </Link>
         </li>
     );
   }

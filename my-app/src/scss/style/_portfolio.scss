@@ -1,7 +1,10 @@
 .hello_portfolio {
-  background: $middleBlack;
   padding: remcalc(15);
   height: 98vh;
+
+  @include breakpoint(medium) {
+    background: $middleBlack;
+  }
 
   .grid_portfolio {
     position: relative;

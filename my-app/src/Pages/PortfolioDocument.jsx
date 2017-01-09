@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PortfolioGrid from './PortfolioGrid/PortfolioGrid';
 import PortfolioGridList from './PortfolioGrid/PortfolioGridList.json';
 import map from 'lodash/map';
+import MediaQuery from 'react-responsive';
 
 class Portfolio extends Component {
 
@@ -43,7 +44,9 @@ class Portfolio extends Component {
                           onHoverChange={this.handleHover.bind(this)}
                       />
                   ))}
-                <div className="project_img" style={BackgroundProject} ></div>
+                <MediaQuery minDeviceWidth={1024}>
+                  <div className="project_img" style={BackgroundProject} ></div>
+                </MediaQuery>
               </ul>
             </section>
         );
