@@ -67,11 +67,10 @@ class Home extends Component {
     };
 
     render() {
-        console.log(routeMap.portfolio);
         var is_click = this.state.menuVisible ? 'is_click_menu' : '';
         var classNameLogo = 'logo_name ' + is_click ;
-        var classHeaderContainer = 'header_container ' + is_click + classnames({ ' black': location.pathname === routeMap.portfolio });
-        var classMainContainer = classnames({ 'black': location.pathname === routeMap.portfolio });
+        var classHeaderContainer = 'header_container ' + is_click + classnames({ ' black': location.pathname === routeMap.portfolio || routeMap.project_details}) + classnames({ ' white': location.pathname === routeMap.portfolio || routeMap.project_details});
+        var classMainContainer = classnames({ 'black': location.pathname === routeMap.portfolio || routeMap.project_details});
         var classNamePiece = is_click + ' burger_menu_piece';
         var classNameOther = is_click + ' burger_menu_other';
         return (

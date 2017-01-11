@@ -78,6 +78,15 @@ main {
     padding-bottom: remcalc(15);
     background: transparent;
 
+    &.white {
+      background: $clearWhite;
+
+      @include breakpoint(medium) {
+        background: transparent;
+      }
+    }
+
+
     @include breakpoint(medium) {
       &.black {
         background: $middleBlack;

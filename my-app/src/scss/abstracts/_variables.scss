@@ -1,5 +1,6 @@
 $clearWhite: #fff;
 $clearGray: #222;
+$Gray: #353535;
 $easeGray: #848484;
 $clearBlack: #000;
 $middleBlack: #242424;
@@ -8,6 +9,7 @@ $gradiBlue: #00e1d9;
 $gradiGreen: #01e6ae;
 $middleGreay: #666;
 $gradientBlueGreen: linear-gradient(135deg, $gradiBlue 23%, $gradiGreen 65%);
+$gradientBlueGreenRevers: linear-gradient(135deg, $gradiGreen 23%, $gradiBlue 65%);
 
 $base-size: 16 !default;
 

@@ -1,7 +1,7 @@
 .project_shots {
   display: flex;
   flex-direction: column;
-  padding: remcalc(50) 0 0;
+  padding: remcalc(50) remcalc(15) 0;
 
   @include breakpoint(small) {
     flex-direction: row;
@@ -10,33 +10,14 @@
   }
 }
 
-.project_shot_img {
-  height:100px; //zero height
-  box-sizing: border-box;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  @include breakpoint(small) {
-    flex: 1 1 50%;
-    order: 2;
-    height: auto;
-  }
-}
-
 .project_shot_info {
-  margin: remcalc(30) remcalc(20);
+  margin: remcalc(10) remcalc(20);
   font-family: $RobotThin;
 
   @include breakpoint(small) {
     flex: 1 1 50%;
     order: 1;
     margin: 20vh remcalc(30) 0;
-  }
-
-  .project_name {
-    @include just-rythm(22);
-    margin-bottom: remcalc(30);
   }
 
   @include breakpoint(small) {
@@ -67,7 +48,7 @@
 
   .project_techno_body {
     flex: 1 1 50%;
-    padding: 0 0 remcalc(35);
+    padding: 0 0 remcalc(15);
 
     .techno_body_name {
       margin: remcalc(5) 0;
@@ -95,40 +76,143 @@
   }
 
   .project_arrow {
-    svg {
-      width: remcalc(60);
-      height: remcalc(38);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 
-      @include breakpoint(small) {
-        width: remcalc(64);
-        height: remcalc(48);
-      }
+    &.last {
+      left: 0;
     }
 
-    @include breakpoint(medium) {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-
-      &.last {
-        left: 0;
-      }
-
-      &.next {
-        right: 0;
-      }
+    &.next {
+      right: 0;
     }
   }
 
-  .project_button_to {
+  svg {
+    width: remcalc(60);
+    height: remcalc(38);
+
+    @include breakpoint(small) {
+      width: remcalc(64);
+      height: remcalc(48);
+    }
+  }
+}
+
+.project_position {
+  position: absolute;
+  width: remcalc(100);
+  height: remcalc(100);
+  margin: auto;
+  top: remcalc(30);
+  left: 0;
+  right: 0;
+  border: 2px solid $gradiGreen;
+  text-align: left;
+
+  p {
+    @include just-rythm(18);
+    margin: 0;
+    padding: remcalc(10);
+    color: $clearWhite;
+  }
+}
+
+.project_name {
+  max-width: remcalc(200);
+  @include just-rythm(28);
+  line-height: remcalc(26);
+  text-transform: uppercase;
+  padding: remcalc(20) 0;
+  color: $middleBlack;
+  letter-spacing: .5px;
+}
+
+.project_button_arrows {
+  display:flex;
+  flex-direction: row;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: remcalc(25);
+
+  .project_button {
+    position: relative;
+    flex: 1 1 50%;
+    padding: remcalc(10) 0;
+    border-top: 1px solid $gradiGreen;
+    border-bottom: 1px solid $gradiGreen;
+
+    &.prev {
+      &:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transform: $skewMinus;
+        background: transparent;
+        border-right: 1px solid $gradiGreen;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        z-index: -1;
+      }
+    }
+  }
+}
+
+.project_image_box {
+  position: relative;
+
+  .project_shot_img {
     width: 100%;
-    max-width: remcalc(280);
-    margin: 0 auto;
+    z-index: -2;
+
+    @include breakpoint(small) {
+      flex: 1 1 50%;
+      order: 2;
+      height: auto;
+    }
+  }
+
+
+  .project_button_to {
+    position: absolute;
+    display: block;
+    width: remcalc(150);
+    margin: remcalc(10) auto remcalc(20);
     padding: remcalc(8) 0;
-    border: 2px solid $gradiBlue;
     text-align: center;
-    border-radius: remcalc(30);
+    font-family: $RobotThin;
     font-weight: $fontSemiBold;
-    color: $middleGreay;
+    color: $clearWhite;
+    z-index: 400;
+    bottom: remcalc(-32);
+    right: remcalc(8);
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      transform: $skewMinus;
+      background: $gradientBlueGreen;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin:  0 auto;
+      z-index: -1;
+      border: none;
+      transition: border 1s ease;
+
+    }
+
+    &:hover {
+      &:before {
+        content: '';
+        background: $gradientBlueGreenRevers;
+      }
+    }
   }
 }
