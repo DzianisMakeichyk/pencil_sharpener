@@ -4,21 +4,13 @@
   padding: remcalc(50) remcalc(15) 0;
 
   @include breakpoint(small) {
-    flex-direction: row;
-    padding: remcalc(60) 0 0;
-    height: calc(100vh - 60px);
+    padding: remcalc(70) remcalc(25) 0;
   }
 }
 
 .project_shot_info {
   margin: remcalc(10) remcalc(20);
   font-family: $RobotThin;
-
-  @include breakpoint(small) {
-    flex: 1 1 50%;
-    order: 1;
-    margin: 20vh remcalc(30) 0;
-  }
 
   @include breakpoint(small) {
     @include just-rythm(28);
@@ -127,6 +119,12 @@
   padding: remcalc(20) 0;
   color: $middleBlack;
   letter-spacing: .5px;
+
+  @include breakpoint(small) {
+    max-width: remcalc(400);
+    @include just-rythm(48);
+    line-height: remcalc(40);
+  }
 }
 
 .project_button_arrows {
@@ -205,7 +203,6 @@
       z-index: -1;
       border: none;
       transition: border 1s ease;
-
     }
 
     &:hover {
@@ -213,6 +210,14 @@
         content: '';
         background: $gradientBlueGreenRevers;
       }
+    }
+
+    @include breakpoint(small) {
+      width: remcalc(220);
+      margin: remcalc(20) auto remcalc(40);
+      @include just-rythm(20);
+      bottom: remcalc(-55);
+      right: remcalc(9);
     }
   }
 }
