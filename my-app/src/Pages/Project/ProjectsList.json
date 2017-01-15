@@ -3,7 +3,9 @@
     "slug": "stypendium-z-wyboru",
     "name": "Stypendium z wyboru",
     "description": "Projekt firmy Absolvent.pl. Stypendium z Wyboru to ogólnopolski program stypendialny stworzony po to, by pomagać zdolnym, kreatywnym i ambitnym studentom i młodym absolwentom w realizowaniu swoich marzeń edukacyjnych i zawodowych.",
-    "img": "stypendium_z_wyboru",
+    "srcImg": {
+      "img" : ["stypendium_z_wyboru", "stypendium_z_wyboru"]
+    },
     "location": "Polska, Warszawa",
     "year": "2016",
     "technologies": {
@@ -19,7 +21,9 @@
     "slug": "animowany-baner",
     "name": "Baner",
     "description": "Animowana kartka z okazji świeta Bożego urodzenia",
-    "img": "animowany-baner",
+    "srcImg": {
+      "img" : ["stypendium_z_wyboru", "stypendium_z_wyboru"]
+    },
     "location": "Polska, Warszawa",
     "year": "2016",
     "technologies": {
@@ -35,7 +39,9 @@
     "slug": "pierwsza-strona",
     "name": "Pierwsza strona www",
     "description": "Pierwsza strona www na bootstrape",
-    "img": "pierwsza-strona",
+    "srcImg": {
+      "img" : ["stypendium_z_wyboru", "stypendium_z_wyboru"]
+    },
     "location": "Polska, Warszawa",
     "year": "2015",
     "technologies": {
@@ -51,7 +57,9 @@
     "slug": "portal-pracy",
     "name": "Portal Pracy",
     "description": "Front dla portala poszukiwania pracy",
-    "img": "portal-pracy",
+    "srcImg": {
+      "img" : ["stypendium_z_wyboru", "stypendium_z_wyboru"]
+    },
     "location": "Polska, Warszawa",
     "year": "2016",
     "technologies": {
@@ -67,7 +75,9 @@
     "slug": "agencja-interaktywna",
     "name": "Agencja Interaktywna",
     "description": "Agencja interaktywna łącząca kompetencje digital, performance marketing i Social Media",
-    "img": "agencja-interaktywna",
+    "srcImg": {
+      "img" : ["stypendium_z_wyboru", "stypendium_z_wyboru"]
+    },
     "location": "Polska, Warszawa",
     "year": "2016",
     "technologies": {
@@ -83,7 +93,9 @@
     "slug": "zaslepka",
     "name": "Zaślepka",
     "description": "Zaślepka dla strony internetowej. Z aktualnym czasem przed rozpoczęciem działania oraz możliwością kontaktu bądż subskrybcji na newslettera.",
-    "img": "zaslepka",
+    "srcImg": {
+      "img" : ["stypendium_z_wyboru", "stypendium_z_wyboru"]
+    },
     "location": "Polska, Warszawa",
     "year": "2016",
     "technologies": {
@@ -99,7 +111,9 @@
     "slug": "facebook-tab",
     "name": "Facebook Tab",
     "description": "Facebook Tab",
-    "img": "facebook-tab",
+    "srcImg": {
+      "img" : ["stypendium_z_wyboru", "stypendium_z_wyboru"]
+    },
     "location": "Polska, Warszawa",
     "year": "2016",
     "technologies": {
@@ -115,7 +129,9 @@
     "slug": "dzianis",
     "name": "Strona portfolio",
     "description": "Strona portfolio",
-    "img": "dzianis",
+    "srcImg": {
+      "img" : ["stypendium_z_wyboru", "stypendium_z_wyboru"]
+    },
     "location": "Polska, Warszawa",
     "year": "2016",
     "technologies": {
@@ -131,7 +147,9 @@
     "slug": "baner",
     "name": "Epos Drift Master",
     "description": "Animowany baner z zegarkiem pokazującym aktualną godzinę",
-    "img": "baner",
+    "srcImg": {
+      "img" : ["stypendium_z_wyboru", "stypendium_z_wyboru"]
+    },
     "location": "Polska, Warszawa",
     "year": "2016",
     "technologies": {
@@ -153,7 +171,9 @@
       "body": ["HTML", "JQuery"],
       "style": ["SCSS", "Bootstrap"]
     },
-    "img": "warsztat-samochodowy",
+    "srcImg": {
+      "img" : ["stypendium_z_wyboru", "stypendium_z_wyboru"]
+    },
     "button_link": "https://www.pencilsharpener.pl/works/warsztat/index.html",
     "button_name": "Warsztat",
     "button_last": "baner",

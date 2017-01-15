@@ -9,16 +9,25 @@
 }
 
 .project_shot_info {
-  margin: remcalc(10) remcalc(20);
+  margin: remcalc(25) remcalc(20) remcalc(10);
   font-family: $RobotThin;
 
   @include breakpoint(small) {
     @include just-rythm(28);
   }
 
+  @include breakpoint(medium) {
+    flex: 1 1 40%;
+    margin-top: remcalc(20);
+  }
+
   .project_location {
     @include just-rythm(12);
     color: $middleBlack;
+
+    @include breakpoint(medium) {
+      color: $clearWhite;
+    }
 
     .project_year {
       color: $middleGreay;
@@ -29,6 +38,10 @@
   .project_description {
     @include breakpoint(small) {
       @include just-rythm(18);
+    }
+
+    @include breakpoint(medium) {
+      color: $clearWhite;
     }
   }
 }
@@ -46,13 +59,16 @@
       margin: remcalc(5) 0;
       color: $middleGreay;
       font-weight: $fontSemiBold;
-
     }
 
     .body_name_shot {
       margin: remcalc(2) 0;
       color: $clearGray;
       font-weight: $fontThin;
+
+      @include breakpoint(medium) {
+        color: $clearWhite;
+      }
     }
   }
 }
@@ -125,6 +141,10 @@
     @include just-rythm(48);
     line-height: remcalc(40);
   }
+  
+  @include breakpoint(medium) {
+    color: $clearWhite;
+  }
 }
 
 .project_button_arrows {
@@ -132,29 +152,38 @@
   flex-direction: row;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: remcalc(25);
+  padding: remcalc(20) 0;
+  border-top: 1px solid $easeGray;
+}
+
+.project_button_one {
+  flex: 1 1 50%;
+
+  &:first-child {
+    border-right: 1px solid $easeGray;
+  }
 
   .project_button {
-    position: relative;
-    flex: 1 1 50%;
     padding: remcalc(10) 0;
-    border-top: 1px solid $gradiGreen;
-    border-bottom: 1px solid $gradiGreen;
 
-    &.prev {
-      &:before {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        transform: $skewMinus;
-        background: transparent;
-        border-right: 1px solid $gradiGreen;
-        top: 0;
-        left: 0;
-        right: 0;
-        margin: 0 auto;
-        z-index: -1;
+    @include breakpoint(medium) {
+      color: $clearWhite;
+    }
+
+    .project_arrows_svg {
+      width: remcalc(15);
+      vertical-align: text-top;
+
+      @include breakpoint(medium) {
+        fill: $clearWhite;
+      }
+
+      &.next {
+        margin: auto auto auto remcalc(20);
+      }
+
+      &.prev {
+        margin: auto remcalc(20) auto auto;
       }
     }
   }
@@ -162,6 +191,10 @@
 
 .project_image_box {
   position: relative;
+
+  @include breakpoint(medium) {
+    flex: 1 1 60%;
+  }
 
   .project_shot_img {
     width: 100%;
@@ -173,51 +206,69 @@
       height: auto;
     }
   }
+}
 
+.project_button_to {
+  position: absolute;
+  display: block;
+  width: remcalc(150);
+  margin: remcalc(10) auto remcalc(20);
+  padding: remcalc(8) 0;
+  text-align: center;
+  font-family: $RobotThin;
+  font-weight: $fontSemiBold;
+  color: $clearWhite;
+  z-index: 400;
+  bottom: remcalc(-32);
+  right: remcalc(8);
 
-  .project_button_to {
+  @include breakpoint(small) {
+    width: remcalc(220);
+    margin: remcalc(20) auto remcalc(40);
+    @include just-rythm(20);
+    bottom: remcalc(-55);
+    right: remcalc(9);
+  }
+  
+  @include breakpoint(medium) {
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    margin: remcalc(20) auto;
+  }
+
+  @include breakpoint(large) {
+    width: remcalc(280);
+  }
+
+  &:before {
+    content: '';
     position: absolute;
-    display: block;
-    width: remcalc(150);
-    margin: remcalc(10) auto remcalc(20);
-    padding: remcalc(8) 0;
-    text-align: center;
-    font-family: $RobotThin;
-    font-weight: $fontSemiBold;
-    color: $clearWhite;
-    z-index: 400;
-    bottom: remcalc(-32);
-    right: remcalc(8);
+    width: 100%;
+    height: 100%;
+    transform: $skewMinus;
+    background: $gradientBlueGreen;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin:  0 auto;
+    z-index: -1;
+    border: none;
+    transition: border 1s ease;
+  }
 
+  &:hover {
     &:before {
       content: '';
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      transform: $skewMinus;
-      background: $gradientBlueGreen;
-      top: 0;
-      left: 0;
-      right: 0;
-      margin:  0 auto;
-      z-index: -1;
-      border: none;
-      transition: border 1s ease;
+      background: $gradientBlueGreenRevers;
     }
+  }
+}
 
-    &:hover {
-      &:before {
-        content: '';
-        background: $gradientBlueGreenRevers;
-      }
-    }
-
-    @include breakpoint(small) {
-      width: remcalc(220);
-      margin: remcalc(20) auto remcalc(40);
-      @include just-rythm(20);
-      bottom: remcalc(-55);
-      right: remcalc(9);
-    }
+.project_name_box {
+  @include breakpoint(medium) {
+    display: flex;
+    flex-direction: row;
+    margin: remcalc(30) remcalc(10) 0
   }
 }

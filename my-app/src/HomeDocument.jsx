@@ -66,13 +66,19 @@ class Home extends Component {
         location: React.PropTypes.object.isRequired,
     };
 
+    static contextTypes = {
+        router: React.PropTypes.object,
+    };
+
     render() {
         var is_click = this.state.menuVisible ? 'is_click_menu' : '';
         var classNameLogo = 'logo_name ' + is_click ;
-        var classHeaderContainer = 'header_container ' + is_click + classnames({ ' black': location.pathname === routeMap.portfolio || routeMap.project_details}) + classnames({ ' white': location.pathname === routeMap.portfolio || routeMap.project_details});
-        var classMainContainer = classnames({ 'black': location.pathname === routeMap.portfolio || routeMap.project_details});
+        var classHeaderContainer = 'header_container ' + is_click + classnames({ ' black': location.pathname === routeMap.portfolio ||  + '/' + this.context.router.params.slug}) + classnames({ ' white': location.pathname === routeMap.portfolio || + '/' + this.context.router.params.slug});
+        var classMainContainer = classnames({ 'black': location.pathname === routeMap.portfolio || + '/' + this.context.router.params.slug });
         var classNamePiece = is_click + ' burger_menu_piece';
         var classNameOther = is_click + ' burger_menu_other';
+        console.log(location.pathname);
+        console.log(location.pathname === routeMap.portfolio + '/' + this.context.router.params.slug);
         return (
         <div className="App">
                     <header className="header_wrap">
