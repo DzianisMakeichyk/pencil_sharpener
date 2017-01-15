@@ -1,79 +1,54 @@
 import React, { Component } from 'react';
-import map from 'lodash/map';
-import SkillsList from './Skills/SkillsList.json'
-import SkillsItem from './Skills/SkillsItem'
-import { Col, Grid, container, row } from 'react-bootstrap';
 
-class App extends Component {
+class About extends Component {
 
     render() {
         return (
-            <div>
-
-                <section
-                    className="jarallax"
-                >
-                    <div className="homepage-hero-module">
-                        <div className="video-container">
-                            <div className="filter"></div>
-                            <video autoPlay loop className="fillWidth">
-                                <source src="video/MP4/BnW.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
-                                <source src="video/WEBM/BnW.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
-                            </video>
-
-
-
-                            <Grid bsClass={container}>
-                                <div className="aligner">
-                                    <div className="aligner-item page-title">
-                                        <h1>O mnie</h1>
-                                    </div>
-                                </div>
-                            </Grid>
-
+          <div>
+            <section className="about_hello">
+                <div className="about_box_image">
+                    <img src="#" className="about_image" alt="Dzianis Makeichyk" role="presentation" />
+                </div>
+                <div className="about_information">
+                    <h2 className="about_name bold">
+                        <span className="green">
+                            Dzianis
+                        </span> Makeichyk</h2>
+                    <div className="about_description">
+                        <div className="about_description_left">
+                            <p className="green">Miasto:</p>
+                            <p className="green">Mail</p>
+                            <p className="green">Telefon</p>
+                            <p className="green"> NIP:</p>
+                        </div>
+                        <div className="about_description_right">
+                            <p className="description_shot">Polska, Warszawa</p>
+                            <a href="mailto:dzianis@pencilsharpener.pl" className="description_shot">dzianis@pencilsharpener.pl</a>
+                            <p className="description_shot"> +48 79767075</p>
+                            <p className="description_shot">527-277-32-56</p>
                         </div>
                     </div>
-                </section>
+                    <p className="about_me">
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                    </p>
+                    <div className="about_cv">
+                        <svg className="about_cv_svg" xmlns="http://www.w3.org/2000/svg"  version="1.1" x="0px" y="0px" viewBox="0 0 60 60" xmlSpace="preserve" >
+                            <g>
+                                <path d="M38.914,0H6.5v60h47V14.586L38.914,0z M17.5,14h10c0.552,0,1,0.447,1,1s-0.448,1-1,1h-10c-0.552,0-1-0.447-1-1
+                                  S16.948,14,17.5,14z M42.5,48h-25c-0.552,0-1-0.447-1-1s0.448-1,1-1h25c0.552,0,1,0.447,1,1S43.052,48,42.5,48z M42.5,40h-25
+                                  c-0.552,0-1-0.447-1-1s0.448-1,1-1h25c0.552,0,1,0.447,1,1S43.052,40,42.5,40z M42.5,32h-25c-0.552,0-1-0.447-1-1s0.448-1,1-1h25
+                                  c0.552,0,1,0.447,1,1S43.052,32,42.5,32z M42.5,24h-25c-0.552,0-1-0.447-1-1s0.448-1,1-1h25c0.552,0,1,0.447,1,1S43.052,24,42.5,24z
+                                   M37.5,16V2l14,14H37.5z"/>
+                            </g>
+                        </svg>
 
-                <section className="section">
-                    <Grid bsClass={container}>
-                        <p>
-                            Nazywam się Dzianis Makeichyk i jestem Front-End Developerem. Zajmuję się tworzeniem stron internetowych, blogów oraz grafiki użytkowej. Zawsze dążę do tego, żeby każdy zbudowany przez mnie projekt był całkowicie optymalny od strony użytkowej oraz graficznej. Dzięki latom doświadczenia przy tworzeniu projektów internetowych oraz graficynych przyjołem i trzymam się politykę, że właściwa, intuicyjna nawigacja, inteligentna i przejrzysta grafika, sprawne działanie wszystkich elementów strony pomoga w maksynalnym dotarciu do potrzebnych informacji. Ze wszystkie te elementy dobrze zgrane sprawią, że Twoi odbiorcy szybciej dokonają zakupu, zamówią usługę, dopiszą się do newslettera czy wypełnią formularz kontaktowy. Dzięki temu Twoja strona skutecznie zareklamuje Ciebie jako godnego zaufania, wydajnego przedsiębiorcę i zwiększy Twoje zyski.
-                        </p>
-                    </Grid>
-                </section>
-
-
-                <section className="section">
-                    <Grid bsClass={container}>
-                        <div className="mb30">
-                            <h5>umiejętności</h5>
-                        </div>
-                        <Grid bsClass={row}>
-                            <Col md={12}>
-                                {map(SkillsList, (skills) => (
-                                  <SkillsItem
-                                    key={skills.name}
-                                    skills={skills}
-                                  />
-                                ))}
-                            </Col>
-
-                        </Grid>
-
-                    </Grid>
-                </section>
-
-                <section className="section">
-                    <Grid bsClass={container}>
-                        <p>
-                            Moje doświadczenie i umiejętności sprawiają, że mogę zaoferować Tobie i Twojej firmie kompleksowe rozwiązania w zakresie projektowania na potrzeby Internetu. Moją specjalnością jest tworzenie serwisów internetowych, zarówno dedykowanych, jak i bardziej standardowych. Jestem w stanie wykonać stronę internetową na każdą kieszeń, dostosuję się do Twoich potrzeb. Graficznie zaprojektuję projekt tak, aby były funkcjonalne, wyjątkowe i idealnie pasowały do Twojej firmy. Moim celem jest łączenie atrakcyjnego designu ze skutecznością strony, bo to klucz do sukcesu Twojej firmy!
-                        </p>
-                    </Grid>
-                </section>
-            </div>
+                        <a href="#" className="about_download green bold">pobierz CV</a>
+                    </div>
+                </div>
+            </section>
+          </div>
         );
     }
 }
 
-export default App;
+export default About;
