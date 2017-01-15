@@ -1,0 +1,60 @@
+.about_hello {
+  display: flex;
+  flex-direction: column;
+  padding: remcalc(25) remcalc(15);
+
+  @include breakpoint(small) {
+    flex-direction: row;
+  }
+
+  .about_box_image {
+    @include breakpoint(small) {
+      flex: 1 1 60%;
+    }
+  }
+
+  .about_information {
+    font-family: $RobotThin;
+
+    @include breakpoint(small) {
+      flex: 1 1 40%;
+    }
+  }
+  
+  .green {
+    color: $gradiGreen;
+  }
+}
+
+.about_name {
+  letter-spacing: 1px;
+}
+
+.about_description {
+  display: flex;
+  margin: remcalc(15) auto;
+
+  .about_description_left {
+    flex: 1 1 40%;
+    font-weight: $fontSemiBold;
+  }
+
+  .about_description_right {
+    flex: 1 1 60%;
+  }
+}
+
+.about_cv {
+  display: flex;
+  vertical-align: middle;
+
+  .about_cv_svg {
+    width: remcalc(15);
+    height: remcalc(15);
+    margin-right: remcalc(5);
+
+    path {
+      fill: $gradiGreen;
+    }
+  }
+}
