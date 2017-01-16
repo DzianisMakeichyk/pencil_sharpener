@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
+import Separation from './Elements/Separation'
+import MediaQuery from 'react-responsive';
+import { Circle } from 'rc-progress';
 
 class About extends Component {
 
     render() {
         return (
           <div>
-            <section className="about_hello">
+            <section className="about">
                 <div className="about_box_image">
-                    <img src="#" className="about_image" alt="Dzianis Makeichyk" role="presentation" />
+                    <img src="../img/background.png" className="about_image" alt="Dzianis Makeichyk" role="presentation" />
                 </div>
                 <div className="about_information">
                     <h2 className="about_name bold">
@@ -17,9 +20,9 @@ class About extends Component {
                     <div className="about_description">
                         <div className="about_description_left">
                             <p className="green">Miasto:</p>
-                            <p className="green">Mail</p>
-                            <p className="green">Telefon</p>
-                            <p className="green"> NIP:</p>
+                            <p className="green">Mail:</p>
+                            <p className="green">Telefon:</p>
+                            <p className="green">NIP:</p>
                         </div>
                         <div className="about_description_right">
                             <p className="description_shot">Polska, Warszawa</p>
@@ -45,6 +48,12 @@ class About extends Component {
                         <a href="#" className="about_download green bold">pobierz CV</a>
                     </div>
                 </div>
+                <Separation />
+            </section>
+            <section className="skills">
+                <MediaQuery maxDeviceWidth={767}>
+                  <Circle percent="90" strokeWidth="4" strokeColor="#01e6ae" />
+              </MediaQuery>
             </section>
           </div>
         );

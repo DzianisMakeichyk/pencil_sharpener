@@ -20,6 +20,7 @@
     "postcss-discard-empty": "^2.1.0",
     "postcss-flexbugs-fixes": "^2.1.0",
     "postcss-round-subpixels": "^1.2.0",
+    "rc-progress": "^2.0.6",
     "react-bootstrap": "^0.30.7",
     "react-responsive": "^1.2.5",
     "react-scripts": "0.8.3",

@@ -1,4 +1,4 @@
-.about_hello {
+.about {
   display: flex;
   flex-direction: column;
   padding: remcalc(25) remcalc(15);
@@ -8,8 +8,13 @@
   }
 
   .about_box_image {
+    margin: remcalc(20) auto;
     @include breakpoint(small) {
       flex: 1 1 60%;
+    }
+
+    .about_image {
+      width: 100%;
     }
   }
 
@@ -56,5 +61,14 @@
     path {
       fill: $gradiGreen;
     }
+  }
+}
+
+.skills {
+  position: relative;
+  padding: 0 remcalc(15);
+
+  svg {
+    width: remcalc(100);
   }
 }

@@ -1,0 +1,57 @@
+$size: remcalc(20);
+
+.separation {
+  position: relative;
+  margin: remcalc(35) 0;
+  height: 1px;
+  background: black;
+  background: -webkit-gradient(linear, 0 0, 100% 0, from($clearWhite), to($clearWhite), color-stop(50%, $middleGreay));
+  cursor: pointer;
+
+  .seporator_circul_one {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: remcalc(-7);
+    margin: 0 auto;
+    width: $size;
+    height: $size;
+    background-color: $gradiGreen;
+    border-radius:50%;
+
+    .seporator_circul_two {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      margin: 0 auto;
+      background-color: $gradiGreen;
+      border-radius:50%;
+      width: $size;
+      height: $size;
+      animation: puls 1.5s ease-out infinite normal;
+
+    }
+  }
+
+  @keyframes puls{
+    from{
+      transform:scale(1);
+      opacity:.5
+    }
+    to{
+      opacity: 0;
+      transform:scale(1.8);
+    }
+  }
+
+  .separation_arrow {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: remcalc(-2);
+    width: remcalc(10);
+    margin: 0 auto;
+    fill: $clearWhite;
+  }
+}
