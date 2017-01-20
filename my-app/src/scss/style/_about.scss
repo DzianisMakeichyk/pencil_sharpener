@@ -7,66 +7,66 @@
     flex-direction: row;
   }
 
-  .about_box_image {
+  .about-box-image {
     margin: remcalc(20) auto;
     @include breakpoint(small) {
       flex: 1 1 60%;
     }
 
-    .about_image {
+    .about-image {
       width: 100%;
     }
   }
 
-  .about_information {
-    font-family: $RobotThin;
+  .about-information {
+    font-family: $robot-thin;
 
     @include breakpoint(small) {
       flex: 1 1 40%;
     }
   }
-  
+
   .green {
-    color: $gradiGreen;
+    color: $gradi-green;
   }
 }
 
-.about_name {
+.about-name {
   letter-spacing: 1px;
 }
 
-.about_description {
+.about-description {
   display: flex;
   margin: remcalc(15) auto;
 
-  .about_description_left {
+  .about-description-left {
     flex: 1 1 40%;
-    font-weight: $fontSemiBold;
+    font-weight: $font-semi-bold;
   }
 
-  .about_description_right {
+  .about-description-right {
     flex: 1 1 60%;
   }
 }
 
-.about_cv {
+.about-cv {
   display: flex;
   vertical-align: middle;
 
-  .about_cv_svg {
-    width: remcalc(15);
+  .about-cv-svg {
     height: remcalc(15);
     margin-right: remcalc(5);
+    width: remcalc(15);
 
     path {
-      fill: $gradiGreen;
+      fill: $gradi-green;
     }
   }
 }
 
 .skills {
-  position: relative;
   padding: 0 remcalc(15);
+  position: relative;
 
   svg {
     width: remcalc(100);

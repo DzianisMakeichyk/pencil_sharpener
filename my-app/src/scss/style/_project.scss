@@ -1,4 +1,4 @@
-.project_shots {
+.project-shots {
   display: flex;
   flex-direction: column;
   padding: remcalc(50) remcalc(15) 0;
@@ -8,9 +8,9 @@
   }
 }
 
-.project_shot_info {
+.project-shot-info {
+  font-family: $robot-thin;
   margin: remcalc(25) remcalc(20) remcalc(10);
-  font-family: $RobotThin;
 
   @include breakpoint(small) {
     @include just-rythm(28);
@@ -21,69 +21,69 @@
     margin-top: remcalc(20);
   }
 
-  .project_location {
+  .project-location {
     @include just-rythm(12);
-    color: $middleBlack;
+    color: $middle-black;
 
     @include breakpoint(medium) {
-      color: $clearWhite;
+      color: $clear-white;
     }
 
-    .project_year {
-      color: $middleGreay;
-      font-weight: $fontSemiBold;
+    .project-year {
+      color: $middle-greay;
+      font-weight: $font-semi-bold;
     }
   }
 
-  .project_description {
+  .project-description {
     @include breakpoint(small) {
       @include just-rythm(18);
     }
 
     @include breakpoint(medium) {
-      color: $clearWhite;
+      color: $clear-white;
     }
   }
 }
 
-.project_technologies {
+.project-technologies {
+  @include just-rythm(14);
   display: flex;
   flex-direction: row;
-  @include just-rythm(14);
 
-  .project_techno_body {
+  .project-techno-body {
     flex: 1 1 50%;
     padding: 0 0 remcalc(15);
 
-    .techno_body_name {
+    .techno-body-name {
+      color: $middle-greay;
+      font-weight: $font-semi-bold;
       margin: remcalc(5) 0;
-      color: $middleGreay;
-      font-weight: $fontSemiBold;
     }
 
-    .body_name_shot {
+    .body-name-shot {
+      color: $clear-gray;
+      font-weight: $font-thin;
       margin: remcalc(2) 0;
-      color: $clearGray;
-      font-weight: $fontThin;
 
       @include breakpoint(medium) {
-        color: $clearWhite;
+        color: $clear-white;
       }
     }
   }
 }
 
-.project_arrows {
+.project-arrows {
+  align-items: flex-start;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
 
   @include breakpoint(small) {
     @include just-rythm(18);
   }
 
-  .project_arrow {
+  .project-arrow {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -98,84 +98,84 @@
   }
 
   svg {
-    width: remcalc(60);
     height: remcalc(38);
+    width: remcalc(60);
 
     @include breakpoint(small) {
-      width: remcalc(64);
       height: remcalc(48);
+      width: remcalc(64);
     }
   }
 }
 
-.project_position {
-  position: absolute;
-  width: remcalc(100);
+.project-position {
+  border: 2px solid $gradi-green;
   height: remcalc(100);
-  margin: auto;
-  top: remcalc(30);
   left: 0;
+  margin: auto;
+  position: absolute;
   right: 0;
-  border: 2px solid $gradiGreen;
   text-align: left;
+  top: remcalc(30);
+  width: remcalc(100);
 
   p {
     @include just-rythm(18);
+    color: $clear-white;
     margin: 0;
     padding: remcalc(10);
-    color: $clearWhite;
   }
 }
 
-.project_name {
-  max-width: remcalc(200);
+.project-name {
   @include just-rythm(28);
-  line-height: remcalc(26);
-  text-transform: uppercase;
-  padding: remcalc(20) 0;
-  color: $middleBlack;
+  color: $middle-black;
   letter-spacing: .5px;
+  line-height: remcalc(26);
+  max-width: remcalc(200);
+  padding: remcalc(20) 0;
+  text-transform: uppercase;
 
   @include breakpoint(small) {
-    max-width: remcalc(400);
     @include just-rythm(48);
     line-height: remcalc(40);
+    max-width: remcalc(400);
   }
-  
+
   @include breakpoint(medium) {
-    color: $clearWhite;
+    color: $clear-white;
   }
 }
 
-.project_button_arrows {
-  display:flex;
+.project-button-arrows {
+  border-top: 1px solid $ease-gray;
+  display: flex;
   flex-direction: row;
-  text-transform: uppercase;
-  text-align: center;
   padding: remcalc(20) 0;
-  border-top: 1px solid $easeGray;
+  text-align: center;
+  text-transform: uppercase;
 }
 
-.project_button_one {
+.project-button-one {
   flex: 1 1 50%;
 
   &:first-child {
-    border-right: 1px solid $easeGray;
+    border-right: 1px solid $ease-gray;
   }
 
-  .project_button {
+  .project-button {
     padding: remcalc(10) 0;
 
     @include breakpoint(medium) {
-      color: $clearWhite;
+      color: $clear-white;
     }
 
-    .project_arrows_svg {
-      width: remcalc(15);
+    .project-arrows-svg {
       vertical-align: text-top;
+      width: remcalc(15);
 
       @include breakpoint(medium) {
-        fill: $clearWhite;
+        fill: $clear-white;
       }
 
       &.next {
@@ -189,86 +189,85 @@
   }
 }
 
-.project_image_box {
+.project-image-box {
   position: relative;
 
   @include breakpoint(medium) {
     flex: 1 1 60%;
   }
 
-  .project_shot_img {
+  .project-shot-img {
     width: 100%;
     z-index: -2;
 
     @include breakpoint(small) {
       flex: 1 1 50%;
-      order: 2;
       height: auto;
+      order: 2;
     }
   }
 }
 
-.project_button_to {
-  position: absolute;
+.project-button-to {
+  bottom: remcalc(-32);
+  color: $clear-white;
   display: block;
-  width: remcalc(150);
+  font-family: $robot-thin;
+  font-weight: $font-semi-bold;
   margin: remcalc(10) auto remcalc(20);
   padding: remcalc(8) 0;
-  text-align: center;
-  font-family: $RobotThin;
-  font-weight: $fontSemiBold;
-  color: $clearWhite;
-  z-index: 400;
-  bottom: remcalc(-32);
+  position: absolute;
   right: remcalc(8);
+  text-align: center;
+  width: remcalc(150);
+  z-index: 400;
 
   @include breakpoint(small) {
-    width: remcalc(220);
-    margin: remcalc(20) auto remcalc(40);
     @include just-rythm(20);
     bottom: remcalc(-55);
+    margin: remcalc(20) auto remcalc(40);
     right: remcalc(9);
+    width: remcalc(220);
   }
-  
   @include breakpoint(medium) {
-    position: relative;
-    width: 100%;
     bottom: 0;
     margin: remcalc(20) auto;
+    position: relative;
+    width: 100%;
   }
 
   @include breakpoint(large) {
     width: remcalc(280);
   }
 
-  &:before {
+  &::before {
+    background: $gradient-blue-green;
+    border: 0;
     content: '';
-    position: absolute;
-    width: 100%;
     height: 100%;
-    transform: $skewMinus;
-    background: $gradientBlueGreen;
-    top: 0;
     left: 0;
-    right: 0;
     margin:  0 auto;
-    z-index: -1;
-    border: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: $skew-minus;
     transition: border 1s ease;
+    width: 100%;
+    z-index: -1;
   }
 
   &:hover {
-    &:before {
+    &::before {
+      background: $gradient-blue-green-revers;
       content: '';
-      background: $gradientBlueGreenRevers;
     }
   }
 }
 
-.project_name_box {
+.project-name-box {
   @include breakpoint(medium) {
     display: flex;
     flex-direction: row;
-    margin: remcalc(30) remcalc(10) 0
+    margin: remcalc(30) remcalc(10) 0;
   }
 }

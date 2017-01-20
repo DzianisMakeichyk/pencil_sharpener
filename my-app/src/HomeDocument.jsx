@@ -71,20 +71,20 @@ class Home extends Component {
     };
 
     render() {
-        var is_click = this.state.menuVisible ? 'is_click_menu' : '';
-        var classNameLogo = 'logo_name ' + is_click ;
-        var classHeaderContainer = 'header_container ' + is_click + classnames({ ' black': location.pathname === routeMap.portfolio ||  + '/' + this.context.router.params.slug}) + classnames({ ' white': location.pathname === routeMap.portfolio || + '/' + this.context.router.params.slug || routeMap.about});
+        var is_click = this.state.menuVisible ? 'is-click-menu' : '';
+        var classNameLogo = 'logo-name ' + is_click ;
+        var classHeaderContainer = 'header-container ' + is_click + classnames({ ' black': location.pathname === routeMap.portfolio ||  + '/' + this.context.router.params.slug}) + classnames({ ' white': location.pathname === routeMap.portfolio || + '/' + this.context.router.params.slug || routeMap.about});
         var classMainContainer = classnames({ 'black': location.pathname === routeMap.portfolio || + '/' + this.context.router.params.slug });
-        var classNamePiece = is_click + ' burger_menu_piece';
-        var classNameOther = is_click + ' burger_menu_other';
+        var classNamePiece = is_click + ' burger-menu-piece';
+        var classNameOther = is_click + ' burger-menu-other';
         console.log(location.pathname);
         console.log(location.pathname === routeMap.portfolio + '/' + this.context.router.params.slug);
         return (
         <div className="App">
-            <header className="header_wrap">
+            <header className="header-wrap">
                 <nav>
                     <div className={classHeaderContainer}>
-                        <div className="pull_left">
+                        <div className="pull-left">
                             <MediaQuery maxDeviceWidth={767}>
                                 <Link
                                   to="/"
@@ -94,17 +94,17 @@ class Home extends Component {
                             <MediaQuery minDeviceWidth={768}>
                                 <Link
                                   to="/"
-                                  className="logo_name">Dzianis Makeichyk
+                                  className="logo-name">Dzianis Makeichyk
                                 </Link>
                             </MediaQuery>
                         </div>
-                        <div className="pull_right">
+                        <div className="pull-right">
                             <div
                               ref="myMenu"
                               onClick={this.handleClick}
-                              className="burger_click_region"
+                              className="burger-click-region"
                             >
-                                <div className="menu_burger">
+                                <div className="menu-burger">
                                     <span
                                       ref="topLine"
                                       className={classNamePiece}

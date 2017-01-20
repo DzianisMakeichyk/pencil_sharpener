@@ -33,8 +33,8 @@ export default class PortfolioGrid extends React.Component {
     //   this.state.isHovering && 'is_hover',
     // ]);
     // className={"portfolio_item " + cx(hoverItem)}
-    var DescriptionOnHover = !this.state.isHovering && <img className="portfolio_svg" src={"img/pencil_wolf_white.svg"} alt={this.props.project.name}/>;
-    var DescriptionOutHover = this.state.isHovering && <div className="portfolio_title_box"><h6 className="portfolio_box_name">{this.props.project.title}</h6><p className="project_mini_categories">{this.props.project.short_description}</p></div>;
+    var DescriptionOnHover = !this.state.isHovering && <img className="portfolio-svg" src={"img/pencil_wolf_white.svg"} alt={this.props.project.name}/>;
+    var DescriptionOutHover = this.state.isHovering && <div className="portfolio-title-box"><h6 className="portfolio-box-name">{this.props.project.title}</h6><p className="project-mini-categories">{this.props.project.short_description}</p></div>;
     console.log(this.state.onHoverChange);
 
     let visible = true;
@@ -44,7 +44,7 @@ export default class PortfolioGrid extends React.Component {
 
     return (
         <li
-          className="portfolio_item"
+          className="portfolio-item"
           onMouseOver={this.handleMouseOver.bind(this)}
           onMouseOut={this.handleMouseOut.bind(this)}
           style={visible?{}:{visibility:'hidden'}}
@@ -54,17 +54,17 @@ export default class PortfolioGrid extends React.Component {
               className="animation-link"
             >
               <MediaQuery maxDeviceWidth={1023}>
-                <img className="portfolio_img" src={"img/background.png"} alt={this.props.project.name}/>
+                <img className="portfolio-img" src={"img/background.png"} alt={this.props.project.name}/>
               </MediaQuery>
               <MediaQuery minDeviceWidth={1024}>
                 {DescriptionOnHover}
                 {DescriptionOutHover}
               </MediaQuery>
               <MediaQuery maxDeviceWidth={1023}>
-              <h6 className="portfolio_title">
+              <h6 className="portfolio-title">
                 {this.props.project.title}
               </h6>
-              <div className="portfolio_categories">
+              <div className="portfolio-categories">
                 {this.props.project.short_description}
               </div>
             </MediaQuery>

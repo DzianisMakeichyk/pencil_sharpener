@@ -1,31 +1,31 @@
 main {
   @include breakpoint(medium) {
     &.black {
-      background: $middleBlack;
+      background: $middle-black;
     }
   }
 }
 
-.header_container {
+.header-container {
   left: 0;
   right: 0;
 }
 
-.burger_click_region {
+.burger-click-region {
   cursor: pointer;
   height: remcalc(20);
   position: relative;
   width: remcalc(20);
 }
 
-.menu_burger {
+.menu-burger {
   left: 50%;
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
 
-  .burger_menu_piece {
-    background: $clearGray;
+  .burger-menu-piece {
+    background: $clear-gray;
     display: block;
     height: remcalc(2);
     position: relative;
@@ -42,84 +42,51 @@ main {
     }
   }
 
-  .burger_menu_other {
-    background: $middleBlack;
+  .burger-menu-other {
+    background: $middle-black;
     display: block;
     position: absolute;
-    width: remcalc(2);
     transition: background 1s ease;
+    width: remcalc(2);
   }
 }
 
-.burger_menu_piece,
-.burger_menu_other {
-  &.is_click_menu {
-    background: $gradientBlueGreen !important;
+.burger-menu-piece,
+.burger-menu-other {
+  &.is-click-menu {
+    background: $gradient-blue-green !important;
   }
 }
 
-.logo_name {
-  font-weight: $fontLight;
-  text-transform: uppercase;
+.logo-name {
+  font-weight: $font-light;
   letter-spacing: remcalc(2);
+  text-transform: uppercase;
   transition: color 1s ease;
 
-  &.is_click_menu {
-    color: $clearWhite;
+  &.is-click-menu {
+    color: $clear-white;
 
   }
 
 }
 
-.header_wrap {
+.header-wrap {
   position: relative;
 
-  .header_container {
-    padding-bottom: remcalc(15);
+  .header-container {
     background: transparent;
-
-    &.white {
-      background: $clearWhite;
-
-      @include breakpoint(medium) {
-        background: transparent;
-      }
-    }
-
-
-    @include breakpoint(medium) {
-      &.black {
-        background: $middleBlack;
-        height: 0;
-        padding: 0;
-
-        .logo_name {
-          color: $clearWhite;
-        }
-
-        .burger_menu_piece {
-          background: $clearWhite;
-        }
-      }
-    }
-
-    &.is_click_menu {
-      padding-bottom: 0;
-      background: transparent;
-    }
-  }
-
-  .header_container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
-    max-width: remcalc(1600);
     margin: auto;
+    max-width: remcalc(1600);
+    padding-bottom: remcalc(15);
     position: fixed;
+    width: 100%;
     z-index: 1001;
 
-    .pull_left {
+    .pull-left {
       margin: remcalc(15) auto auto remcalc(15);
 
       @include breakpoint(small) {
@@ -131,7 +98,7 @@ main {
       }
     }
 
-    .pull_right {
+    .pull-right {
       margin: remcalc(15) remcalc(15) auto auto;
 
       @include breakpoint(small) {
@@ -143,47 +110,79 @@ main {
       }
     }
   }
+
+  &.white {
+    background: $clear-white;
+
+    @include breakpoint(medium) {
+      background: transparent;
+    }
+  }
+
+
+  @include breakpoint(medium) {
+    &.black {
+      background: $middle-black;
+      height: 0;
+      padding: 0;
+
+      .logo-name {
+        color: $clear-white;
+      }
+
+      .burger-menu-piece {
+        background: $clear-white;
+      }
+    }
+  }
+
+  &.is-click-menu {
+    background: transparent;
+    padding-bottom: 0;
+  }
 }
 
 .hero {
-  display: flex;
   align-items: center;
-  padding: remcalc(15);
+  display: flex;
+  height: calc(98vh - 15px);
   justify-content: center;
+  padding: remcalc(15);
 
   @include breakpoint(medium) {
-    height: 98vh;
     flex-direction: row;
+    height: calc(98vh - 25px);
     justify-content: space-between;
     padding: remcalc(25);
   }
 
   @include breakpoint(extralarge) {
+    height: calc(98vh - 45px);
     padding: remcalc(45);
   }
 }
 
-.hero_title {
+.hero-title {
+  @include just-rythm(18);
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  @include just-rythm(18);
 
   @include breakpoint(small) {
     @include just-rythm(32);
   }
 
   @include breakpoint(medium) {
-    position: relative;
     flex: 1 1 50%;
+    position: relative;
+    top: 0;
     transform: translateY(0%);
-    top:0;
   }
 }
 
-.hero_name {
-  position: absolute;
+.hero-name {
   bottom: remcalc(15);
+  position: absolute;
   right: remcalc(15);
 
   @include breakpoint(small) {
@@ -192,16 +191,16 @@ main {
   }
 
   @include breakpoint(medium) {
-    position: relative;
-    flex: 1 1 50%;
     align-self: flex-end;
+    flex: 1 1 50%;
     max-width: remcalc(150);
+    position: relative;
   }
 
-  .hero_pencil {
-    text-transform: uppercase;
+  .hero-pencil {
     @include just-rythm(16);
     line-height: remcalc(16);
+    text-transform: uppercase;
 
     @include breakpoint(small) {
       @include just-rythm(18);
@@ -214,7 +213,7 @@ main {
     }
   }
 
-  .hero_production {
+  .hero-production {
     @include just-rythm(12);
 
     @include breakpoint(small) {
@@ -226,21 +225,21 @@ main {
     }
   }
 
-  .svg_wolf {
-    width: remcalc(30);
+  .svg-wolf {
     height: remcalc(30);
     margin: auto auto remcalc(-35) remcalc(-35);
+    width: remcalc(30);
 
     @include breakpoint(small) {
-      width: remcalc(35);
       height: remcalc(35);
       margin: auto auto remcalc(-38) remcalc(-40);
+      width: remcalc(35);
     }
 
     @include breakpoint(medium) {
-      width: remcalc(40);
       height: remcalc(40);
       margin: auto auto remcalc(-42) remcalc(-45);
+      width: remcalc(40);
     }
   }
 }

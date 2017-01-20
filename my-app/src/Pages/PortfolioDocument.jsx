@@ -34,8 +34,8 @@ class Portfolio extends Component {
       var BackgroundProject = {backgroundImage: 'url("./img/project_grid/' + this.state.currentProjectBackground +'.png")'};
 
         return (
-          <section className="hello_portfolio">
-              <ul className="grid_portfolio">
+          <section className="hello-portfolio">
+              <ul className="grid-portfolio">
                   {map(PortfolioGridList, (project) => (
                       <PortfolioGrid
                           key={project.name}
@@ -45,7 +45,7 @@ class Portfolio extends Component {
                       />
                   ))}
                 <MediaQuery minDeviceWidth={1024}>
-                  <div className="project_img" style={BackgroundProject} ></div>
+                  <div className="project-img" style={BackgroundProject} ></div>
                 </MediaQuery>
               </ul>
             </section>
