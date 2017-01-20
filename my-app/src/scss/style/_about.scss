@@ -5,12 +5,14 @@
 
   @include breakpoint(small) {
     flex-direction: row;
+    padding: remcalc(65) remcalc(25);
   }
 
   .about-box-image {
     margin: remcalc(20) auto;
     @include breakpoint(small) {
-      flex: 1 1 60%;
+      flex: 1 1 50%;
+      padding: 0 remcalc(25) 0 0;
     }
 
     .about-image {
@@ -22,7 +24,7 @@
     font-family: $robot-thin;
 
     @include breakpoint(small) {
-      flex: 1 1 40%;
+      flex: 1 1 50%;
     }
   }
 
@@ -65,10 +67,50 @@
 }
 
 .skills {
-  padding: 0 remcalc(15);
+  padding: 0 remcalc(15) remcalc(25);
   position: relative;
 
   svg {
     width: remcalc(100);
   }
+}
+
+.skill-box {
+  display: flex;
+  flex-direction: row;
+  padding: 0 remcalc(10);
+
+  .skill-percent {
+    position: relative;
+    flex: 0 0 40%;
+    height: remcalc(40);
+    margin-right: remcalc(15);
+    border: 1px solid $light-gray;
+    transform: $skew-minus;
+    margin-bottom: remcalc(15);
+
+    .skill-percent-up {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      background: $gradient-blue-green-revers;
+    }
+  }
+
+  .skill-name {
+    flex: 0 0 60%;
+    text-align: center;
+    padding: remcalc(12) 0 0;
+    font-family: $robot-thin;
+  }
+}
+
+.skill-percent-text {
+  display: block;
+  margin: remcalc(10) remcalc(17);
+  color: $clear-white;
+  font-family: $robot-thin;
+  font-weight: $font-semi-bold;
+  transform: $skew-plus;
 }

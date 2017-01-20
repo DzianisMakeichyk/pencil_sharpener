@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import Separation from './Elements/Separation'
 import MediaQuery from 'react-responsive';
+import SkillOne from './Skills/SkillsList.json';
+import SkillOneItem from './Skills/SkillsItem';
+import map from 'lodash/map';
 
 class About extends Component {
 
@@ -46,10 +48,15 @@ class About extends Component {
                         <a href="#" className="about-download green bold">pobierz CV</a>
                     </div>
                 </div>
-                <Separation />
             </section>
             <section className="skills">
                 <MediaQuery maxDeviceWidth={767}>
+                  {map(SkillOne, (skillsShot) => (
+                    <SkillOneItem
+                      key={skillsShot.name}
+                      skillsShot={skillsShot}
+                    />
+                    ))}
               </MediaQuery>
             </section>
           </div>

@@ -1,20 +1,24 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 
-export default function SkillsItem(props) {
+class SkillsItem extends Component {
 
-  return (
-    <div className="progress-bar">
-      <h6>{props.skills.name}</h6>
-      <div className="progress-outer">
-        <div className="progress-inner">
-          <span>{props.skills.percent}</span>
+  render() {
+    return (
+      <div className="skill-box">
+        <div className="skill-percent">
+          <div className="skill-percent-up" style={{ width: this.props.skillsShot.percent+'%' }}>
+            <span className="skill-percent-text">{this.props.skillsShot.percent}%</span>
+          </div>
         </div>
+        <div className="skill-name">{this.props.skillsShot.name}</div>
       </div>
-    </div>
-  );
+    );
+  }
 }
 
 SkillsItem.contextTypes = {
-  router: React.PropTypes.object,
+  skillsShot: React.PropTypes.object,
 };
+
+export default SkillsItem;
