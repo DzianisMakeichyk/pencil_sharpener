@@ -3,15 +3,54 @@ import MediaQuery from 'react-responsive';
 import SkillOne from './Skills/SkillsList.json';
 import SkillOneItem from './Skills/SkillsItem';
 import map from 'lodash/map';
+import { AreaChart, XAxis, YAxis, CartesianGrid, Tooltip, Area } from 'recharts';
 
 class About extends Component {
 
     render() {
+        console.log(SkillOne);
+        const data = [
+            {name: 'Illustrator', pv: 60},
+            {name: 'PhotoShop', pv: 65},
+            {name: 'Jade/HTML', pv: 70},
+            {name: 'SASS/SCSS', pv: 75},
+            {name: 'WordPress', pv: 60},
+            {name: 'Jquery', pv: 50},
+            {name: 'ReactJs', pv: 45},
+        ];
+        const CustomizedDot = React.createClass({
+            render () {
+                const {cx, cy, stroke, payload} = this.props;
+
+                return (
+                  <svg version="1.1" x={cx - 5} y={cy - 5} width={10} height={10} fill="#00e1d9" viewBox="0 0 29.107 29.107" xmlSpace="preserve">
+                    <g>
+                      <g id="c147_full_moon">
+                        <g>
+                          <path d="M14.554,0C6.561,0,0,6.562,0,14.552c0,7.996,6.561,14.555,14.554,14.555c7.996,0,14.553-6.559,14.553-14.555
+                            C29.106,6.562,22.55,0,14.554,0z"/>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                );
+            }
+        });
         return (
           <div>
             <section className="about">
                 <div className="about-box-image">
                     <img src="../img/background.png" className="about-image" alt="Dzianis Makeichyk" role="presentation" />
+                    <MediaQuery minDeviceWidth={767}>
+                        <MediaQuery maxDeviceWidth={1023}>
+                            {map(SkillOne, (skillsShot) => (
+                              <SkillOneItem
+                                key={skillsShot.name}
+                                skillsShot={skillsShot}
+                              />
+                            ))}
+                        </MediaQuery>
+                    </MediaQuery>
                 </div>
                 <div className="about-information">
                     <h2 className="about-name bold">
@@ -57,6 +96,22 @@ class About extends Component {
                       skillsShot={skillsShot}
                     />
                     ))}
+              </MediaQuery>
+              <MediaQuery minDeviceWidth={1024}>
+                  <AreaChart width={730} height={250} data={data}
+                             margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
+                      <defs>
+                          <linearGradient id="colorPv" x1="0" y1="0" x2="0" y2="1">
+                              <stop offset="5%" stopColor="#01e6ae" stopOpacity={0.6}/>
+                              <stop offset="95%" stopColor="#01e6ae" stopOpacity={0}/>
+                          </linearGradient>
+                      </defs>
+                      <XAxis dataKey="name" />
+                      <YAxis />
+                      <CartesianGrid strokeDasharray="3 3" />
+                      <Tooltip />
+                      <Area type="monotone" dataKey="pv" stroke="#000" fillOpacity={0.8} height={10} fill="url(#colorPv)" dot={<CustomizedDot />} />
+                  </AreaChart>
               </MediaQuery>
             </section>
           </div>

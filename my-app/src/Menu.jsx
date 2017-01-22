@@ -73,7 +73,7 @@ export default class Menu extends React.Component {
            >
                <Link
                  to={routeMap.contact}
-                 className="text_menu"
+                 className="text-menu"
                >
                 Kontakt
               </Link>

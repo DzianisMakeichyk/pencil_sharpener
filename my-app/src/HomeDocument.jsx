@@ -73,12 +73,12 @@ class Home extends Component {
     render() {
         var is_click = this.state.menuVisible ? 'is-click-menu' : '';
         var classNameLogo = 'logo-name ' + is_click ;
-        var classHeaderContainer = 'header-container ' + is_click + classnames({ ' black': location.pathname === routeMap.portfolio ||  + '/' + this.context.router.params.slug}) + classnames({ ' white': location.pathname === routeMap.portfolio || + '/' + this.context.router.params.slug || routeMap.about});
-        var classMainContainer = classnames({ 'black': location.pathname === routeMap.portfolio || + '/' + this.context.router.params.slug });
+        var classHeaderContainer = 'header-container' + is_click + classnames({ ' black': location.pathname === routeMap.portfolio ||  + '/' + this.context.router.params.slug || routeMap.about}) + classnames({ ' white': location.pathname === routeMap.portfolio || + '/' + this.context.router.params.slug || routeMap.about });
+        var classMainContainer = classnames({ 'black': location.pathname === routeMap.portfolio || + '/' + this.context.router.params.slug || routeMap.about});
         var classNamePiece = is_click + ' burger-menu-piece';
         var classNameOther = is_click + ' burger-menu-other';
         console.log(location.pathname);
-        console.log(location.pathname === routeMap.portfolio + '/' + this.context.router.params.slug);
+        console.log(location.pathname === (routeMap.portfolio || + '/' + this.context.router.params.slug) || routeMap.about);
         return (
         <div className="App">
             <header className="header-wrap">

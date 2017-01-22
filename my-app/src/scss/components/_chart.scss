@@ -1,0 +1,24 @@
+.recharts-legend-wrapper,
+.recharts-cartesian-axis-tick-line,
+.recharts-cartesian-axis-line
+{
+  display: none;
+}
+
+
+.recharts-wrapper {
+  width: 100% !important;
+}
+
+.recharts-text {
+  padding-top: remcalc(20);
+  display: block;
+  font-family: $robot-thin;
+}
+
+.recharts-cartesian-grid-vertical,
+.recharts-cartesian-grid-horizontal {
+  line {
+    display: none;
+  }
+}

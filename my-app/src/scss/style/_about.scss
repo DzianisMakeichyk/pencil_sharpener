@@ -17,6 +17,10 @@
 
     .about-image {
       width: 100%;
+
+      @include breakpoint(small) {
+        margin: auto auto remcalc(25);
+      }
     }
   }
 
@@ -72,6 +76,10 @@
 
   svg {
     width: remcalc(100);
+
+    @include breakpoint(small) {
+      width: 100%;
+    }
   }
 }
 
