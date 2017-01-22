@@ -109,29 +109,28 @@ main {
         margin: remcalc(25) remcalc(45) auto auto;
       }
     }
-  }
 
-  &.white {
-    background: $clear-white;
+    &.white {
+      background: $clear-white;
+
+      @include breakpoint(medium) {
+        background: transparent;
+      }
+    }
 
     @include breakpoint(medium) {
-      background: transparent;
-    }
-  }
+      &.black {
+        background: $middle-black;
+        height: 0;
+        padding: 0;
 
+        .logo-name {
+          color: $clear-white;
+        }
 
-  @include breakpoint(medium) {
-    &.black {
-      background: $middle-black;
-      height: 0;
-      padding: 0;
-
-      .logo-name {
-        color: $clear-white;
-      }
-
-      .burger-menu-piece {
-        background: $clear-white;
+        .burger-menu-piece {
+          background: $clear-white;
+        }
       }
     }
   }

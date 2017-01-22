@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae70fbcf-6836-4fe7-8551-c540eac68b5b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/my-app/src/scss/components/_chart.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/package.json" afterPath="$PROJECT_DIR$/my-app/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/public/css/main.css" afterPath="$PROJECT_DIR$/my-app/public/css/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/src/HomeDocument.jsx" afterPath="$PROJECT_DIR$/my-app/src/HomeDocument.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/src/Menu.jsx" afterPath="$PROJECT_DIR$/my-app/src/Menu.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/src/Pages/AboutDocument.jsx" afterPath="$PROJECT_DIR$/my-app/src/Pages/AboutDocument.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/src/scss/main.scss" afterPath="$PROJECT_DIR$/my-app/src/scss/main.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/src/scss/style/_about.scss" afterPath="$PROJECT_DIR$/my-app/src/scss/style/_about.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/src/scss/style/_style.scss" afterPath="$PROJECT_DIR$/my-app/src/scss/style/_style.scss" />
     </list>
     <ignored path="pencil_sharpener.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -64,8 +59,18 @@
       <file leaf-file-name="HomeDocument.jsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/my-app/src/HomeDocument.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="84" column="21" selection-start-line="84" selection-start-column="21" selection-end-line="84" selection-end-column="21" />
+            <state relative-caret-position="105">
+              <caret line="74" column="53" selection-start-line="74" selection-start-column="53" selection-end-line="74" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routeMap.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/my-app/routeMap.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="8" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -86,8 +91,8 @@
       <file leaf-file-name="_style.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/my-app/src/scss/style/_style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1605">
-              <caret line="115" column="0" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
+            <state relative-caret-position="791">
+              <caret line="118" column="5" selection-start-line="118" selection-start-column="5" selection-end-line="118" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -140,7 +145,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/my-app/src/scss/abstracts/_functions.scss" />
         <option value="$PROJECT_DIR$/my-app/src/Pages/Menu.jsx" />
         <option value="$USER_HOME$/Desktop/malling/REK/index_abso_2863.html" />
         <option value="$USER_HOME$/Desktop/malling/CE/index_ce_2030.html" />
@@ -172,7 +176,6 @@
         <option value="$PROJECT_DIR$/my-app/src/Pages/Project/ProjectDetails.jsx" />
         <option value="$PROJECT_DIR$/my-app/src/Pages/IndexDocument.jsx" />
         <option value="$PROJECT_DIR$/my-app/src/Pages/PortfolioDocument.jsx" />
-        <option value="$PROJECT_DIR$/my-app/src/scss/style/_style.scss" />
         <option value="$PROJECT_DIR$/my-app/src/scss/style/_project.scss" />
         <option value="$PROJECT_DIR$/my-app/src/scss/style/_portfolio.scss" />
         <option value="$PROJECT_DIR$/my-app/src/scss/helpers/_helpers.scss" />
@@ -190,6 +193,8 @@
         <option value="$PROJECT_DIR$/my-app/package.json" />
         <option value="$PROJECT_DIR$/my-app/src/Pages/AboutDocument.jsx" />
         <option value="$PROJECT_DIR$/my-app/src/scss/style/_about.scss" />
+        <option value="$PROJECT_DIR$/my-app/routeMap.json" />
+        <option value="$PROJECT_DIR$/my-app/src/scss/style/_style.scss" />
         <option value="$PROJECT_DIR$/my-app/src/HomeDocument.jsx" />
       </list>
     </option>
@@ -679,7 +684,7 @@
       <workItem from="1484319186039" duration="35394000" />
       <workItem from="1484900754248" duration="2702000" />
       <workItem from="1484917195423" duration="13242000" />
-      <workItem from="1485099238343" duration="7366000" />
+      <workItem from="1485099238343" duration="8897000" />
     </task>
     <task id="LOCAL-00001" summary="react">
       <created>1481294817238</created>
@@ -877,11 +882,18 @@
       <option name="project" value="LOCAL" />
       <updated>1484929251634</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="about + chart">
+      <created>1485112508429</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1485112508430</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="371289000" />
+    <option name="totallyTimeSpent" value="372820000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -952,7 +964,8 @@
     <MESSAGE value="project 1.1" />
     <MESSAGE value="portfolio" />
     <MESSAGE value="about" />
-    <option name="LAST_COMMIT_MESSAGE" value="about" />
+    <MESSAGE value="about + chart" />
+    <option name="LAST_COMMIT_MESSAGE" value="about + chart" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1228,26 +1241,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/scss/style/_style.scss">
+    <entry file="file://$PROJECT_DIR$/my-app/routeMap.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1605">
-          <caret line="115" column="0" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
+        <state relative-caret-position="60">
+          <caret line="4" column="8" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/routeMap.json">
+    <entry file="file://$PROJECT_DIR$/my-app/src/scss/style/_style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+        <state relative-caret-position="791">
+          <caret line="118" column="5" selection-start-line="118" selection-start-column="5" selection-end-line="118" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/my-app/src/HomeDocument.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="84" column="21" selection-start-line="84" selection-start-column="21" selection-end-line="84" selection-end-column="21" />
+        <state relative-caret-position="105">
+          <caret line="74" column="53" selection-start-line="74" selection-start-column="53" selection-end-line="74" selection-end-column="53" />
           <folding />
         </state>
       </provider>
