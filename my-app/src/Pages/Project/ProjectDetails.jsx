@@ -17,7 +17,7 @@ export default function ProjectDetails(props, context) {
         <section className="project-shots">
             <div className="project-name-box">
               <MediaQuery maxDeviceWidth={1023}>
-                <h3 className="project-name bold">{currentProject.name}</h3>
+                <h3 className="project-name bold ">{currentProject.name}</h3>
               </MediaQuery>
               <div className="project-image-box">
                 {map(currentProject.srcImg.img, (img)  => (
@@ -38,17 +38,17 @@ export default function ProjectDetails(props, context) {
               </div>
               <div className="project-shot-info">
                 <MediaQuery minDeviceWidth={1024}>
-                  <h3 className="project-name bold">{currentProject.name}</h3>
+                  <h3 className="project-name bold is-landscape-white">{currentProject.name}</h3>
                 </MediaQuery>
-                      <p className="project-location">{currentProject.location}
+                      <p className="project-location is-landscape-white">{currentProject.location}
                           <span className="project-year"> {currentProject.year}</span>
                       </p>
-                      <p className="project-description">{currentProject.description}</p>
+                      <p className="project-description is-landscape-white">{currentProject.description}</p>
                       <div className="project-technologies">
                           <div className="project-techno-body">
                               <p className="techno-body-name">Body</p>
                               {map(currentProject.technologies.body, (body) => (
-                                  <p className="body-name-shot">
+                                  <p className="body-name-shot is-landscape-white">
                                       {body}
                                   </p>
                               ))}
@@ -56,7 +56,7 @@ export default function ProjectDetails(props, context) {
                           <div className="project-techno-body">
                               <p className="techno-body-name">Styling</p>
                               {map(currentProject.technologies.style, (style) => (
-                                <p className="body-name-shot">
+                                <p className="body-name-shot is-landscape-white">
                                     {style}
                                 </p>
                               ))}

@@ -3,3 +3,9 @@
   padding: remcalc(-15);
   transform: translate3d(0, -8px, 0);
 }
+
+.is-landscape-white {
+  @include breakpoint(medium) {
+    color: $clear-white;
+  }
+}

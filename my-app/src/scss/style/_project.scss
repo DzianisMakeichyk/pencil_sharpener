@@ -23,11 +23,6 @@
 
   .project-location {
     @include just-rythm(12);
-    color: $middle-black;
-
-    @include breakpoint(medium) {
-      color: $clear-white;
-    }
 
     .project-year {
       color: $middle-greay;
@@ -38,10 +33,6 @@
   .project-description {
     @include breakpoint(small) {
       @include just-rythm(18);
-    }
-
-    @include breakpoint(medium) {
-      color: $clear-white;
     }
   }
 }
@@ -62,13 +53,8 @@
     }
 
     .body-name-shot {
-      color: $clear-gray;
       font-weight: $font-thin;
       margin: remcalc(2) 0;
-
-      @include breakpoint(medium) {
-        color: $clear-white;
-      }
     }
   }
 }
@@ -129,7 +115,6 @@
 
 .project-name {
   @include just-rythm(28);
-  color: $middle-black;
   letter-spacing: .5px;
   line-height: remcalc(26);
   max-width: remcalc(200);
@@ -140,10 +125,6 @@
     @include just-rythm(48);
     line-height: remcalc(40);
     max-width: remcalc(400);
-  }
-
-  @include breakpoint(medium) {
-    color: $clear-white;
   }
 }
 
