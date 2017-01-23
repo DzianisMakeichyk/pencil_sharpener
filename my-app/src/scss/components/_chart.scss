@@ -5,7 +5,6 @@
   display: none;
 }
 
-
 .recharts-wrapper {
   width: 100% !important;
 }
@@ -20,5 +19,28 @@
 .recharts-cartesian-grid-horizontal {
   line {
     display: none;
+  }
+}
+
+.recharts-text {
+  tspan {
+    fill: $clear-white;
+    @include just-rythm(16);
+  }
+}
+
+.recharts-surface {
+  width: remcalc(900);
+  height: remcalc(260);
+}
+
+#c147_full_moon {
+  &:hover {
+    content: 'hello';
+    color: $clear-white;
+    width: remcalc(100);
+    height: remcalc(100);
+    background: red;
+    position: absolute;
   }
 }

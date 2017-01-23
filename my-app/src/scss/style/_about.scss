@@ -59,10 +59,19 @@
   display: flex;
   vertical-align: middle;
 
+  @include breakpoint(medium) {
+    @include just-rythm(20);
+  }
+
   .about-cv-svg {
     height: remcalc(15);
     margin-right: remcalc(5);
     width: remcalc(15);
+
+    @include breakpoint(medium) {
+      width: remcalc(20);
+      height: remcalc(20);
+    }
 
     path {
       fill: $gradi-green;

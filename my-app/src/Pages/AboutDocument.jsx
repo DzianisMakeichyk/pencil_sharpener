@@ -2,14 +2,15 @@ import React, { Component } from 'react';
 import MediaQuery from 'react-responsive';
 import SkillOne from './Skills/SkillsList.json';
 import SkillOneItem from './Skills/SkillsItem';
+import Chart from './Elements/Chart';
 import map from 'lodash/map';
-import { AreaChart, XAxis, YAxis, CartesianGrid, Tooltip, Area } from 'recharts';
+// import { AreaChart, XAxis, YAxis, CartesianGrid, Tooltip, Area } from 'recharts';
 
 class About extends Component {
 
     render() {
         console.log(SkillOne);
-        const data = [
+/*        const data = [
             {name: 'Illustrator', pv: 60},
             {name: 'PhotoShop', pv: 65},
             {name: 'Jade/HTML', pv: 70},
@@ -35,7 +36,7 @@ class About extends Component {
                   </svg>
                 );
             }
-        });
+        });*/
         return (
           <div>
             <section className="about">
@@ -98,7 +99,7 @@ class About extends Component {
                     ))}
               </MediaQuery>
               <MediaQuery minDeviceWidth={1024}>
-                  <AreaChart width={730} height={250} data={data}
+        {/*          <AreaChart width={930} height={250} data={data}
                              margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
                       <defs>
                           <linearGradient id="colorPv" x1="0" y1="0" x2="0" y2="1">
@@ -110,8 +111,9 @@ class About extends Component {
                       <YAxis />
                       <CartesianGrid strokeDasharray="3 3" />
                       <Tooltip />
-                      <Area type="monotone" dataKey="pv" stroke="#000" fillOpacity={0.8} height={10} fill="url(#colorPv)" dot={<CustomizedDot />} />
-                  </AreaChart>
+                      <Area type="monotone" dataKey="pv" stroke="#00e1d9" fillOpacity={0.8} height={10} fill="url(#colorPv)" dot={<CustomizedDot />} />
+                  </AreaChart>*/}
+                <Chart />
               </MediaQuery>
             </section>
           </div>

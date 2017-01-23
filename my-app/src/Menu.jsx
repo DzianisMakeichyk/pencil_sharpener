@@ -68,6 +68,18 @@ export default class Menu extends React.Component {
            </li>
            <li
              className={classnames('item-menu', {
+               'is-active-page': this.props.location.pathname === this.props.routeMap.blog,
+             })}
+           >
+               <Link
+                 to={routeMap.blog}
+                 className="text-menu"
+               >
+                Funny Box
+              </Link>
+           </li>
+           <li
+             className={classnames('item-menu', {
                'is-active-page': this.props.location.pathname === this.props.routeMap.contact,
              })}
            >
