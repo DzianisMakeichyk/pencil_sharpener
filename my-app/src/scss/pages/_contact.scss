@@ -1,12 +1,39 @@
 .contact {
   display: flex;
   flex-direction: column;
-  padding: remcalc(25) remcalc(15);
+  padding: remcalc(45) remcalc(15);
   font-family: $robot-thin;
 
   @include breakpoint(small) {
     flex-direction: row;
-    padding: remcalc(65) remcalc(25);
+    padding: remcalc(85) remcalc(25);
+  }
+
+  @include breakpoint(large) {
+    padding: remcalc(100) remcalc(35);
+  }
+
+  @include breakpoint(large) {
+    padding: remcalc(100) 0;
+  }
+
+  .about-information {
+    margin: remcalc(25) auto 0;
+    height: 100%;
+    max-height: remcalc(250);
+
+    @include breakpoint(small) {
+      margin: 0 auto;
+    }
+
+    @include breakpoint(medium) {
+      width: 40%;
+      margin: 0 remcalc(15) 0 auto;
+    }
+
+    @include breakpoint(large) {
+      margin: 0 remcalc(35) 0 auto;
+    }
   }
 }
 
@@ -14,12 +41,23 @@ label {
   display: block;
   font-size: 1.3em;
   padding: 0 0 remcalc(10) 0;
+
+  @include breakpoint(medium) {
+    color: $clear-white;
+  }
 }
 
 .form {
   margin: remcalc(30) auto;
-  max-width: remcalc(400);
   text-align: center;
+
+  @include breakpoint(small) {
+    margin: 0 auto;
+  }
+
+  @include breakpoint(medium) {
+    width: 60%;
+  }
 }
 
 .form-group {
@@ -27,12 +65,15 @@ label {
   position: relative;
   overflow: hidden;
   height: remcalc(100);
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .form-focus {
   position: absolute;
-  bottom: remcalc(25);
   left: 0;
+  bottom: 17%;
   width: 100%;
   background: $gradi-green;
   height: 2px;
@@ -60,6 +101,11 @@ label {
   font-size: 2em;
   outline: none;
   font-family: Arial, sans-serif;
+
+  @include breakpoint(medium) {
+    border-bottom: none;
+    background: $gray;
+  }
 }
 
 .form-error {

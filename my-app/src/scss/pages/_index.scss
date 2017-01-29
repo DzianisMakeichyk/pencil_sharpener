@@ -96,6 +96,10 @@ main {
       @include breakpoint(large) {
         margin: remcalc(25) auto auto remcalc(45);
       }
+
+      @include breakpoint(extralarge) {
+        margin: remcalc(25) auto auto remcalc(0);
+      }
     }
 
     .pull-right {
@@ -107,6 +111,10 @@ main {
 
       @include breakpoint(large) {
         margin: remcalc(25) remcalc(45) auto auto;
+      }
+
+      @include breakpoint(extralarge) {
+        margin: remcalc(25) 0 auto auto;
       }
     }
 

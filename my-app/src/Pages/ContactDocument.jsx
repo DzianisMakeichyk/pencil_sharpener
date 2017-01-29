@@ -99,8 +99,7 @@ class Contact extends Component {
         console.log(this.state.inputDatas);
         return (
           <section className="contact">
-
-              <div className="about-information">
+              <div className="about-information ease-box">
                   <h2 className="about-name bold is-landscape-white">
                         <span className="green">
                             Dzianis

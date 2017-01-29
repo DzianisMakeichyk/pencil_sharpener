@@ -14,7 +14,7 @@ var FormElement = React.createClass({
                 onChangeInputHandler={props.onChangeInputHandler} />;
     });
     return (
-      <form className="form clearfix" onSubmit={this._onSubmit}>
+      <form className="form ease-box" onSubmit={this._onSubmit}>
         {inputNodes}
         <SubmitElement percent={this.props.percent}/>
       </form>
