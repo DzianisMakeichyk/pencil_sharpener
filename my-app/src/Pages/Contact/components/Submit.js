@@ -6,12 +6,12 @@ var SubmitElement = React.createClass({
   render: function() {
     var done = this.props.percent >= 100;
     var classes = classSet({
-      'form--submit': true,
-      'form--submit-disabled': !done
+      'form-submit': true,
+      'form-submit-disabled': !done
     });
-    var label = done ? 'Submit Now!' : 'You Cannot Yet!';
+    var label = done ? 'A teraz tak!' : 'Jeszcze nie';
     return (
-      <div className="form--group">
+      <div className="form-group">
         <button type="submit" className={classes}>{label}</button>
       </div>
     );

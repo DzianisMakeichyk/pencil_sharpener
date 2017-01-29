@@ -1,27 +1,40 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  padding: remcalc(25) remcalc(15);
+  font-family: $robot-thin;
+
+  @include breakpoint(small) {
+    flex-direction: row;
+    padding: remcalc(65) remcalc(25);
+  }
+}
+
 label {
   display: block;
   font-size: 1.3em;
+  padding: 0 0 remcalc(10) 0;
 }
 
 .form {
-  margin: 60px auto 30px;
-  max-width: 400px;
+  margin: remcalc(30) auto;
+  max-width: remcalc(400);
   text-align: center;
 }
 
-.form--group {
-  margin: 10px auto 40px;
+.form-group {
+  margin: remcalc(10) auto remcalc(40);
   position: relative;
   overflow: hidden;
-  height: 100px;
+  height: remcalc(100);
 }
 
-.form--focus {
+.form-focus {
   position: absolute;
-  bottom: 25px;
+  bottom: remcalc(25);
   left: 0;
   width: 100%;
-  background: #1ECD97;
+  background: $gradi-green;
   height: 2px;
   -webkit-transform: translate3d(-100%, 0, 0);
   transform: translate3d(-100%, 0, 0);
@@ -29,51 +42,56 @@ label {
   transition: transform 0.3s;
 }
 
-.form--control:focus + .form--focus {
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
+.form-control {
+  &:focus + .form-focus {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
 }
 
-.form--control {
+.form-control {
   display: block;
-  padding: 5px;
+  padding: remcalc(5);
   width: 100%;
   border: none;
-  border-bottom: solid 2px #eee;
-  background: #f9f9f9;
+  border-bottom: solid 2px $space-gray;
+  background: $space-white;
   text-align: center;
   font-size: 2em;
   outline: none;
   font-family: Arial, sans-serif;
 }
 
-.form--error {
+.form-error {
   display: none;
-  color: #FB797E;
+  color: $ease-red;
   font-size: 1em;
-  padding: 4px;
-  border-radius: 20px;
+  padding: remcalc(4);
+  border-radius: remcalc(20);
 }
 
-.has--error .form--focus {
-  background: #FB797E;
-}
-.has--error .form--error {
-  display: block;
+.has-error {
+  .form-error {
+    display: block;
+  }
+
+  .form-focus {
+    background: $ease-red;
+  }
 }
 
-.form--submit {
+.form-submit {
   display: block;
   margin: 0 auto;
   padding: 0;
-  width: 250px;
-  height: 70px;
-  border: 2px solid #1ECD97;
-  border-radius: 40px;
+  width: remcalc(250);
+  height: remcalc(70);
+  border: 2px solid $gradi-green;
+  border-radius: remcalc(40);
   background: transparent;
-  color: #1ECD97;
+  color: $gradi-green;
   letter-spacing: 1px;
-  font-size: 18px;
+  @include just-rythm(18);
   font-family: Arial, sans-serif;
   outline: none;
   cursor: pointer;
@@ -81,99 +99,23 @@ label {
   -webkit-transition: background-color 0.3s, color 0.3s, width 0.3s, border-width 0.3s, border-color 0.3s;
   transition: background-color 0.3s, color 0.3s, width 0.3s, border-width 0.3s, border-color 0.3s;
 }
-.form--submit:hover {
-  background-color: #1ECD97;
-  color: #fff;
-}
-
-.form--submit-disabled, .form--submit-disabled:hover {
-  cursor: not-allowed;
-  background: #FB797E;
-  border-color: #F0797E;
-  color: #fff;
-}
-
-.progress {
-  position: fixed!important;
-  top: 50%;
-  margin-top: -100px;
-}
-
-.progress-pie-chart {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  background-color: #E5E5E5;
-  position: relative;
-}
-.progress-pie-chart.gt-50 {
-  background-color: #1ECD97;
-}
-
-.ppc-progress {
-  content: "";
-  position: absolute;
-  border-radius: 50%;
-  left: calc(50% - 100px);
-  top: calc(50% - 100px);
-  width: 200px;
-  height: 200px;
-  clip: rect(0, 200px, 200px, 100px);
-}
-.ppc-progress .ppc-progress-fill {
-  content: "";
-  position: absolute;
-  border-radius: 50%;
-  left: calc(50% - 100px);
-  top: calc(50% - 100px);
-  width: 200px;
-  height: 200px;
-  clip: rect(0, 100px, 200px, 0);
-  background: #1ECD97;
-  transition: all 1s ease;
-  -webkit-transition: all 1s ease;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
-}
-.gt-50 .ppc-progress {
-  clip: rect(0, 100px, 200px, 0);
-}
-.gt-50 .ppc-progress .ppc-progress-fill {
-  clip: rect(0, 200px, 200px, 100px);
-  background: #E5E5E5;
-}
-
-.ppc-percents {
-  content: "";
-  position: absolute;
-  border-radius: 50%;
-  left: calc(50% - 173.91304px/2);
-  top: calc(50% - 173.91304px/2);
-  width: 173.91304px;
-  height: 173.91304px;
-  background: #fff;
-  text-align: center;
-  display: table;
-}
-.ppc-percents span {
-  display: block;
-  font-size: 2.6em;
-  font-weight: bold;
-  color: #1ECD97;
-}
-
-.pcc-percents-wrapper {
-  display: table-cell;
-  vertical-align: middle;
-}
-
-@media (max-width: 924px) {
-  .progress {
-    position: relative!important;
-    top: 0;
-    left: 50%;
-    margin: 0 0 0 -100px;
+.form-submit {
+  &:hover {
+    background-color: $gradi-green;
+    color: $clear-white;
   }
 }
 
+.form-submit-disabled {
+  cursor: not-allowed;
+  background: $ease-red;
+  border-color: $ease-border-red;
+  color: $clear-white;
+
+  &:hover {
+    cursor: not-allowed;
+    background: $ease-red;
+    border-color: $ease-border-red;
+    color: $clear-white;
+  }
+}

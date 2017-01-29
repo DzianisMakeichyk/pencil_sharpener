@@ -98,14 +98,35 @@ class Contact extends Component {
     render() {
         console.log(this.state.inputDatas);
         return (
-          <div>
+          <section className="contact">
+
+              <div className="about-information">
+                  <h2 className="about-name bold is-landscape-white">
+                        <span className="green">
+                            Dzianis
+                        </span> Makeichyk</h2>
+                  <div className="about-description">
+                      <div className="about-description-left">
+                          <p className="green">Miasto:</p>
+                          <p className="green">Mail:</p>
+                          <p className="green">Telefon:</p>
+                          <p className="green">NIP:</p>
+                      </div>
+                      <div className="about-description-right">
+                          <p className="description-shot is-landscape-white">Polska, Warszawa</p>
+                          <a href="mailto:dzianis@pencilsharpener.pl" className="description-shot is-landscape-white">dzianis@pencilsharpener.pl</a>
+                          <p className="description-shot is-landscape-white"> +48 79767075</p>
+                          <p className="description-shot is-landscape-white">527-277-32-56</p>
+                      </div>
+                  </div>
+              </div>
               {/*<ProgressElement percent={this.state.progressPercent} />*/}
               <FormElement
                 inputs={this.state.inputDatas}
                 onChangeInputHandler={this._onChangeInputHandler}
                 onSubmitFormHandler={this._onSubmitFormHandler}
                 percent={this.state.progressPercent} />
-          </div>
+          </section>
         );
     }
 }

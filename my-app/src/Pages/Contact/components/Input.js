@@ -6,15 +6,15 @@ var InputElement = React.createClass({
   render: function() {
     var item = this.props.item;
     var classes = classSet({
-      "form--group": true,
-      "has--error": item.hasError && !item.pristine
+      "form-group": true,
+      "has-error": item.hasError && !item.pristine
     });
     return (
       <div className={classes}>
         <label htmlFor={item.id}>{item.label}</label>
-        <input type="text" className="form--control" id={item.id} value={item.value} onChange={this._onChange}/>
-        <span className="form--focus"></span>
-        <span className="form--error">{item.errorMessage}</span>
+        <input type="text" className="form-control" id={item.id} value={item.value} onChange={this._onChange}/>
+        <span className="form-focus"></span>
+        <span className="form-error">{item.errorMessage}</span>
       </div>
     );
   },
