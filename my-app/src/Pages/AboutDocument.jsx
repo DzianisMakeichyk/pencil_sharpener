@@ -1,42 +1,13 @@
 import React, { Component } from 'react';
 import MediaQuery from 'react-responsive';
 import SkillOne from './Skills/SkillsList.json';
-import SkillOneItem from './Skills/SkillsItem';
-import Chart from './Elements/Chart';
+import SkillOneItem from './Skills/SkillsItem'
 import map from 'lodash/map';
-// import { AreaChart, XAxis, YAxis, CartesianGrid, Tooltip, Area } from 'recharts';
 
 class About extends Component {
 
-    render() {
-        console.log(SkillOne);
-/*        const data = [
-            {name: 'Illustrator', pv: 60},
-            {name: 'PhotoShop', pv: 65},
-            {name: 'Jade/HTML', pv: 70},
-            {name: 'SASS/SCSS', pv: 75},
-            {name: 'WordPress', pv: 60},
-            {name: 'Jquery', pv: 50},
-            {name: 'ReactJs', pv: 45},
-        ];
-        const CustomizedDot = React.createClass({
-            render () {
-                const {cx, cy, stroke, payload} = this.props;
 
-                return (
-                  <svg version="1.1" x={cx - 5} y={cy - 5} width={10} height={10} fill="#00e1d9" viewBox="0 0 29.107 29.107" xmlSpace="preserve">
-                    <g>
-                      <g id="c147_full_moon">
-                        <g>
-                          <path d="M14.554,0C6.561,0,0,6.562,0,14.552c0,7.996,6.561,14.555,14.554,14.555c7.996,0,14.553-6.559,14.553-14.555
-                            C29.106,6.562,22.55,0,14.554,0z"/>
-                        </g>
-                      </g>
-                    </g>
-                  </svg>
-                );
-            }
-        });*/
+    render() {
         return (
           <div>
             <section className="about">

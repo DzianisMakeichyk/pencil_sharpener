@@ -35,13 +35,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AboutDocument.jsx" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AboutDocument.jsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/my-app/src/Pages/AboutDocument.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="895">
-              <caret line="92" column="21" selection-start-line="92" selection-start-column="21" selection-end-line="92" selection-end-column="21" />
+            <state relative-caret-position="358">
+              <caret line="62" column="40" selection-start-line="62" selection-start-column="40" selection-end-line="62" selection-end-column="40" />
               <folding>
-                <element signature="e#415#1496#0" expanded="false" />
+                <element signature="e#0#41#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -50,18 +50,14 @@
       <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/my-app/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
-              <folding>
-                <marker date="1485723544000" expanded="true" signature="0:1148" ph="{&quot;name&quot;: &quot;Pencil_Sharpener&quot;...}" />
-                <marker date="1485723544000" expanded="true" signature="94:867" ph="{&quot;autoprefixer&quot;: &quot;^6.5.3&quot;...}" />
-                <marker date="1485723544000" expanded="true" signature="887:973" ph="{&quot;react&quot;: &quot;^15.4.1&quot;...}" />
-              </folding>
+            <state relative-caret-position="75">
+              <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/Downloads/charts-info-graphic/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="265">
@@ -643,7 +639,7 @@
       <workItem from="1484917195423" duration="13242000" />
       <workItem from="1485099238343" duration="21254000" />
       <workItem from="1485379684871" duration="2474000" />
-      <workItem from="1485427022777" duration="17830000" />
+      <workItem from="1485427022777" duration="18030000" />
     </task>
     <task id="LOCAL-00001" summary="react">
       <created>1481294817238</created>
@@ -897,11 +893,18 @@
       <option name="project" value="LOCAL" />
       <updated>1485723326695</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="about v2.0.1">
+      <created>1485724179018</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1485724179018</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="405481000" />
+    <option name="totallyTimeSpent" value="405681000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -952,7 +955,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="route" />
     <MESSAGE value="props" />
     <MESSAGE value="gsap" />
     <MESSAGE value="fix img" />
@@ -977,7 +979,8 @@
     <MESSAGE value="chart 1.02 fix head menu color" />
     <MESSAGE value="contact 320px" />
     <MESSAGE value="contact" />
-    <option name="LAST_COMMIT_MESSAGE" value="contact" />
+    <MESSAGE value="about v2.0.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="about v2.0.1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1318,33 +1321,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/Pages/AboutDocument.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="895">
-          <caret line="92" column="21" selection-start-line="92" selection-start-column="21" selection-end-line="92" selection-end-column="21" />
-          <folding>
-            <element signature="e#415#1496#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
-          <folding>
-            <marker date="1485723544000" expanded="true" signature="0:1148" ph="{&quot;name&quot;: &quot;Pencil_Sharpener&quot;...}" />
-            <marker date="1485723544000" expanded="true" signature="94:867" ph="{&quot;autoprefixer&quot;: &quot;^6.5.3&quot;...}" />
-            <marker date="1485723544000" expanded="true" signature="887:973" ph="{&quot;react&quot;: &quot;^15.4.1&quot;...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/charts-info-graphic/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="265">
           <caret line="452" column="38" selection-start-line="452" selection-start-column="38" selection-end-line="452" selection-end-column="38" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/Pages/AboutDocument.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="62" column="40" selection-start-line="62" selection-start-column="40" selection-end-line="62" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
