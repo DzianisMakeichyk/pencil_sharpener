@@ -90,24 +90,7 @@ class About extends Component {
                 </div>
             </section>
             <section className="skills">
-                <MediaQuery minDeviceWidth={1023}>
-                    <MediaQuery maxDeviceWidth={767}>
-                      {map(SkillOne, (skillsShot) => (
-                        <SkillOneItem
-                          key={skillsShot.name}
-                          skillsShot={skillsShot}
-                        />
-                        ))}
-                  </MediaQuery>
-              </MediaQuery>
-              <MediaQuery minDeviceWidth={1024}>
-                  <div className="selector-box">
-                      <div className="one-selector-box">Grafika</div>
-                      <div className="one-selector-box">Języki/Biblioteki</div>
-                      <div className="one-selector-box">Języki/Biblioteki</div>
-                      <div className="one-selector-box">Języki/Biblioteki</div>
-                  </div>
-              </MediaQuery>
+                hello
             </section>
           </div>
         );
