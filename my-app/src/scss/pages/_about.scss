@@ -131,3 +131,19 @@
   font-weight: $font-semi-bold;
   transform: $skew-plus;
 }
+
+/****************  Second ****************/
+
+.selector-box {
+  display: flex;
+  flex-direction: row;
+
+  .one-selector-box {
+    flex: 1 1 25%;
+    margin: 1px;
+    text-align: center;
+    padding: remcalc(15);
+    border: 1px solid $ease-gray;
+    font-family: $robot-thin;
+  }
+}

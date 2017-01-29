@@ -23,8 +23,10 @@
     "react-bootstrap": "^0.30.7",
     "react-responsive": "^1.2.5",
     "react-scripts": "0.8.3",
+    "reactify": "^1.1.1",
     "recharts": "^0.20.5",
-    "space-preconfigured-eslint": "^1.4.11"
+    "space-preconfigured-eslint": "^1.4.11",
+    "validatorjs": "^3.11.0"
   },
   "dependencies": {
     "react": "^15.4.1",

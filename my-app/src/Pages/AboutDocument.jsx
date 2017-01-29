@@ -90,30 +90,23 @@ class About extends Component {
                 </div>
             </section>
             <section className="skills">
-                <MediaQuery maxDeviceWidth={767}>
-                  {map(SkillOne, (skillsShot) => (
-                    <SkillOneItem
-                      key={skillsShot.name}
-                      skillsShot={skillsShot}
-                    />
-                    ))}
+                <MediaQuery minDeviceWidth={1023}>
+                    <MediaQuery maxDeviceWidth={767}>
+                      {map(SkillOne, (skillsShot) => (
+                        <SkillOneItem
+                          key={skillsShot.name}
+                          skillsShot={skillsShot}
+                        />
+                        ))}
+                  </MediaQuery>
               </MediaQuery>
               <MediaQuery minDeviceWidth={1024}>
-        {/*          <AreaChart width={930} height={250} data={data}
-                             margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
-                      <defs>
-                          <linearGradient id="colorPv" x1="0" y1="0" x2="0" y2="1">
-                              <stop offset="5%" stopColor="#01e6ae" stopOpacity={0.6}/>
-                              <stop offset="95%" stopColor="#01e6ae" stopOpacity={0}/>
-                          </linearGradient>
-                      </defs>
-                      <XAxis dataKey="name" />
-                      <YAxis />
-                      <CartesianGrid strokeDasharray="3 3" />
-                      <Tooltip />
-                      <Area type="monotone" dataKey="pv" stroke="#00e1d9" fillOpacity={0.8} height={10} fill="url(#colorPv)" dot={<CustomizedDot />} />
-                  </AreaChart>*/}
-                <Chart />
+                  <div className="selector-box">
+                      <div className="one-selector-box">Grafika</div>
+                      <div className="one-selector-box">Języki/Biblioteki</div>
+                      <div className="one-selector-box">Języki/Biblioteki</div>
+                      <div className="one-selector-box">Języki/Biblioteki</div>
+                  </div>
               </MediaQuery>
             </section>
           </div>
