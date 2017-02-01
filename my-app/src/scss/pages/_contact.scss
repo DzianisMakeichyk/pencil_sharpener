@@ -10,6 +10,7 @@
   }
 
   @include breakpoint(large) {
+    width: calc(100% - 80px);
     padding: remcalc(100) remcalc(35);
   }
 
@@ -18,11 +19,13 @@
   }
 
   .about-information {
-    margin: remcalc(25) auto 0;
+    width: calc(100% - 40px);
     height: 100%;
+    margin: remcalc(25) auto 0;
     max-height: remcalc(250);
 
     @include breakpoint(small) {
+      width: auto;
       margin: 0 auto;
     }
 
@@ -33,6 +36,24 @@
 
     @include breakpoint(large) {
       margin: 0 remcalc(35) 0 auto;
+    }
+
+    .socials {
+      display: flex;
+      justify-content: space-around;
+      margin: remcalc(25) 0;
+
+      .icon-item {
+        width: remcalc(17);
+        height: remcalc(17);
+        fill: $clear-black;
+
+        @include breakpoint(medium) {
+          width: remcalc(20);
+          height: remcalc(20);
+          fill: $clear-white;
+        }
+      }
     }
   }
 }

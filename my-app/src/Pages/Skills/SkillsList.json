@@ -12,11 +12,7 @@
     "percent": "70"
   },
   {
-    "name": "Jade/HTML",
-    "percent": "70"
-  },
-  {
-    "name": "SASS/SCSS",
+    "name": "Sass/Scss",
     "percent": "75"
   },
   {
@@ -24,7 +20,7 @@
     "percent": "45"
   },
   {
-    "name": "Jquery",
+    "name": "JavaScript",
     "percent": "50"
   },
   {

@@ -4,27 +4,27 @@ import SkillOne from './Skills/SkillsList.json';
 import SkillOneItem from './Skills/SkillsItem'
 import map from 'lodash/map';
 
-class About extends Component {
 
+class About extends Component {
 
     render() {
         return (
           <div>
             <section className="about">
                 <div className="about-box-image">
-                    <img src="../img/background.png" className="about-image" alt="Dzianis Makeichyk" role="presentation" />
-                    <MediaQuery minDeviceWidth={767}>
-                        <MediaQuery maxDeviceWidth={1023}>
+                    <img src="../img/background.png" className="about-image ease-box little" alt="Dzianis Makeichyk" role="presentation" />
+                    <MediaQuery minDeviceWidth={768}>
+                        <div className="skills-box ease-box">
                             {map(SkillOne, (skillsShot) => (
                               <SkillOneItem
                                 key={skillsShot.name}
                                 skillsShot={skillsShot}
                               />
                             ))}
-                        </MediaQuery>
+                        </div>
                     </MediaQuery>
                 </div>
-                <div className="about-information">
+                <div className="about-information ease-box">
                     <h2 className="about-name bold is-landscape-white">
                         <span className="green">
                             Dzianis
@@ -61,7 +61,16 @@ class About extends Component {
                 </div>
             </section>
             <section className="skills">
-                hello
+                <MediaQuery maxDeviceWidth={767}>
+                    <div className="skills-box ease-box">
+                        {map(SkillOne, (skillsShot) => (
+                          <SkillOneItem
+                            key={skillsShot.name}
+                            skillsShot={skillsShot}
+                          />
+                        ))}
+                    </div>
+                </MediaQuery>
             </section>
           </div>
         );

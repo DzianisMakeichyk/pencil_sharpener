@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
-// import ReactDOM from 'react-dom';
 import Validator from 'validatorjs';
-// import classSet from './Contact/utils/classSet';
-// import ProgressElement from './Contact/components/Progress';
 import FormElement from'./Contact/components/Form';
 import inputDatas from'./Contact/datas/InputDatas';
+import Social from './Elements/Social';
 
 
 class Contact extends Component {
@@ -118,6 +116,7 @@ class Contact extends Component {
                           <p className="description-shot is-landscape-white">527-277-32-56</p>
                       </div>
                   </div>
+                  <Social />
               </div>
               {/*<ProgressElement percent={this.state.progressPercent} />*/}
               <FormElement

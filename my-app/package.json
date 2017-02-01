@@ -6,6 +6,7 @@
     "autoprefixer": "^6.5.3",
     "bootstrap": "^3.3.7",
     "classnames": "^2.2.5",
+    "d3": "^4.5.0",
     "gore-gulp": "^0.15.1",
     "gsap": "^1.19.0",
     "gulp": "^3.9.1",

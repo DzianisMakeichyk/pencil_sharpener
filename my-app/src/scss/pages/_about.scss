@@ -1,15 +1,20 @@
 .about {
   display: flex;
   flex-direction: column;
-  padding: remcalc(25) remcalc(15);
+  padding: remcalc(70) remcalc(15) remcalc(25);
 
   @include breakpoint(small) {
     flex-direction: row;
-    padding: remcalc(65) remcalc(25);
+    padding: remcalc(75) remcalc(25);
+  }
+
+  @include breakpoint(large) {
+    flex-direction: row;
+    padding: remcalc(75) remcalc(40) auto remcalc(45);
   }
 
   .about-box-image {
-    margin: remcalc(20) auto;
+    margin: auto auto remcalc(20) auto;
     @include breakpoint(small) {
       flex: 1 1 50%;
       padding: 0 remcalc(25) 0 0;
@@ -75,71 +80,82 @@
   }
 }
 
+/****************  Second ****************/
+
 .skills {
   padding: 0 remcalc(15) remcalc(25);
   position: relative;
-
-  svg {
-    width: remcalc(100);
-
-    @include breakpoint(small) {
-      width: 100%;
-    }
-  }
 }
 
-.skill-box {
-  display: flex;
-  flex-direction: row;
-  padding: 0 remcalc(10);
-
-  .skill-percent {
-    position: relative;
-    flex: 0 0 40%;
-    height: remcalc(40);
-    margin-right: remcalc(15);
-    border: 1px solid $light-gray;
-    transform: $skew-minus;
-    margin-bottom: remcalc(15);
-
-    .skill-percent-up {
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      background: $gradient-blue-green-revers;
-    }
-  }
-
-  .skill-name {
-    flex: 0 0 60%;
-    text-align: center;
-    padding: remcalc(12) 0 0;
-    font-family: $robot-thin;
-  }
-}
-
-.skill-percent-text {
-  display: block;
-  margin: remcalc(10) remcalc(17);
-  color: $clear-white;
+.skills-title {
+  text-align: center;
+  @include just-rythm(22);
   font-family: $robot-thin;
   font-weight: $font-semi-bold;
-  transform: $skew-plus;
 }
 
-/****************  Second ****************/
-
-.selector-box {
+.skills-box {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
+  flex-direction: column;
+}
 
-  .one-selector-box {
-    flex: 1 1 25%;
-    margin: 1px;
-    text-align: center;
-    padding: remcalc(15);
-    border: 1px solid $ease-gray;
-    font-family: $robot-thin;
+.skill-one-shot {
+  display: flex;
+  font-family: $robot-thin;
+
+  .skill-name {
+    margin-right: remcalc(10);
+
+    @include breakpoint(medium) {
+      color: $clear-white;
+    }
+  }
+
+  .skill-chart-line {
+    position: relative;
+    width: 100%;
+    margin-right: remcalc(10);
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      height: remcalc(2);
+      margin: auto;
+      background: $gradi-blue;
+      transform: $skew-minus;
+    }
+
+    .skill-chart-line-percent {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        width: 100%;
+        height: remcalc(4);
+        background: $gradi-green;
+        transform: $skew-minus;
+      }
+    }
+  }
+
+  .skill-percent {
+    @include breakpoint(medium) {
+      color: $clear-white;
+    }
   }
 }
