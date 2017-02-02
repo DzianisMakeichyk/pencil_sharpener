@@ -3,6 +3,7 @@ import { Link } from 'react-router';
 import routeMap from '../routeMap.json';
 import classnames from 'classnames';
 import Social from './Pages/Elements/Social';
+import { Motion, spring } from 'react-motion';
 
 export default class Menu extends React.Component {
 
@@ -17,83 +18,114 @@ export default class Menu extends React.Component {
 
   render() {
     return (
-       <div className="show-menu">
-         <ul className="list-menu">
-           <li
-             className={classnames('item-menu', {
-               'is-active-page': this.props.location.pathname === this.props.routeMap.home,
-             })}
-           >
-               <Link
-                 to="/"
-                 className="text-menu"
-               >
-                Home
-              </Link>
-           </li>
-           <li
-             className={classnames('item-menu', {
-               'is-active-page': this.props.location.pathname === this.props.routeMap.portfolio || + '/' + this.context.router.params.slug,
-             })}
-           >
-               <Link
-                 to={routeMap.portfolio}
-                 className="text-menu"
-               >
-                Portfolio
-              </Link>
-           </li>
-           <li
-             className={classnames('item-menu', {
-               'is-active-page': this.props.location.pathname === this.props.routeMap.about,
-             })}
-           >
-               <Link
-                 to={routeMap.about}
-                 className="text-menu"
-               >
-                O mnie
-              </Link>
-           </li>
-           <li
-             className={classnames('item-menu', {
-               'is-active-page': this.props.location.pathname === this.props.routeMap.blog,
-             })}
-           >
-               <Link
-                 to={routeMap.blog}
-                 className="text-menu"
-               >
-                Blog
-              </Link>
-           </li>
-           <li
-             className={classnames('item-menu', {
-               'is-active-page': this.props.location.pathname === this.props.routeMap.blog,
-             })}
-           >
-               <Link
-                 to={routeMap.blog}
-                 className="text-menu"
-               >
-                Funny Box
-              </Link>
-           </li>
-           <li
-             className={classnames('item-menu', {
-               'is-active-page': this.props.location.pathname === this.props.routeMap.contact,
-             })}
-           >
-               <Link
-                 to={routeMap.contact}
-                 className="text-menu"
-               >
-                Kontakt
-              </Link>
-           </li>
-           <Social />
-         </ul>
-       </div>
-    );
+      <Motion
+        defaultStyle={{
+          opacity: 0,
+        }} style={{
+        opacity: spring(1),
+      }}>
+        {style => (
+          <div
+            className="show-menu"
+            style={{
+              opacity: style.opacity,
+            }}
+          >
+            <Motion
+              defaultStyle={{
+                opacity: 0,
+                y: -20,
+              }} style={{
+              opacity: spring(1),
+              y: spring(0),
+            }}>
+              {styleLi => (
+                <ul
+                  className="list-menu"
+                  style={{
+                    opacity: styleLi.opacity,
+                    transform: `translateY(${styleLi.y}px)`,
+                  }}>
+                  <li
+                    className={classnames('item-menu', {
+                      'is-active-page': this.props.location.pathname === this.props.routeMap.home,
+                    })}
+                  >
+                    <Link
+                      to="/"
+                      className="text-menu"
+                    >
+                      Home
+                    </Link>
+                  </li>
+                  <li
+                    className={classnames('item-menu', {
+                      'is-active-page': this.props.location.pathname === this.props.routeMap.portfolio || +'/' + this.context.router.params.slug,
+                    })}
+                  >
+                    <Link
+                      to={routeMap.portfolio}
+                      className="text-menu"
+                    >
+                      Portfolio
+                    </Link>
+                  </li>
+                  <li
+                    className={classnames('item-menu', {
+                      'is-active-page': this.props.location.pathname === this.props.routeMap.about,
+                    })}
+                  >
+                    <Link
+                      to={routeMap.about}
+                      className="text-menu"
+                    >
+                      O mnie
+                    </Link>
+                  </li>
+                  <li
+                    className={classnames('item-menu', {
+                      'is-active-page': this.props.location.pathname === this.props.routeMap.blog,
+                    })}
+                  >
+                    <Link
+                      to={routeMap.blog}
+                      className="text-menu"
+                    >
+                      Blog
+                    </Link>
+                  </li>
+                  <li
+                    className={classnames('item-menu', {
+                      'is-active-page': this.props.location.pathname === this.props.routeMap.blog,
+                    })}
+                  >
+                    <Link
+                      to={routeMap.blog}
+                      className="text-menu"
+                    >
+                      Funny Box
+                    </Link>
+                  </li>
+                  <li
+                    className={classnames('item-menu', {
+                      'is-active-page': this.props.location.pathname === this.props.routeMap.contact,
+                    })}
+                  >
+                    <Link
+                      to={routeMap.contact}
+                      className="text-menu"
+                    >
+                      Kontakt
+                    </Link>
+                  </li>
+                  <Social />
+                </ul>
+              )}
+            </Motion>
+          </div>
+        )}
+      </Motion>
+    )
   }
 }
+
