@@ -23,8 +23,6 @@ export default class Menu extends React.Component {
     this.props.onToggle();
   };
   render() {
-    console.log(this.props);
-    console.log(this.props.onToggle);
     return (
       <Motion
         defaultStyle={{

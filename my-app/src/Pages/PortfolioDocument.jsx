@@ -3,6 +3,7 @@ import PortfolioGrid from './PortfolioGrid/PortfolioGrid';
 import PortfolioGridList from './PortfolioGrid/PortfolioGridList.json';
 import map from 'lodash/map';
 import MediaQuery from 'react-responsive';
+import cx from 'classnames';
 
 class Portfolio extends Component {
 
@@ -32,6 +33,9 @@ class Portfolio extends Component {
 
     render() {
       var BackgroundProject = {backgroundImage: 'url("./img/project_grid/' + this.state.currentProjectBackground +'.png")'};
+      var hoverItem = cx([
+        this.state.currentProjectName && 'is-hover',
+      ]);
 
         return (
           <section className="hello-portfolio">
@@ -45,7 +49,7 @@ class Portfolio extends Component {
                       />
                   ))}
                 <MediaQuery minDeviceWidth={1024}>
-                  <div className="project-img" style={BackgroundProject} ></div>
+                  <div className={'project-img ' + cx(hoverItem)} style={BackgroundProject} ></div>
                 </MediaQuery>
               </ul>
             </section>

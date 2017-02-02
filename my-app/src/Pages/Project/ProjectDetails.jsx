@@ -40,36 +40,36 @@ export default function ProjectDetails(props, context) {
                 <MediaQuery minDeviceWidth={1024}>
                   <h3 className="project-name bold is-landscape-white">{currentProject.name}</h3>
                 </MediaQuery>
-                      <p className="project-location is-landscape-white">{currentProject.location}
-                          <span className="project-year"> {currentProject.year}</span>
-                      </p>
-                      <p className="project-description is-landscape-white">{currentProject.description}</p>
-                      <div className="project-technologies">
-                          <div className="project-techno-body">
-                              <p className="techno-body-name">Body</p>
-                              {map(currentProject.technologies.body, (body) => (
-                                  <p className="body-name-shot is-landscape-white">
-                                      {body}
-                                  </p>
-                              ))}
-                          </div>
-                          <div className="project-techno-body">
-                              <p className="techno-body-name">Styling</p>
-                              {map(currentProject.technologies.style, (style) => (
-                                <p className="body-name-shot is-landscape-white">
-                                    {style}
-                                </p>
-                              ))}
-                          </div>
-                      </div>
-                      <MediaQuery minDeviceWidth={1024}>
-                        <Link
-                          to={currentProject.button_link}
-                          target="_blank"
-                          className="project-button-to"
-                        >{currentProject.button_name}
-                        </Link>
-                      </MediaQuery>
+                  <p className="project-location is-landscape-white">{currentProject.location}
+                      <span className="project-year"> {currentProject.year}</span>
+                  </p>
+                  <p className="project-description is-landscape-white">{currentProject.description}</p>
+                  <div className="project-technologies">
+                    <div className="project-techno-body">
+                      <p className="techno-body-name">Body</p>
+                      {map(currentProject.technologies.body, (body) => (
+                          <p className="body-name-shot is-landscape-white">
+                              {body}
+                          </p>
+                      ))}
+                    </div>
+                    <div className="project-techno-body">
+                      <p className="techno-body-name">Styling</p>
+                      {map(currentProject.technologies.style, (style) => (
+                        <p className="body-name-shot is-landscape-white">
+                            {style}
+                        </p>
+                      ))}
+                    </div>
+                  </div>
+                  <MediaQuery minDeviceWidth={1024}>
+                    <Link
+                      to={currentProject.button_link}
+                      target="_blank"
+                      className="project-button-to"
+                    >{currentProject.button_name}
+                    </Link>
+                  </MediaQuery>
                   </div>
                 </div>
                 <div className="project-button-arrows">

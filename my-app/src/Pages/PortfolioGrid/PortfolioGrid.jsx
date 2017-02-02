@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router';
 import routeMap from '../../../routeMap.json';
 import MediaQuery from 'react-responsive';
-// import cx from 'classnames';
+import { Motion, spring } from 'react-motion';
 
 export default class PortfolioGrid extends React.Component {
 
@@ -32,9 +32,27 @@ export default class PortfolioGrid extends React.Component {
     // var hoverItem = cx([
     //   this.state.isHovering && 'is_hover',
     // ]);
-    // className={"portfolio_item " + cx(hoverItem)}
+    // className={'portfolio_item ' + cx(hoverItem)};
     var DescriptionOnHover = !this.state.isHovering && <img className="portfolio-svg" src={"img/pencil_wolf_white.svg"} alt={this.props.project.name}/>;
-    var DescriptionOutHover = this.state.isHovering && <div className="portfolio-title-box"><h6 className="portfolio-box-name">{this.props.project.title}</h6><p className="project-mini-categories">{this.props.project.short_description}</p></div>;
+    var DescriptionOutHover = this.state.isHovering &&
+      <Motion
+        defaultStyle={{
+          opacity: 0,
+        }} style={{
+        opacity: spring(1),
+      }}>
+        {style => (
+        <div
+          className="portfolio-title-box"
+          style={{
+            opacity: style.opacity,
+          }}
+        >
+          <h6 className="portfolio-box-name">{this.props.project.title}</h6>
+          <p className="project-mini-categories">{this.props.project.short_description}</p>
+        </div>
+        )}
+      </Motion>;
 
     let visible = true;
     if (this.props.currentProjectName !== null && this.props.currentProjectName !== this.props.project.name) {

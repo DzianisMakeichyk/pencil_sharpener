@@ -1,5 +1,5 @@
 .hello-portfolio {
-  height: 98vh;
+  height: calc(100vh - 30px);
   padding: remcalc(15);
 
   @include breakpoint(medium) {
@@ -93,7 +93,8 @@
   .portfolio-box-name {
     @include just-rythm(24);
     background: $gradient-blue-green;
-    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-family: $ganelas-bold;
     line-height: remcalc(22);
     margin: auto auto remcalc(10);
@@ -112,6 +113,7 @@
     font-family: $robot-thin;
     margin: auto;
     max-width: remcalc(180);
+    letter-spacing: 1px;
 
     @include breakpoint(large) {
       @include just-rythm(20);
@@ -128,6 +130,19 @@
   position: absolute;
   width: 100%;
   z-index: 10;
+
+  &.is-hover {
+    animation: pulse .5s;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .animation-link {
