@@ -53,6 +53,10 @@
           height: remcalc(20);
           fill: $clear-white;
         }
+
+        &:hover {
+          fill: $gradi-green;
+        }
       }
     }
   }
@@ -82,10 +86,10 @@ label {
 }
 
 .form-group {
-  margin: remcalc(10) auto remcalc(40);
+  margin: remcalc(15) auto remcalc(40);
   position: relative;
   overflow: hidden;
-  height: remcalc(100);
+  height: remcalc(110);
   &:last-child {
     margin-bottom: 0;
   }
@@ -94,7 +98,7 @@ label {
 .form-focus {
   position: absolute;
   left: 0;
-  bottom: 17%;
+  bottom: 26%;
   width: 100%;
   background: $gradi-green;
   height: 2px;
@@ -109,6 +113,9 @@ label {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
+
+  @include breakpoint(medium) {
+    color: $space-white;}
 }
 
 .form-control {

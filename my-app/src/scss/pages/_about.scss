@@ -1,20 +1,23 @@
 .about {
   display: flex;
   flex-direction: column;
+  height: calc(100vh - 95px);
   padding: remcalc(70) remcalc(15) remcalc(25);
 
   @include breakpoint(small) {
     flex-direction: row;
     padding: remcalc(75) remcalc(25);
+    height: calc(100vh - 100px);
   }
 
   @include breakpoint(large) {
     flex-direction: row;
-    padding: remcalc(75) remcalc(40) auto remcalc(45);
+    padding: remcalc(75) remcalc(40) 0 remcalc(45);
+    height: calc(100vh - 120px);
   }
 
   .about-box-image {
-    margin: auto auto remcalc(20) auto;
+    margin: 0 auto remcalc(20) auto;
     @include breakpoint(small) {
       flex: 1 1 50%;
       padding: 0 remcalc(25) 0 0;
