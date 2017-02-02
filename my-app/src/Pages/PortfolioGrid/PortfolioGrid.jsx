@@ -35,7 +35,6 @@ export default class PortfolioGrid extends React.Component {
     // className={"portfolio_item " + cx(hoverItem)}
     var DescriptionOnHover = !this.state.isHovering && <img className="portfolio-svg" src={"img/pencil_wolf_white.svg"} alt={this.props.project.name}/>;
     var DescriptionOutHover = this.state.isHovering && <div className="portfolio-title-box"><h6 className="portfolio-box-name">{this.props.project.title}</h6><p className="project-mini-categories">{this.props.project.short_description}</p></div>;
-    console.log(this.state.onHoverChange);
 
     let visible = true;
     if (this.props.currentProjectName !== null && this.props.currentProjectName !== this.props.project.name) {

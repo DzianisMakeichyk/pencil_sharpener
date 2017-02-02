@@ -5,6 +5,7 @@ import Menu from './Menu'
 import MediaQuery from 'react-responsive';
 import routeMap from '../routeMap.json';
 import classnames from 'classnames';
+import { Motion, spring } from 'react-motion';
 
 class Home extends Component {
 
@@ -77,8 +78,8 @@ class Home extends Component {
         var classMainContainer = classnames({ 'black': location.pathname !== routeMap.home});
         var classNamePiece = is_click + ' burger-menu-piece';
         var classNameOther = is_click + ' burger-menu-other';
-        console.log(location.pathname);
-        console.log(location.pathname !== routeMap.home);
+        // console.log(location.pathname);
+        // console.log(location.pathname !== routeMap.home);
         return (
         <div className="App">
             <header className="header-wrap">
@@ -126,15 +127,30 @@ class Home extends Component {
                         </div>
                     </div>
                     {(this.state.menuVisible &&
+                    <Motion
+                      defaultStyle={{
+                          opacity: 0.3,
+                          rotate: 60,
+                          y: -20,
+                      }} style={{
+                        opacity: spring(1),
+                        rotate: spring(0),
+                        y: spring(0),
+                    }}
+                    >{style => (
                         <Menu
                           routeMap={routeMap}
                           location={this.props.location}
+                          style={{
+                              opacity: style.opacity,
+                              transform: `rotateX(${style.rotate}deg) translateY(${style.y}px)`,
+                          }}
                         />
+                    )}
+                    </Motion>
                     )}
                     </nav>
             </header>
-
-
             <main className={classMainContainer}>
                 {this.props.children}
             </main>

@@ -94,7 +94,6 @@ class Contact extends Component {
     };
 
     render() {
-        console.log(this.state.inputDatas);
         return (
           <section className="contact">
               <div className="about-information ease-box">

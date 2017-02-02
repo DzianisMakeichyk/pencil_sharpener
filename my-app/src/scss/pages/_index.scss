@@ -152,19 +152,19 @@ main {
 .hero {
   align-items: center;
   display: flex;
-  height: calc(98vh - 15px);
+  height: calc(100vh - 30px);
   justify-content: center;
   padding: remcalc(15);
 
   @include breakpoint(medium) {
     flex-direction: row;
-    height: calc(98vh - 25px);
+    height: calc(100vh - 50px);
     justify-content: space-between;
     padding: remcalc(25);
   }
 
   @include breakpoint(extralarge) {
-    height: calc(98vh - 45px);
+    height: calc(100vh - 90px);
     padding: remcalc(45);
   }
 }
