@@ -6,6 +6,9 @@ import Social from './Pages/Elements/Social';
 import { Motion, spring } from 'react-motion';
 
 export default class Menu extends React.Component {
+  constructor(props) {
+    super(props);
+  }
 
   static propTypes = {
     routeMap: React.PropTypes.object,
@@ -16,7 +19,12 @@ export default class Menu extends React.Component {
     router: React.PropTypes.object,
   };
 
+  handleClick = () => {
+    this.props.onToggle();
+  };
   render() {
+    console.log(this.props);
+    console.log(this.props.onToggle);
     return (
       <Motion
         defaultStyle={{
@@ -50,6 +58,7 @@ export default class Menu extends React.Component {
                     className={classnames('item-menu', {
                       'is-active-page': this.props.location.pathname === this.props.routeMap.home,
                     })}
+                    onClick={this.handleClick}
                   >
                     <Link
                       to="/"
@@ -62,6 +71,7 @@ export default class Menu extends React.Component {
                     className={classnames('item-menu', {
                       'is-active-page': this.props.location.pathname === this.props.routeMap.portfolio || +'/' + this.context.router.params.slug,
                     })}
+                    onClick={this.handleClick}
                   >
                     <Link
                       to={routeMap.portfolio}
@@ -74,6 +84,7 @@ export default class Menu extends React.Component {
                     className={classnames('item-menu', {
                       'is-active-page': this.props.location.pathname === this.props.routeMap.about,
                     })}
+                    onClick={this.handleClick}
                   >
                     <Link
                       to={routeMap.about}
@@ -86,6 +97,7 @@ export default class Menu extends React.Component {
                     className={classnames('item-menu', {
                       'is-active-page': this.props.location.pathname === this.props.routeMap.blog,
                     })}
+                    onClick={this.handleClick}
                   >
                     <Link
                       to={routeMap.blog}
@@ -98,6 +110,7 @@ export default class Menu extends React.Component {
                     className={classnames('item-menu', {
                       'is-active-page': this.props.location.pathname === this.props.routeMap.blog,
                     })}
+                    onClick={this.handleClick}
                   >
                     <Link
                       to={routeMap.blog}
@@ -110,6 +123,7 @@ export default class Menu extends React.Component {
                     className={classnames('item-menu', {
                       'is-active-page': this.props.location.pathname === this.props.routeMap.contact,
                     })}
+                    onClick={this.handleClick}
                   >
                     <Link
                       to={routeMap.contact}

@@ -129,6 +129,7 @@ class Home extends Component {
                         <Menu
                           routeMap={routeMap}
                           location={this.props.location}
+                          onToggle={this.handleClick.bind(this)}
                         />
                     )}
                 </nav>
