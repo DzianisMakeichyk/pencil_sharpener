@@ -122,7 +122,8 @@ class Contact extends Component {
                 inputs={this.state.inputDatas}
                 onChangeInputHandler={this._onChangeInputHandler}
                 onSubmitFormHandler={this._onSubmitFormHandler}
-                percent={this.state.progressPercent} />
+                percent={this.state.progressPercent}
+              />
           </section>
         );
     }

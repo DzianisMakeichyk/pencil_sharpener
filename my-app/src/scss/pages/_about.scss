@@ -1,7 +1,6 @@
 .about {
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 95px);
   padding: remcalc(70) remcalc(15) remcalc(25);
 
   @include breakpoint(small) {

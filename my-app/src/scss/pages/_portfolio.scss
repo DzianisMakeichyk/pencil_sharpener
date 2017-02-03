@@ -1,8 +1,8 @@
 .hello-portfolio {
-  height: calc(100vh - 30px);
   padding: remcalc(15);
 
   @include breakpoint(medium) {
+    height: calc(100vh - 30px);
     background: $middle-black;
   }
 

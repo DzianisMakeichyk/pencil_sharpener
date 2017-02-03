@@ -12,8 +12,27 @@ var InputElement = React.createClass({
     return (
       <div className={classes}>
         <label htmlFor={item.id}>{item.label}</label>
-        <input type="text" className="form-control" id={item.id} value={item.value} onChange={this._onChange}/>
-        <span className="form-focus"></span>
+        {(!item.id &&
+          <input
+          type="text"
+          className="form-control"
+          id={item.id}
+          value={item.value}
+          name={item.name}
+          onChange={this._onChange}
+          />
+        )}
+        {(item.id &&
+          <textarea
+            type="text"
+            className="form-control"
+            id={item.id}
+            value={item.value}
+            name={item.name}
+            onChange={this._onChange}
+          ></textarea>
+        )}
+        <span className="form-focus textarea"></span>
         <span className="form-error">{item.errorMessage}</span>
       </div>
     );
