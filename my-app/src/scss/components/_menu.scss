@@ -1,6 +1,6 @@
-.show_menu {
-  background: $middleBlack;
-  font-family: $GanelasBold;
+.show-menu {
+  background: $middle-black;
+  font-family: $ganelas-bold;
   display: flex;
   justify-content: flex-end;
   width: 100%;
@@ -20,12 +20,13 @@
   }
 }
 
-.list_menu{
+.list-menu{
   width: 55%;
   padding: 30% 0;
 
   @include breakpoint(small) {
     width: 80%;
+    padding: 20% 0;
   }
 
   @include breakpoint(extralarge) {
@@ -33,13 +34,13 @@
     padding: 11% 0;
   }
 
-  .item_menu {
+  .item-menu {
     line-height: remcalc(36);
     letter-spacing: 1px;
 
     @include breakpoint(small) {
       line-height: remcalc(40);
-      transform: $skewMinus;
+      transform: $skew-minus;
       margin: remcalc(10) 0;
 
       &:before {
@@ -59,13 +60,13 @@
         @include breakpoint(small) {
           &:before {
             content: '';
-            background: $gradientBlueGreen;
+            background: $gradient-blue-green;
           }
         }
       }
-      &.is_active_page {
+      &.is-active-page {
         &:before {
-          background: $gradientBlueGreen;
+          background: $gradient-blue-green;
         }
       }
 
@@ -138,16 +139,16 @@
       }
     }
 
-    .text_menu {
-      font-weight: $fontSemiBold;
+    .text-menu {
+      font-weight: $font-semi-bold;
       text-transform: uppercase;
-      color: $clearWhite;
+      color: $clear-white;
       @include just-rythm(24);
 
       @include breakpoint(small) {
         @include just-rythm(60);
         display: block;
-        transform: $skewPlus;
+        transform: $skew-plus;
         margin-left: remcalc(15);
       }
 
@@ -167,17 +168,17 @@
       padding: 0 remcalc(15);
     }
 
-    .icon_item {
+    .icon-item {
       width: remcalc(15);
       height: remcalc(15);
-      fill: $clearWhite;
+      fill: $clear-white;
 
       @include breakpoint(small) {
         width: remcalc(16);
         height: remcalc(16);
 
         &:hover {
-          fill: $gradiGreen;
+          fill: $gradi-green;
         }
       }
 

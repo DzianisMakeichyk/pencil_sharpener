@@ -1,134 +1,132 @@
 import React, { Component } from 'react';
-import { Grid, container, row, Col } from 'react-bootstrap';
+import Validator from 'validatorjs';
+import FormElement from'./Contact/components/Form';
+import inputDatas from'./Contact/datas/InputDatas';
+import Social from './Elements/Social';
 
-// const MY_API_KEY = "AIzaSyCwEpRbCdcngylFY88eAvkxWr70F9wR53E";
-var map = {
-    height: '250px'
-};
 
-var send = {
-    display: 'none',
-    margin: '0 0 0 5px'
-};
+class Contact extends Component {
+    constructor() {
+        super();
 
-class App extends Component {
+        this.state = {
+            inputDatas: inputDatas,
+        };
+    }
+    componentDidMount() {
+        console.log(this.props.inputDatas);
+        var inputDatas = this.props.inputDatas;
+        this.setState( { inputDatas: inputDatas } );
+        this._initialInputVerification();
+
+    };
+    _initialInputVerification() {
+
+        var self = this;
+        this.state.inputDatas.forEach( function ( item, index ) {
+            self._setAndValidateInput( index, item.value );
+        });
+        this._calculatePercent();
+
+    };
+    _resetInputDatas() {
+
+        var inputDatas = this.state.inputDatas.map( function ( item ) {
+            item.value = '';
+            item.pristine = true;
+            item.hasError = false;
+            return item;
+        });
+        this.setState( { inputDatas: inputDatas } );
+        this._initialInputVerification();
+
+    };
+    _calculatePercent() {
+
+        var total = this.state.inputDatas.length;
+        var done = 0;
+        var progressPercent;
+        this.state.inputDatas.forEach( function( item ) {
+            if( item.hasError === false ) {
+                done += 1;
+            }
+        });
+        progressPercent = done/total*100;
+        this.setState( { progressPercent: progressPercent } );
+
+    };
+    _setAndValidateInput( index, value, noMorePristine ) {
+
+        var pristine = noMorePristine ? false : true;
+        var inputDatas = this.state.inputDatas;
+        var item = inputDatas[index];
+        var data = {};
+        var validation;
+
+        inputDatas[index].value = value;
+        inputDatas[index].pristine = pristine;
+        inputDatas[index].hasError = false;
+        inputDatas[index].errorMessage = '';
+
+        data[item.id] = value || '';
+
+        validation = new Validator( data, item.validation.rules, item.validation.messages );
+        if( validation.fails() ) {
+            inputDatas[index].hasError = true;
+            inputDatas[index].errorMessage  = validation.errors.first( item.id );
+        }
+        this.setState( { inputDatas: inputDatas } );
+
+    };
+    _onChangeInputHandler = ( index, value ) => {
+
+        this._setAndValidateInput( index, value, true );
+        this._calculatePercent();
+
+    };
+    _onSubmitFormHandler = () => {
+
+        if ( this.state.progressPercent >= 100 ) {
+            this._resetInputDatas();
+            this._calculatePercent();
+        }
+
+    };
 
     render() {
         return (
-            <div>
-                <section
-                    className="jarallax"
-                >
-                    <div className="homepage-hero-module">
-                        <div className="video-container">
-                            <div className="filter"></div>
-                            <video autoPlay loop className="fillHeight">
-                                <source src="video/MP4/Ground-Zero.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
-                                <source src="video/WEBM/Ground-Zero.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
-                            </video>
-
-
-
-                            <Grid bsClass={container}>
-                                <div className="aligner">
-                                    <div className="aligner-item page-title">
-                                        <h1>Kontakt</h1>
-                                    </div>
-                                </div>
-                            </Grid>
-
-                        </div>
-                    </div>
-                </section>
-
-                <section className="section">
-                    <Grid bsClass={container}>
-                        <Grid bsClass={row}>
-                            <Col sm={10} smOffset={1}>
-
-
-
-                                <Grid bsClass={row}>
-                                    <Col md={6}>
-                                        <h5 className="mb10">Kontakt</h5>
-                                        <dl>
-                                            <dt>Email</dt>
-                                            <dd>
-                                                <a href="mailto:dzianis@pencilsharpener.pl">dzianis@pencilsharpener.pl</a>
-                                            </dd>
-                                            <dt>Telefon</dt>
-                                            <dd>+48797657075</dd>
-                                            <dt>Warszawa</dt>
-                                            <dd>NIP: 527-277-32-56</dd>
-                                        </dl>
-
-                                        <ul className="social-link">
-                                            <li><a className="icon-style" href="https://www.facebook.com/dzianismakeichyk" target="_blank" ><i className="fa fa-facebook"></i></a></li>
-                                            <li><a className="icon-style" href="https://pl.linkedin.com/in/dzianis-makeichyk-81664a127" target="_blank" ><i className="fa fa-linkedin"></i></a></li>
-                                            <li><a className="icon-style" href="https://www.vk.com/road66" target="_blank" ><i className="fa fa-vk"></i></a></li>
-                                        </ul>
-
-                                    </Col>
-
-                                    <Col md={6}>
-                                        <div
-                                            className="map mb50 sm-mt60"
-                                            id="map"
-                                            data-lat="52.2296"
-                                            data-lng="21.0117"
-                                            data-zoom="15"
-                                            style={map}></div>
-                                        <form
-                                            className="contact-form"
-                                            id="contact-form"
-                                            action="send_email.php"
-                                            method="post"
-                                            data-all-fields-required-msg="O czymś zapomniałeś"
-                                            data-ajax-fail-msg="Ajax could not set the request"
-                                            data-success-msg="Email został wysłany ;)">
-
-                                            <label>Imię:
-                                                <span>*</span>
-                                            </label>
-                                            <input className="contact-form-name" type="text" name="name" />
-
-                                                <label>Email:
-                                                    <span>*</span>
-                                                </label>
-                                                <input className="contact-form-email" type="text" name="email" />
-
-                                                    <label>Wiadomość:
-                                                        <span>*</span>
-                                                    </label>
-                                                    <textarea cols="30" rows="2" className="contact-form-message" name="message"></textarea>
-
-                                                    <p className="return-msg"></p>
-
-                                                    <div className="mt40">
-                                                        <button className="btn btn-md btn-black">
-            														<span>Wyślij
-            															<i
-                                            className="fa fa-spin fa-spinner ajax-loader"
-                                            style={send}>
-
-                                          </i>
-            														</span>
-                                                        </button>
-                                                    </div>
-
-                                        </form>
-
-                                    </Col>
-                                </Grid>
-
-                            </Col>
-                        </Grid>
-
-                    </Grid>
-
-                </section>        </div>
+          <section className="contact">
+              <div className="about-information ease-box">
+                  <h2 className="about-name bold is-landscape-white">
+                        <span className="green">
+                            Dzianis
+                        </span> Makeichyk</h2>
+                  <div className="about-description">
+                      <div className="about-description-left">
+                          <p className="green">Miasto:</p>
+                          <p className="green">Mail:</p>
+                          <p className="green">Telefon:</p>
+                          <p className="green">NIP:</p>
+                      </div>
+                      <div className="about-description-right">
+                          <p className="description-shot is-landscape-white">Polska, Warszawa</p>
+                          <a href="mailto:dzianis@pencilsharpener.pl" className="description-shot is-landscape-white">dzianis@pencilsharpener.pl</a>
+                          <p className="description-shot is-landscape-white"> +48 79767075</p>
+                          <p className="description-shot is-landscape-white">527-277-32-56</p>
+                      </div>
+                  </div>
+                  <Social />
+              </div>
+              {/*<ProgressElement percent={this.state.progressPercent} />*/}
+              <FormElement
+                inputs={this.state.inputDatas}
+                onChangeInputHandler={this._onChangeInputHandler}
+                onSubmitFormHandler={this._onSubmitFormHandler}
+                percent={this.state.progressPercent}
+              />
+          </section>
         );
     }
 }
 
-export default App;
+export default Contact;

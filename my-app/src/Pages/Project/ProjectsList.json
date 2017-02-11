@@ -3,17 +3,33 @@
     "slug": "stypendium-z-wyboru",
     "name": "Stypendium z wyboru",
     "description": "Projekt firmy Absolvent.pl. Stypendium z Wyboru to ogólnopolski program stypendialny stworzony po to, by pomagać zdolnym, kreatywnym i ambitnym studentom i młodym absolwentom w realizowaniu swoich marzeń edukacyjnych i zawodowych.",
-    "img": "stypendium_z_wyboru",
+    "srcImg": {
+      "img" : ["stypendium_z_wyboru", "stypendium_z_wyboru"]
+    },
+    "location": "Polska, Warszawa",
+    "year": "2016",
+    "technologies": {
+      "body": ["ReactJs", "JavaScript"],
+      "style": ["SCSS", "Gsap"]
+    },
     "button_link": "https://www.stypendiumzwyboru.pl",
     "button_name": "SZW",
-    "button_last": "#",
+    "button_last": " ",
     "button_next": "animowany-baner"
   },
   {
     "slug": "animowany-baner",
     "name": "Baner",
     "description": "Animowana kartka z okazji świeta Bożego urodzenia",
-    "img": "animowany-baner",
+    "srcImg": {
+      "img" : ["stypendium_z_wyboru", "stypendium_z_wyboru"]
+    },
+    "location": "Polska, Warszawa",
+    "year": "2016",
+    "technologies": {
+      "body": ["HTML", "JQuery"],
+      "style": ["SCSS"]
+    },
     "button_link": "https://www.pencilsharpener.pl/works/kartka/index.html",
     "button_name": "Baner",
     "button_last": "stypendium-z-wyboru",
@@ -22,16 +38,18 @@
   {
     "slug": "pierwsza-strona",
     "name": "Pierwsza strona www",
-    "description": "Pierwsza strona www na bootstrape Pierwsza strona www na bootstrape Pierwsza strona www na bootstrape Pierwsza strona www na bootstrape",
-    "img": "pierwsza-strona",
+    "description": "Pierwsza strona www na bootstrape",
+    "srcImg": {
+      "img" : ["stypendium_z_wyboru", "stypendium_z_wyboru"]
+    },
     "location": "Polska, Warszawa",
     "year": "2015",
     "technologies": {
-      "body": ["html", "bang"],
-      "style": ["css", "wow"]
+      "body": ["HTML", "JQuery"],
+      "style": ["Bootstrap", "CSS"]
     },
     "button_link": "https://www.pencilsharpener.pl/works/rus/index.html",
-    "button_name": "Strona",
+    "button_name": "Zobacz stronę",
     "button_last": "animowany-baner",
     "button_next": "portal-pracy"
   },
@@ -39,7 +57,15 @@
     "slug": "portal-pracy",
     "name": "Portal Pracy",
     "description": "Front dla portala poszukiwania pracy",
-    "img": "portal-pracy",
+    "srcImg": {
+      "img" : ["stypendium_z_wyboru", "stypendium_z_wyboru"]
+    },
+    "location": "Polska, Warszawa",
+    "year": "2016",
+    "technologies": {
+      "body": ["JADE", "JQuery"],
+      "style": ["SCSS", "Bootstrap"]
+    },
     "button_link": "https://www.pencilsharpener.pl/works/portal-praca/index.html",
     "button_name": "Strona",
     "button_last": "pierwsza-strona",
@@ -49,7 +75,15 @@
     "slug": "agencja-interaktywna",
     "name": "Agencja Interaktywna",
     "description": "Agencja interaktywna łącząca kompetencje digital, performance marketing i Social Media",
-    "img": "agencja-interaktywna",
+    "srcImg": {
+      "img" : ["stypendium_z_wyboru", "stypendium_z_wyboru"]
+    },
+    "location": "Polska, Warszawa",
+    "year": "2016",
+    "technologies": {
+      "body": ["JADE", "JQuery"],
+      "style": ["SCSS", "Bootstrap"]
+    },
     "button_link": "https://www.pencilsharpener.pl/works/agencja/index.html",
     "button_name": "Agencja",
     "button_last": "portal-pracy",
@@ -59,7 +93,15 @@
     "slug": "zaslepka",
     "name": "Zaślepka",
     "description": "Zaślepka dla strony internetowej. Z aktualnym czasem przed rozpoczęciem działania oraz możliwością kontaktu bądż subskrybcji na newslettera.",
-    "img": "zaslepka",
+    "srcImg": {
+      "img" : ["stypendium_z_wyboru", "stypendium_z_wyboru"]
+    },
+    "location": "Polska, Warszawa",
+    "year": "2016",
+    "technologies": {
+      "body": ["JADE", "JQuery"],
+      "style": ["SCSS", "Bootstrap"]
+    },
     "button_link": "https://www.pencilsharpener.pl/works/timer/index.html",
     "button_name": "Zaślepka",
     "button_last": "agencja-interaktywna",
@@ -69,7 +111,15 @@
     "slug": "facebook-tab",
     "name": "Facebook Tab",
     "description": "Facebook Tab",
-    "img": "facebook-tab",
+    "srcImg": {
+      "img" : ["stypendium_z_wyboru", "stypendium_z_wyboru"]
+    },
+    "location": "Polska, Warszawa",
+    "year": "2016",
+    "technologies": {
+      "body": ["HTML", "JQuery"],
+      "style": ["SASS"]
+    },
     "button_link": "#",
     "button_name": "Facebook",
     "button_last": "zaslepka",
@@ -79,7 +129,15 @@
     "slug": "dzianis",
     "name": "Strona portfolio",
     "description": "Strona portfolio",
-    "img": "dzianis",
+    "srcImg": {
+      "img" : ["stypendium_z_wyboru", "stypendium_z_wyboru"]
+    },
+    "location": "Polska, Warszawa",
+    "year": "2016",
+    "technologies": {
+      "body": ["JADE", "JQuery"],
+      "style": ["SCSS", "Bootstrap"]
+    },
     "button_link": "https://www.pencilsharpener.pl/works/self/index.html",
     "button_name": "Strona",
     "button_last": "facebook-tab",
@@ -89,7 +147,15 @@
     "slug": "baner",
     "name": "Epos Drift Master",
     "description": "Animowany baner z zegarkiem pokazującym aktualną godzinę",
-    "img": "baner",
+    "srcImg": {
+      "img" : ["stypendium_z_wyboru", "stypendium_z_wyboru"]
+    },
+    "location": "Polska, Warszawa",
+    "year": "2016",
+    "technologies": {
+      "body": ["HTML", "JQuery"],
+      "style": ["CSS", "Bootstrap"]
+    },
     "button_link": "https://www.pencilsharpener.pl/works/zegar/index.html",
     "button_name": "Zegar",
     "button_last": "dzianis",
@@ -99,10 +165,18 @@
     "slug": "warsztat-samochodowy",
     "name": "Warsztat samochodowy",
     "description": "W trakcie realizacji..",
-    "img": "warsztat-samochodowy",
+    "location": "Polska, Warszawa",
+    "year": "2015",
+    "technologies": {
+      "body": ["HTML", "JQuery"],
+      "style": ["SCSS", "Bootstrap"]
+    },
+    "srcImg": {
+      "img" : ["stypendium_z_wyboru", "stypendium_z_wyboru"]
+    },
     "button_link": "https://www.pencilsharpener.pl/works/warsztat/index.html",
     "button_name": "Warsztat",
     "button_last": "baner",
-    "button_next": "#"
+    "button_next": " "
   }
 ]

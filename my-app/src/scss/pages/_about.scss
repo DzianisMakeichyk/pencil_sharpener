@@ -1,0 +1,163 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  padding: remcalc(70) remcalc(15) remcalc(25);
+
+  @include breakpoint(small) {
+    flex-direction: row;
+    padding: remcalc(75) remcalc(25);
+    height: calc(100vh - 100px);
+  }
+
+  @include breakpoint(large) {
+    flex-direction: row;
+    padding: remcalc(75) remcalc(40) 0 remcalc(45);
+    height: calc(100vh - 120px);
+  }
+
+  .about-box-image {
+    margin: 0 auto remcalc(20) auto;
+    @include breakpoint(small) {
+      flex: 1 1 50%;
+      padding: 0 remcalc(25) 0 0;
+    }
+
+    .about-image {
+      width: 100%;
+
+      @include breakpoint(small) {
+        margin: auto auto remcalc(25);
+      }
+    }
+  }
+
+  .about-information {
+    font-family: $robot-thin;
+
+    @include breakpoint(small) {
+      flex: 1 1 50%;
+    }
+  }
+}
+
+.about-name {
+  letter-spacing: 1px;
+}
+
+.about-description {
+  display: flex;
+  margin: remcalc(15) auto;
+
+  .about-description-left {
+    flex: 1 1 40%;
+    font-weight: $font-semi-bold;
+  }
+
+  .about-description-right {
+    flex: 1 1 60%;
+  }
+}
+
+.about-cv {
+  display: flex;
+  vertical-align: middle;
+
+  @include breakpoint(medium) {
+    @include just-rythm(20);
+  }
+
+  .about-cv-svg {
+    height: remcalc(15);
+    margin-right: remcalc(5);
+    width: remcalc(15);
+
+    @include breakpoint(medium) {
+      width: remcalc(20);
+      height: remcalc(20);
+    }
+
+    path {
+      fill: $gradi-green;
+    }
+  }
+}
+
+/****************  Second ****************/
+
+.skills {
+  padding: 0 remcalc(15) remcalc(25);
+  position: relative;
+}
+
+.skills-title {
+  text-align: center;
+  @include just-rythm(22);
+  font-family: $robot-thin;
+  font-weight: $font-semi-bold;
+}
+
+.skills-box {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.skill-one-shot {
+  display: flex;
+  font-family: $robot-thin;
+
+  .skill-name {
+    margin-right: remcalc(10);
+
+    @include breakpoint(medium) {
+      color: $clear-white;
+    }
+  }
+
+  .skill-chart-line {
+    position: relative;
+    width: 100%;
+    margin-right: remcalc(10);
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      height: remcalc(2);
+      margin: auto;
+      background: $gradi-blue;
+      transform: $skew-minus;
+    }
+
+    .skill-chart-line-percent {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        width: 100%;
+        height: remcalc(4);
+        background: $gradi-green;
+        transform: $skew-minus;
+      }
+    }
+  }
+
+  .skill-percent {
+    @include breakpoint(medium) {
+      color: $clear-white;
+    }
+  }
+}

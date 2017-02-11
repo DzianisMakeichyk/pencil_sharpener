@@ -1,0 +1,201 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  padding: remcalc(45) remcalc(15);
+  font-family: $robot-thin;
+
+  @include breakpoint(small) {
+    flex-direction: row;
+    padding: remcalc(85) remcalc(25);
+  }
+
+  @include breakpoint(large) {
+    width: calc(100% - 80px);
+    padding: remcalc(100) remcalc(35);
+  }
+
+  @include breakpoint(large) {
+    padding: remcalc(100) 0;
+  }
+
+  .about-information {
+    width: calc(100% - 40px);
+    height: 100%;
+    margin: remcalc(25) auto 0;
+    max-height: remcalc(250);
+
+    @include breakpoint(small) {
+      width: auto;
+      margin: 0 auto;
+    }
+
+    @include breakpoint(medium) {
+      width: 40%;
+      margin: 0 remcalc(15) 0 auto;
+    }
+
+    @include breakpoint(large) {
+      margin: 0 remcalc(35) 0 auto;
+    }
+
+    .socials {
+      display: flex;
+      justify-content: space-around;
+      margin: remcalc(25) 0;
+
+      .icon-item {
+        width: remcalc(17);
+        height: remcalc(17);
+        fill: $clear-black;
+
+        @include breakpoint(medium) {
+          width: remcalc(20);
+          height: remcalc(20);
+          fill: $clear-white;
+        }
+
+        &:hover {
+          fill: $gradi-green;
+        }
+      }
+    }
+  }
+}
+
+label {
+  display: block;
+  font-size: 1.3em;
+  padding: 0 0 remcalc(10) 0;
+
+  @include breakpoint(medium) {
+    color: $clear-white;
+  }
+}
+
+.form {
+  width: calc(100% - 40px);
+  margin: remcalc(30) auto;
+  text-align: center;
+
+  @include breakpoint(small) {
+    width: auto;
+    margin: 0 auto;
+  }
+
+  @include breakpoint(medium) {
+    width: 60%;
+  }
+}
+
+.form-group {
+  margin: remcalc(15) auto remcalc(40);
+  position: relative;
+  overflow: hidden;
+  height: remcalc(110);
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form-focus {
+  position: absolute;
+  left: 0;
+  bottom: 26%;
+  width: 100%;
+  background: $gradi-green;
+  height: 2px;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+
+  &.textarea {
+    bottom: 0;
+  }
+}
+
+.form-control {
+  &:focus + .form-focus {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  @include breakpoint(medium) {
+    color: $space-white;}
+}
+
+.form-control {
+  display: block;
+  padding: remcalc(5);
+  width: 100%;
+  border: none;
+  border-bottom: solid 2px $space-gray;
+  background: $space-white;
+  text-align: center;
+  font-size: 2em;
+  outline: none;
+  font-family: Arial, sans-serif;
+
+  @include breakpoint(medium) {
+    border-bottom: none;
+    background: $gray;
+  }
+}
+
+.form-error {
+  display: none;
+  color: $ease-red;
+  font-size: 1em;
+  padding: remcalc(4);
+  border-radius: remcalc(20);
+}
+
+.has-error {
+  .form-error {
+    display: block;
+  }
+
+  .form-focus {
+    background: $ease-red;
+  }
+}
+
+.form-submit {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  width: remcalc(250);
+  height: remcalc(70);
+  border: 2px solid $gradi-green;
+  border-radius: remcalc(40);
+  background: transparent;
+  color: $gradi-green;
+  letter-spacing: 1px;
+  @include just-rythm(18);
+  font-family: Arial, sans-serif;
+  outline: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-transition: background-color 0.3s, color 0.3s, width 0.3s, border-width 0.3s, border-color 0.3s;
+  transition: background-color 0.3s, color 0.3s, width 0.3s, border-width 0.3s, border-color 0.3s;
+}
+.form-submit {
+  &:hover {
+    background-color: $gradi-green;
+    color: $clear-white;
+  }
+}
+
+.form-submit-disabled {
+  cursor: not-allowed;
+  background: $ease-red;
+  border-color: $ease-border-red;
+  color: $clear-white;
+
+  &:hover {
+    cursor: not-allowed;
+    background: $ease-red;
+    border-color: $ease-border-red;
+    color: $clear-white;
+  }
+}

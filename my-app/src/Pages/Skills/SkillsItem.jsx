@@ -1,20 +1,48 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 
-export default function SkillsItem(props) {
+class SkillsItem extends Component {
 
-  return (
-    <div className="progress-bar">
-      <h6>{props.skills.name}</h6>
-      <div className="progress-outer">
-        <div className="progress-inner">
-          <span>{props.skills.percent}</span>
+  constructor(props) {
+    super(props);
+    this.state = {
+      isHoveringSkill: false,
+    };
+  };
+
+  handleMouseOver() {
+    this.setState({
+      isHoveringSkill: true,
+    });
+  }
+
+  handleMouseOut() {
+    this.setState({
+      isHoveringSkill: false,
+    });
+  }
+
+  render() {
+    var WidthChartLine = {width: this.props.skillsShot.percent + '%'};
+    return (
+      <div
+        className="skill-one-shot"
+        onMouseOver={this.handleMouseOver.bind(this)}
+        onMouseOut={this.handleMouseOut.bind(this)}
+      >
+        <p className="skill-name">{this.props.skillsShot.name}</p>
+        <div className="skill-chart-line">
+          <div className="skill-chart-line-percent" style={WidthChartLine}>
+            <span className="skill-chart-line"></span>
+          </div>
         </div>
+        <p className="skill-percent">{this.props.skillsShot.percent}%</p>
       </div>
-    </div>
-  );
+    );
+  }
 }
 
 SkillsItem.contextTypes = {
-  router: React.PropTypes.object,
+  skillsShot: React.PropTypes.object,
 };
+export default SkillsItem;

@@ -9,10 +9,12 @@
 @import 'helpers/helpers';
 
 // Styles
-@import 'style/style';
-@import 'style/portfolio';
-@import 'style/project';
+@import 'pages/index';
+@import 'pages/portfolio';
+@import 'pages/project';
+@import 'pages/about';
+@import 'pages/contact';
 
 // Components
 @import 'components/menu';
-
+@import 'components/separator';

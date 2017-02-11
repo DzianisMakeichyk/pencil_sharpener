@@ -1,5 +1,28 @@
 .is-hover {
-  box-shadow: remcalc(15) remcalc(30) 0 $lightGray;
+  box-shadow: remcalc(15) remcalc(30) 0 $light-gray;
   padding: remcalc(-15);
   transform: translate3d(0, -8px, 0);
+}
+
+.is-landscape-white {
+  @include breakpoint(medium) {
+    color: $clear-white;
+  }
+}
+
+.green {
+  color: $gradi-green;
+}
+
+.ease-box {
+  box-shadow: 0 0 remcalc(20) 0 rgba(0, 0, 0, 0.15);
+  padding: remcalc(20);
+
+  &.none {
+    padding: 0;
+  }
+
+  &.little {
+    padding: remcalc(1);
+  }
 }

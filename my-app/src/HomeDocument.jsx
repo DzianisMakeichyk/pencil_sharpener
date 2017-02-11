@@ -66,128 +66,77 @@ class Home extends Component {
         location: React.PropTypes.object.isRequired,
     };
 
+    static contextTypes = {
+        router: React.PropTypes.object,
+    };
+
     render() {
-        console.log(routeMap.portfolio);
-        var is_click = this.state.menuVisible ? 'is_click_menu' : '';
-        var classNameLogo = 'logo_name ' + is_click ;
-        var classHeaderContainer = 'header_container ' + is_click + classnames({ ' black': location.pathname === routeMap.portfolio });
-        var classMainContainer = classnames({ 'black': location.pathname === routeMap.portfolio });
-        var classNamePiece = is_click + ' burger_menu_piece';
-        var classNameOther = is_click + ' burger_menu_other';
+        var is_click = this.state.menuVisible ? 'is-click-menu ' : '';
+        var classNameLogo = 'logo-name ' + is_click ;
+        var classHeaderContainer = 'header-container ' + is_click + classnames({ 'black': location.pathname !== routeMap.home}) + classnames({ ' white': location.pathname !== routeMap.home });
+        var classMainContainer = classnames({ 'black': location.pathname !== routeMap.home});
+        var classNamePiece = is_click + ' burger-menu-piece';
+        var classNameOther = is_click + ' burger-menu-other';
+        // console.log(location.pathname);
+        // console.log(location.pathname !== routeMap.home);
         return (
         <div className="App">
-                    <header className="header_wrap">
-                        <nav>
-                            <div className={classHeaderContainer}>
-                                <div className="pull_left">
-                                    <MediaQuery maxDeviceWidth={767}>
-                                        <Link
-                                          to="/"
-                                          className={classNameLogo}>Dzianis Makeichyk
-                                        </Link>
-                                    </MediaQuery>
-                                    <MediaQuery minDeviceWidth={768}>
-                                        <Link
-                                          to="/"
-                                          className="logo_name">Dzianis Makeichyk
-                                        </Link>
-                                    </MediaQuery>
-                                </div>
-                                <div className="pull_right">
-                                    <div
-                                      ref="myMenu"
-                                      onClick={this.handleClick}
-                                      className="burger_click_region"
-                                    >
-                                        <div className="menu_burger">
-                                            <span
-                                              ref="topLine"
-                                              className={classNamePiece}
-                                            ></span>
-                                            <span
-                                              ref="middleLine"
-                                              className={classNamePiece}
-                                            ></span>
-                                            <span
-                                              ref="bottomLine"
-                                              className={classNamePiece}
-                                            ></span>
-                                            <span
-                                              ref="otherLine"
-                                              className={classNameOther}
-                                            ></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            {(this.state.menuVisible &&
-                                <Menu
-                                  routeMap={routeMap}
-                                  location={this.props.location}
-                                />
-                            )}
-                            </nav>
-                    </header>
-
-
-                    <main className={classMainContainer}>
-                        {this.props.children}
-                    </main>
-
-                  {/*  <a href="#top" className="scroll-top scroll-top-hidden">
-                        <i className="fa fa-angle-up"></i>
-                    </a>*/}
-
-              {/*  <footer>
-                    <div className="footer">
-                        <div className="container">
-                            <div className="text-center">
-                                <Link to="/" className="logo clearfix">
-                                    <img className="logotype small" src={pencil_wolf} alt="Pencil Sharperner Wolf"/>
+            <header className="header-wrap">
+                <nav>
+                    <div className={classHeaderContainer}>
+                        <div className="pull-left">
+                            <MediaQuery maxDeviceWidth={767}>
+                                <Link
+                                  to="/"
+                                  className={classNameLogo}>Dzianis Makeichyk
                                 </Link>
-
-                                <ul className="footer-menu clearfix">
-                                    <li>
-                                        <Link
-                                            className="animsition-link"
-                                            to={routeMap.portfolio}
-                                        >
-                                            Portfolio
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link
-                                            className="animsition-link"
-                                            to={routeMap.about}
-                                        >
-                                            O mnie
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link
-                                            className="animsition-link"
-                                            to={routeMap.blog}
-                                        >
-                                            Blog
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link
-                                            className="animsition-link"
-                                            to={routeMap.contact}
-                                        >
-                                            Kontakt
-                                        </Link>
-                                    </li>
-                                </ul>
-
-                                <p className="copy">
-                                    Copyright &copy; 2016 <span>Pencilsharpener.pl</span>. All rights reserved.
-                                </p>
+                            </MediaQuery>
+                            <MediaQuery minDeviceWidth={768}>
+                                <Link
+                                  to="/"
+                                  className="logo-name">Dzianis Makeichyk
+                                </Link>
+                            </MediaQuery>
+                        </div>
+                        <div className="pull-right">
+                            <div
+                              ref="myMenu"
+                              onClick={this.handleClick}
+                              className="burger-click-region"
+                            >
+                                <div className="menu-burger">
+                                    <span
+                                      ref="topLine"
+                                      className={classNamePiece}
+                                    ></span>
+                                    <span
+                                      ref="middleLine"
+                                      className={classNamePiece}
+                                    ></span>
+                                    <span
+                                      ref="bottomLine"
+                                      className={classNamePiece}
+                                    ></span>
+                                    <span
+                                      ref="otherLine"
+                                      className={classNameOther}
+                                    ></span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </footer>*/}
+                    {(this.state.menuVisible &&
+                        <Menu
+                          routeMap={routeMap}
+                          location={this.props.location}
+                          onToggle={this.handleClick.bind(this)}
+                        />
+                    )}
+                </nav>
+            </header>
+            <main className={classMainContainer}>
+                {this.props.children}
+            </main>
         </div>
         );
     }

@@ -2,26 +2,57 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae70fbcf-6836-4fe7-8551-c540eac68b5b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/my-app/public/img/project_description/background.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/my-app/src/scss/style/_project.scss" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/Pages/Project/Index.jsx" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/src/Pages/PortfolioGrid/PortfolioGridList.json" afterPath="$PROJECT_DIR$/my-app/src/Pages/PortfolioGrid/PortfolioGridList.json" />
+    </list>
+    <list id="28039557-55e8-4f9f-9a35-c8dfe32fbbfb" name="Failed commit: Default" comment="Merge branch 'master' of https://github.com/DzianisMakeichyk/pencil_sharpener&#10;&#10;# Conflicts:&#10;#&#9;my-app/package.json&#10;">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/my-app/public/send_email.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/my-app/src/Pages/Contact/components/Form.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/my-app/src/Pages/Contact/components/Input.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/my-app/src/Pages/Contact/components/Submit.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/my-app/src/Pages/Contact/datas/InputDatas.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/my-app/src/Pages/Contact/utils/classSet.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/my-app/src/Pages/Elements/Separation.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/my-app/src/Pages/Elements/Social.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/my-app/src/img/pencil_wolf.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/my-app/src/scss/components/_separator.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/my-app/src/scss/pages/_about.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/my-app/src/scss/pages/_contact.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/my-app/src/scss/pages/_project.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/my-app/src/send_email.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/npm-debug.log" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my-app/src/scss/style/_project.scss" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/.gitignore" afterPath="$PROJECT_DIR$/my-app/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/package.json" afterPath="$PROJECT_DIR$/my-app/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/public/css/main.css" afterPath="$PROJECT_DIR$/my-app/public/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/public/index.html" afterPath="$PROJECT_DIR$/my-app/public/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/public/img/pencil_wolf_white.svg" afterPath="$PROJECT_DIR$/my-app/public/img/pencil_wolf_white.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/src/HomeDocument.jsx" afterPath="$PROJECT_DIR$/my-app/src/HomeDocument.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/src/Menu.jsx" afterPath="$PROJECT_DIR$/my-app/src/Menu.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/src/Pages/AboutDocument.jsx" afterPath="$PROJECT_DIR$/my-app/src/Pages/AboutDocument.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/src/Pages/ContactDocument.jsx" afterPath="$PROJECT_DIR$/my-app/src/Pages/ContactDocument.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/src/Pages/IndexDocument.jsx" afterPath="$PROJECT_DIR$/my-app/src/Pages/IndexDocument.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/src/Pages/PortfolioDocument.jsx" afterPath="$PROJECT_DIR$/my-app/src/Pages/PortfolioDocument.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/src/Pages/PortfolioGrid/PortfolioGrid.jsx" afterPath="$PROJECT_DIR$/my-app/src/Pages/PortfolioGrid/PortfolioGrid.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/src/Pages/Project/ProjectDetails.jsx" afterPath="$PROJECT_DIR$/my-app/src/Pages/Project/ProjectDetails.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/src/Pages/Project/ProjectsList.json" afterPath="$PROJECT_DIR$/my-app/src/Pages/Project/ProjectsList.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/src/index.js" afterPath="$PROJECT_DIR$/my-app/src/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/src/Pages/Skills/SkillsItem.jsx" afterPath="$PROJECT_DIR$/my-app/src/Pages/Skills/SkillsItem.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/src/Pages/Skills/SkillsList.json" afterPath="$PROJECT_DIR$/my-app/src/Pages/Skills/SkillsList.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/src/img/pencil_wolf_white.svg" afterPath="$PROJECT_DIR$/my-app/src/img/pencil_wolf_white.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/src/scss/abstracts/_mixins.scss" afterPath="$PROJECT_DIR$/my-app/src/scss/abstracts/_mixins.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/src/scss/abstracts/_variables.scss" afterPath="$PROJECT_DIR$/my-app/src/scss/abstracts/_variables.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/src/scss/components/_menu.scss" afterPath="$PROJECT_DIR$/my-app/src/scss/components/_menu.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/src/scss/helpers/_helpers.scss" afterPath="$PROJECT_DIR$/my-app/src/scss/helpers/_helpers.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/src/scss/main.scss" afterPath="$PROJECT_DIR$/my-app/src/scss/main.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/src/scss/style/_portfolio.scss" afterPath="$PROJECT_DIR$/my-app/src/scss/style/_portfolio.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/src/scss/style/_style.scss" afterPath="$PROJECT_DIR$/my-app/src/scss/style/_style.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/yarn.lock" afterPath="$PROJECT_DIR$/my-app/yarn.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public_html/kontakt.html" afterPath="$PROJECT_DIR$/public_html/kontakt.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/my-app/src/scss/style/_portfolio.scss" afterPath="$PROJECT_DIR$/my-app/src/scss/pages/_portfolio.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/my-app/src/scss/style/_style.scss" afterPath="$PROJECT_DIR$/my-app/src/scss/pages/_index.scss" />
     </list>
     <ignored path="pencil_sharpener.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <file path="$PROJECT_DIR$/my-app/package.json" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,66 +67,22 @@
     <favorites_list name="pencil_sharpener" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ProjectDetails.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/my-app/src/Pages/Project/ProjectDetails.jsx">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/my-app/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="60" column="31" selection-start-line="60" selection-start-column="31" selection-end-line="60" selection-end-column="31" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PortfolioGrid.jsx" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/my-app/src/Pages/PortfolioGrid/PortfolioGrid.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="674">
-              <caret line="62" column="48" selection-start-line="62" selection-start-column="48" selection-end-line="62" selection-end-column="48" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProjectsList.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/my-app/src/Pages/Project/ProjectsList.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="33" column="16" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="16" />
+            <state relative-caret-position="0">
+              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_project.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/my-app/src/scss/style/_project.scss">
+      <file leaf-file-name="PortfolioGridList.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/my-app/src/Pages/PortfolioGrid/PortfolioGridList.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="923">
-              <caret line="121" column="0" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_variables.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/my-app/src/scss/abstracts/_variables.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="48" column="16" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_portfolio.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/my-app/src/scss/style/_portfolio.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="73" column="11" selection-start-line="73" selection-start-column="11" selection-end-line="74" selection-end-column="30" />
+            <state relative-caret-position="330">
+              <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -103,92 +90,13 @@
       </file>
     </leaf>
   </component>
-  <component name="FrameworkCommandLineHistory">
-    <commandsHistory>
-      <command text="npm install gsap --save-dev" />
-      <command text="npm install react-autobind --save-dev" />
-      <command text="npm install core-decorators --save-dev" />
-      <command text="git add ." />
-      <command text="npm install classnames --save-dev" />
-      <command text="npm i react-responsive --save-dev" />
-      <command text="npm i react-responsive --save" />
-      <command text="ls" />
-      <command text="cd my-app" />
-      <command text="npm i react-responsive --save-dev" />
-      <command text="ls" />
-      <command text="npm i --save-dev react-responsive " />
-      <command text="npm i -dev" />
-      <command text="npm i --dev" />
-      <command text="ls" />
-      <command text="cd my-app/" />
-      <command text=" npm i react-responsive --save-dev" />
-      <command text="ls" />
-      <command text="npm install classnames --save-dev" />
-      <command text="ls" />
-      <command text="cd my-app/" />
-      <command text="npm start" />
-      <command text="ls" />
-      <command text="cd my-app/" />
-      <command text="npm start" />
-    </commandsHistory>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/my-app/public/scripts/jarallax.js" />
-        <option value="$PROJECT_DIR$/my-app/src/scripts/jarallax.js" />
-        <option value="$PROJECT_DIR$/my-app/public/scripts/libs.js" />
-        <option value="$PROJECT_DIR$/my-app/src/Pages/Project/ProjectDetailsDocument.jsx" />
-        <option value="$PROJECT_DIR$/my-app/public/scripts/vl_portfolio.js" />
-        <option value="$PROJECT_DIR$/my-app/public/scripts/script.js" />
-        <option value="$PROJECT_DIR$/my-app/public/css/main.css" />
-        <option value="$PROJECT_DIR$/my-app/src/scss/style/_variables.scss" />
-        <option value="$PROJECT_DIR$/my-app/src/Pages/AboutDocument.jsx" />
-        <option value="$PROJECT_DIR$/my-app/src/Pages/ContactDocument.jsx" />
-        <option value="$PROJECT_DIR$/my-app/src/scripts/Portfolio.js" />
-        <option value="$PROJECT_DIR$/my-app/src/scripts/vl_portfolio.js" />
-        <option value="$USER_HOME$/Desktop/malling/SZW/index_szw_948.html" />
-        <option value="$PROJECT_DIR$/my-app/src/scripts/isLibs.js" />
-        <option value="$PROJECT_DIR$/my-app/src/scripts/isPortfolio.js" />
-        <option value="$PROJECT_DIR$/my-app/src/scripts/isScript.js" />
-        <option value="$PROJECT_DIR$/my-app/public/css/style.css" />
-        <option value="$PROJECT_DIR$/my-app/src/scss/abstracts/_functions.scss" />
-        <option value="$PROJECT_DIR$/my-app/package.json" />
-        <option value="$PROJECT_DIR$/my-app/src/Pages/Menu.jsx" />
-        <option value="$USER_HOME$/Desktop/malling/REK/index_abso_2863.html" />
-        <option value="$USER_HOME$/Desktop/malling/CE/index_ce_2030.html" />
-        <option value="$USER_HOME$/Desktop/malling/CE/index_ce_2028.html" />
-        <option value="$USER_HOME$/Desktop/malling/CE/index_ce_2029.html" />
-        <option value="$PROJECT_DIR$/my-app/src/scss/components/_lines.scss" />
-        <option value="$PROJECT_DIR$/my-app/src/scss/helpers/_helpers.scss" />
-        <option value="$PROJECT_DIR$/my-app/src/scss/abstracts/_mixins.scss" />
-        <option value="$PROJECT_DIR$/my-app/public/fonts/acre_medium_macroman/stylesheet.css" />
-        <option value="$PROJECT_DIR$/my-app/public/fonts/acherusgrotesque_regular_macroman/stylesheet.css" />
-        <option value="$PROJECT_DIR$/my-app/public/fonts/galanogrotesquedemo_bold_macroman/stylesheet.css" />
-        <option value="$PROJECT_DIR$/my-app/public/fonts/nexa_lightfree_macroman/stylesheet.css" />
-        <option value="$PROJECT_DIR$/my-app/public/fonts/planer_regular_macroman/stylesheet.css" />
-        <option value="$PROJECT_DIR$/my-app/public/fonts/quasimoda_light_macroman/stylesheet.css" />
-        <option value="$PROJECT_DIR$/my-app/src/Pages/IndexDocument.jsx" />
-        <option value="$PROJECT_DIR$/my-app/src/scss/components/_menu.scss" />
-        <option value="$PROJECT_DIR$/my-app/src/Menu.jsx" />
-        <option value="$USER_HOME$/Downloads/mailing_v1.2/index.html" />
         <option value="$PROJECT_DIR$/my-app/src/Pages/PortfolioGrid/PortfolioGridList.json" />
-        <option value="$PROJECT_DIR$/my-app/src/HomeDocument.jsx" />
-        <option value="$PROJECT_DIR$/my-app/src/Pages/Project/Index.jsx" />
-        <option value="$PROJECT_DIR$/my-app/src/index.js" />
-        <option value="$PROJECT_DIR$/my-app/src/scss/main.scss" />
-        <option value="$PROJECT_DIR$/my-app/src/scss/style/_style.scss" />
-        <option value="$PROJECT_DIR$/my-app/src/Pages/PortfolioDocument.jsx" />
-        <option value="$PROJECT_DIR$/my-app/src/scss/style/_portfolio.scss" />
-        <option value="$PROJECT_DIR$/my-app/src/Pages/PortfolioGrid/PortfolioGrid.jsx" />
-        <option value="$PROJECT_DIR$/my-app/src/Pages/Project/ProjectsList.json" />
-        <option value="$PROJECT_DIR$/my-app/src/scss/abstracts/_variables.scss" />
-        <option value="$PROJECT_DIR$/my-app/public/index.html" />
-        <option value="$PROJECT_DIR$/my-app/src/Pages/Project/ProjectDetails.jsx" />
-        <option value="$PROJECT_DIR$/my-app/src/scss/style/_project.scss" />
       </list>
     </option>
   </component>
@@ -196,80 +104,14 @@
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
-    <gulpfiles>
-      <GulpfileState>
-        <gulpfile-path>$PROJECT_DIR$/my-app/gulpfile.js</gulpfile-path>
-        <tasks>
-          <GulpTaskState>
-            <task-name>scss-prod</task-name>
-          </GulpTaskState>
-          <GulpTaskState>
-            <task-name>scss-dev</task-name>
-          </GulpTaskState>
-          <GulpTaskState>
-            <task-name>watch-scss</task-name>
-          </GulpTaskState>
-          <GulpTaskState>
-            <task-name>watch-jsx</task-name>
-          </GulpTaskState>
-          <GulpTaskState>
-            <task-name>format</task-name>
-          </GulpTaskState>
-          <GulpTaskState>
-            <task-name>lint</task-name>
-          </GulpTaskState>
-          <GulpTaskState>
-            <task-name>ava</task-name>
-          </GulpTaskState>
-          <GulpTaskState>
-            <task-name>test</task-name>
-          </GulpTaskState>
-          <GulpTaskState>
-            <task-name>webpack.development</task-name>
-          </GulpTaskState>
-          <GulpTaskState>
-            <task-name>webpack.production</task-name>
-          </GulpTaskState>
-          <GulpTaskState>
-            <dependencies>
-              <dependency value="webpack.development" />
-            </dependencies>
-            <task-name>webpack</task-name>
-          </GulpTaskState>
-          <GulpTaskState>
-            <dependencies>
-              <dependency value="webpack" />
-            </dependencies>
-            <task-name>default</task-name>
-          </GulpTaskState>
-          <GulpTaskState>
-            <dependencies>
-              <dependency value="webpack" />
-              <dependency value="scss-prod" />
-            </dependencies>
-            <task-name>build</task-name>
-          </GulpTaskState>
-          <GulpTaskState>
-            <dependencies>
-              <dependency value="webpack.production" />
-              <dependency value="scss-prod" />
-            </dependencies>
-            <task-name>build.production</task-name>
-          </GulpTaskState>
-        </tasks>
-      </GulpfileState>
-    </gulpfiles>
     <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/my-app/node_modules" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1070" />
-    <option name="y" value="-1068" />
-    <option name="width" value="1920" />
-    <option name="height" value="1057" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -296,7 +138,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -344,54 +186,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pencil_sharpener" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pencil_sharpener" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my-app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scss" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pencil_sharpener" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pencil_sharpener" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my-app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scss" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="style" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -483,6 +277,28 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pencil_sharpener" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pencil_sharpener" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="my-app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="public" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -537,36 +353,14 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
-    <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
-    <property name="js.buildTools.gulp.gulp_package_dir" value="/usr/local/lib/node_modules/gulp" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JavaScript" />
-    <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="nodejs.mocha.mocha_node_package_dir" value="$PROJECT_DIR$/my-app/node_modules/mocha" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/todo_list" />
-    <property name="FullScreen" value="true" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/my-app/public/img/project_grid" />
-      <recent name="$PROJECT_DIR$/my-app/public/img" />
-      <recent name="$PROJECT_DIR$/my-app/public/img/svg" />
-      <recent name="$PROJECT_DIR$/my-app/public/fonts" />
-      <recent name="$PROJECT_DIR$/my-app/public" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/my-app/public/img/project_description" />
-      <recent name="$PROJECT_DIR$/my-app/public/img" />
-      <recent name="$PROJECT_DIR$/my-app/src/img" />
-      <recent name="$PROJECT_DIR$/my-app/public/img/portfolio" />
-      <recent name="$PROJECT_DIR$/my-app/src" />
-    </key>
+    <property name="nodejs.mocha.mocha_node_package_dir" value="Q:\GitHub\pencil_sharpener\my-app\node_modules\mocha" />
+    <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -622,475 +416,81 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="ae70fbcf-6836-4fe7-8551-c540eac68b5b" name="Default" comment="" />
-      <created>1481278818606</created>
+      <created>1486799318813</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1481278818606</updated>
-      <workItem from="1481278821758" duration="1345000" />
-      <workItem from="1481281607993" duration="30229000" />
-      <workItem from="1481534927566" duration="68790000" />
-      <workItem from="1481902582652" duration="24834000" />
-      <workItem from="1482055922593" duration="11762000" />
-      <workItem from="1482081971655" duration="14355000" />
-      <workItem from="1482156185415" duration="12907000" />
-      <workItem from="1482248796199" duration="75000" />
-      <workItem from="1482316737118" duration="24162000" />
-      <workItem from="1482396584179" duration="439000" />
-      <workItem from="1482400432758" duration="23996000" />
-      <workItem from="1482750200751" duration="233000" />
-      <workItem from="1482759862562" duration="42000" />
-      <workItem from="1482833090170" duration="1163000" />
-      <workItem from="1482953680662" duration="18974000" />
-      <workItem from="1483134100410" duration="19975000" />
-      <workItem from="1483457198438" duration="31000" />
-      <workItem from="1483603586787" duration="18791000" />
-      <workItem from="1483951892162" duration="216000" />
-      <workItem from="1483952454986" duration="22331000" />
+      <updated>1486799318813</updated>
+      <workItem from="1486799349742" duration="340000" />
     </task>
-    <task id="LOCAL-00001" summary="react">
-      <created>1481294817238</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1481294817238</updated>
-    </task>
-    <task id="LOCAL-00002" summary="react">
-      <created>1481534687694</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1481534687694</updated>
-    </task>
-    <task id="LOCAL-00003" summary="react">
-      <created>1481534729354</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1481534729354</updated>
-    </task>
-    <task id="LOCAL-00004" summary="preloader">
-      <created>1481576091323</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1481576091324</updated>
-    </task>
-    <task id="LOCAL-00005" summary="route">
-      <created>1481724367096</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1481724367097</updated>
-    </task>
-    <task id="LOCAL-00006" summary="props">
-      <created>1481811536865</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1481811536865</updated>
-    </task>
-    <task id="LOCAL-00007" summary="gsap">
-      <created>1481968120383</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1481968120384</updated>
-    </task>
-    <task id="LOCAL-00008" summary="gsap">
-      <created>1481968145144</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1481968145144</updated>
-    </task>
-    <task id="LOCAL-00009" summary="fix img">
-      <created>1482061048388</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1482061048388</updated>
-    </task>
-    <task id="LOCAL-00010" summary="pencil sharpener v.2">
-      <created>1482247245164</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1482247245164</updated>
-    </task>
-    <task id="LOCAL-00011" summary="menu">
-      <created>1482401507037</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1482401507037</updated>
-    </task>
-    <task id="LOCAL-00012" summary="menu large">
-      <created>1482402557204</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1482402557204</updated>
-    </task>
-    <task id="LOCAL-00013" summary="menu svg">
-      <created>1482409947228</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1482409947228</updated>
-    </task>
-    <task id="LOCAL-00014" summary="front-page second part">
-      <created>1482510903207</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1482510903207</updated>
-    </task>
-    <task id="LOCAL-00015" summary="morf">
-      <created>1483020064459</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1483020064459</updated>
-    </task>
-    <task id="LOCAL-00016" summary="portfolio">
-      <created>1483315884786</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1483315884787</updated>
-    </task>
-    <task id="LOCAL-00017" summary="portfolio grid">
-      <created>1483630721571</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1483630721571</updated>
-    </task>
-    <task id="LOCAL-00018" summary="portfolio grid image hover">
-      <created>1483957487003</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1483957487003</updated>
-    </task>
-    <task id="LOCAL-00019" summary="portfolio grid 4k">
-      <created>1483959416948</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1483959416948</updated>
-    </task>
-    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="294650000" />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
+    <option name="totallyTimeSpent" value="3501000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1070" y="-1068" width="1920" height="1057" extended-state="0" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21991481" sideWeight="0.08854782" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21991481" sideWeight="0.9114522" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21770833" sideWeight="0.89381933" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871288" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970297" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14893617" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14184397" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3301179" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="SvgViewer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32465753" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-    </layout>
-    <layout-to-restore>
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32465753" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970297" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32363316" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14950494" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14337349" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27539343" sideWeight="0.07172996" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27539343" sideWeight="0.92827004" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27712137" sideWeight="0.10618067" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871288" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-    </layout-to-restore>
-  </component>
-  <component name="Vcs.Log.UiProperties">
-    <option name="RECENTLY_FILTERED_USER_GROUPS">
-      <collection />
-    </option>
-    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-      <collection />
-    </option>
+    </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="react" />
-    <MESSAGE value="preloader" />
-    <MESSAGE value="route" />
-    <MESSAGE value="props" />
-    <MESSAGE value="gsap" />
-    <MESSAGE value="fix img" />
-    <MESSAGE value="pencil sharpener v.2" />
-    <MESSAGE value="menu" />
-    <MESSAGE value="menu large" />
-    <MESSAGE value="menu svg" />
-    <MESSAGE value="front-page second part" />
-    <MESSAGE value="morf" />
-    <MESSAGE value="portfolio" />
-    <MESSAGE value="portfolio grid" />
-    <MESSAGE value="portfolio grid image hover" />
-    <MESSAGE value="portfolio grid 4k" />
-    <option name="LAST_COMMIT_MESSAGE" value="portfolio grid 4k" />
+    <MESSAGE value="Merge branch 'master' of https://github.com/DzianisMakeichyk/pencil_sharpener&#10;&#10;# Conflicts:&#10;#&#9;my-app/package.json&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of https://github.com/DzianisMakeichyk/pencil_sharpener&#10;&#10;# Conflicts:&#10;#&#9;my-app/package.json&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Desktop/malling/CE/index_ce_2029.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="141" column="59" selection-start-line="141" selection-start-column="59" selection-end-line="141" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/malling/REK/index_abso_2863.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="68" column="44" selection-start-line="0" selection-start-column="0" selection-end-line="330" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/public/css/themes.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/scss/components/_lines.scss" />
-    <entry file="file://$PROJECT_DIR$/my-app/src/img/social/facebook.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="3" selection-start-line="0" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/img/social/linkedin.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="4" selection-start-line="0" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/img/social/vk.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="4" selection-start-line="0" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="133" column="0" selection-start-line="113" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="0" column="39013" selection-start-line="0" selection-start-column="39013" selection-end-line="0" selection-end-column="39641" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/img/pencil_wolf_white.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="35" selection-start-line="0" selection-start-column="0" selection-end-line="11960" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/Pages/Contact/index.jsx" />
+    <entry file="file://$PROJECT_DIR$/my-app/src/Pages/Elements/AboutMeInfoBox.jsx" />
     <entry file="file://$PROJECT_DIR$/my-app/routeMap.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="12" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/Pages/Skills/SkillsList.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-1260">
-            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/scss/abstracts/_functions.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="38" column="32" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/scss/helpers/_helpers.scss">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+          <caret line="4" column="8" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/public/fonts/acherusgrotesque_regular_macroman/specimen_files/grid_12-825-55-15.css" />
-    <entry file="file://$PROJECT_DIR$/my-app/public/fonts/acherusgrotesque_regular_macroman/specimen_files/specimen_stylesheet.css" />
-    <entry file="file://$PROJECT_DIR$/my-app/public/fonts/acherusgrotesque_regular_macroman/specimen_files/easytabs.js" />
-    <entry file="file://$PROJECT_DIR$/my-app/public/fonts/acre_medium_macroman/stylesheet.css" />
-    <entry file="file://$PROJECT_DIR$/my-app/public/fonts/acherusgrotesque_regular_macroman/stylesheet.css" />
-    <entry file="file://$PROJECT_DIR$/my-app/public/fonts/galanogrotesquedemo_bold_macroman/stylesheet.css" />
-    <entry file="file://$PROJECT_DIR$/my-app/public/fonts/nexa_lightfree_macroman/stylesheet.css" />
-    <entry file="file://$PROJECT_DIR$/my-app/public/fonts/planer_regular_macroman/stylesheet.css" />
-    <entry file="file://$PROJECT_DIR$/my-app/public/fonts/quasimoda_light_macroman/stylesheet.css" />
-    <entry file="file://$PROJECT_DIR$/my-app/public/img/hero/1x1.png" />
-    <entry file="file://$PROJECT_DIR$/my-app/src/Pages/BlogDocument.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/Pages/Skills/SkillsItem.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/Pages/AboutDocument.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/Pages/ContactDocument.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="7" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/scss/components/_menu.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="15" selection-start-line="32" selection-start-column="15" selection-end-line="32" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/public/img/background_name.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/public/img/svg/logo.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/Menu.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="18" column="44" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/mailing_v1.2/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1575">
-          <caret line="105" column="0" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/public/img/background.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/Pages/PortfolioGrid/PortfolioGridList.json">
+    <entry file="file://$USER_HOME$/Downloads/charts-info-graphic/js/index.js" />
+    <entry file="file://$PROJECT_DIR$/my-app/src/Pages/Elements/Chart.js" />
+    <entry file="file://$PROJECT_DIR$/my-app/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="5" column="39" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
-          <folding />
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/Pages/IndexDocument.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1185">
-          <caret line="79" column="20" selection-start-line="79" selection-start-column="20" selection-end-line="79" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/HomeDocument.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="132" column="55" selection-start-line="132" selection-start-column="55" selection-end-line="132" selection-end-column="55" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/Pages/Project/Index.jsx">
+    <entry file="file://$USER_HOME$/Desktop/malling/REK/index_ABSO_2966.html" />
+    <entry file="file://$USER_HOME$/Desktop/malling/TEM/index_TEM-2.html" />
+    <entry file="file://$PROJECT_DIR$/my-app/src/Pages/Elements/ChartOne.js" />
+    <entry file="file://$PROJECT_DIR$/my-app/src/scss/components/_chart.scss" />
+    <entry file="file://$PROJECT_DIR$/my-app/src/img/pencil_wolf_white.svg">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1100,105 +500,269 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/my-app/src/scss/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+        <state relative-caret-position="285">
+          <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/Pages/Skills/SkillsList.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/scss/helpers/_helpers.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/public/img/pencil_wolf_white.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/index.js">
+    <entry file="file://$PROJECT_DIR$/my-app/src/Pages/Skills/SkillsItem.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="76" selection-start-line="20" selection-start-column="76" selection-end-line="20" selection-end-column="76" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="435">
+          <caret line="36" column="10" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/Pages/PortfolioDocument.jsx">
+    <entry file="file://$PROJECT_DIR$/my-app/src/Pages/Elements/Separation.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="42" column="40" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="105">
+          <caret line="7" column="30" selection-start-line="0" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/scss/abstracts/_mixins.scss">
+    <entry file="file://$PROJECT_DIR$/my-app/src/Pages/Elements/springPresets.js" />
+    <entry file="file://$PROJECT_DIR$/my-app/src/Pages/Elements/Social.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/scss/style/_style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="94" column="5" selection-start-line="94" selection-start-column="5" selection-end-line="94" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/Pages/Project/ProjectsList.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="33" column="16" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/scss/abstracts/_variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="48" column="16" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/scss/style/_portfolio.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="73" column="11" selection-start-line="73" selection-start-column="11" selection-end-line="74" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="25" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
-          <folding />
+        <state relative-caret-position="268">
+          <caret line="23" column="45" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/my-app/src/Pages/Project/ProjectDetails.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="60" column="31" selection-start-line="60" selection-start-column="31" selection-end-line="60" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/scss/style/_project.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="923">
-          <caret line="121" column="0" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="1455">
+          <caret line="106" column="7" selection-start-line="106" selection-start-column="7" selection-end-line="106" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/my-app/src/Pages/PortfolioGrid/PortfolioGrid.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="674">
-          <caret line="62" column="48" selection-start-line="62" selection-start-column="48" selection-end-line="62" selection-end-column="48" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="540">
+          <caret line="50" column="25" selection-start-line="50" selection-start-column="25" selection-end-line="50" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/scss/abstracts/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="12" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/scss/components/_menu.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="28" column="14" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/scss/pages/_about.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/scss/pages/_portfolio.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/scss/pages/_project.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="16" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/send_email.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/send_email.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/scss/pages/_index.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="191" column="21" selection-start-line="191" selection-start-column="21" selection-end-line="191" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/scripts/jarallax.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/Pages/Contact/utils/classSet.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/Pages/Contact/components/Progress.js" />
+    <entry file="file://$PROJECT_DIR$/my-app/src/Pages/Contact/components/Submit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/Pages/Contact/components/Form.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/Pages/ContactDocument.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="125" column="14" selection-start-line="125" selection-start-column="14" selection-end-line="125" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/Pages/PortfolioDocument.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/Pages/AboutDocument.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="14" column="91" selection-start-line="14" selection-start-column="91" selection-end-line="14" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/Pages/IndexDocument.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/HomeDocument.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="127" column="39" selection-start-line="127" selection-start-column="39" selection-end-line="127" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/scss/pages/_contact.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="111" column="12" selection-start-line="111" selection-start-column="4" selection-end-line="111" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/Pages/Contact/components/Input.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="44" selection-start-line="34" selection-start-column="44" selection-end-line="34" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/public/send_email.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="39" column="6" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/kontakt.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="198" column="52" selection-start-line="198" selection-start-column="52" selection-end-line="198" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/Pages/Contact/datas/InputDatas.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/scripts/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="541" column="105" selection-start-line="541" selection-start-column="105" selection-end-line="541" selection-end-column="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/Menu.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="7" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/Pages/Project/ProjectsList.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/public/img/project_grid/13.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/public/img/project_grid/12.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/Pages/PortfolioGrid/PortfolioGridList.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>
