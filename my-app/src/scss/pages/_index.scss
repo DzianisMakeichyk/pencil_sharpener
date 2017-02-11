@@ -1,9 +1,5 @@
 main {
-  @include breakpoint(medium) {
-    &.black {
-      background: $middle-black;
-    }
-  }
+  background: $middle-black;
 }
 
 .header-container {
@@ -126,26 +122,24 @@ main {
       }
     }
 
-    @include breakpoint(medium) {
-      &.black {
-        background: $middle-black;
-        height: 0;
-        padding: 0;
+    &.black {
+      background: $middle-black;
+      height: 0;
+      padding: 0;
 
-        .logo-name {
-          color: $clear-white;
-        }
+      .logo-name {
+        color: $clear-white;
+      }
 
-        .burger-menu-piece {
-          background: $clear-white;
-        }
+      .burger-menu-piece {
+        background: $clear-white;
       }
     }
+  }
 
-    &.is-click-menu {
-      background: transparent;
-      padding-bottom: 0;
-    }
+  &.is-click-menu {
+    background: transparent;
+    padding-bottom: 0;
   }
 }
 
@@ -169,84 +163,102 @@ main {
   }
 }
 
-.hero-title {
-  @include just-rythm(18);
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+/*********************************  HELLO *********************************/
 
-  @include breakpoint(small) {
-    @include just-rythm(32);
+.hello-svg {
+  width: remcalc(210);
+}
+
+$width: 350px;
+$stroke-width: 1.5px;
+
+
+.demo {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #111;
+
+  &__loader {
+    width: $width;
+    height: auto;
+
+    animation: scale 5s ease infinite;
   }
 
-  @include breakpoint(medium) {
-    flex: 1 1 50%;
-    position: relative;
-    top: 0;
-    transform: translateY(0%);
+  &__wave {
+    stroke: url("#gradient1");
+    stroke-width: $stroke-width;
+
+    transform-origin: 0% 50%;
+  }
+
+  @for $i from 2 through 25 {
+    &__wave:nth-child(#{$i}) {
+      animation: rotate (2500 + random(200 * $i)) + ms linear infinite;
+      stroke: url("#gradient#{random(3)}")
+    }
   }
 }
 
-.hero-name {
-  bottom: remcalc(15);
+@keyframes rotate {
+  from {
+    transform: rotateX(0);
+  }
+
+  to {
+    transform: rotateX(360deg);
+  }
+}
+
+@keyframes scale {
+  0% {
+    transform: scaleY(0.6);
+  }
+
+  50% {
+    transform: scaleY(0.4);
+  }
+
+  100% {
+    transform: scaleY(0.6);
+  }
+}
+
+.me {
   position: absolute;
+  bottom: 10px;
+  left: 0;
 
+  width: 100%;
 
-  @include breakpoint(small) {
-    bottom: remcalc(25);
-    right: remcalc(25);
-  }
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
 
-  @include breakpoint(medium) {
-    align-self: flex-end;
-    flex: 1 1 50%;
-    max-width: remcalc(180);
-    position: relative;
-  }
+  color: white;
 
-  .hero-pencil {
-    @include just-rythm(16);
-    line-height: remcalc(16);
-    text-transform: uppercase;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: appear 0.6s 1;
+  animation-fill-mode: forwards;
+  animation-delay: 5s;
 
-    @include breakpoint(small) {
-      @include just-rythm(18);
-      line-height: remcalc(18);
-    }
+  & a {
+    color: white;
 
-    @include breakpoint(medium) {
-      @include just-rythm(20);
-      line-height: remcalc(20);
+    &:hover {
+      color: lighten(#022A35, 25%);
     }
   }
+}
 
-  .hero-production {
-    @include just-rythm(12);
-
-    @include breakpoint(small) {
-      @include just-rythm(14);
-    }
-
-    @include breakpoint(medium) {
-      @include just-rythm(16);
-    }
-  }
-
-  .svg-wolf {
-    height: remcalc(30);
-    margin: auto auto remcalc(-35) remcalc(-35);
-    width: remcalc(30);
-
-    @include breakpoint(small) {
-      height: remcalc(35);
-      margin: auto auto remcalc(-38) remcalc(-40);
-      width: remcalc(35);
-    }
-
-    @include breakpoint(medium) {
-      height: remcalc(40);
-      margin: auto auto remcalc(-42) remcalc(-45);
-      width: remcalc(40);
-    }
+@keyframes appear {
+  to {
+    transform: none;
+    opacity: 1;
   }
 }
