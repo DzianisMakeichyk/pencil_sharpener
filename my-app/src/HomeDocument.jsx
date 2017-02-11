@@ -73,8 +73,8 @@ class Home extends Component {
     render() {
         var is_click = this.state.menuVisible ? 'is-click-menu ' : '';
         var classNameLogo = 'logo-name ' + is_click ;
-        var classHeaderContainer = 'header-container ' + is_click + classnames({ 'black': location.pathname !== routeMap.home}) + classnames({ ' white': location.pathname !== routeMap.home });
-        var classMainContainer = classnames({ 'black': location.pathname !== routeMap.home});
+        // var classHeaderContainer = 'header-container ' + is_click + classnames({ 'black': location.pathname !== routeMap.home}) + classnames({ ' white': location.pathname !== routeMap.home });
+        // var classMainContainer = classnames({ 'black': location.pathname !== routeMap.home});
         var classNamePiece = is_click + ' burger-menu-piece';
         var classNameOther = is_click + ' burger-menu-other';
         // console.log(location.pathname);
@@ -83,7 +83,7 @@ class Home extends Component {
         <div className="App">
             <header className="header-wrap">
                 <nav>
-                    <div className={classHeaderContainer}>
+                    <div className="header-container black">
                         <div className="pull-left">
                             <MediaQuery maxDeviceWidth={767}>
                                 <Link
@@ -134,7 +134,7 @@ class Home extends Component {
                     )}
                 </nav>
             </header>
-            <main className={classMainContainer}>
+            <main>
                 {this.props.children}
             </main>
         </div>
