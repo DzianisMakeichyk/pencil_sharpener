@@ -144,10 +144,11 @@ main {
 }
 
 .hero {
-  align-items: center;
   display: flex;
-  height: calc(100vh - 30px);
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: calc(100vh - 30px);
   padding: remcalc(15);
 
   @include breakpoint(medium) {
@@ -165,100 +166,46 @@ main {
 
 /*********************************  HELLO *********************************/
 
-.hello-svg {
-  width: remcalc(210);
-}
-
-$width: 350px;
-$stroke-width: 1.5px;
-
-
-.demo {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  background-color: #111;
-
-  &__loader {
-    width: $width;
-    height: auto;
-
-    animation: scale 5s ease infinite;
-  }
-
-  &__wave {
-    stroke: url("#gradient1");
-    stroke-width: $stroke-width;
-
-    transform-origin: 0% 50%;
-  }
-
-  @for $i from 2 through 25 {
-    &__wave:nth-child(#{$i}) {
-      animation: rotate (2500 + random(200 * $i)) + ms linear infinite;
-      stroke: url("#gradient#{random(3)}")
-    }
-  }
-}
-
-@keyframes rotate {
-  from {
-    transform: rotateX(0);
-  }
-
-  to {
-    transform: rotateX(360deg);
-  }
-}
-
-@keyframes scale {
-  0% {
-    transform: scaleY(0.6);
-  }
-
-  50% {
-    transform: scaleY(0.4);
-  }
-
-  100% {
-    transform: scaleY(0.6);
-  }
-}
-
-.me {
-  position: absolute;
-  bottom: 10px;
-  left: 0;
-
+.hello {
   width: 100%;
+  max-width: remcalc(700);
+  margin: 0 auto;
 
-  text-align: center;
-  font-family: "Roboto", sans-serif;
-  font-size: 17px;
+  @include breakpoint(large) {
+    max-width: remcalc(800);
+  }
 
-  color: white;
-
-  opacity: 0;
-  transform: translateY(10px);
-  animation: appear 0.6s 1;
-  animation-fill-mode: forwards;
-  animation-delay: 5s;
-
-  & a {
-    color: white;
-
-    &:hover {
-      color: lighten(#022A35, 25%);
-    }
+  @include breakpoint(extralarge) {
+    max-width: remcalc(1000);
   }
 }
 
-@keyframes appear {
-  to {
-    transform: none;
-    opacity: 1;
+.hello-name {
+  font-family: $robot-thin;
+  color: $clear-white;
+  @include just-rythm(12);
+  text-align: left;
+  margin-bottom: remcalc(-5);
+
+  @include breakpoint(small) {
+    @include just-rythm(26);
+    margin: auto auto remcalc(-25) remcalc(20);
+    letter-spacing: remcalc(2);
+    font-weight: $font-thin;
+  }
+}
+
+.hello-svg {
+  position: relative;
+  width: 100%;
+  margin: auto auto remcalc(25);
+
+  .hello-cut {
+    width: 100%;
+    height: 100%;
+  }
+
+  .hello-developer {
+    fill: $clear-white;
   }
 }

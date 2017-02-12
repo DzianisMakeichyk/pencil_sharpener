@@ -6,9 +6,6 @@ import Social from './Pages/Elements/Social';
 import { Motion, spring } from 'react-motion';
 
 export default class Menu extends React.Component {
-  constructor(props) {
-    super(props);
-  }
 
   static propTypes = {
     routeMap: React.PropTypes.object,

@@ -4,7 +4,7 @@ import { TimelineLite } from "gsap";
 import Menu from './Menu'
 import MediaQuery from 'react-responsive';
 import routeMap from '../routeMap.json';
-import classnames from 'classnames';
+// import classnames from 'classnames';
 
 class Home extends Component {
 

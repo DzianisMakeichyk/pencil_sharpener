@@ -1,0 +1,31 @@
+.button-classic {
+  display: block;
+  width: remcalc(140);
+  color: $clear-white;
+  margin: 0 auto;
+  padding: remcalc(12) 0;
+  background: $gradient-blue-green;
+  border: none;
+  border-radius: remcalc(5);
+  text-align: center;
+  box-shadow: 0 remcalc(2) remcalc(5) $gradi-green;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+
+  @include breakpoint(small) {
+    width: remcalc(180);
+    padding: remcalc(15) 0;
+    @include just-rythm(18);
+  }
+
+  &:hover {
+    background: $gradient-blue-green-revers;
+  }
+
+  &.qanelas-light {
+    font-family: $ganelas-bold;
+    text-transform: full-width;
+    letter-spacing: remcalc(2.5);
+  }
+}

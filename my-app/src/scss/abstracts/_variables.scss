@@ -95,17 +95,6 @@ li {
   padding: 0;
 }
 
-span,
-p,
-a,
-h3 {
-  color: $middle-black;
-
-  &.bold {
-    font-family: $ganelas-bold;
-  }
-}
-
 h1,
 h2,
 h3,
@@ -118,4 +107,8 @@ section,
 .header-container {
   max-width: remcalc(1600);
   margin: auto;
+}
+
+.bold {
+  font-family: $ganelas-bold;
 }
