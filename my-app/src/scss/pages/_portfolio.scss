@@ -1,22 +1,13 @@
-.hello-portfolio {
-  padding: remcalc(15);
+.grid-portfolio {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: remcalc(60);
+  position: relative;
 
-  @include breakpoint(medium) {
-    height: calc(100vh - 30px);
-    background: $middle-black;
-  }
-
-  .grid-portfolio {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding-top: remcalc(60);
-    position: relative;
-
-    @include breakpoint(small) {
-      padding-top: remcalc(80);
-    }
+  @include breakpoint(small) {
+    padding-top: remcalc(80);
   }
 }
 

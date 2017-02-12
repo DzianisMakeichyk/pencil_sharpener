@@ -38,7 +38,7 @@ class Portfolio extends Component {
       ]);
 
         return (
-          <section className="hello-portfolio">
+          <section className="height-auto vh-medium">
               <ul className="grid-portfolio">
                   {map(PortfolioGridList, (project) => (
                       <PortfolioGrid
@@ -58,4 +58,3 @@ class Portfolio extends Component {
 }
 
 export default Portfolio;
-

@@ -5,8 +5,7 @@ class Index extends Component {
 
     render() {
         return (
-          <div>
-            <section className="hero">
+            <section>
                 <div className="hello">
                     <h1 className="hello-name">I`m Dzianis Makeichyk</h1>
                     <svg className="hello-svg" viewBox="0 0 594.5 266.2" enableBackground="new 0 0 594.5 266.2;" xmlSpace="preserve">
@@ -80,7 +79,6 @@ class Index extends Component {
                     </a>
                 </div>
             </section>
-          </div>
         );
     }
 }
