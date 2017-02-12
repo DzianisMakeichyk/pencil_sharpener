@@ -190,7 +190,6 @@ main {
   @include breakpoint(small) {
     @include just-rythm(26);
     margin: auto auto remcalc(-25) remcalc(20);
-    letter-spacing: remcalc(2);
     font-weight: $font-thin;
   }
 }

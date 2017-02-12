@@ -3,7 +3,7 @@
 }
 
 @mixin box-shadow {
-  box-shadow: 0px remcalc(12) remcalc(40) remcalc(-15) $ease-gray;
+  box-shadow: 0 remcalc(12) remcalc(40) remcalc(-15) $ease-gray;
 }
 
 @mixin center($extend: true) {

@@ -21,17 +21,23 @@
 }
 
 .list-menu{
-  width: 55%;
-  padding: 30% 0;
+  height: 50%;
+  margin: auto remcalc(35) auto auto;
 
   @include breakpoint(small) {
-    width: 80%;
-    padding: 20% 0;
+    margin: auto auto auto remcalc(50);
+  }
+
+  @include breakpoint(medium) {
+    margin: auto auto auto remcalc(60);
+  }
+
+  @include breakpoint(large) {
+    margin: auto auto auto remcalc(70);
   }
 
   @include breakpoint(extralarge) {
-    width: 30%;
-    padding: 11% 0;
+    margin: auto remcalc(135) auto auto;
   }
 
   .item-menu {
@@ -42,90 +48,109 @@
       line-height: remcalc(40);
       transform: $skew-minus;
       margin: remcalc(10) 0;
+    }
+
+    @include breakpoint(large) {
+      margin: remcalc(15) 0;
+    }
 
       &:before {
         content: '';
         position: absolute;
         width: 15%;
-        height: 100%;
         transition: width .5s ease;
         top: remcalc(-2);
+
+        @include breakpoint(small) {
+          height: 100%;
+        }
 
         @include breakpoint(extralarge) {
           width: 8%;
         }
       }
 
-      &:hover {
-        @include breakpoint(small) {
-          &:before {
-            content: '';
-            background: $gradient-blue-green;
-          }
-        }
-      }
-      &.is-active-page {
+    &:hover {
+      @include breakpoint(small) {
         &:before {
+          content: '';
           background: $gradient-blue-green;
         }
       }
+    }
+    &.is-active-page {
+      &:before {
+        background: $gradient-blue-green;
+      }
+    }
 
-      &:nth-child(1) {
-        &:hover {
-          &:before {
-            width: 50%;
+    &:nth-child(1) {
+      &:hover {
+        &:before {
+          width: 63%;
 
-            @include breakpoint(extralarge) {
-              width: 25%;
-            }
+          @include breakpoint(extralarge) {
+            width: 25%;
           }
         }
       }
+    }
 
-      &:nth-child(2) {
-        &:hover {
-          &:before {
-            width: 72%;
+    &:nth-child(2) {
+      &:hover {
+        &:before {
+          width: 110%;
 
-            @include breakpoint(extralarge) {
-              width: 35%;
-            }
+          @include breakpoint(extralarge) {
+            width: 35%;
           }
         }
       }
+    }
 
-      &:nth-child(3) {
-        &:hover {
-          &:before {
-            width: 55%;
+    &:nth-child(3) {
+      &:hover {
+        &:before {
+          width: 75%;
 
-            @include breakpoint(extralarge) {
-              width: 25%;
-            }
+          @include breakpoint(extralarge) {
+            width: 25%;
           }
         }
       }
+    }
 
-      &:nth-child(4) {
-        &:hover {
-          &:before {
-            width: 45%;
+    &:nth-child(4) {
+      &:hover {
+        &:before {
+          width: 65%;
 
-            @include breakpoint(extralarge) {
-              width: 20%;
-            }
+          @include breakpoint(extralarge) {
+            width: 20%;
           }
         }
       }
+    }
 
-      &:nth-child(5) {
-        &:hover {
-          &:before {
-            width: 65%;
+    &:nth-child(5) {
+      &:hover {
+        &:before {
+          width: 110%;
 
-            @include breakpoint(extralarge) {
-              width: 30%;
-            }
+          @include breakpoint(extralarge) {
+            width: 30%;
+          }
+        }
+      }
+    }
+
+    &:nth-child(6) {
+      &:hover {
+        &:before {
+          width: 88%;
+
+          @include breakpoint(extralarge) {
+            width: 30%;
           }
         }
       }
@@ -146,15 +171,19 @@
       @include just-rythm(24);
 
       @include breakpoint(small) {
-        @include just-rythm(60);
+        @include just-rythm(28);
         display: block;
         transform: $skew-plus;
         margin-left: remcalc(15);
       }
 
+      @include breakpoint(medium) {
+        @include just-rythm(32);
+      }
+
       @include breakpoint(large) {
-        @include just-rythm(40);
-        line-height: remcalc(50);
+        @include just-rythm(48);
+        line-height: remcalc(60);
       }
     }
   }
