@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PortfolioGrid from './PortfolioGrid/PortfolioGrid';
 import PortfolioGridList from './PortfolioGrid/PortfolioGridList.json';
 import map from 'lodash/map';
-import MediaQuery from 'react-responsive';
+import isMediaLessThan from '../web_modules/isMediaLessThan';
 import cx from 'classnames';
 
 class Portfolio extends Component {
@@ -13,6 +13,10 @@ class Portfolio extends Component {
       currentProjectName: null,
       currentProjectBackground: 'smoke_black',
     }
+  };
+
+  static contextTypes = {
+    currentMedia: React.PropTypes.string,
   };
 
   handleHover(projectName, projectBackground, isHovering) {
@@ -48,9 +52,9 @@ class Portfolio extends Component {
                           onHoverChange={this.handleHover.bind(this)}
                       />
                   ))}
-                <MediaQuery minDeviceWidth={1024}>
+                {isMediaLessThan('Small', this.context.currentMedia) && (
                   <div className={'project-img ' + cx(hoverItem)} style={BackgroundProject} ></div>
-                </MediaQuery>
+                )}
               </ul>
             </section>
         );

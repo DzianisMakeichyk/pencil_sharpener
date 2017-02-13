@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
-import MediaQuery from 'react-responsive';
+import isMediaGreaterThan from '../web_modules/isMediaGreaterThan';
 
 class Index extends Component {
-
+    static contextTypes = {
+        currentMedia: React.PropTypes.string,
+    };
     render() {
         return (
             <section>
@@ -26,7 +28,7 @@ class Index extends Component {
                     </clipPath>
                         <image className="hello-cut-img" width="100%" height="100%" clipPath="url(#hello-cut)" xlinkHref="../img/hello.png"></image>
                     </g>
-                        <MediaQuery minDeviceWidth={768}>
+                        {isMediaGreaterThan('Mobile', this.context.currentMedia) && (
                         <g className="hello-developer">
                             <path d="M159,42.7v2h3.2c0.2,0,0.4,0.1,0.4,0.4v1.5c0,0.2-0.1,0.4-0.4,0.4H159V50c0,0.2-0.1,0.4-0.4,0.4h-1.5
                                 c-0.2,0-0.4-0.1-0.4-0.4v-9.1c0-0.2,0.1-0.4,0.4-0.4h1.9h3.2c0.2,0,0.4,0.1,0.4,0.4v1.5c0,0.2-0.1,0.4-0.4,0.4H159z"/>
@@ -72,7 +74,7 @@ class Index extends Component {
                                 h-1.5c-0.2,0-0.4-0.1-0.4-0.4v-9.1c0-0.2,0.1-0.4,0.4-0.4h1.9h1.5c1.9,0,3.4,1.5,3.4,3.4c0,1.2-0.7,2.2-1.7,2.8L314.4,49.9
                                 L314.4,49.9z M308.7,45.2h1.5c0.6,0,1.1-0.5,1.1-1.3s-0.5-1.3-1.1-1.3h-1.5V45.2z"/>
                         </g>
-                        </MediaQuery>
+                        )}
                     </svg>
                     <a className="button-classic qanelas-light">
                         O mnie

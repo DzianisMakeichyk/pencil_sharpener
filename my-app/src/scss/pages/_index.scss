@@ -71,10 +71,10 @@ main {
   position: relative;
 
   .header-container {
-    background: transparent;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    background: $middle-black;
     margin: 0 auto;
     max-width: remcalc(1600);
     padding-bottom: remcalc(15);
@@ -114,26 +114,12 @@ main {
       }
     }
 
-    &.white {
-      background: $clear-white;
-
-      @include breakpoint(medium) {
-        background: transparent;
-      }
+    .logo-name {
+      color: $clear-white;
     }
 
-    &.black {
-      background: $middle-black;
-      height: 0;
-      padding: 0;
-
-      .logo-name {
-        color: $clear-white;
-      }
-
-      .burger-menu-piece {
-        background: $clear-white;
-      }
+    .burger-menu-piece {
+      background: $clear-white;
     }
   }
 

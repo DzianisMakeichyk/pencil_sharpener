@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { Link } from 'react-router';
 import { TimelineLite } from "gsap";
 import Menu from './Menu'
-import MediaQuery from 'react-responsive';
 import routeMap from '../routeMap.json';
+import MediaDetectElement from './web_modules/MediaDetectElement';
 // import classnames from 'classnames';
 
 class Home extends Component {
@@ -36,8 +36,7 @@ class Home extends Component {
         menuVisible: false,
         currentMedia: '',
     };
-}
-
+ }
     handleClick = () => {
         const menuAnimation = new TimelineLite();
         if (!this.state.menuVisible) {
@@ -65,11 +64,20 @@ class Home extends Component {
         routeMap: React.PropTypes.object,
         location: React.PropTypes.object.isRequired,
     };
-
     static contextTypes = {
         router: React.PropTypes.object,
     };
-
+    static childContextTypes = {
+    currentMedia: React.PropTypes.string.isRequired,
+    };
+    getChildContext() {
+        return {
+            currentMedia: this.state.currentMedia,
+        };
+    }
+    onMediaChange = (currentMedia) => {
+        this.setState({ currentMedia });
+    };
     render() {
         var is_click = this.state.menuVisible ? 'is-click-menu ' : '';
         var classNameLogo = 'logo-name ' + is_click ;
@@ -83,20 +91,12 @@ class Home extends Component {
         <div className="App">
             <header className="header-wrap">
                 <nav>
-                    <div className="header-container black">
+                    <div className="header-container">
                         <div className="pull-left">
-                            <MediaQuery maxDeviceWidth={767}>
-                                <Link
-                                  to="/"
-                                  className={classNameLogo}>Dzianis Makeichyk
-                                </Link>
-                            </MediaQuery>
-                            <MediaQuery minDeviceWidth={768}>
-                                <Link
-                                  to="/"
-                                  className="logo-name">Dzianis Makeichyk
-                                </Link>
-                            </MediaQuery>
+                            <Link
+                              to="/"
+                              className={classNameLogo}>Dzianis Makeichyk
+                            </Link>
                         </div>
                         <div className="pull-right">
                             <div
@@ -136,6 +136,7 @@ class Home extends Component {
             </header>
             <main>
                 {this.props.children}
+                <MediaDetectElement onMediaChange={this.onMediaChange} />
             </main>
         </div>
         );

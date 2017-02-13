@@ -22,7 +22,7 @@
 /* React Viewports */
 .viewport {
   display: none;
-  font-family: 'ExtraSmall';
+  font-family: 'Mobile';
 
   @include breakpoint(small) {
     font-family: 'Small';
@@ -35,12 +35,7 @@
   @include breakpoint(large) {
     font-family: 'Large';
   }
-
-  @include breakpoint(extralarge) {
-    font-family: 'ExraLarge';
-  }
 }
-
 
 /* Readjust Size and Line Height, keeping same margin */
 @mixin just-rythm($font) {
