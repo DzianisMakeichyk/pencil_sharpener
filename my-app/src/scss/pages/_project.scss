@@ -113,15 +113,15 @@
 }
 
 .project-name {
-  @include just-rythm(28);
+  @include just-rythm(24);
   letter-spacing: .5px;
   line-height: remcalc(26);
   max-width: remcalc(200);
-  padding: remcalc(20) 0;
+  padding: remcalc(10) 0 remcalc(20) 0;
   text-transform: uppercase;
 
   @include breakpoint(small) {
-    @include just-rythm(48);
+    @include just-rythm(42);
     line-height: remcalc(40);
     max-width: remcalc(400);
   }
@@ -173,8 +173,18 @@
   }
 
   .project-shot-img {
-    width: 100%;
+    display: block;
+    width: 75%;
     z-index: -2;
+
+    &:not(:first-child) {
+    margin-top: -15%;
+    }
+
+    &:nth-child(2n) {
+      margin-left: auto;
+      margin-right: 0;
+    }
 
     @include breakpoint(small) {
       flex: 1 1 50%;

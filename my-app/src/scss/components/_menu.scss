@@ -181,6 +181,10 @@
       }
 
       @include breakpoint(large) {
+        @include just-rythm(36);
+      }
+
+      @include breakpoint(extralarge) {
         @include just-rythm(48);
         line-height: remcalc(60);
       }
