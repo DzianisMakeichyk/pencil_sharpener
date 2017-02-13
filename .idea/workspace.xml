@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ae70fbcf-6836-4fe7-8551-c540eac68b5b" name="Default" comment="hello">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+    <list default="true" id="ae70fbcf-6836-4fe7-8551-c540eac68b5b" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="28039557-55e8-4f9f-9a35-c8dfe32fbbfb" name="Failed commit: Default" comment="Merge branch 'master' of https://github.com/DzianisMakeichyk/pencil_sharpener&#10;&#10;# Conflicts:&#10;#&#9;my-app/package.json&#10;" />
     <ignored path="pencil_sharpener.iws" />
@@ -47,8 +47,8 @@
       <file leaf-file-name="_portfolio.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/my-app/src/scss/pages/_portfolio.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+            <state relative-caret-position="424">
+              <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -165,6 +165,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="pencil_sharpener" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pencil_sharpener" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pencil_sharpener" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public_html" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -458,7 +472,7 @@
       <workItem from="1486799349742" duration="19021000" />
       <workItem from="1486846028489" duration="5095000" />
       <workItem from="1486891844394" duration="22144000" />
-      <workItem from="1487010164241" duration="375000" />
+      <workItem from="1487010164241" duration="498000" />
     </task>
     <task id="LOCAL-00001" summary="Merge branch 'master' of https://github.com/DzianisMakeichyk/pencil_sharpener&#10;&#10;# Conflicts:&#10;#&#9;my-app/package.json&#10;">
       <created>1486799738054</created>
@@ -495,11 +509,25 @@
       <option name="project" value="LOCAL" />
       <updated>1487010347131</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="hello">
+      <created>1487010546994</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1487010546994</updated>
+    </task>
+    <task id="LOCAL-00007" summary="hello">
+      <created>1487010645041</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1487010645041</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49796000" />
+    <option name="totallyTimeSpent" value="49919000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-433" y="-1346" width="2004" height="1309" extended-state="0" />
@@ -884,8 +912,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/my-app/src/scss/pages/_portfolio.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+        <state relative-caret-position="424">
+          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
           <folding />
         </state>
       </provider>
