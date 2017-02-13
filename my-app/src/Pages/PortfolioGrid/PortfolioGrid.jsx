@@ -1,8 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router';
+import isMediaGreaterThan from '../../web_modules/isMediaGreaterThan';
+import isMediaLessThan from '../../web_modules/isMediaLessThan';
 import routeMap from '../../../routeMap.json';
-import MediaQuery from 'react-responsive';
 import { Motion, spring } from 'react-motion';
+import classnames from 'classnames';
 
 export default class PortfolioGrid extends React.Component {
 
@@ -11,6 +13,10 @@ export default class PortfolioGrid extends React.Component {
     this.state = {
       isHovering: false,
     };
+  };
+
+  static contextTypes = {
+    currentMedia: React.PropTypes.string,
   };
 
   handleMouseOver() {
@@ -48,7 +54,7 @@ export default class PortfolioGrid extends React.Component {
             opacity: style.opacity,
           }}
         >
-          <h6 className="portfolio-box-name">{this.props.project.title}</h6>
+          <h6 className="portfolio-box-name qanelas-bold">{this.props.project.title}</h6>
           <p className="project-mini-categories">{this.props.project.short_description}</p>
         </div>
         )}
@@ -58,6 +64,7 @@ export default class PortfolioGrid extends React.Component {
     if (this.props.currentProjectName !== null && this.props.currentProjectName !== this.props.project.name) {
       visible = false;
     }
+    console.log(this.state.width);
 
     return (
         <li
@@ -68,23 +75,26 @@ export default class PortfolioGrid extends React.Component {
         >
             <Link
               to={routeMap.project_details.replace(':slug', this.props.project.name)}
-              className="animation-link"
+              className={classnames('animation-link', {'is-mobile':this.context.currentMedia <= 'Mobile' })}
             >
-              <MediaQuery maxDeviceWidth={1023}>
-                <img className="portfolio-img" src={"img/background.png"} alt={this.props.project.name}/>
-              </MediaQuery>
-              <MediaQuery minDeviceWidth={1024}>
-                {DescriptionOnHover}
-                {DescriptionOutHover}
-              </MediaQuery>
-              <MediaQuery maxDeviceWidth={1023}>
-              <h6 className="portfolio-title">
-                {this.props.project.title}
-              </h6>
-              <div className="portfolio-categories">
-                {this.props.project.short_description}
-              </div>
-            </MediaQuery>
+              {isMediaLessThan('Small', this.context.currentMedia) && (
+                <div className="portfolio-img-box">
+                  <img className="portfolio-img" src={"img/pencil_wolf_white.svg"} alt={this.props.project.name}/>
+                </div>
+              )}
+              {isMediaGreaterThan('Mobile', this.context.currentMedia) && (
+                <div>
+                  {DescriptionOnHover}
+                  {DescriptionOutHover}
+                </div>
+              )}
+              {isMediaLessThan('Small', this.context.currentMedia) && (
+                <div className={classnames({'portfolio-info-box':this.context.currentMedia <= 'Mobile' })}>
+                  <h6 className="portfolio-title qanelas-bold">
+                    {this.props.project.title}
+                  </h6>
+                </div>
+              )}
           </Link>
         </li>
     );

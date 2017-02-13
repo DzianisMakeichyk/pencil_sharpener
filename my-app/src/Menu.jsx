@@ -29,7 +29,7 @@ export default class Menu extends React.Component {
       }}>
         {style => (
           <div
-            className="show-menu"
+            className="show-menu qanelas-bold"
             style={{
               opacity: style.opacity,
             }}
@@ -103,7 +103,7 @@ export default class Menu extends React.Component {
                   </li>
                   <li
                     className={classnames('item-menu', {
-                      'is-active-page': this.props.location.pathname === this.props.routeMap.blog,
+                      'is-active-page': this.props.location.pathname === this.props.routeMap.funnybox,
                     })}
                     onClick={this.handleClick}
                   >

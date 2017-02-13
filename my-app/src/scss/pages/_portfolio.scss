@@ -12,30 +12,29 @@
 }
 
 .portfolio-item {
-  @include box-shadow;
-  margin-bottom: remcalc(25);
+  width: 100%;
   text-align: center;
   z-index: 11;
+  padding: remcalc(20) 0;
+  border-radius: remcalc(1);
 
   @include breakpoint(small) {
-    margin-bottom: remcalc(45);
-    max-width: remcalc(270);
-    width: remcalc(270);
-  }
-
-  @include breakpoint(medium) {
-    box-shadow: none;
+    position: relative;
     flex: 1 1 25%;
+    max-width: 100%;
+    width: 25vh;
+    padding: 0;
     height: 25vh;
     margin: 0 auto;
-    max-width: 100%;
-    position: relative;
-    width: 25vh;
   }
 
   .portfolio-title {
-    @include just-rythm(16);
-    font-family: $ganelas-bold;
+    position: relative;
+    @include just-rythm(18);
+    background: $gradient-blue-green;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
     padding: remcalc(20) 0 remcalc(15);
 
     @include breakpoint(small) {
@@ -43,16 +42,12 @@
     }
   }
 
-  .portfolio-categories {
+ /* .portfolio-categories {
     @include just-rythm(14);
+    color: $clear-white;
     font-family: $robot-thin;
     padding: 0 remcalc(10) remcalc(20);
-  }
-}
-
-.portfolio-img {
-  display: block;
-  width: 100%;
+  }*/
 }
 
 .portfolio-svg {
@@ -86,7 +81,6 @@
     background: $gradient-blue-green;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-family: $ganelas-bold;
     line-height: remcalc(22);
     margin: auto auto remcalc(10);
     max-width: remcalc(215);
@@ -100,7 +94,6 @@
 
   .project-mini-categories {
     @include just-rythm(14);
-    color: $clear-white;
     font-family: $robot-thin;
     margin: auto;
     max-width: remcalc(180);
@@ -140,4 +133,24 @@
   display: block;
   height: 100%;
   width: 100%;
+
+  &.is-mobile {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.portfolio-img-box {
+  width: 40%;
+
+  .portfolio-img {
+    max-width: remcalc(70);
+    margin: auto;
+  }
+}
+
+.portfolio-info-box {
+  width: 60%;
+  margin: 0 auto;
+  padding: remcalc(5);
 }

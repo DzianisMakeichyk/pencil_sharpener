@@ -1,19 +1,22 @@
 import React, { Component } from 'react';
-import MediaQuery from 'react-responsive';
+import isMediaGreaterThan from '../web_modules/isMediaGreaterThan';
+import isMediaLessThan from '../web_modules/isMediaLessThan';
 import SkillOne from './Skills/SkillsList.json';
 import SkillOneItem from './Skills/SkillsItem'
 import map from 'lodash/map';
 
-
 class About extends Component {
 
+    static contextTypes = {
+        currentMedia: React.PropTypes.string,
+    };
     render() {
         return (
           <div>
             <section className="about">
                 <div className="about-box-image">
                     <img src="../img/background.png" className="about-image ease-box little" alt="Dzianis Makeichyk" role="presentation" />
-                    <MediaQuery minDeviceWidth={768}>
+                    {isMediaGreaterThan('Mobile', this.context.currentMedia) && (
                         <div className="skills-box ease-box">
                             {map(SkillOne, (skillsShot) => (
                               <SkillOneItem
@@ -22,10 +25,10 @@ class About extends Component {
                               />
                             ))}
                         </div>
-                    </MediaQuery>
+                    )}
                 </div>
                 <div className="about-information ease-box">
-                    <h2 className="about-name bold is-landscape-white">
+                    <h2 className="about-name qanelas-bold is-landscape-white">
                         <span className="green">
                             Dzianis
                         </span> Makeichyk</h2>
@@ -56,12 +59,12 @@ class About extends Component {
                                    M37.5,16V2l14,14H37.5z"/>
                             </g>
                         </svg>
-                        <a href="#" className="about-download green bold">pobierz CV</a>
+                        <a href="#" className="about-download green qanelas-bold">pobierz CV</a>
                     </div>
                 </div>
             </section>
-            <section className="skills">
-                <MediaQuery maxDeviceWidth={767}>
+              {isMediaLessThan('Small', this.context.currentMedia) && (
+                <section className="skills">
                     <div className="skills-box ease-box">
                         {map(SkillOne, (skillsShot) => (
                           <SkillOneItem
@@ -70,8 +73,8 @@ class About extends Component {
                           />
                         ))}
                     </div>
-                </MediaQuery>
-            </section>
+                </section>
+              )}
           </div>
         );
     }

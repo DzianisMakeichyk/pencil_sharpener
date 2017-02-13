@@ -14,10 +14,10 @@ export default function ProjectDetails(props, context) {
     //var ProjectImg = "../../img/project_grid/stypendium_z_wyboru.png";
 
     return (
-        <section className="project-shots">
+        <section className="height-auto project-shots">
             <div className="project-name-box">
               <MediaQuery maxDeviceWidth={1023}>
-                <h3 className="project-name bold ">{currentProject.name}</h3>
+                <h3 className="project-name qanelas-bold ">{currentProject.name}</h3>
               </MediaQuery>
               <div className="project-image-box">
                 {map(currentProject.srcImg.img, (img)  => (
@@ -38,7 +38,7 @@ export default function ProjectDetails(props, context) {
               </div>
               <div className="project-shot-info">
                 <MediaQuery minDeviceWidth={1024}>
-                  <h3 className="project-name bold is-landscape-white">{currentProject.name}</h3>
+                  <h3 className="project-name qanelas-bold is-landscape-white">{currentProject.name}</h3>
                 </MediaQuery>
                   <p className="project-location is-landscape-white">{currentProject.location}
                       <span className="project-year"> {currentProject.year}</span>

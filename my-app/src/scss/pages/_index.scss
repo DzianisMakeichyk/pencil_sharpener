@@ -71,10 +71,10 @@ main {
   position: relative;
 
   .header-container {
-    background: transparent;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    background: $middle-black;
     margin: 0 auto;
     max-width: remcalc(1600);
     padding-bottom: remcalc(15);
@@ -96,6 +96,10 @@ main {
       @include breakpoint(extralarge) {
         margin: remcalc(25) auto auto remcalc(0);
       }
+
+      .logo-name {
+        color: $clear-white;
+      }
     }
 
     .pull-right {
@@ -114,26 +118,8 @@ main {
       }
     }
 
-    &.white {
+    .burger-menu-piece {
       background: $clear-white;
-
-      @include breakpoint(medium) {
-        background: transparent;
-      }
-    }
-
-    &.black {
-      background: $middle-black;
-      height: 0;
-      padding: 0;
-
-      .logo-name {
-        color: $clear-white;
-      }
-
-      .burger-menu-piece {
-        background: $clear-white;
-      }
     }
   }
 
@@ -161,7 +147,6 @@ main {
 
 .hello-name {
   font-family: $robot-thin;
-  color: $clear-white;
   @include just-rythm(12);
   text-align: left;
   margin-bottom: remcalc(-5);

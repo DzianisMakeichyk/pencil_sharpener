@@ -97,7 +97,7 @@ class Contact extends Component {
         return (
           <section className="contact">
               <div className="about-information ease-box">
-                  <h2 className="about-name bold is-landscape-white">
+                  <h2 className="about-name qanelas-bold is-landscape-white">
                         <span className="green">
                             Dzianis
                         </span> Makeichyk</h2>

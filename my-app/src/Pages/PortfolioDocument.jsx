@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import PortfolioGrid from './PortfolioGrid/PortfolioGrid';
 import PortfolioGridList from './PortfolioGrid/PortfolioGridList.json';
 import map from 'lodash/map';
-import MediaQuery from 'react-responsive';
-import cx from 'classnames';
+import isMediaGreaterThan from '../web_modules/isMediaGreaterThan';
+import classnames from 'classnames';
 
 class Portfolio extends Component {
 
@@ -13,6 +13,10 @@ class Portfolio extends Component {
       currentProjectName: null,
       currentProjectBackground: 'smoke_black',
     }
+  };
+
+  static contextTypes = {
+    currentMedia: React.PropTypes.string,
   };
 
   handleHover(projectName, projectBackground, isHovering) {
@@ -33,12 +37,9 @@ class Portfolio extends Component {
 
     render() {
       var BackgroundProject = {backgroundImage: 'url("./img/project_grid/' + this.state.currentProjectBackground +'.png")'};
-      var hoverItem = cx([
-        this.state.currentProjectName && 'is-hover',
-      ]);
 
         return (
-          <section className="height-auto vh-medium">
+          <section className={classnames('height-auto vh-medium', {'is-mobile':this.context.currentMedia <= 'Mobile' })}>
               <ul className="grid-portfolio">
                   {map(PortfolioGridList, (project) => (
                       <PortfolioGrid
@@ -48,9 +49,9 @@ class Portfolio extends Component {
                           onHoverChange={this.handleHover.bind(this)}
                       />
                   ))}
-                <MediaQuery minDeviceWidth={1024}>
-                  <div className={'project-img ' + cx(hoverItem)} style={BackgroundProject} ></div>
-                </MediaQuery>
+                {isMediaGreaterThan('Small', this.context.currentMedia) && (
+                  <div className={classnames('project-img', {'is-hover':this.state.currentProjectName})} style={BackgroundProject} ></div>
+                )}
               </ul>
             </section>
         );
