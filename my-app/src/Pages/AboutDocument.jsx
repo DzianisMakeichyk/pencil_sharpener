@@ -28,7 +28,7 @@ class About extends Component {
                     )}
                 </div>
                 <div className="about-information ease-box">
-                    <h2 className="about-name bold is-landscape-white">
+                    <h2 className="about-name qanelas-bold is-landscape-white">
                         <span className="green">
                             Dzianis
                         </span> Makeichyk</h2>
@@ -59,7 +59,7 @@ class About extends Component {
                                    M37.5,16V2l14,14H37.5z"/>
                             </g>
                         </svg>
-                        <a href="#" className="about-download green bold">pobierz CV</a>
+                        <a href="#" className="about-download green qanelas-bold">pobierz CV</a>
                     </div>
                 </div>
             </section>

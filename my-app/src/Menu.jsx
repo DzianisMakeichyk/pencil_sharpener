@@ -29,7 +29,7 @@ export default class Menu extends React.Component {
       }}>
         {style => (
           <div
-            className="show-menu"
+            className="show-menu qanelas-bold"
             style={{
               opacity: style.opacity,
             }}

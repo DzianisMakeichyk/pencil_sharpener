@@ -107,7 +107,6 @@
 
   p {
     @include just-rythm(18);
-    color: $clear-white;
     margin: 0;
     padding: remcalc(10);
   }
@@ -146,10 +145,6 @@
 
   .project-button {
     padding: remcalc(10) 0;
-
-    @include breakpoint(medium) {
-      color: $clear-white;
-    }
 
     .project-arrows-svg {
       vertical-align: text-top;
@@ -191,7 +186,6 @@
 
 .project-button-to {
   bottom: remcalc(-32);
-  color: $clear-white;
   display: block;
   font-family: $robot-thin;
   font-weight: $font-semi-bold;

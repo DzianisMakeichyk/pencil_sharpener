@@ -96,6 +96,10 @@ main {
       @include breakpoint(extralarge) {
         margin: remcalc(25) auto auto remcalc(0);
       }
+
+      .logo-name {
+        color: $clear-white;
+      }
     }
 
     .pull-right {
@@ -112,10 +116,6 @@ main {
       @include breakpoint(extralarge) {
         margin: remcalc(25) 0 auto auto;
       }
-    }
-
-    .logo-name {
-      color: $clear-white;
     }
 
     .burger-menu-piece {
@@ -147,7 +147,6 @@ main {
 
 .hello-name {
   font-family: $robot-thin;
-  color: $clear-white;
   @include just-rythm(12);
   text-align: left;
   margin-bottom: remcalc(-5);

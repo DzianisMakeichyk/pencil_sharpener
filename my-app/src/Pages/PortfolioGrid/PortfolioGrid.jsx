@@ -4,6 +4,7 @@ import isMediaGreaterThan from '../../web_modules/isMediaGreaterThan';
 import isMediaLessThan from '../../web_modules/isMediaLessThan';
 import routeMap from '../../../routeMap.json';
 import { Motion, spring } from 'react-motion';
+import classnames from 'classnames';
 
 export default class PortfolioGrid extends React.Component {
 
@@ -53,7 +54,7 @@ export default class PortfolioGrid extends React.Component {
             opacity: style.opacity,
           }}
         >
-          <h6 className="portfolio-box-name">{this.props.project.title}</h6>
+          <h6 className="portfolio-box-name qanelas-bold">{this.props.project.title}</h6>
           <p className="project-mini-categories">{this.props.project.short_description}</p>
         </div>
         )}
@@ -74,10 +75,12 @@ export default class PortfolioGrid extends React.Component {
         >
             <Link
               to={routeMap.project_details.replace(':slug', this.props.project.name)}
-              className="animation-link"
+              className={classnames('animation-link', {'is-mobile':this.context.currentMedia <= 'Mobile' })}
             >
               {isMediaLessThan('Small', this.context.currentMedia) && (
-                <img className="portfolio-img" src={"img/background.png"} alt={this.props.project.name}/>
+                <div className="portfolio-img-box">
+                  <img className="portfolio-img" src={"img/pencil_wolf_white.svg"} alt={this.props.project.name}/>
+                </div>
               )}
               {isMediaGreaterThan('Mobile', this.context.currentMedia) && (
                 <div>
@@ -86,13 +89,10 @@ export default class PortfolioGrid extends React.Component {
                 </div>
               )}
               {isMediaLessThan('Small', this.context.currentMedia) && (
-                <div>
-                  <h6 className="portfolio-title">
+                <div className={classnames({'portfolio-info-box':this.context.currentMedia <= 'Mobile' })}>
+                  <h6 className="portfolio-title qanelas-bold">
                     {this.props.project.title}
                   </h6>
-                  <div className="portfolio-categories">
-                    {this.props.project.short_description}
-                  </div>
                 </div>
               )}
           </Link>
