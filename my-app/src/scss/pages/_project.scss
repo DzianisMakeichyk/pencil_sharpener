@@ -113,7 +113,7 @@
 }
 
 .project-name {
-  @include just-rythm(24);
+  @include just-rythm(28);
   letter-spacing: .5px;
   line-height: remcalc(26);
   max-width: remcalc(200);
@@ -176,6 +176,7 @@
     display: block;
     width: 75%;
     z-index: -2;
+    box-shadow: remcalc(-5) remcalc(-5) remcalc(5) 0 rgba(0,0,0,.2);
 
     &:not(:first-child) {
     margin-top: -15%;
