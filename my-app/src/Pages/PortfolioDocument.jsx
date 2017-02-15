@@ -39,7 +39,7 @@ class Portfolio extends Component {
       var BackgroundProject = {backgroundImage: 'url("./img/project_grid/' + this.state.currentProjectBackground +'.png")'};
 
         return (
-          <section className={classnames('height-auto vh-medium', {'is-mobile':this.context.currentMedia <= 'Mobile' })}>
+          <section className="height-auto vh-medium">
               <ul className="grid-portfolio">
                   {map(PortfolioGridList, (project) => (
                       <PortfolioGrid

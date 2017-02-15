@@ -21,21 +21,24 @@
   @include breakpoint(small) {
     position: relative;
     flex: 1 1 25%;
-    max-width: 100%;
     width: 25vh;
-    padding: 0;
+    max-width: 100%;
     height: 25vh;
     margin: 0 auto;
+    padding: 0;
   }
 
   .portfolio-title {
     position: relative;
-    @include just-rythm(18);
+    @include just-rythm(36);
+    text-align: left;
+    max-width: remcalc(260);
+    margin-bottom: -12.5%;
+    padding-left: remcalc(10);
     background: $gradient-blue-green;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-fill-color: transparent;
-    padding: remcalc(20) 0 remcalc(15);
 
     @include breakpoint(small) {
       padding: remcalc(20) 0 remcalc(25);
@@ -91,18 +94,19 @@
       @include just-rythm(30);
     }
   }
+}
 
-  .project-mini-categories {
-    @include just-rythm(14);
-    font-family: $robot-thin;
-    margin: auto;
-    max-width: remcalc(180);
-    letter-spacing: 1px;
+.project-mini-categories {
+  @include just-rythm(14);
+  font-family: $robot-thin;
+  margin: auto;
+  max-width: remcalc(180);
+  color: $clear-white;
+  letter-spacing: 1px;
 
-    @include breakpoint(large) {
-      @include just-rythm(20);
-      max-width: remcalc(220);
-    }
+  @include breakpoint(large) {
+    @include just-rythm(20);
+    max-width: remcalc(220);
   }
 }
 
@@ -140,17 +144,20 @@
   }
 }
 
-.portfolio-img-box {
-  width: 40%;
+.portfolio-img {
+  display: block;
+  width: 100%;
+  margin-bottom: remcalc(20);
+}
 
-  .portfolio-img {
-    max-width: remcalc(70);
-    margin: auto;
-  }
+.portfolio-arrow {
+  display: inline-block;
+  height: remcalc(15);
+  margin-right: remcalc(15);
+  padding-top: remcalc(3);
 }
 
 .portfolio-info-box {
-  width: 60%;
-  margin: 0 auto;
-  padding: remcalc(5);
+  padding: remcalc(25) 0;
+  @include back-box-shadow;
 }

@@ -1,5 +1,5 @@
 @mixin back-box-shadow {
-  box-shadow: remcalc(15) remcalc(30) 0 $light-gray;
+  box-shadow: 0 0 remcalc(20) remcalc(5) $clear-black;
 }
 
 @mixin box-shadow {
@@ -22,3 +22,5 @@
 }
 
 /* @include center($extend: false); / @include center; */
+
+/* 0px 0px 20px 5px rgba(0,0,0,1) */
