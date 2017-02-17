@@ -10,14 +10,13 @@
 
 .project-shot-info {
   font-family: $robot-thin;
-  margin: remcalc(25) remcalc(20) remcalc(10);
+  margin: remcalc(25) auto remcalc(10);
 
   @include breakpoint(small) {
     @include just-rythm(28);
   }
 
   @include breakpoint(medium) {
-    flex: 1 1 40%;
     margin-top: remcalc(20);
   }
 
@@ -25,7 +24,7 @@
     @include just-rythm(12);
 
     .project-year {
-      color: $middle-greay;
+      color: $gradi-green;
       font-weight: $font-semi-bold;
     }
   }
@@ -113,27 +112,30 @@
 }
 
 .project-name {
-  @include just-rythm(28);
-  letter-spacing: .5px;
-  line-height: remcalc(26);
-  max-width: remcalc(200);
+  @include just-rythm(30);
+  @include gradient-text;
+  max-width: remcalc(220);
+  margin: 0 auto 0 0;
   padding: remcalc(10) 0 remcalc(20) 0;
   text-transform: uppercase;
+  line-height: remcalc(30);
+  letter-spacing: .5px;
 
   @include breakpoint(small) {
-    @include just-rythm(42);
+    @include just-rythm(40);
     line-height: remcalc(40);
     max-width: remcalc(400);
   }
 }
 
 .project-button-arrows {
-  border-top: 1px solid $ease-gray;
   display: flex;
   flex-direction: row;
+  width: 100%;
   padding: remcalc(20) 0;
   text-align: center;
   text-transform: uppercase;
+  border-top: 1px solid $ease-gray;
 }
 
 .project-button-one {
@@ -145,14 +147,16 @@
 
   .project-button {
     padding: remcalc(10) 0;
+    color: $clear-white;
+
+    @include breakpoint(small) {
+      letter-spacing: 1px;
+    }
 
     .project-arrows-svg {
       vertical-align: text-top;
       width: remcalc(15);
-
-      @include breakpoint(medium) {
-        fill: $clear-white;
-      }
+      fill: $clear-white;
 
       &.next {
         margin: auto auto auto remcalc(20);
@@ -168,92 +172,40 @@
 .project-image-box {
   position: relative;
 
-  @include breakpoint(medium) {
-    flex: 1 1 60%;
+  @include breakpoint(small) {
+    margin-right: remcalc(25);
   }
 
   .project-shot-img {
     display: block;
-    width: 75%;
+    width: 100%;
+    padding-bottom: remcalc(5);
     z-index: -2;
-    box-shadow: remcalc(-5) remcalc(-5) remcalc(5) 0 rgba(0,0,0,.2);
-
-    &:not(:first-child) {
-    margin-top: -15%;
-    }
-
-    &:nth-child(2n) {
-      margin-left: auto;
-      margin-right: 0;
-    }
-
-    @include breakpoint(small) {
-      flex: 1 1 50%;
-      height: auto;
-      order: 2;
-    }
   }
 }
 
 .project-button-to {
-  bottom: remcalc(-32);
+  @include just-rythm(18);
+  @include gradient-text;
   display: block;
-  font-family: $robot-thin;
-  font-weight: $font-semi-bold;
-  margin: remcalc(10) auto remcalc(20);
-  padding: remcalc(8) 0;
-  position: absolute;
-  right: remcalc(8);
-  text-align: center;
-  width: remcalc(150);
-  z-index: 400;
+  width: 43%;
+  margin: 0 0 0 auto;
+  padding: remcalc(20) 0 remcalc(3);
+  border-bottom: 1px solid $gradi-blue;
+  color: $clear-white;
 
   @include breakpoint(small) {
-    @include just-rythm(20);
-    bottom: remcalc(-55);
-    margin: remcalc(20) auto remcalc(40);
-    right: remcalc(9);
-    width: remcalc(220);
+    margin: 0 auto 0 0;
   }
+
   @include breakpoint(medium) {
-    bottom: 0;
-    margin: remcalc(20) auto;
-    position: relative;
-    width: 100%;
-  }
-
-  @include breakpoint(large) {
-    width: remcalc(280);
-  }
-
-  &::before {
-    background: $gradient-blue-green;
-    border: 0;
-    content: '';
-    height: 100%;
-    left: 0;
-    margin:  0 auto;
-    position: absolute;
-    right: 0;
-    top: 0;
-    transform: $skew-minus;
-    transition: border 1s ease;
-    width: 100%;
-    z-index: -1;
-  }
-
-  &:hover {
-    &::before {
-      background: $gradient-blue-green-revers;
-      content: '';
-    }
+    width: 32%;
   }
 }
 
 .project-name-box {
-  @include breakpoint(medium) {
+  @include breakpoint(small) {
     display: flex;
     flex-direction: row;
-    margin: remcalc(30) remcalc(10) 0;
   }
 }

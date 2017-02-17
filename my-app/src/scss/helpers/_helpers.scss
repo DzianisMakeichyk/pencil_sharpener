@@ -4,12 +4,6 @@
   transform: translate3d(0, -8px, 0);
 }
 
-.is-landscape-white {
-  @include breakpoint(medium) {
-    color: $clear-white;
-  }
-}
-
 .green {
   color: $gradi-green;
 }
@@ -25,4 +19,12 @@
   &.little {
     padding: remcalc(1);
   }
+}
+
+.qanelas-bold {
+  font-family: $ganelas-bold;
+}
+
+.qanelas-light {
+  font-family: $ganelas-light;
 }

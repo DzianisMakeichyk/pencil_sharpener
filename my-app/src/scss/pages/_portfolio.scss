@@ -15,8 +15,7 @@
   width: 100%;
   text-align: center;
   z-index: 11;
-  padding: remcalc(20) 0;
-  border-radius: remcalc(1);
+  padding: 0 0 remcalc(20) 0;
 
   @include breakpoint(small) {
     position: relative;
@@ -30,15 +29,11 @@
 
   .portfolio-title {
     position: relative;
-    @include just-rythm(36);
+    @include just-rythm(34);
+    @include gradient-text;
     text-align: left;
     max-width: remcalc(260);
-    margin-bottom: -12.5%;
-    padding-left: remcalc(10);
-    background: $gradient-blue-green;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-fill-color: transparent;
+    text-transform: uppercase;
 
     @include breakpoint(small) {
       padding: remcalc(20) 0 remcalc(25);
@@ -97,12 +92,12 @@
 }
 
 .project-mini-categories {
-  @include just-rythm(14);
+  @include just-rythm(12);
   font-family: $robot-thin;
-  margin: auto;
-  max-width: remcalc(180);
   color: $clear-white;
+  text-align: left;
   letter-spacing: 1px;
+  padding: 0 0 remcalc(5);
 
   @include breakpoint(large) {
     @include just-rythm(20);
@@ -159,5 +154,9 @@
 
 .portfolio-info-box {
   padding: remcalc(25) 0;
-  @include back-box-shadow;
+}
+
+.separator-icon {
+  width: remcalc(20);
+  margin: remcalc(20) auto remcalc(-35);
 }

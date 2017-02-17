@@ -24,3 +24,10 @@
 /* @include center($extend: false); / @include center; */
 
 /* 0px 0px 20px 5px rgba(0,0,0,1) */
+
+@mixin gradient-text {
+  background: $gradient-blue-green;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
