@@ -95,13 +95,17 @@
   @include just-rythm(12);
   font-family: $robot-thin;
   color: $clear-white;
-  text-align: left;
+  text-align: center;
   letter-spacing: 1px;
   padding: 0 0 remcalc(5);
 
   @include breakpoint(large) {
     @include just-rythm(20);
     max-width: remcalc(220);
+  }
+
+  &.left {
+    text-align: left;
   }
 }
 

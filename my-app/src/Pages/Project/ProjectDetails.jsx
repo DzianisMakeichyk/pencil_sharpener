@@ -11,7 +11,6 @@ export default function ProjectDetails(props, context) {
     const currentProject = find(projects, (project) => (
         project.slug === context.router.params.slug
     ));
-    //var ProjectImg = "../../img/project_grid/stypendium_z_wyboru.png";
 
     return (
         <section className="height-auto project-shots">

@@ -26,16 +26,16 @@
 
     @include breakpoint(small) {
       width: auto;
-      margin: 0 auto;
+      margin: 0 auto auto;
     }
 
     @include breakpoint(medium) {
       width: 40%;
-      margin: 0 remcalc(15) 0 auto;
+      margin: 0 remcalc(15) auto auto;
     }
 
     @include breakpoint(large) {
-      margin: 0 remcalc(35) 0 auto;
+      margin: 0 remcalc(35) auto auto;
     }
 
     .socials {
@@ -46,12 +46,11 @@
       .icon-item {
         width: remcalc(17);
         height: remcalc(17);
-        fill: $clear-black;
+        fill: $clear-white;
 
         @include breakpoint(medium) {
           width: remcalc(20);
           height: remcalc(20);
-          fill: $clear-white;
         }
 
         &:hover {
@@ -64,7 +63,6 @@
 
 label {
   display: block;
-  font-size: 1.3em;
   padding: 0 0 remcalc(10) 0;
   color: $clear-white;
 }
@@ -76,7 +74,7 @@ label {
 
   @include breakpoint(small) {
     width: auto;
-    margin: 0 auto;
+    margin: 0 auto auto;
   }
 
   @include breakpoint(medium) {
@@ -112,30 +110,20 @@ label {
 }
 
 .form-control {
-  &:focus + .form-focus {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-
-  @include breakpoint(medium) {
-    color: $space-white;}
-}
-
-.form-control {
   display: block;
-  padding: remcalc(5);
+  padding: remcalc(15) remcalc(5) 0;
   width: 100%;
-  border: none;
-  border-bottom: solid 2px $space-gray;
-  background: $space-white;
+  background: $gray;
   text-align: center;
+  border: none;
   font-size: 2em;
   outline: none;
   font-family: Arial, sans-serif;
+  color: $space-white;
 
-  @include breakpoint(medium) {
-    border-bottom: none;
-    background: $gray;
+  &:focus + .form-focus {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
 }
 

@@ -31,3 +31,10 @@
   -webkit-text-fill-color: transparent;
   text-fill-color: transparent;
 }
+
+@mixin gradient-revers-text {
+  background: $gradient-blue-green-revers;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+}

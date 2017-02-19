@@ -13,7 +13,7 @@ var datas = [
     errorMessage: ''
   },
   {
-    id: "name",
+    id: "email",
     label: "E-mail",
     value: "",
     validation: {

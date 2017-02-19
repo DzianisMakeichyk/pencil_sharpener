@@ -5,7 +5,8 @@ import isMediaLessThan from '../../web_modules/isMediaLessThan';
 import routeMap from '../../../routeMap.json';
 import { Motion, spring } from 'react-motion';
 import classnames from 'classnames';
-import Forest from '../Elements/icon_svg';
+import ElementIcon from '../Elements/icon_svg';
+import { TimelineLite } from "gsap";
 
 export default class PortfolioGrid extends React.Component {
 
@@ -33,6 +34,14 @@ export default class PortfolioGrid extends React.Component {
     });
     this.props.onHoverChange(this.props.project.name, this.props.project.background, false);
   }
+
+  componentDidMount = () => {
+    const skeletonAnimation = new TimelineLite();
+    skeletonAnimation.to(this.refs.skeletonBox, .1, { x:-100+'%', y:0, backgroundColor: '#ffffff' }, 'firstStep')
+      .to(this.refs.skeletonBox, 1, { x:100+'%', y:0 }, 'secondStep')
+      .to(this.refs.skeletonImg, .1, { x:-100+'%', y:0 }, 'firstStep')
+      .to(this.refs.skeletonImg, 1, { x:0+'%', y:0 }, 'secondStep', '+=.6');
+  };
 
   render() {
     // var filtersClass = this.props.project.filters + ("portfolio-item-wrap");
@@ -65,8 +74,6 @@ export default class PortfolioGrid extends React.Component {
     if (this.props.currentProjectName !== null && this.props.currentProjectName !== this.props.project.name) {
       visible = false;
     }
-    console.log(this.state.width);
-
     return (
       <li
         className="portfolio-item"
@@ -83,11 +90,14 @@ export default class PortfolioGrid extends React.Component {
               <h6 className="portfolio-title qanelas-bold">
                 {this.props.project.title}
               </h6>
-              <p className="project-mini-categories">
+              <p className="project-mini-categories left">
                 {this.props.project.short_description}
               </p>
-              <img className="portfolio-img" src={'img/project_grid/' + this.props.project.background + '.png'} alt={this.props.project.name}/>
-              <Forest />
+              <div className="relative">
+                <div className="back-image" ref="skeletonBox"></div>
+                <img className="portfolio-img" ref="skeletonImg" src={'img/project_grid/' + this.props.project.background + '.png'} alt={this.props.project.name}/>
+              </div>
+              <ElementIcon />
             </div>
           )}
           {isMediaGreaterThan('Mobile', this.context.currentMedia) && (
@@ -99,5 +109,7 @@ export default class PortfolioGrid extends React.Component {
         </Link>
       </li>
     );
+
+    console.log(this.state.width);
   }
 }

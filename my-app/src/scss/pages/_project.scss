@@ -148,15 +148,25 @@
   .project-button {
     padding: remcalc(10) 0;
     color: $clear-white;
+    transition: color ease .5s;
 
     @include breakpoint(small) {
       letter-spacing: 1px;
+    }
+
+    &:hover {
+      color: $gradi-green;
+
+      .project-arrows-svg {
+        fill: $gradi-green;
+      }
     }
 
     .project-arrows-svg {
       vertical-align: text-top;
       width: remcalc(15);
       fill: $clear-white;
+      transition: fill ease .5s;
 
       &.next {
         margin: auto auto auto remcalc(20);
@@ -174,6 +184,7 @@
 
   @include breakpoint(small) {
     margin-right: remcalc(25);
+    flex: 1 0 55%
   }
 
   .project-shot-img {
@@ -193,6 +204,7 @@
   padding: remcalc(20) 0 remcalc(3);
   border-bottom: 1px solid $gradi-blue;
   color: $clear-white;
+  transition: background ease .6s;
 
   @include breakpoint(small) {
     margin: 0 auto 0 0;
@@ -200,6 +212,10 @@
 
   @include breakpoint(medium) {
     width: 32%;
+  }
+
+  &:hover {
+   @include gradient-revers-text;
   }
 }
 
