@@ -23,6 +23,7 @@
 
     @include breakpoint(small) {
       flex: 1 1 50%;
+      margin: 0 auto auto;
       padding: 0 remcalc(25) 0 0;
     }
 
@@ -37,6 +38,7 @@
 
   .about-information {
     font-family: $robot-thin;
+    margin: 0 auto auto;
 
     @include breakpoint(small) {
       flex: 1 1 50%;

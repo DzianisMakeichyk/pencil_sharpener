@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Motion, spring } from 'react-motion';
+import { TimelineLite } from "gsap";
 
 
 class SkillsItem extends Component {
@@ -22,9 +22,13 @@ class SkillsItem extends Component {
       isHoveringSkill: false,
     });
   }
+  componentDidMount = () => {
+  const skeletonAnimation = new TimelineLite();
+  skeletonAnimation.to(this.refs.lineChart, 1.5, { width: this.props.skillsShot.percent + '%'}, '+=.5', 'secondStep')
+  };
 
   render() {
-    var WidthChartLine = this.props.skillsShot.percent;
+    var WidthChartLine = {width: this.props.skillsShot.percent + '%'};
     return (
       <div
         className="skill-one-shot"
@@ -33,23 +37,12 @@ class SkillsItem extends Component {
       >
         <p className="skill-name">{this.props.skillsShot.name}</p>
         <div className="skill-chart-line">
-          <Motion
-            defaultStyle={{
-              width: 0,
-            }} style={{
-            width: spring(WidthChartLine),
-          }}>
-            {style => (
-              <div
-                className="skill-chart-line-percent"
-                style={{
-                  width: style.width*0.01+'%'
-                }}
-                >
-                  <span className="skill-chart-line"></span>
-              </div>
-            )}
-          </Motion>
+          <div
+            className="skill-chart-line-percent"
+            ref="lineChart"
+            >
+              <span className="skill-chart-line"></span>
+            </div>
         </div>
         <p className="skill-percent">{this.props.skillsShot.percent}%</p>
       </div>

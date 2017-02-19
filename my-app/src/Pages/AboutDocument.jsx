@@ -25,14 +25,16 @@ class About extends Component {
           <div>
             <section className="about height-auto vh-medium">
                 <div className="about-box-image">
-                    <div className="back-image" ref="skeletonBox"></div>
-                    <img
-                      src="../img/background.png"
-                      className="about-image ease-box little"
-                      alt="Dzianis Makeichyk"
-                      role="presentation"
-                      ref="skeletonImg"
-                    />
+                    <div className="relative">
+                        <div className="back-image" ref="skeletonBox"></div>
+                        <img
+                          src="../img/background.png"
+                          className="about-image ease-box little"
+                          alt="Dzianis Makeichyk"
+                          role="presentation"
+                          ref="skeletonImg"
+                        />
+                    </div>
                     {isMediaGreaterThan('Mobile', this.context.currentMedia) && (
                         <div className="skills-box ease-box">
                             {map(SkillOne, (skillsShot) => (
