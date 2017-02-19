@@ -28,7 +28,6 @@ class SkillsItem extends Component {
   };
 
   render() {
-    var WidthChartLine = {width: this.props.skillsShot.percent + '%'};
     return (
       <div
         className="skill-one-shot"
