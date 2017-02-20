@@ -49,7 +49,7 @@ export default class PortfolioGrid extends React.Component {
     //   this.state.isHovering && 'is_hover',
     // ]);
     // className={'portfolio_item ' + cx(hoverItem)};
-    var DescriptionOnHover = !this.state.isHovering && <img className="portfolio-svg" src={"img/pencil_wolf_white.svg"} alt={this.props.project.name}/>;
+    var DescriptionOnHover = !this.state.isHovering && <img className="portfolio-svg" ref="skeletonImg" src={"img/pencil_wolf_white.svg"} alt={this.props.project.name}/>;
     var DescriptionOutHover = this.state.isHovering &&
       <Motion
         defaultStyle={{
@@ -80,12 +80,10 @@ export default class PortfolioGrid extends React.Component {
         onMouseOver={this.handleMouseOver.bind(this)}
         onMouseOut={this.handleMouseOut.bind(this)}
         style={visible?{}:{visibility:'hidden'}}
-        ref="skeletonImg"
       >
         <Link
           to={routeMap.project_details.replace(':slug', this.props.project.name)}
           className={classnames('animation-link', {'is-mobile':this.context.currentMedia <= 'Mobile' })}
-          ref="skeletonBox"
         >
           {isMediaLessThan('Small', this.context.currentMedia) && (
             <div className={classnames({'portfolio-info-box':this.context.currentMedia <= 'Mobile' })}>
@@ -106,6 +104,8 @@ export default class PortfolioGrid extends React.Component {
             <div>
               {DescriptionOnHover}
               {DescriptionOutHover}
+              <span ref="skeletonBox"></span>
+              <span ref="skeletonImg"></span>
             </div>
           )}
         </Link>

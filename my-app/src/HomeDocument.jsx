@@ -92,7 +92,8 @@ class Home extends Component {
         var classNameOther = is_click + ' burger-menu-other';
         // console.log(location.pathname);
         // console.log(location.pathname !== routeMap.home);
-        return (
+
+      return (
         <div className="App">
             <header className="header-wrap">
                 <nav>
@@ -148,9 +149,10 @@ class Home extends Component {
             <main>
               <RouteTransition
                 pathname={this.props.location.pathname}
-                atEnter={{ opacity: 0 }}
-                atLeave={{ opacity: 0 }}
-                atActive={{ opacity: 1 }}
+                atEnter={{ translateX: 100 }}
+                atLeave={{ translateX: -100 }}
+                atActive={{ translateX: 0 }}
+                mapStyles={styles => ({ transform: `translateX(${styles.translateX}%)` })}
               >
                 {this.props.children}
               </RouteTransition>
