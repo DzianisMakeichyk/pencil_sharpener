@@ -25,11 +25,6 @@
     max-height: remcalc(250);
 
     @include breakpoint(small) {
-      width: auto;
-      margin: 0 auto auto;
-    }
-
-    @include breakpoint(medium) {
       width: 40%;
       margin: 0 remcalc(15) auto auto;
     }
@@ -73,11 +68,7 @@ label {
   text-align: center;
 
   @include breakpoint(small) {
-    width: auto;
     margin: 0 auto auto;
-  }
-
-  @include breakpoint(medium) {
     width: 60%;
   }
 }

@@ -49,7 +49,7 @@ class Portfolio extends Component {
                           onHoverChange={this.handleHover.bind(this)}
                       />
                   ))}
-                {isMediaGreaterThan('Small', this.context.currentMedia) && (
+                {isMediaGreaterThan('Mobile', this.context.currentMedia) && (
                   <div className={classnames('project-img', {'is-hover':this.state.currentProjectName})} style={BackgroundProject} ></div>
                 )}
               </ul>

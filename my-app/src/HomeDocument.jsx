@@ -153,6 +153,7 @@ class Home extends Component {
                 atLeave={{ translateX: -100 }}
                 atActive={{ translateX: 0 }}
                 mapStyles={styles => ({ transform: `translateX(${styles.translateX}%)` })}
+                className="hello-world"
               >
                 {this.props.children}
               </RouteTransition>
