@@ -83,10 +83,10 @@ label {
 }
 
 .form-group {
-  margin: remcalc(15) auto remcalc(40);
+  padding: remcalc(15) 0 remcalc(40);
   position: relative;
   overflow: hidden;
-  height: remcalc(110);
+  height: remcalc(100);
   &:last-child {
     margin-bottom: 0;
   }
@@ -95,7 +95,7 @@ label {
 .form-focus {
   position: absolute;
   left: 0;
-  bottom: 26%;
+  bottom: 15%;
   width: 100%;
   background: $gradi-green;
   height: 2px;
@@ -104,9 +104,9 @@ label {
   -webkit-transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
 
-  &.textarea {
-    bottom: 0;
-  }
+  //&.textarea {
+  //  bottom: 0;
+  //}
 }
 
 .form-control {

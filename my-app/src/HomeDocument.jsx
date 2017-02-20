@@ -4,7 +4,8 @@ import { TimelineLite } from "gsap";
 import Menu from './Menu'
 import routeMap from '../routeMap.json';
 import MediaDetectElement from './web_modules/MediaDetectElement';
-// import classnames from 'classnames';
+import ReactAudioPlayer from 'react-audio-player';
+import { RouteTransition } from 'react-router-transition';
 
 class Home extends Component {
 
@@ -35,6 +36,7 @@ class Home extends Component {
     this.state = {
         menuVisible: false,
         currentMedia: '',
+        playAudio: true,
     };
  }
     handleClick = () => {
@@ -78,6 +80,9 @@ class Home extends Component {
     onMediaChange = (currentMedia) => {
         this.setState({ currentMedia });
     };
+    onPause = (playAudio) => {
+      this.setState({ playAudio });
+    };
     render() {
         var is_click = this.state.menuVisible ? 'is-click-menu ' : '';
         var classNameLogo = 'logo-name ' + is_click ;
@@ -97,6 +102,12 @@ class Home extends Component {
                               to="/"
                               className={classNameLogo}>Dzianis Makeichyk
                             </Link>
+                            {/*<ReactAudioPlayer*/}
+                              {/*src="/audio/ambient.mp3"*/}
+                              {/*autoPlay*/}
+                              {/*loop*/}
+                            {/*/>*/}
+                          <button onClick={this.onPause.bind(this)}>hello</button>
                         </div>
                         <div className="pull-right">
                             <div
@@ -135,7 +146,14 @@ class Home extends Component {
                 </nav>
             </header>
             <main>
+              <RouteTransition
+                pathname={this.props.location.pathname}
+                atEnter={{ opacity: 0 }}
+                atLeave={{ opacity: 0 }}
+                atActive={{ opacity: 1 }}
+              >
                 {this.props.children}
+              </RouteTransition>
                 <MediaDetectElement onMediaChange={this.onMediaChange} />
             </main>
         </div>

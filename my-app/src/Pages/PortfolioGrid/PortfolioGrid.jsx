@@ -80,10 +80,12 @@ export default class PortfolioGrid extends React.Component {
         onMouseOver={this.handleMouseOver.bind(this)}
         onMouseOut={this.handleMouseOut.bind(this)}
         style={visible?{}:{visibility:'hidden'}}
+        ref="skeletonImg"
       >
         <Link
           to={routeMap.project_details.replace(':slug', this.props.project.name)}
           className={classnames('animation-link', {'is-mobile':this.context.currentMedia <= 'Mobile' })}
+          ref="skeletonBox"
         >
           {isMediaLessThan('Small', this.context.currentMedia) && (
             <div className={classnames({'portfolio-info-box':this.context.currentMedia <= 'Mobile' })}>

@@ -44,7 +44,7 @@ var datas = [
     value: "",
     validation: {
       rules: { lang: [ "required", "regex:/^javascript$/" ] },
-      messages: { "required.lang": 'Wpisz język!', 'regex.lang': 'Podpowiedź: zaczyna się z "java" i kinczy się "script"' }
+      messages: { "required.lang": 'Wpisz język!', 'regex.lang': 'Podpowiedź: zaczyna się z "java" i konczy się "script"' }
     },
     pristine: true,
     hasError: false,

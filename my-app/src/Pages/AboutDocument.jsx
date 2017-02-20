@@ -16,12 +16,13 @@ class About extends Component {
     componentDidMount = () => {
         const skeletonAnimation = new TimelineLite();
         skeletonAnimation.to(this.refs.skeletonBox, .1, { x:-100+'%', y:0, backgroundColor: '#ffffff' }, 'firstStep')
-        .to(this.refs.skeletonBox, 1.2, { x:100+'%', y:0 }, 'secondStep')
+        .to(this.refs.skeletonBox, 1.2, { x:101+'%', y:0 }, 'secondStep')
         .to(this.refs.skeletonImg, .1, { x:-100+'%', y:0 }, 'firstStep')
         .to(this.refs.skeletonImg, 1.2, { x:0+'%', y:0 }, 'secondStep', '+=.6')
     };
     render() {
-         return (
+
+        return (
           <div>
             <section className="about height-auto vh-medium">
                 <div className="about-box-image">
@@ -98,3 +99,4 @@ class About extends Component {
 }
 
 export default About;
+

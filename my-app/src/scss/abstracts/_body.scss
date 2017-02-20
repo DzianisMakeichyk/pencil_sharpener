@@ -51,6 +51,7 @@ section {
     &.vh-medium {
       @include breakpoint(medium) {
         height: calc(100vh - 50px);
+        overflow: hidden;
       }
 
       @include breakpoint(extralarge) {
