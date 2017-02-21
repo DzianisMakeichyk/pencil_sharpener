@@ -77,8 +77,8 @@ export default class PortfolioGrid extends React.Component {
     return (
       <li
         className="portfolio-item"
-        onMouseOver={this.handleMouseOver.bind(this)}
-        onMouseOut={this.handleMouseOut.bind(this)}
+        onMouseEnter={this.handleMouseOver.bind(this)}
+        onMouseLeave={this.handleMouseOut.bind(this)}
         style={visible?{}:{visibility:'hidden'}}
       >
         <Link

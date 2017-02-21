@@ -92,7 +92,6 @@ class Home extends Component {
         var classNameOther = is_click + ' burger-menu-other';
         // console.log(location.pathname);
         // console.log(location.pathname !== routeMap.home);
-
       return (
         <div className="App">
             <header className="header-wrap">
@@ -157,6 +156,13 @@ class Home extends Component {
               >
                 {this.props.children}
               </RouteTransition>
+              {(this.props.location.pathname &&
+                <div id="preload">
+                  <div id="preloader">
+                    <div id="preloader-content"></div>
+                  </div>
+                </div>
+              )}
                 <MediaDetectElement onMediaChange={this.onMediaChange} />
             </main>
         </div>
