@@ -4,39 +4,17 @@ import { TimelineLite } from "gsap";
 import Menu from './Menu'
 import routeMap from '../routeMap.json';
 import MediaDetectElement from './web_modules/MediaDetectElement';
-import ReactAudioPlayer from 'react-audio-player';
 import { RouteTransition } from 'react-router-transition';
 
 class Home extends Component {
 
- /* componentWillUpdate() {
-    const script = document.createElement("script");
-    script.src = "/scripts/jquery-1.12.0.min.js";
-    script.async = true;
-    document.body.appendChild(script);
-
-    const script_2 = document.createElement("script");
-    script_2.src = "/scripts/libs.js";
-    script_2.async = true;
-    document.body.appendChild(script_2);
-
-    const script_3 = document.createElement("script");
-    script_3.src = "/scripts/vl_portfolio.js";
-    script_3.async = true;
-    document.body.appendChild(script_3);
-
-    const script_4 = document.createElement("script");
-    script_4.src = "/scripts/script.js";
-    script_4.async = true;
-    document.body.appendChild(script_4);
-  };*/
-
  constructor(props) {
     super(props);
+
     this.state = {
         menuVisible: false,
         currentMedia: '',
-        playAudio: true,
+        audioPlaying: true,
     };
  }
     handleClick = () => {
@@ -70,7 +48,7 @@ class Home extends Component {
         router: React.PropTypes.object,
     };
     static childContextTypes = {
-    currentMedia: React.PropTypes.string.isRequired,
+      currentMedia: React.PropTypes.string.isRequired,
     };
     getChildContext() {
         return {
@@ -80,9 +58,24 @@ class Home extends Component {
     onMediaChange = (currentMedia) => {
         this.setState({ currentMedia });
     };
-    onPause = (playAudio) => {
-      this.setState({ playAudio });
+    componentDidMount() {
+      this.audioEl =  new Audio('/audio/ambient.mp3');
+      this.audioEl.play();
+    }
+    onPause = () => {
+      if ( this.state.audioPlaying === true ){
+        this.audioEl.pause();
+        this.setState({
+          audioPlaying: false
+        })
+      } else {
+        this.audioEl.play();
+        this.setState({
+          audioPlaying: true
+        })
+      }
     };
+
     render() {
         var is_click = this.state.menuVisible ? 'is-click-menu ' : '';
         var classNameLogo = 'logo-name ' + is_click ;
@@ -92,6 +85,7 @@ class Home extends Component {
         var classNameOther = is_click + ' burger-menu-other';
         // console.log(location.pathname);
         // console.log(location.pathname !== routeMap.home);
+      console.log();
       return (
         <div className="App">
             <header className="header-wrap">
@@ -102,12 +96,7 @@ class Home extends Component {
                               to="/"
                               className={classNameLogo}>Dzianis Makeichyk
                             </Link>
-                            {/*<ReactAudioPlayer*/}
-                              {/*src="/audio/ambient.mp3"*/}
-                              {/*autoPlay*/}
-                              {/*loop*/}
-                            {/*/>*/}
-                          <button onClick={this.onPause.bind(this)}>hello</button>
+                          <button ref="audioPause" onClick={this.onPause}>hello</button>
                         </div>
                         <div className="pull-right">
                             <div
@@ -156,13 +145,13 @@ class Home extends Component {
               >
                 {this.props.children}
               </RouteTransition>
-              {(this.props.location.pathname &&
+              {/*{(this.props.location.pathname &&
                 <div id="preload">
                   <div id="preloader">
                     <div id="preloader-content"></div>
                   </div>
                 </div>
-              )}
+              )}*/}
                 <MediaDetectElement onMediaChange={this.onMediaChange} />
             </main>
         </div>
