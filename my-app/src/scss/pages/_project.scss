@@ -181,6 +181,7 @@
 
 .project-image-box {
   position: relative;
+  padding-bottom: remcalc(20);
 
   @include breakpoint(small) {
     margin-right: remcalc(25);

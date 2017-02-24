@@ -24,16 +24,17 @@ export default function ProjectDetails(props, context) {
                     src={"../../img/project_grid/" + img + ".png"}
                   />
                 ))}
-                {isMediaLessThan('Mobile', context.currentMedia) && (
-                  <Link
-                    to={currentProject.button_link}
-                    target="_blank"
-                    className="project-button-to qanelas-bold"
-                  >
-                    Zobacz project
-                  </Link>
-                )}
               </div>
+              {isMediaLessThan('Small', context.currentMedia) && (
+                <Link to={currentProject.button_link} target="_blank" >
+                  <div className="svg-button-wrapper">
+                    <svg height="35" width="180" xmlns="http://www.w3.org/2000/svg">
+                      <rect className="button-shape" height="35" width="180" />
+                    </svg>
+                    <div className="button-text">Zobacz project</div>
+                  </div>
+                </Link>
+              )}
               <div className="project-shot-info">
                 <p className="project-location">{currentProject.location}
                     <span className="project-year"> {currentProject.year}</span>
@@ -58,12 +59,13 @@ export default function ProjectDetails(props, context) {
                   </div>
                 </div>
                 {isMediaGreaterThan('Mobile', context.currentMedia) && (
-                  <Link
-                    to={currentProject.button_link}
-                    target="_blank"
-                    className="project-button-to qanelas-bold"
-                  >
-                    Zobacz project
+                  <Link to={currentProject.button_link} target="_blank" >
+                    <div className="svg-button-wrapper">
+                      <svg height="45" width="180" xmlns="http://www.w3.org/2000/svg">
+                        <rect className="button-shape" height="45" width="180" />
+                      </svg>
+                      <div className="button-text">Zobacz project</div>
+                    </div>
                   </Link>
                 )}
               </div>
@@ -74,7 +76,7 @@ export default function ProjectDetails(props, context) {
                   to={routeMap.project_details.replace(':slug', currentProject.button_last)}
                   className="project-button prev"
                 >
-                <svg className="project-arrows-svg prev" version="1.1" x="0px" y="0px" viewBox="0 0 284.935 284.936" xmlSpace="preserve">
+                <svg className="project-arrows-svg prev" version="1.1" x="0" y="0" viewBox="0 0 284.935 284.936" xmlSpace="preserve">
                   <g>
                     <path d="M62.2,149l133,133c1.9,1.9,4.1,2.9,6.6,2.9c2.5,0,4.7-1,6.6-2.9l14.3-14.3c1.9-1.9,2.9-4.1,2.9-6.6s-0.9-4.7-2.9-6.6
                       L110.5,142.5L222.7,30.3c1.9-1.9,2.9-4.1,2.9-6.6c0-2.5-0.9-4.7-2.9-6.6L208.4,2.9c-1.9-1.9-4.1-2.9-6.6-2.9c-2.5,0-4.7,1-6.6,2.9
@@ -89,7 +91,7 @@ export default function ProjectDetails(props, context) {
                   to={routeMap.project_details.replace(':slug', currentProject.button_next)}
                   className="project-button next"
                 >następny
-                <svg className="project-arrows-svg next" version="1.1" x="0px" y="0px" viewBox="0 0 284.935 284.936" xmlSpace="preserve">
+                <svg className="project-arrows-svg next" version="1.1" x="0" y="0" viewBox="0 0 284.935 284.936" xmlSpace="preserve">
                   <g>
                     <path d="M222.701,135.9L89.652,2.857C87.748,0.955,85.557,0,83.084,0c-2.474,0-4.664,0.955-6.567,2.857L62.244,17.133
                       c-1.906,1.903-2.855,4.089-2.855,6.567c0,2.478,0.949,4.664,2.855,6.567l112.204,112.204L62.244,254.677

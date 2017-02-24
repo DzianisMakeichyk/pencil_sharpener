@@ -22,3 +22,63 @@
     background: $gradient-blue-green-revers;
   }
 }
+
+.svg-button-wrapper {
+  height: remcalc(35);
+  margin: 0 auto 0 remcalc(-15);
+  position: relative;
+  width: remcalc(180);
+
+  @include breakpoint(small) {
+    height: remcalc(45);
+  }
+}
+
+.button-shape {
+  fill: transparent;
+  stroke-dasharray: 140 540;
+  stroke-dashoffset: -240;
+  stroke-width: 2px;
+  stroke: $gradi-green;
+
+  @include breakpoint(small) {
+    stroke-dashoffset: -250;
+  }
+}
+
+.button-text {
+  color: $clear-white;
+  @include just-rythm(20);
+  line-height: remcalc(45);
+  position: relative;
+  top: remcalc(-48);
+  padding: 0 remcalc(15);
+
+  @include breakpoint(small) {
+    line-height: remcalc(32);
+  }
+}
+
+@keyframes draw {
+  0% {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -250;
+    stroke-width: remcalc(8);
+  }
+  100% {
+    stroke-dasharray: 760;
+    stroke-dashoffset: 0;
+    stroke-width: 2px;
+    opacity: 1;
+  }
+}
+
+.svg-button-wrapper {
+  &:hover {
+  .button-shape {
+      -webkit-animation: 4s draw ease;
+      animation: 4s draw ease;
+      //animation-iteration-count: infinite;
+    }
+  }
+}
