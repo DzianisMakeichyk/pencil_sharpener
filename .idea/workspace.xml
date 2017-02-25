@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae70fbcf-6836-4fe7-8551-c540eac68b5b" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/my-app/src/scss/components/_addons.scss" afterPath="$PROJECT_DIR$/my-app/src/scss/components/_preloader.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/my-app/src/Pages/Elements/audioIcon.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/my-app/src/img/pencil_wolf_lines.svg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/public/css/main.css" afterPath="$PROJECT_DIR$/my-app/public/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/src/Pages/Project/ProjectDetails.jsx" afterPath="$PROJECT_DIR$/my-app/src/Pages/Project/ProjectDetails.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/src/scss/components/_button.scss" afterPath="$PROJECT_DIR$/my-app/src/scss/components/_button.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/src/scss/main.scss" afterPath="$PROJECT_DIR$/my-app/src/scss/main.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/src/scss/pages/_project.scss" afterPath="$PROJECT_DIR$/my-app/src/scss/pages/_project.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/src/HomeDocument.jsx" afterPath="$PROJECT_DIR$/my-app/src/HomeDocument.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/src/img/pencil_wolf.svg" afterPath="$PROJECT_DIR$/my-app/src/img/pencil_wolf.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/src/scss/components/_audio.scss" afterPath="$PROJECT_DIR$/my-app/src/scss/components/_audio.scss" />
     </list>
     <ignored path="pencil_sharpener.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,12 +32,40 @@
       <file leaf-file-name="HomeDocument.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/my-app/src/HomeDocument.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-605">
-              <caret line="62" column="26" selection-start-line="62" selection-start-column="26" selection-end-line="62" selection-end-column="26" />
+            <state relative-caret-position="255">
+              <caret line="67" column="17" selection-start-line="67" selection-start-column="17" selection-end-line="67" selection-end-column="17" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
-                <element signature="e#3748#4992#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="audioIcon.jsx" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/my-app/src/Pages/Elements/audioIcon.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#813#4390#0" expanded="false" />
+                <marker date="1488024666000" expanded="true" signature="4137:4142" ph="..." />
+                <marker date="1488024666000" expanded="true" signature="4142:4147" ph="..." />
+                <marker date="1488024666000" expanded="true" signature="4147:4152" ph="..." />
+                <marker date="1488024666000" expanded="true" signature="4262:4267" ph="..." />
+                <marker date="1488024666000" expanded="true" signature="4267:4272" ph="..." />
+                <marker date="1488024666000" expanded="true" signature="4272:4277" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_audio.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/my-app/src/scss/components/_audio.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -45,14 +73,14 @@
       <file leaf-file-name="ProjectDetails.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/my-app/src/Pages/Project/ProjectDetails.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
+            <state relative-caret-position="435">
               <caret line="36" column="16" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_button.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_button.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/my-app/src/scss/components/_button.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
@@ -114,26 +142,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PortfolioDocument.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/my-app/src/Pages/PortfolioDocument.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="705">
-              <caret line="52" column="70" selection-start-line="52" selection-start-column="70" selection-end-line="52" selection-end-column="70" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_body.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/my-app/src/scss/abstracts/_body.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="810">
-              <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="Git.Settings">
@@ -142,7 +150,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/my-app/convertMediaToNumber.js" />
         <option value="$USER_HOME$/Desktop/malling/TD/index_TD_4622.html" />
         <option value="$PROJECT_DIR$/my-app/web_modules/isMediaGreaterThan.js" />
         <option value="$PROJECT_DIR$/my-app/web_modules/isMediaLessThan.js" />
@@ -177,7 +184,6 @@
         <option value="$PROJECT_DIR$/my-app/src/scss/pages/_portfolio.scss" />
         <option value="$PROJECT_DIR$/my-app/src/Pages/ContactDocument.jsx" />
         <option value="$PROJECT_DIR$/my-app/src/Pages/Skills/SkillsItem.jsx" />
-        <option value="$PROJECT_DIR$/my-app/src/scss/components/_audio.scss" />
         <option value="$PROJECT_DIR$/my-app/src/scss/pages/_about.scss" />
         <option value="$PROJECT_DIR$/my-app/src/Pages/Contact/datas/InputDatas.js" />
         <option value="$USER_HOME$/Desktop/malling/TD/index_TD_4759 copy.html" />
@@ -188,11 +194,13 @@
         <option value="$PROJECT_DIR$/my-app/src/scss/abstracts/_body.scss" />
         <option value="$PROJECT_DIR$/my-app/src/scss/components/_addons.scss" />
         <option value="$PROJECT_DIR$/my-app/src/Pages/PortfolioGrid/PortfolioGrid.jsx" />
-        <option value="$PROJECT_DIR$/my-app/src/HomeDocument.jsx" />
         <option value="$PROJECT_DIR$/my-app/src/scss/main.scss" />
         <option value="$PROJECT_DIR$/my-app/src/Pages/Project/ProjectDetails.jsx" />
         <option value="$PROJECT_DIR$/my-app/src/scss/pages/_project.scss" />
         <option value="$PROJECT_DIR$/my-app/src/scss/components/_button.scss" />
+        <option value="$PROJECT_DIR$/my-app/src/HomeDocument.jsx" />
+        <option value="$PROJECT_DIR$/my-app/src/scss/components/_audio.scss" />
+        <option value="$PROJECT_DIR$/my-app/src/Pages/Elements/audioIcon.jsx" />
       </list>
     </option>
   </component>
@@ -435,6 +443,72 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pencil_sharpener" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pencil_sharpener" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="my-app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Pages" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Elements" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pencil_sharpener" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pencil_sharpener" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="my-app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pencil_sharpener" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pencil_sharpener" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="my-app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -535,7 +609,7 @@
       <workItem from="1487669445033" duration="964000" />
       <workItem from="1487769877350" duration="4035000" />
       <workItem from="1487870643592" duration="7334000" />
-      <workItem from="1487966260248" duration="5912000" />
+      <workItem from="1487966260248" duration="12804000" />
     </task>
     <task id="LOCAL-00002" summary="hello">
       <created>1486799639094</created>
@@ -642,11 +716,18 @@
       <option name="project" value="LOCAL" />
       <updated>1487967408344</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="svg button">
+      <created>1487972446889</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1487972446890</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94819000" />
+    <option name="totallyTimeSpent" value="101711000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -707,7 +788,8 @@
     <MESSAGE value="music + react-router-animation fix" />
     <MESSAGE value="fix portfolio mouseOver" />
     <MESSAGE value="onPause" />
-    <option name="LAST_COMMIT_MESSAGE" value="onPause" />
+    <MESSAGE value="svg button" />
+    <option name="LAST_COMMIT_MESSAGE" value="svg button" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -716,28 +798,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Desktop/malling/MARK/index_mark_428.html" />
-    <entry file="file://$PROJECT_DIR$/my-app/src/Pages/IndexDocument.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="42" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/Pages/BlogDocument.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="12" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/img/pencil_wolf.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/my-app/public/img/svg/logo.svg">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-12">
@@ -799,13 +859,6 @@
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Downloads/forest.svg" />
-    <entry file="file://$PROJECT_DIR$/my-app/src/Pages/Elements/icon_svg.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="91" selection-start-line="8" selection-start-column="91" selection-end-line="8" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/next.svg" />
     <entry file="file://$PROJECT_DIR$/my-app/src/Pages/Project/ProjectsList.json">
       <provider selected="true" editor-type-id="text-editor">
@@ -877,14 +930,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="573">
           <caret line="622" column="119" selection-start-line="622" selection-start-column="119" selection-end-line="622" selection-end-column="119" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/scss/components/_audio.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1003,29 +1048,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/HomeDocument.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-605">
-          <caret line="62" column="26" selection-start-line="62" selection-start-column="26" selection-end-line="62" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-            <element signature="e#3748#4992#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/my-app/src/scss/main.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/Pages/Project/ProjectDetails.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="36" column="16" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
           <folding />
         </state>
       </provider>
@@ -1043,6 +1069,81 @@
         <state relative-caret-position="255">
           <caret line="50" column="26" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/Pages/Elements/icon_svg.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/public/img/pencil_wolf_white.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/img/pencil_wolf.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="38" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/img/pencil_wolf_white.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2070">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/Pages/Project/ProjectDetails.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="36" column="16" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/scss/components/_audio.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/HomeDocument.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="67" column="17" selection-start-line="67" selection-start-column="17" selection-end-line="67" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/Pages/Elements/audioIcon.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#813#4390#0" expanded="false" />
+            <marker date="1488024666000" expanded="true" signature="4137:4142" ph="..." />
+            <marker date="1488024666000" expanded="true" signature="4142:4147" ph="..." />
+            <marker date="1488024666000" expanded="true" signature="4147:4152" ph="..." />
+            <marker date="1488024666000" expanded="true" signature="4262:4267" ph="..." />
+            <marker date="1488024666000" expanded="true" signature="4267:4272" ph="..." />
+            <marker date="1488024666000" expanded="true" signature="4272:4277" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

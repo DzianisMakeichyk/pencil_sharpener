@@ -1,5 +1,13 @@
-.react-audio-player {
-  display: none;
-  width: 0;
-  height: 0;
+.audio-wolf {
+  position: relative;
+  display: inline-block;
+  width: remcalc(16);
+  margin-left: remcalc(10);
+  vertical-align: middle;
+  cursor: pointer;
+
+  .audio-wolf-wave {
+    position: absolute;
+    left: 0;
+  }
 }

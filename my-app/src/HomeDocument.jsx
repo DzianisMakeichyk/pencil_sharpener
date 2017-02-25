@@ -5,6 +5,7 @@ import Menu from './Menu'
 import routeMap from '../routeMap.json';
 import MediaDetectElement from './web_modules/MediaDetectElement';
 import { RouteTransition } from 'react-router-transition';
+import AudioWolf from './Pages/Elements/audioIcon'
 
 class Home extends Component {
 
@@ -96,7 +97,9 @@ class Home extends Component {
                               to="/"
                               className={classNameLogo}>Dzianis Makeichyk
                             </Link>
-                          <button ref="audioPause" onClick={this.onPause}>hello</button>
+                          <span onClick={this.onPause}>
+                            <AudioWolf />
+                          </span>
                         </div>
                         <div className="pull-right">
                             <div
