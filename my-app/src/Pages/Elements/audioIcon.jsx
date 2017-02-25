@@ -34,7 +34,6 @@ export default class audioIcon extends React.Component {
   };
 
   render() {
-    console.log(this.refs.wave);
     return (
       <div className="audio-wolf" onClick={this.handleClick}>
         <svg className="audio-wolf-logo" style={{"enableBackground":"new 0 0 290 309"}} version="1.1" viewBox="0 0 290 309" x="0px" y="0px" xmlSpace="preserve">

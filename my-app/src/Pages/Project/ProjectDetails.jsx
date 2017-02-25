@@ -19,7 +19,7 @@ export default function ProjectDetails(props, context) {
               <div className="project-image-box">
                 {map(currentProject.srcImg.img, (img)  => (
                   <img
-                    className="project-shot-img"
+                    className="project-shot-img box-shadow"
                     alt="Hello Pencil"
                     src={"../../img/project_grid/" + img + ".png"}
                   />
@@ -58,16 +58,16 @@ export default function ProjectDetails(props, context) {
                     ))}
                   </div>
                 </div>
-                {isMediaGreaterThan('Mobile', context.currentMedia) && (
-                  <Link to={currentProject.button_link} target="_blank" >
-                    <div className="svg-button-wrapper">
-                      <svg height="45" width="180" xmlns="http://www.w3.org/2000/svg">
-                        <rect className="button-shape" height="45" width="180" />
-                      </svg>
-                      <div className="button-text">Zobacz project</div>
-                    </div>
-                  </Link>
-                )}
+                {/*{isMediaGreaterThan('Mobile', context.currentMedia) && (*/}
+                  {/*<Link to={currentProject.button_link} target="_blank" >*/}
+                    {/*<div className="svg-button-wrapper">*/}
+                      {/*<svg height="45" width="180" xmlns="http://www.w3.org/2000/svg">*/}
+                        {/*<rect className="button-shape" height="45" width="180" />*/}
+                      {/*</svg>*/}
+                      {/*<div className="button-text">Zobacz project</div>*/}
+                    {/*</div>*/}
+                  {/*</Link>*/}
+                {/*)}*/}
               </div>
             </div>
             <div className="project-button-arrows">
