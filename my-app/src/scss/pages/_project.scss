@@ -1,3 +1,97 @@
+.project-name {
+  @include just-rythm(30);
+  @include gradient-text;
+  max-width: remcalc(220);
+  margin: 0 auto 0 0;
+  padding: remcalc(20) 0 remcalc(10) 0;
+  text-transform: uppercase;
+  line-height: remcalc(30);
+  letter-spacing: .5px;
+
+  @include breakpoint(small) {
+    @include just-rythm(40);
+    line-height: remcalc(40);
+    max-width: remcalc(400);
+  }
+}
+
+.project-image-box {
+  width: 100%;
+  padding-bottom: remcalc(15);
+
+  .project-shot-img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.project-description {
+  display: block;
+  padding: remcalc(15) 0 remcalc(25);
+  font-family: $robot-thin;
+}
+
+.type-box {
+  margin: auto auto auto 0;
+  text-align: left;
+
+  &:nth-last-child {
+    padding-bottom: remcalc(15);
+  }
+
+  .type-box-name {
+    letter-spacing: 1px;
+    @include just-rythm(18);
+    margin-bottom: 0;
+  }
+
+  .project-location {
+    @include just-rythm(14);
+    margin: 0;
+  }
+}
+
+.project-technologies {
+  margin: 0 auto remcalc(15) remcalc(25);
+
+  .project-technologies-shot {
+    margin-bottom: remcalc(15);
+  }
+
+  .project-technologies-svg {
+    width: remcalc(11);
+    margin-right: remcalc(10);
+    fill: $gradi-green;
+  }
+}
+
+.project-button {
+  width: 100%;
+  margin-bottom: remcalc(10);
+  padding: 15px 0;
+  color: $gradi-green;
+  text-align: center;
+  letter-spacing: 1px;
+  font-family: $robot-thin;
+  font-weight: $font-bold;
+  border-radius: remcalc(5);
+  text-transform: uppercase;
+  
+  &.see-project {
+    background: $gradi-green;
+    color: $gray;
+  }
+  
+  &.next {
+    background: $gray;
+  }
+}
+
+
+
+
+
+
 .project-shots {
   display: flex;
   flex-direction: column;
@@ -19,44 +113,29 @@
   @include breakpoint(medium) {
     margin-top: remcalc(20);
   }
-
-  .project-location {
-    @include just-rythm(12);
-
-    .project-year {
-      color: $gradi-green;
-      font-weight: $font-semi-bold;
-    }
-  }
-
-  .project-description {
-    @include breakpoint(small) {
-      @include just-rythm(18);
-    }
-  }
 }
 
-.project-technologies {
-  @include just-rythm(14);
-  display: flex;
-  flex-direction: row;
-
-  .project-techno-body {
-    flex: 1 1 50%;
-    padding: 0 0 remcalc(15);
-
-    .techno-body-name {
-      color: $middle-greay;
-      font-weight: $font-semi-bold;
-      margin: remcalc(5) 0;
-    }
-
-    .body-name-shot {
-      font-weight: $font-thin;
-      margin: remcalc(2) 0;
-    }
-  }
-}
+//.project-technologies {
+//  @include just-rythm(14);
+//  display: flex;
+//  flex-direction: row;
+//
+//  .project-techno-body {
+//    flex: 1 1 50%;
+//    padding: 0 0 remcalc(15);
+//
+//    .techno-body-name {
+//      color: $middle-greay;
+//      font-weight: $font-semi-bold;
+//      margin: remcalc(5) 0;
+//    }
+//
+//    .body-name-shot {
+//      font-weight: $font-thin;
+//      margin: remcalc(2) 0;
+//    }
+//  }
+//}
 
 .project-arrows {
   align-items: flex-start;
@@ -111,23 +190,6 @@
   }
 }
 
-.project-name {
-  @include just-rythm(30);
-  @include gradient-text;
-  max-width: remcalc(220);
-  margin: 0 auto 0 0;
-  padding: remcalc(10) 0 remcalc(20) 0;
-  text-transform: uppercase;
-  line-height: remcalc(30);
-  letter-spacing: .5px;
-
-  @include breakpoint(small) {
-    @include just-rythm(40);
-    line-height: remcalc(40);
-    max-width: remcalc(400);
-  }
-}
-
 .project-button-arrows {
   display: flex;
   flex-direction: row;
@@ -179,21 +241,6 @@
   }
 }
 
-.project-image-box {
-  position: relative;
-  padding-bottom: remcalc(20);
-
-  @include breakpoint(small) {
-    margin-right: remcalc(25);
-    flex: 1 0 55%
-  }
-
-  .project-shot-img {
-    display: block;
-    width: 100%;
-  }
-}
-
 .project-button-to {
   @include just-rythm(18);
   @include gradient-text;
@@ -223,4 +270,9 @@
     display: flex;
     flex-direction: row;
   }
+}
+
+.project-year {
+  color: $gradi-green;
+  font-weight: $font-semi-bold;
 }

@@ -15,49 +15,93 @@ export default function ProjectDetails(props, context) {
     return (
         <section className="height-auto project-shots">
           <h3 className="project-name qanelas-bold">{currentProject.name}</h3>
-            <div className="project-name-box">
-              <div className="project-image-box">
-                {map(currentProject.srcImg.img, (img)  => (
-                  <img
-                    className="project-shot-img box-shadow"
-                    alt="Hello Pencil"
-                    src={"../../img/project_grid/" + img + ".png"}
-                  />
-                ))}
-              </div>
-              {isMediaLessThan('Small', context.currentMedia) && (
-                <Link to={currentProject.button_link} target="_blank" >
-                  <div className="svg-button-wrapper">
-                    <svg height="35" width="180" xmlns="http://www.w3.org/2000/svg">
-                      <rect className="button-shape" height="35" width="180" />
-                    </svg>
-                    <div className="button-text">Zobacz project</div>
-                  </div>
-                </Link>
-              )}
+            <div className="project-image-box">
+              <i className="project-description">"{currentProject.description_part_1}"</i>
+              {map(currentProject.srcImg.img, (img)  => (
+                <img
+                  className="project-shot-img box-shadow"
+                  alt="Hello Pencil"
+                  src={"../../img/project_grid/" + img + ".png"}
+                />
+              ))}
+            </div>
+          <div className="type-box">
+            <p className="type-box-name qanelas-bold">Rodzaj</p>
+            <p className="project-location">{currentProject.type}</p>
+          </div>
+          <div className="type-box">
+            <p className="type-box-name qanelas-bold">Gdzie</p>
+            <p className="project-location">{currentProject.location}</p>
+          </div>
+          <div className="type-box">
+            <p className="type-box-name qanelas-bold">Rok</p>
+            <p className="project-location">{currentProject.year}</p>
+          </div>
+          <i className="project-description">"{currentProject.description_part_2}"</i>
+          <ul className="project-technologies">
+            {map(currentProject.technologies.name, (name) => (
+              <li className="project-technologies-shot qanelas-bold">
+                <svg className="project-technologies-svg" version="1.1" viewBox="0 0 16 16">
+                  <path d="M8 4c-2.2 0-4 1.8-4 4s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4z"/>
+                  <path d="M8 1c3.9 0 7 3.1 7 7s-3.1 7-7 7-7-3.1-7-7 3.1-7 7-7zM8 0c-4.4 0-8 3.6-8 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8v0z"/>
+                </svg>
+                {name}
+              </li>
+            ))}
+          </ul>
+          <Link
+            to={currentProject.button_link}
+            target="_blank"
+            className="project-button see-project qanelas-bold box-shadow"
+          >
+            Zobacz project
+          </Link>
+          <Link
+            to={routeMap.project_details.replace(':slug', currentProject.button_next)}
+            className="project-button next qanelas-bold box-shadow"
+          >
+            Następny
+          </Link>
+
+
+
+
+
+
+
+          {/*{isMediaLessThan('Small', context.currentMedia) && (*/}
+                {/*<Link to={currentProject.button_link} target="_blank" >*/}
+                  {/*<div className="svg-button-wrapper">*/}
+                    {/*<svg height="35" width="180" xmlns="http://www.w3.org/2000/svg">*/}
+                      {/*<rect className="button-shape" height="35" width="180" />*/}
+                    {/*</svg>*/}
+                    {/*<div className="button-text">Zobacz project</div>*/}
+                  {/*</div>*/}
+                {/*</Link>*/}
+              {/*)}*/}
               <div className="project-shot-info">
-                <p className="project-location">{currentProject.location}
-                    <span className="project-year"> {currentProject.year}</span>
-                </p>
-                <p className="project-description">{currentProject.description}</p>
-                <div className="project-technologies">
-                  <div className="project-techno-body">
-                    <p className="techno-body-name">Body</p>
-                    {map(currentProject.technologies.body, (body) => (
-                        <p className="body-name-shot">
-                            {body}
-                        </p>
-                    ))}
-                  </div>
-                  <div className="project-techno-body">
-                    <p className="techno-body-name">Styling</p>
-                    {map(currentProject.technologies.style, (style) => (
-                      <p className="body-name-shot">
-                          {style}
-                      </p>
-                    ))}
-                  </div>
-                </div>
+                {/*<p className="project-location">{currentProject.location}*/}
+                    {/*<span className="project-year"> {currentProject.year}</span>*/}
+                {/*</p>*/}
+
+                {/*<div className="project-technologies">*/}
+                  {/*<div className="project-techno-body">*/}
+                    {/*<p className="techno-body-name">Body</p>*/}
+                    {/*{map(currentProject.technologies.body, (body) => (*/}
+                        {/*<p className="body-name-shot">*/}
+                            {/*{body}*/}
+                        {/*</p>*/}
+                    {/*))}*/}
+                  {/*</div>*/}
+                  {/*<div className="project-techno-body">*/}
+                    {/*<p className="techno-body-name">Styling</p>*/}
+                    {/*{map(currentProject.technologies.style, (style) => (*/}
+                      {/*<p className="body-name-shot">*/}
+                          {/*{style}*/}
+                      {/*</p>*/}
+                    {/*))}*/}
+                  {/*</div>*/}
+                {/*</div>*/}
                 {/*{isMediaGreaterThan('Mobile', context.currentMedia) && (*/}
                   {/*<Link to={currentProject.button_link} target="_blank" >*/}
                     {/*<div className="svg-button-wrapper">*/}
@@ -69,7 +113,7 @@ export default function ProjectDetails(props, context) {
                   {/*</Link>*/}
                 {/*)}*/}
               </div>
-            </div>
+{/*
             <div className="project-button-arrows">
               <div className="project-button-one">
                 <Link
@@ -102,6 +146,7 @@ export default function ProjectDetails(props, context) {
                 </Link>
               </div>
             </div>
+*/}
         </section>
     );
 }
