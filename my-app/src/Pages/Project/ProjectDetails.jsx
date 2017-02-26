@@ -25,20 +25,25 @@ export default function ProjectDetails(props, context) {
                 />
               ))}
             </div>
-          <div className="type-box">
-            <p className="type-box-name qanelas-bold">Rodzaj</p>
-            <p className="project-location">{currentProject.type}</p>
-          </div>
-          <div className="type-box">
-            <p className="type-box-name qanelas-bold">Gdzie</p>
-            <p className="project-location">{currentProject.location}</p>
-          </div>
-          <div className="type-box">
-            <p className="type-box-name qanelas-bold">Rok</p>
-            <p className="project-location">{currentProject.year}</p>
-          </div>
-          <i className="project-description">"{currentProject.description_part_2}"</i>
-          <ul className="project-technologies">
+          <div className="project-description-wrapper">
+            <div className="project-type">
+              <div className="type-box">
+                <p className="type-box-name qanelas-bold">Rodzaj</p>
+                <p className="project-location">{currentProject.type}</p>
+              </div>
+              <div className="type-box">
+                <p className="type-box-name qanelas-bold">Gdzie</p>
+                <p className="project-location">{currentProject.location}</p>
+              </div>
+              <div className="type-box">
+                <p className="type-box-name qanelas-bold">Rok</p>
+                <p className="project-location">{currentProject.year}</p>
+              </div>
+            </div>
+            {isMediaLessThan('Medium', context.currentMedia) && (
+              <i className="project-description">"{currentProject.description_part_2}"</i>
+            )}
+            <ul className="project-technologies">
             {map(currentProject.technologies.name, (name) => (
               <li className="project-technologies-shot qanelas-bold">
                 <svg className="project-technologies-svg" version="1.1" viewBox="0 0 16 16">
@@ -49,19 +54,41 @@ export default function ProjectDetails(props, context) {
               </li>
             ))}
           </ul>
+          </div>
+          {isMediaGreaterThan('Small', context.currentMedia) && (
+            <div>
+              <i className="project-description">"{currentProject.description_part_2}"</i>
+              <ul className="project-colors">
+                  {map(currentProject.color.name, (name) => (
+                    <li className="project-color-shot">
+                      <div className="project-color-circle" style={{ backgroundColor: '#'+name}}></div>
+                      <p className="project-color-name">
+                        #{name}
+                      </p>
+                    </li>
+                  ))}
+                </ul>
+            </div>
+          )}
+          <div className="project-button-wrapper">
           <Link
             to={currentProject.button_link}
             target="_blank"
             className="project-button see-project qanelas-bold box-shadow"
           >
-            Zobacz project
+            <span>
+              Zobacz project
+            </span>
           </Link>
           <Link
             to={routeMap.project_details.replace(':slug', currentProject.button_next)}
             className="project-button next qanelas-bold box-shadow"
           >
-            Następny
+            <span>
+              Następny
+            </span>
           </Link>
+            </div>
 
 
 

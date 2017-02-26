@@ -7,6 +7,9 @@
     "srcImg": {
       "img" : ["browser"]
     },
+    "color": {
+      "name" : ["222222", "fcd500", "fafafa", "00e1d9", "01e6ae"]
+    },
     "location": "Polska, Warszawa",
     "type": "Personal WebSite",
     "year": "2016",
@@ -24,6 +27,9 @@
     "description_part_2": "Animowana kartka z okazji świeta Bożego urodzenia",
     "srcImg": {
       "img" : ["stypendium_z_wyboru", "stypendium_z_wyboru"]
+    },
+    "color": {
+      "name" : ["222222", "fcd500"]
     },
     "location": "Polska, Warszawa",
     "type": "WebSite",
@@ -43,6 +49,9 @@
     "srcImg": {
       "img" : ["stypendium_z_wyboru", "stypendium_z_wyboru"]
     },
+    "color": {
+      "name" : ["222222", "fcd500"]
+    },
     "location": "Polska, Warszawa",
     "type": "WebSite",
     "year": "2015",
@@ -60,6 +69,9 @@
     "description_part_2": "Front dla portala poszukiwania pracy",
     "srcImg": {
       "img" : ["stypendium_z_wyboru", "stypendium_z_wyboru"]
+    },
+    "color": {
+      "name" : ["222222", "fcd500"]
     },
     "location": "Polska, Warszawa",
     "type": "WebSite",
@@ -79,6 +91,9 @@
     "srcImg": {
       "img" : ["stypendium_z_wyboru", "stypendium_z_wyboru"]
     },
+    "color": {
+      "name" : ["222222", "fcd500"]
+    },
     "location": "Polska, Warszawa",
     "type": "WebSite",
     "year": "2016",
@@ -96,6 +111,9 @@
     "description_part_2": "Zaślepka dla strony internetowej. Z aktualnym czasem przed rozpoczęciem działania oraz możliwością kontaktu bądż subskrybcji na newslettera.",
     "srcImg": {
       "img" : ["stypendium_z_wyboru", "stypendium_z_wyboru"]
+    },
+    "color": {
+      "name" : ["222222", "fcd500"]
     },
     "location": "Polska, Warszawa",
     "type": "WebSite",
@@ -115,6 +133,9 @@
     "srcImg": {
       "img" : ["stypendium_z_wyboru", "stypendium_z_wyboru"]
     },
+    "color": {
+      "name" : ["222222", "fcd500"]
+    },
     "location": "Polska, Warszawa",
     "type": "WebSite",
     "year": "2016",
@@ -133,6 +154,9 @@
     "srcImg": {
       "img" : ["stypendium_z_wyboru", "stypendium_z_wyboru"]
     },
+    "color": {
+      "name" : ["222222", "fcd500"]
+    },
     "location": "Polska, Warszawa",
     "type": "WebSite",
     "year": "2016",
@@ -150,6 +174,9 @@
     "description_part_2": "Animowany baner z zegarkiem pokazującym aktualną godzinę",
     "srcImg": {
       "img" : ["stypendium_z_wyboru", "stypendium_z_wyboru"]
+    },
+    "color": {
+      "name" : ["222222", "fcd500"]
     },
     "location": "Polska, Warszawa",
     "type": "WebSite",
@@ -171,6 +198,9 @@
     "year": "2015",
     "technologies": {
       "body": ["HTML", "JQuery", "SCSS", "Bootstrap"]
+    },
+    "color": {
+      "name" : ["222222", "fcd500"]
     },
     "srcImg": {
       "img" : ["stypendium_z_wyboru", "stypendium_z_wyboru"]
