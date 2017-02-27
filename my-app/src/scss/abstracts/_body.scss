@@ -25,14 +25,6 @@ h5,
 h6
 {margin: 0}
 
-p,
-span,
-i {
-  @include breakpoint(medium) {
-    @include just-rythm(18);
-  }
-}
-
 section {
   display: flex;
   justify-content: center;
