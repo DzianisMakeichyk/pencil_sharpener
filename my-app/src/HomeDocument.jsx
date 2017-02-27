@@ -4,7 +4,6 @@ import { TimelineLite } from "gsap";
 import Menu from './Menu'
 import routeMap from '../routeMap.json';
 import MediaDetectElement from './web_modules/MediaDetectElement';
-import { RouteTransition } from 'react-router-transition';
 import AudioWolf from './Pages/Elements/audioIcon'
 
 class Home extends Component {
@@ -86,7 +85,9 @@ class Home extends Component {
         var classNameOther = is_click + ' burger-menu-other';
         // console.log(location.pathname);
         // console.log(location.pathname !== routeMap.home);
-      console.log();
+      var things = ['rock', 'fun', 'more work'];
+      const thing = things[Math.floor(Math.random()*things.length)];
+      console.log('The computer :' + thing);
       return (
         <div className="App">
             <header className="header-wrap">
@@ -138,23 +139,25 @@ class Home extends Component {
                 </nav>
             </header>
             <main>
-              <RouteTransition
-                pathname={this.props.location.pathname}
-                atEnter={{ translateX: 100 }}
-                atLeave={{ translateX: -100 }}
-                atActive={{ translateX: 0 }}
-                mapStyles={styles => ({ transform: `translateX(${styles.translateX}%)` })}
-                className="hello-world"
-              >
-                {this.props.children}
-              </RouteTransition>
-              {/*{(this.props.location.pathname &&
-                <div id="preload">
-                  <div id="preloader">
-                    <div id="preloader-content"></div>
-                  </div>
+              {this.props.children}
+              {(this.props.location.pathname &&
+                <div className="preloader">
+                  <p className="preloader-text qanelas-bold">
+                    Pencil Sharpener
+                    <svg version="1.1" x="0" y="0" viewBox="0 0 357 357" enableBackground="new 0 0 357 357" xmlSpace="preserve">
+                      <g>
+                        <g id="remove">
+                          <path d="M357,204H0v-51h357V204z" fill="#FFFFFF"/>
+                        </g>
+                      </g>
+                    </svg>
+                    it's
+                    <span className="preloader-color-text">
+                      &nbsp;{thing}
+                    </span>
+                  </p>
                 </div>
-              )}*/}
+              )}
                 <MediaDetectElement onMediaChange={this.onMediaChange} />
             </main>
         </div>

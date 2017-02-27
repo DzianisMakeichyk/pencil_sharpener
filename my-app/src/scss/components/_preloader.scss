@@ -1,130 +1,109 @@
 
 /*= Preload */
 
-@keyframes firstSegment {
-  from {
-    width: 0%;
+@keyframes swipe {
+  0% {
+    width: 0;
+    opacity: 1;
   }
-  to {
+  30% {
     width: 100%;
+    transform: translateX(100%)
   }
-}
-
-@keyframes secondSegment {
-  from {
-    height: 0%;
+  50% {
+    transform: translateX(200%)
   }
-  to {
-    height: 100%;
+  80% {
+    transform: translateX(100%)
   }
-}
-
-@keyframes thirdSegment {
-  from {
-    width: 0%;
-  }
-  to {
+  90% {
+      opacity: 1;
+    }
+  95% {
     width: 100%;
-  }
-}
-
-@keyframes fourthSegment {
-  from {
-    height: 0%;
-  }
-  to {
-    height: 100%;
+    transform: translateX(0);
+    opacity: 0;
   }
 }
 
 @keyframes preloading {
-  from {
-    width: 100px;
-    height: 100px;
-    top: 50%;
-    left: 50%;
-    margin: -50px 0 0 -50px;
-    background: #000;
+  90% {
+    background: $clear-white;
+    opacity: 1;
   }
 
-  to {
+  100% {
     width: 100%;
     height: 100%;
-    top: 0;
-    left: 0;
-    margin: 0;
-    background: #fff;
+    opacity: 0;
+    display: none;
+    z-index: -1;
   }
 }
 
-#preload {
+@keyframes text {
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.preloader {
   width: 100%;
   height: 100%;
-  background: #000;
+  background: $clear-black;
+  letter-spacing: 1px;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 99999999999999999;
-}
+  animation: preloading 3s ease-out 2s both;
 
-#preloader {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: -50px 0 0 -50px;
-  background: #000;
-  animation: preloading 1s ease-out 4s both;
-}
+  .preloader-text {
+    position: relative;
+    width: remcalc(250);
+    margin: 0;
+    overflow: hidden;
+    @include center($extend: false);
+    @include just-rythm(30);
+    animation: text 2.5s ease-out;
+    opacity: 0;
 
-#preloader-content {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-}
+    @include breakpoint(medium) {
+      width: remcalc(500);
+      @include just-rythm(60);
+    }
 
-#preloader:before {
-  content: ' ';
-  display: block;
-  height: 1px;
-  width: 0%;
-  background: #fff;
-  position: absolute;
-  animation: firstSegment 1s linear both;
-}
+    &:before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: $clear-white;
+      animation: swipe 3s ease-out;
+      opacity: 0;
 
-#preloader:after {
-  content: ' ';
-  display: block;
-  height: 0%;
-  width: 1px;
-  background: #fff;
-  position: absolute;
-  right: 0;
-  animation: secondSegment 1s linear 1s both;
-}
+    }
 
-#preloader-content:before {
-  content: ' ';
-  display: block;
-  height: 1px;
-  width: 0%;
-  background: #fff;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  animation: thirdSegment 1s linear 2s both;
-}
+    svg {
+      margin-right: remcalc(10);
+      width: remcalc(15);
+      height: remcalc(15);
 
-#preloader-content:after {
-  content: ' ';
-  display: block;
-  height: 0%;
-  width: 1px;
-  background: #fff;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  animation: fourthSegment 1s linear 3s both;
+      @include breakpoint(medium) {
+        width: remcalc(35);
+        height: remcalc(35);
+      }
+    }
+
+    .preloader-color-text {
+      @include gradient-text;
+
+      @include breakpoint(medium) {
+        @include just-rythm(60);
+      }
+    }
+  }
 }
