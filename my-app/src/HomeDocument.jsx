@@ -88,6 +88,7 @@ class Home extends Component {
       var things = ['rock', 'fun', 'more work'];
       const thing = things[Math.floor(Math.random()*things.length)];
       console.log('The computer :' + thing);
+      console.log(this.props.location.pathname);
       return (
         <div className="App">
             <header className="header-wrap">
