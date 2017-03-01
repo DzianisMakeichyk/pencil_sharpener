@@ -1,0 +1,36 @@
+.not-found{
+  display: table;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+
+.not-found-box{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.not-found-box {
+  .not-found-text {
+    @include just-rythm(52);
+    display: inline-block;
+    color: $ease-gray;
+    padding-right: remcalc(12);
+    animation: type .5s alternate infinite;
+    transition: all .6s;
+  }
+
+  .not-found-home {
+    @include just-rythm(22);
+    color: $ease-gray;
+  }
+}
+
+@keyframes type{
+  from {
+    box-shadow: inset -3px 0 0 $ease-gray;
+  }
+  to {
+    box-shadow: inset -3px 0 0 transparent;
+  }
+}
