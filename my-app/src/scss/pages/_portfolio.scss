@@ -7,7 +7,7 @@
   position: relative;
 
   @include breakpoint(small) {
-    padding-top: remcalc(80);
+    padding-top: remcalc(40);
   }
 }
 
@@ -93,11 +93,12 @@
 
 .project-mini-categories {
   @include just-rythm(12);
-  font-family: $robot-thin;
+  margin: 0 auto;
+  padding: 0 0 remcalc(5);
   color: $clear-white;
+  font-family: $robot-thin;
   text-align: center;
   letter-spacing: 1px;
-  padding: 0 0 remcalc(5);
 
   @include breakpoint(large) {
     @include just-rythm(20);
