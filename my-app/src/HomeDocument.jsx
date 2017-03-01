@@ -89,7 +89,7 @@ class Home extends Component {
         // console.log(location.pathname !== routeMap.home);
       var things = ['rock', 'fun', 'more work'];
       const thing = things[Math.floor(Math.random()*things.length)];
-      const isLoggedIn = (platform.name === 'Chrome' || platform.name === 'IE' || platform.name === 'Microsoft Edge');
+      const isLoggedIn = (platform.name === 'IE' || platform.name === 'Microsoft Edge');
 
       return (
         <div className="App">
