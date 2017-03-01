@@ -7,6 +7,7 @@ import BlogDocument from './Pages/BlogDocument';
 import ContactDocument from './Pages/ContactDocument';
 import AboutDocument from './Pages/AboutDocument';
 import ProjectDetails from './Pages/Project/ProjectDetails';
+import NotFound from './Pages/NotFoundDocument';
 import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 import routeMap from '../routeMap.json';
 
@@ -21,6 +22,7 @@ ReactDOM.render((
             <Route path={routeMap.project_details} component={ProjectDetails} />
             /* <Route path={routeMap.index} component={IndexDocument} /> */
         </Route>
+      <Route path="*" component={NotFound} />
     </Router>
     ),document.getElementById('root')
 );
