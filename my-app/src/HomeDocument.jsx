@@ -5,6 +5,7 @@ import Menu from './Menu'
 import routeMap from '../routeMap.json';
 import MediaDetectElement from './web_modules/MediaDetectElement';
 import AudioWolf from './Pages/Elements/audioIcon'
+import IEDocument from './Pages/IEDocument'
 import platform from 'platform'
 
 class Home extends Component {
@@ -88,15 +89,12 @@ class Home extends Component {
         // console.log(location.pathname !== routeMap.home);
       var things = ['rock', 'fun', 'more work'];
       const thing = things[Math.floor(Math.random()*things.length)];
-      const isLoggedIn = (platform.name === 'Microsoft Edge' || 'IE');
-      console.log(platform.name);
-      console.log(isLoggedIn);
-
+      const isLoggedIn = (platform.name === 'Chrome' || platform.name === 'IE' || platform.name === 'Microsoft Edge');
 
       return (
         <div className="App">
           {isLoggedIn ? (
-            <p>hello</p>
+            <IEDocument />
           ) : (
             <div>
               <header className="header-wrap">

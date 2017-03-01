@@ -1,0 +1,26 @@
+.ie {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: $middle-black;
+}
+
+.grampy-cat-box {
+  @include center($extend: false);
+  margin: 0 auto;
+  width: 100%;
+  max-width: remcalc(620);
+
+  .ie-svg {
+    display: block;
+    width: 100%;
+    max-width: remcalc(550);
+    margin: 0 auto remcalc(45);
+  }
+
+  .ie-text {
+    @include just-rythm(42);
+    text-align: center;
+    letter-spacing: 1px;
+  }
+}
