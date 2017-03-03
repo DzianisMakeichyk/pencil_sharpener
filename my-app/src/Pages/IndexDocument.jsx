@@ -76,9 +76,6 @@ class Index extends Component {
                         </g>
                         )}
                     </svg>
-                    <a className="button-classic qanelas-light">
-                        O mnie
-                    </a>
                 </div>
             </section>
         );

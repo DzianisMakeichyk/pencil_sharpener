@@ -1,5 +1,5 @@
 main {
-  background: $middle-black;
+  background: $clear-gray;
 }
 
 .header-container {
@@ -160,7 +160,7 @@ main {
 .hello-svg {
   position: relative;
   width: 100%;
-  margin: auto auto remcalc(25);
+  //margin: auto auto remcalc(25);
 
   .hello-cut {
     width: 100%;
