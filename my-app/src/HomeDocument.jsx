@@ -29,7 +29,7 @@ class Home extends Component {
               .to(this.refs.thirdLine, .3, { x: 4, y: -9, rotation: -45 }, 'third_step')
 
         } else {
-            menuAnimation.to(this.refs.thirdLine, .3, { scaleX: 1, width: 3, x: 18 }, 'first_step')
+            menuAnimation.to(this.refs.thirdLine, .3, { scaleX: 1, width: 3, x: 14 }, 'first_step')
               .to(this.refs.secondLine, .3, { scaleX: 0, y: -5 }, 'first_step')
               .to(this.refs.firstLine, .1, { scaleX: 0, x: 0, y: 0 }, 'first_step')
               .to(this.refs.secondLine, .1, { scaleX: 0, x: 0, y: 0, rotation: 0 }, 'first_step')
