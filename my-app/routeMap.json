@@ -5,5 +5,6 @@
   "about": "/o-mnie",
   "blog": "/blog",
   "contact": "/kontakt",
+  "funny_box": "/funny-box",
   "project_details": "/portfolio/:slug"
 }

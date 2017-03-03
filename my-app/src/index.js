@@ -7,6 +7,7 @@ import BlogDocument from './Pages/BlogDocument';
 import ContactDocument from './Pages/ContactDocument';
 import AboutDocument from './Pages/AboutDocument';
 import ProjectDetails from './Pages/Project/ProjectDetails';
+import FunnyBox from './Pages/FunnyBoxDocument';
 import NotFound from './Pages/NotFoundDocument';
 import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 import routeMap from '../routeMap.json';
@@ -20,6 +21,7 @@ ReactDOM.render((
             <Route path={routeMap.blog} component={BlogDocument} />
             <Route path={routeMap.contact} component={ContactDocument} />
             <Route path={routeMap.project_details} component={ProjectDetails} />
+            <Route path={routeMap.funny_box} component={FunnyBox} />
             /* <Route path={routeMap.index} component={IndexDocument} /> */
         </Route>
       <Route path="*" component={NotFound} />
