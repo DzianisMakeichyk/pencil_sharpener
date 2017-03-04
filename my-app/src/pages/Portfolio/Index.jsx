@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import PortfolioGrid from './PortfolioGrid';
+import PortfolioGrid from './Grid';
 import PortfolioGridList from './PortfolioGridList.json';
 import map from 'lodash/map';
 import isMediaGreaterThan from '../../web_modules/isMediaGreaterThan';

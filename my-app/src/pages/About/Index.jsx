@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import isMediaGreaterThan from '../../web_modules/isMediaGreaterThan';
 import isMediaLessThan from '../../web_modules/isMediaLessThan';
 import SkillOne from './Skills/SkillsList.json';
-import SkillOneItem from './Skills/SkillsItem'
+import SkillOneItem from './Skills/Index'
 import map from 'lodash/map';
 import { TimelineLite } from "gsap";
 
