@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 import find from 'lodash/find';
-import projects from './ProjectsList.json';
+import projects from './datas/ProjectsList.json';
 import map from 'lodash/map';
 import routeMap from '../../../routeMap.json';
 import isMediaGreaterThan from '../../web_modules/isMediaGreaterThan';

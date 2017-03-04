@@ -2,6 +2,9 @@
   {
     "slug": "stypendium-z-wyboru",
     "name": "Stypendium z wyboru",
+    "title": "Stypendium z wyboru",
+    "short_description": "Absolvent.pl",
+    "background": "13",
     "description_part_1": " Projekt firmy Absolvent.pl. Stypendium z Wyboru to ogólnopolski program stypendialny stworzony po to, by pomagać zdolnym, kreatywnym i ambitnym studentom i młodym absolwentom w realizowaniu swoich marzeń edukacyjnych i zawodowych.",
     "description_part_2": " Projekt firmy Absolvent.pl. Stypendium z Wyboru to ogólnopolski program stypendialny stworzony po to, by pomagać zdolnym, kreatywnym i ambitnym studentom i młodym absolwentom w realizowaniu swoich marzeń edukacyjnych i zawodowych.",
     "srcImg": {
@@ -17,54 +20,14 @@
       "name": ["ReactJs", "JavaScript", "SCSS", "Gsap"]
     },
     "button_link": "https://www.stypendiumzwyboru.pl",
-    "button_last": " ",
     "button_next": "animowany-baner"
-  },
-  {
-    "slug": "animowany-baner",
-    "name": "Baner",
-    "description_part_1": "Animowana kartka z okazji świeta Bożego urodzenia",
-    "description_part_2": "Animowana kartka z okazji świeta Bożego urodzenia",
-    "srcImg": {
-      "img" : ["stypendium_z_wyboru", "stypendium_z_wyboru"]
-    },
-    "color": {
-      "name" : ["222222", "fcd500"]
-    },
-    "location": "Polska, Warszawa",
-    "type": "WebSite",
-    "year": "2016",
-    "technologies": {
-      "body": ["HTML", "JQuery", "SCSS"]
-    },
-    "button_link": "https://www.pencilsharpener.pl/works/kartka/index.html",
-    "button_last": "stypendium-z-wyboru",
-    "button_next": "pierwsza-strona"
-  },
-  {
-    "slug": "pierwsza-strona",
-    "name": "Pierwsza strona www",
-    "description_part_1": "Pierwsza strona www na bootstrape",
-    "description_part_2": "Pierwsza strona www na bootstrape",
-    "srcImg": {
-      "img" : ["stypendium_z_wyboru", "stypendium_z_wyboru"]
-    },
-    "color": {
-      "name" : ["222222", "fcd500"]
-    },
-    "location": "Polska, Warszawa",
-    "type": "WebSite",
-    "year": "2015",
-    "technologies": {
-      "body": ["HTML", "JQuery", "Bootstrap", "CSS"]
-    },
-    "button_link": "https://www.pencilsharpener.pl/works/rus/index.html",
-    "button_last": "animowany-baner",
-    "button_next": "portal-pracy"
   },
   {
     "slug": "portal-pracy",
     "name": "Portal Pracy",
+    "title": "Portal pracy",
+    "short_description": "Front dla portala poszukiwania pracy",
+    "background": "background_name",
     "description_part_1": "Front dla portala poszukiwania pracy",
     "description_part_2": "Front dla portala poszukiwania pracy",
     "srcImg": {
@@ -80,12 +43,14 @@
       "body": ["JADE", "JQuery", "SCSS", "Bootstrap"]
     },
     "button_link": "https://www.pencilsharpener.pl/works/portal-praca/index.html",
-    "button_last": "pierwsza-strona",
     "button_next": "agencja-interaktywna"
   },
   {
     "slug": "agencja-interaktywna",
     "name": "Agencja Interaktywna",
+    "title": "Agencja kreatywna",
+    "short_description": "Agencja interaktywna łącząca kompetencje digital, performance marketing i Social Media",
+    "background": "test_multi_www",
     "description_part_1": "Agencja interaktywna łącząca kompetencje digital, performance marketing i Social Media",
     "description_part_2": "Agencja interaktywna łącząca kompetencje digital, performance marketing i Social Media",
     "srcImg": {
@@ -101,12 +66,14 @@
       "body": ["JADE", "JQuery", "SCSS", "Bootstrap"]
     },
     "button_link": "https://www.pencilsharpener.pl/works/agencja/index.html",
-    "button_last": "portal-pracy",
     "button_next": "zaslepka"
   },
   {
     "slug": "zaslepka",
     "name": "Zaślepka",
+    "title": "Zaślepka",
+    "short_description": "Zaślepka dla strony internetowej. Z aktualnym czasem przed rozpoczęciem działania oraz możliwością ...",
+    "background": "test_multi_www",
     "description_part_1": "Zaślepka dla strony internetowej. Z aktualnym czasem przed rozpoczęciem działania oraz możliwością kontaktu bądż subskrybcji na newslettera.",
     "description_part_2": "Zaślepka dla strony internetowej. Z aktualnym czasem przed rozpoczęciem działania oraz możliwością kontaktu bądż subskrybcji na newslettera.",
     "srcImg": {
@@ -122,54 +89,14 @@
       "body": ["JADE", "JQuery", "SCSS", "Bootstrap"]
     },
     "button_link": "https://www.pencilsharpener.pl/works/timer/index.html",
-    "button_last": "agencja-interaktywna",
     "button_next": "facebook-tab"
-  },
-  {
-    "slug": "facebook-tab",
-    "name": "Facebook Tab",
-    "description_part_1": "Facebook Tab",
-    "description_part_2": "Facebook Tab",
-    "srcImg": {
-      "img" : ["stypendium_z_wyboru", "stypendium_z_wyboru"]
-    },
-    "color": {
-      "name" : ["222222", "fcd500"]
-    },
-    "location": "Polska, Warszawa",
-    "type": "WebSite",
-    "year": "2016",
-    "technologies": {
-      "body": ["HTML", "JQuery", "SASS"]
-    },
-    "button_link": "#",
-    "button_last": "zaslepka",
-    "button_next": "dzianis"
-  },
-  {
-    "slug": "dzianis",
-    "name": "Strona portfolio",
-    "description_part_1": "Strona portfolio",
-    "description_part_2": "Strona portfolio",
-    "srcImg": {
-      "img" : ["stypendium_z_wyboru", "stypendium_z_wyboru"]
-    },
-    "color": {
-      "name" : ["222222", "fcd500"]
-    },
-    "location": "Polska, Warszawa",
-    "type": "WebSite",
-    "year": "2016",
-    "technologies": {
-      "body": ["JADE", "JQuery", "SCSS", "Bootstrap"]
-    },
-    "button_link": "https://www.pencilsharpener.pl/works/self/index.html",
-    "button_last": "facebook-tab",
-    "button_next": "baner"
   },
   {
     "slug": "baner",
     "name": "Epos Drift Master",
+    "title": "Baner zegarkowy",
+    "short_description": "Z aktualną godziną",
+    "background": "background_name",
     "description_part_1": "Animowany baner z zegarkiem pokazującym aktualną godzinę",
     "description_part_2": "Animowany baner z zegarkiem pokazującym aktualną godzinę",
     "srcImg": {
@@ -185,28 +112,6 @@
       "body": ["HTML", "JQuery", "CSS", "Bootstrap"]
     },
     "button_link": "https://www.pencilsharpener.pl/works/zegar/index.html",
-    "button_last": "dzianis",
     "button_next": "warsztat-samochodowy"
-  },
-  {
-    "slug": "warsztat-samochodowy",
-    "name": "Warsztat samochodowy",
-    "description_part_1": "W trakcie realizacji..",
-    "description_part_2": "W trakcie realizacji..",
-    "location": "Polska, Warszawa",
-    "type": "WebSite",
-    "year": "2015",
-    "technologies": {
-      "body": ["HTML", "JQuery", "SCSS", "Bootstrap"]
-    },
-    "color": {
-      "name" : ["222222", "fcd500"]
-    },
-    "srcImg": {
-      "img" : ["stypendium_z_wyboru", "stypendium_z_wyboru"]
-    },
-    "button_link": "https://www.pencilsharpener.pl/works/warsztat/index.html",
-    "button_last": "baner",
-    "button_next": " "
   }
 ]
