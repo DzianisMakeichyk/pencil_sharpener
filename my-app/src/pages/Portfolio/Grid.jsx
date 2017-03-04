@@ -64,7 +64,7 @@ export default class PortfolioGrid extends React.Component {
             opacity: style.opacity,
           }}
         >
-          <h6 className="portfolio-box-name qanelas-bold">{this.props.project.title}</h6>
+          <h6 className="portfolio-box-name qanelas-bold">{this.props.project.name}</h6>
           <p className="project-mini-categories">{this.props.project.short_description}</p>
         </div>
         )}
@@ -88,7 +88,7 @@ export default class PortfolioGrid extends React.Component {
           {isMediaLessThan('Small', this.context.currentMedia) && (
             <div className={classnames({'portfolio-info-box':this.context.currentMedia <= 'Mobile' })}>
               <h6 className="portfolio-title qanelas-bold">
-                {this.props.project.title}
+                {this.props.project.name}
               </h6>
               <p className="project-mini-categories left">
                 {this.props.project.short_description}
