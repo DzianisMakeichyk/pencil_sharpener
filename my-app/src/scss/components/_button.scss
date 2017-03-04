@@ -105,6 +105,7 @@
   font-weight: $font-bold;
   //border-radius: remcalc(5);
   text-transform: uppercase;
+  border: 2px solid $gradi-green;
 
   &.see-project {
     background: $gradi-green;
@@ -113,13 +114,5 @@
     @include breakpoint(small) {
       margin-right: remcalc(20);
     }
-  }
-
-  &.next {
-    border: 2px solid $gradi-green;
-  }
-
-  .project-button-text {
-
   }
 }
