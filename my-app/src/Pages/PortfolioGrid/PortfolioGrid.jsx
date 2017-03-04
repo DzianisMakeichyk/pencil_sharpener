@@ -5,7 +5,7 @@ import isMediaLessThan from '../../web_modules/isMediaLessThan';
 import routeMap from '../../../routeMap.json';
 import { Motion, spring } from 'react-motion';
 import classnames from 'classnames';
-import ElementIcon from '../Elements/icon_svg';
+import ElementIcon from '../Elements/IconSvg';
 import { TimelineLite } from "gsap";
 
 export default class PortfolioGrid extends React.Component {

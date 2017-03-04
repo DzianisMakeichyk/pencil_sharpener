@@ -4,7 +4,7 @@ import { TimelineLite } from "gsap";
 import Menu from './Menu'
 import routeMap from '../routeMap.json';
 import MediaDetectElement from './web_modules/MediaDetectElement';
-import AudioWolf from './Pages/Elements/audioIcon'
+import AudioWolf from './Pages/Elements/AudioIcon'
 import IEDocument from './Pages/IEDocument'
 import platform from 'platform'
 

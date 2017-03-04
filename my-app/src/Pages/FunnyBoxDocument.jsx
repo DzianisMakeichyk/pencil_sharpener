@@ -3,12 +3,12 @@ import ComingSoon from './Elements/ComingSoonDocument';
 
 class App extends Component {
 
-    render() {
-        console.log(this.context.currentMedia);
-        return (
-            <ComingSoon />
-        );
-    }
+  render() {
+    console.log(this.context.currentMedia);
+    return (
+      <ComingSoon />
+    );
+  }
 }
 
 export default App;

@@ -108,7 +108,7 @@ export default class Menu extends React.Component {
                     onClick={this.handleClick}
                   >
                     <Link
-                      to={routeMap.blog}
+                      to={routeMap.funny_box}
                       className="text-menu"
                     >
                       Funny Box

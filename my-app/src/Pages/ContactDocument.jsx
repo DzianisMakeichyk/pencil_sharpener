@@ -111,7 +111,7 @@ class Contact extends Component {
                       <div className="about-description-right">
                           <p className="description-shot is-landscape-white">Polska, Warszawa</p>
                           <a href="mailto:dzianis@pencilsharpener.pl" className="description-shot is-landscape-white">dzianis@pencilsharpener.pl</a>
-                          <p className="description-shot is-landscape-white"> +48 79767075</p>
+                          <p className="description-shot is-landscape-white"> +48 797657075</p>
                           <p className="description-shot is-landscape-white">527-277-32-56</p>
                       </div>
                   </div>
