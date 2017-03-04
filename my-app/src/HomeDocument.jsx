@@ -4,8 +4,8 @@ import { TimelineLite } from "gsap";
 import Menu from './Menu'
 import routeMap from '../routeMap.json';
 import MediaDetectElement from './web_modules/MediaDetectElement';
-import AudioWolf from './Pages/Elements/AudioIcon'
-import IEDocument from './Pages/IEDocument'
+import AudioWolf from './pages/Elements/AudioIcon'
+import IEDocument from './pages/IEDocument'
 import platform from 'platform'
 
 class Home extends Component {

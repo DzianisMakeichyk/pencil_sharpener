@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import PortfolioGrid from './PortfolioGrid/PortfolioGrid';
-import PortfolioGridList from './PortfolioGrid/PortfolioGridList.json';
+import PortfolioGrid from './PortfolioGrid';
+import PortfolioGridList from './PortfolioGridList.json';
 import map from 'lodash/map';
-import isMediaGreaterThan from '../web_modules/isMediaGreaterThan';
+import isMediaGreaterThan from '../../web_modules/isMediaGreaterThan';
 import classnames from 'classnames';
 
 class Portfolio extends Component {

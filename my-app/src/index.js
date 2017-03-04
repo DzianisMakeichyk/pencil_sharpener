@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import HomeDocument from './HomeDocument';
-import IndexDocument from './Pages/IndexDocument';
-import PortfolioDocument from './Pages/PortfolioDocument';
-import BlogDocument from './Pages/BlogDocument';
-import ContactDocument from './Pages/ContactDocument';
-import AboutDocument from './Pages/AboutDocument';
-import ProjectDetails from './Pages/Project/ProjectDetails';
-import FunnyBox from './Pages/FunnyBoxDocument';
-import NotFound from './Pages/NotFoundDocument';
+import IndexDocument from './pages/IndexDocument';
+import PortfolioDocument from './pages/Portfolio/PortfolioDocument';
+import BlogDocument from './pages/BlogDocument';
+import ContactDocument from './pages/Contact/ContactDocument';
+import AboutDocument from './pages/About/AboutDocument';
+import ProjectDetails from './pages/Portfolio/ProjectDetails';
+import FunnyBox from './pages/FunnyBoxDocument';
+import NotFound from './pages/NotFoundDocument';
 import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 import routeMap from '../routeMap.json';
 

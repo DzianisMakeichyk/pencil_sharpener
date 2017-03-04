@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import Validator from 'validatorjs';
-import FormElement from'./Contact/components/Form';
-import inputDatas from'./Contact/datas/InputDatas';
-import Social from './Elements/Social';
+import FormElement from'./components/Form';
+import inputDatas from'./datas/InputDatas';
+import Social from '../Elements/Social';
 
 
 class Contact extends Component {
