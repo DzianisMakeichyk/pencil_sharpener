@@ -9,9 +9,10 @@ main {
 
 .burger-click-region {
   cursor: pointer;
-  height: remcalc(20);
+  height: remcalc(28);
   position: relative;
-  width: remcalc(20);
+  width: remcalc(30);
+  overflow-x: hidden;
 }
 
 .menu-burger {
@@ -23,9 +24,10 @@ main {
   .burger-menu-piece {
     background: $clear-gray;
     display: block;
-    height: remcalc(2);
+    height: remcalc(3);
     position: relative;
     width: remcalc(30);
+    border-radius: remcalc(25);
 
     &:nth-child(1) {
       top: -5px;
@@ -34,7 +36,6 @@ main {
 
     &:nth-child(3) {
       top: 5px;
-      width: remcalc(20);
     }
   }
 
@@ -44,13 +45,6 @@ main {
     position: absolute;
     transition: background 1s ease;
     width: remcalc(2);
-  }
-}
-
-.burger-menu-piece,
-.burger-menu-other {
-  &.is-click-menu {
-    background: $gradient-blue-green !important;
   }
 }
 
@@ -81,42 +75,6 @@ main {
     width: 100%;
     z-index: 1001;
 
-    .pull-left {
-      margin: remcalc(18) auto auto remcalc(15);
-
-      @include breakpoint(small) {
-        margin: remcalc(25) auto auto remcalc(25);
-      }
-
-      @include breakpoint(large) {
-        margin: remcalc(25) auto auto remcalc(45);
-      }
-
-      @include breakpoint(extralarge) {
-        margin: remcalc(25) auto auto remcalc(0);
-      }
-
-      .logo-name {
-        color: $clear-white;
-      }
-    }
-
-    .pull-right {
-      margin: remcalc(15) remcalc(20) auto auto;
-
-      @include breakpoint(small) {
-        margin: remcalc(25) remcalc(35) auto auto;
-      }
-
-      @include breakpoint(large) {
-        margin: remcalc(25) remcalc(55) auto auto;
-      }
-
-      @include breakpoint(extralarge) {
-        margin: remcalc(25) 0 auto auto;
-      }
-    }
-
     .burger-menu-piece {
       background: $clear-white;
     }
@@ -128,6 +86,63 @@ main {
   }
 }
 
+.pull-left {
+  margin: remcalc(18) auto auto remcalc(15);
+
+  @include breakpoint(small) {
+    margin: remcalc(25) auto auto remcalc(25);
+  }
+
+  @include breakpoint(large) {
+    margin: remcalc(25) auto auto remcalc(45);
+  }
+
+  @include breakpoint(extralarge) {
+    margin: remcalc(25) auto auto remcalc(0);
+  }
+
+  .logo-name {
+    color: $clear-white;
+  }
+}
+
+.pull-right {
+  margin: remcalc(15) remcalc(20) auto auto;
+
+  @include breakpoint(small) {
+    margin: remcalc(25) remcalc(35) auto auto;
+  }
+
+  @include breakpoint(large) {
+    margin: remcalc(25) remcalc(55) auto auto;
+  }
+
+  @include breakpoint(extralarge) {
+    margin: remcalc(25) 0 auto auto;
+  }
+
+  .burger-menu-piece,
+  .burger-menu-other {
+    &.is-click-menu {
+      background: $gradient-blue-green;
+      animation: open-burger 1.5s ease;
+    }
+  }
+}
+
+@keyframes open-burger {
+  0% {
+    background: $clear-white;
+  }
+
+  49% {
+    background: $clear-white;
+  }
+
+  50% {
+    background: $gradient-blue-green;
+  }
+}
 /*********************************  HELLO *********************************/
 
 .hello {

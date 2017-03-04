@@ -22,20 +22,22 @@ class Home extends Component {
     handleClick = () => {
         const menuAnimation = new TimelineLite();
         if (!this.state.menuVisible) {
-            menuAnimation.to(this.refs.topLine, .3, { scaleX: 0 }, 'firstStep')
-              .to(this.refs.bottomLine, .3, { width: 0 }, 'firstStep')
-               .to(this.refs.otherLine, .3, { x: 14, y: -19 }, 'firstStep')
-               .to(this.refs.otherLine, .2, { height: 31 }, 'secondStep')
-               .to(this.refs.middleLine, .2, { rotation: 45 }, 'thirdStep')
-               .to(this.refs.otherLine, .2, { rotation: 45 }, 'thirdStep')
+            menuAnimation.to(this.refs.firstLine, .3, { x: 27 }, 'first_step')
+              .to(this.refs.firstLine, .3, { y: -5 }, 'second_step')
+              .to(this.refs.firstLine, .3, { y: 16, opacity: 0 }, 'third_step')
+              .to(this.refs.secondLine, .3, { x: 4, y: -1, rotation: 45 }, 'third_step')
+              .to(this.refs.thirdLine, .3, { x: 4, y: -9, rotation: -45 }, 'third_step')
 
         } else {
-            menuAnimation.to(this.refs.middleLine, .2, { rotation: 0 }, 'firstStep')
-              .to(this.refs.otherLine, .2, { rotation: 0 }, 'firstStep')
-              .to(this.refs.otherLine, .2, { height: 0 }, 'secondStep')
-              .to(this.refs.otherLine, .3, { x: 0, y: 0 }, 'thirdStep')
-              .to(this.refs.topLine, .3, { scaleX: 1 }, 'thirdStep')
-              .to(this.refs.bottomLine, .3, { width: 20 }, 'thirdStep')
+            menuAnimation.to(this.refs.thirdLine, .3, { scaleX: 1, width: 3, x: 14 }, 'first_step')
+              .to(this.refs.secondLine, .3, { scaleX: 0, y: -5 }, 'first_step')
+              .to(this.refs.firstLine, .1, { scaleX: 0, x: 0, y: 0 }, 'first_step')
+              .to(this.refs.secondLine, .1, { scaleX: 0, x: 0, y: 0, rotation: 0 }, 'first_step')
+              .to(this.refs.thirdLine, .3, { y: -20 }, 'second_step')
+              .to(this.refs.thirdLine, .3, { y: 0, rotation: 0 }, 'third_step')
+              .to(this.refs.firstLine, .3, { scaleX: 1, opacity: 1 }, 'third_step')
+              .to(this.refs.secondLine, .3, { scaleX: 1, delay: .1, }, 'third_step')
+              .to(this.refs.thirdLine, .3, { x: 0, width: 30, delay: .15, }, 'third_step')
         }
         this.setState({
             menuVisible: !this.state.menuVisible,
@@ -83,8 +85,8 @@ class Home extends Component {
         var classNameLogo = 'logo-name ' + is_click ;
         // var classHeaderContainer = 'header-container ' + is_click + classnames({ 'black': location.pathname !== routeMap.home}) + classnames({ ' white': location.pathname !== routeMap.home });
         // var classMainContainer = classnames({ 'black': location.pathname !== routeMap.home});
-        var classNamePiece = is_click + ' burger-menu-piece';
-        var classNameOther = is_click + ' burger-menu-other';
+        var classNamePiece = 'burger-menu-piece ' + is_click;
+        // var classNameOther = is_click + ' burger-menu-other';
         // console.log(location.pathname);
         // console.log(location.pathname !== routeMap.home);
       var things = ['rock', 'fun', 'more work'];
@@ -106,8 +108,8 @@ class Home extends Component {
                         className={classNameLogo}>Dzianis Makeichyk
                       </Link>
                       <span onClick={this.onPause}>
-            <AudioWolf />
-            </span>
+                        <AudioWolf />
+                      </span>
                     </div>
                     <div className="pull-right">
                       <div
@@ -117,28 +119,19 @@ class Home extends Component {
                       >
                         <div className="menu-burger">
                           <span
-                            ref="topLine"
+                            ref="firstLine"
                             className={classNamePiece}
                           >
-
                           </span>
                           <span
-                            ref="middleLine"
+                            ref="secondLine"
                             className={classNamePiece}
                           >
-
                           </span>
                           <span
-                            ref="bottomLine"
+                            ref="thirdLine"
                             className={classNamePiece}
                           >
-
-                          </span>
-                          <span
-                            ref="otherLine"
-                            className={classNameOther}
-                          >
-
                           </span>
                         </div>
                       </div>
@@ -155,24 +148,24 @@ class Home extends Component {
               </header>
               <main>
                 {this.props.children}
-                {(this.props.location.pathname &&
-                  <div className="preloader">
-                    <p className="preloader-text qanelas-bold">
-                      Pencil Sharpener
-                      <svg version="1.1" x="0" y="0" viewBox="0 0 357 357" enableBackground="new 0 0 357 357" xmlSpace="preserve">
-                        <g>
-                          <g id="remove">
-                            <path d="M357,204H0v-51h357V204z" fill="#FFFFFF"/>
-                          </g>
-                        </g>
-                      </svg>
-                      it's
-                      <span className="preloader-color-text">
-                      &nbsp;{thing}
-                    </span>
-                    </p>
-                  </div>
-                )}
+                {/*{(this.props.location.pathname &&*/}
+                  {/*<div className="preloader">*/}
+                    {/*<p className="preloader-text qanelas-bold">*/}
+                      {/*Pencil Sharpener*/}
+                      {/*<svg version="1.1" x="0" y="0" viewBox="0 0 357 357" enableBackground="new 0 0 357 357" xmlSpace="preserve">*/}
+                        {/*<g>*/}
+                          {/*<g id="remove">*/}
+                            {/*<path d="M357,204H0v-51h357V204z" fill="#FFFFFF"/>*/}
+                          {/*</g>*/}
+                        {/*</g>*/}
+                      {/*</svg>*/}
+                      {/*it's*/}
+                      {/*<span className="preloader-color-text">*/}
+                      {/*&nbsp;{thing}*/}
+                    {/*</span>*/}
+                    {/*</p>*/}
+                  {/*</div>*/}
+                {/*)}*/}
                 <MediaDetectElement onMediaChange={this.onMediaChange} />
               </main>
             </div>
