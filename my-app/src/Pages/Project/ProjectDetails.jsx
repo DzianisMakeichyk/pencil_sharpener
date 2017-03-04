@@ -76,7 +76,7 @@ export default function ProjectDetails(props, context) {
             target="_blank"
             className="project-button see-project qanelas-bold box-shadow"
           >
-            <span>
+            <span className="project-button-text">
               Zobacz project
             </span>
           </Link>
@@ -84,7 +84,7 @@ export default function ProjectDetails(props, context) {
             to={routeMap.project_details.replace(':slug', currentProject.button_next)}
             className="project-button next qanelas-bold box-shadow"
           >
-            <span>
+            <span className="project-button-text">
               Następny
             </span>
           </Link>

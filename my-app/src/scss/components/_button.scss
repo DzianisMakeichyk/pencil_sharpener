@@ -92,30 +92,34 @@
   @include breakpoint(small) {
     flex-direction: row;
   }
+}
 
-  .project-button {
-    width: 100%;
-    margin-bottom: remcalc(10);
-    padding: 15px 0;
-    color: $gradi-green;
-    text-align: center;
-    letter-spacing: 1px;
-    font-family: $robot-thin;
-    font-weight: $font-bold;
-    //border-radius: remcalc(5);
-    text-transform: uppercase;
+.project-button {
+  width: 100%;
+  margin-bottom: remcalc(10);
+  padding: 15px 0;
+  color: $gradi-green;
+  text-align: center;
+  letter-spacing: 1px;
+  font-family: $robot-thin;
+  font-weight: $font-bold;
+  //border-radius: remcalc(5);
+  text-transform: uppercase;
 
-    &.see-project {
-      background: $gradi-green;
-      color: $gray;
+  &.see-project {
+    background: $gradi-green;
+    color: $gray;
 
-      @include breakpoint(small) {
-        margin-right: remcalc(20);
-      }
+    @include breakpoint(small) {
+      margin-right: remcalc(20);
     }
+  }
 
-    &.next {
-      border: 2px solid $gradi-green;
-    }
+  &.next {
+    border: 2px solid $gradi-green;
+  }
+
+  .project-button-text {
+
   }
 }
