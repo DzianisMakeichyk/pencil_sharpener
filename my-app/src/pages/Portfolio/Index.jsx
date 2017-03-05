@@ -11,7 +11,7 @@ class Portfolio extends Component {
     super(props);
     this.state = {
       currentProjectName: null,
-      currentProjectBackground: 'smoke_black',
+      currentProjectBackground: null,
     }
   };
 
@@ -30,7 +30,7 @@ class Portfolio extends Component {
     else {
       this.setState({
         currentProjectName: null,
-        currentProjectBackground: 'smoke_black',
+        currentProjectBackground: null,
       });
     }
   }
