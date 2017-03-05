@@ -17,13 +17,15 @@ export default function ProjectDetails(props, context) {
           <h3 className="project-name qanelas-bold">{currentProject.name}</h3>
             <div className="project-image-box">
               <i className="project-description">"{currentProject.description_part_1}"</i>
-              {map(currentProject.srcImg.img, (img)  => (
-                <img
-                  className="project-shot-img box-shadow"
-                  alt="Hello Pencil"
-                  src={"../../img/project_grid/" + img + ".png"}
-                />
-              ))}
+              <div className="project-img-list">
+                {map(currentProject.srcImg.img, (img)  => (
+                  <img
+                    className="project-shot-img"
+                    alt="Hello Pencil"
+                    src={"../../img/project_grid/" + img + ".png"}
+                  />
+                ))}
+              </div>
             </div>
           <div className="project-description-wrapper">
             <div className="project-type">

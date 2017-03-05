@@ -32,13 +32,15 @@
     margin: auto remcalc(25) auto auto;
   }
 
-  .project-shot-img {
-    display: block;
-    width: 100%;
+  .project-img-list {
+    //@include breakpoint(medium) {
+    //  width: 45%;
+    //  height: 100%;
+    //}
 
-    @include breakpoint(medium) {
-      width: 45%;
-      height: 100%;
+    .project-shot-img {
+      display: block;
+      width: 100%;
     }
   }
 }
@@ -147,10 +149,6 @@
     }
   }
 }
-
-
-
-
 
 .project-shots {
   display: flex;

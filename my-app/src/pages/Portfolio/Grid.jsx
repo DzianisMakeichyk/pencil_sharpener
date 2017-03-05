@@ -49,7 +49,13 @@ export default class PortfolioGrid extends React.Component {
     //   this.state.isHovering && 'is_hover',
     // ]);
     // className={'portfolio_item ' + cx(hoverItem)};
-    var DescriptionOnHover = !this.state.isHovering && <img className="portfolio-svg" ref="skeletonImg" src={"img/pencil_wolf_white.svg"} alt={this.props.project.slug}/>;
+    var DescriptionOnHover = !this.state.isHovering &&
+      <img
+        className={'portfolio-svg ' + this.props.project.logo.size}
+        ref="skeletonImg"
+        src={'img/logos/' + this.props.project.logo.svg + '.svg'}
+        alt={this.props.project.slug}
+      />;
     var DescriptionOutHover = this.state.isHovering &&
       <Motion
         defaultStyle={{
