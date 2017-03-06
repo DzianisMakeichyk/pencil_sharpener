@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import PortfolioGrid from './PortfolioGrid/PortfolioGrid';
-import PortfolioGridList from './PortfolioGrid/PortfolioGridList.json';
+import PortfolioGrid from './Grid';
+import PortfolioGridList from './datas/ProjectsList.json';
 import map from 'lodash/map';
-import isMediaGreaterThan from '../web_modules/isMediaGreaterThan';
+import isMediaGreaterThan from '../../web_modules/isMediaGreaterThan';
 import classnames from 'classnames';
 
 class Portfolio extends Component {
@@ -11,7 +11,7 @@ class Portfolio extends Component {
     super(props);
     this.state = {
       currentProjectName: null,
-      currentProjectBackground: 'smoke_black',
+      currentProjectBackground: null,
     }
   };
 
@@ -30,7 +30,7 @@ class Portfolio extends Component {
     else {
       this.setState({
         currentProjectName: null,
-        currentProjectBackground: 'smoke_black',
+        currentProjectBackground: null,
       });
     }
   }
@@ -43,7 +43,7 @@ class Portfolio extends Component {
               <ul className="grid-portfolio">
                   {map(PortfolioGridList, (project) => (
                       <PortfolioGrid
-                          key={project.name}
+                          key={project.slug}
                           project={project}
                           currentProjectName={this.state.currentProjectName}
                           onHoverChange={this.handleHover.bind(this)}

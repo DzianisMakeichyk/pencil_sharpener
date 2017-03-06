@@ -3,6 +3,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin: 0 auto auto;
   padding-top: remcalc(60);
   position: relative;
 
@@ -51,18 +52,30 @@
 .portfolio-svg {
   left: 0;
   margin: auto;
-  max-height: remcalc(60);
-  max-width: remcalc(60);
   position: absolute;
   right: 0;
   top: 50%;
   transform: translateY(-50%);
-  width: remcalc(60);
 
   @include breakpoint(large) {
     max-height: remcalc(90);
     max-width: remcalc(90);
     width: remcalc(90);
+  }
+
+  &.medium-width {
+    width: remcalc(50);
+    max-width: remcalc(50);
+  }
+
+  &.medium-height {
+    height: remcalc(20);
+    max-height: remcalc(20);
+  }
+
+  &.large-height {
+    height: remcalc(45);
+    max-height: remcalc(45);
   }
 }
 
@@ -114,7 +127,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  height: 100%;
+  height: 90vh;
   position: absolute;
   width: 100%;
   z-index: 10;
@@ -134,9 +147,23 @@
 }
 
 .animation-link {
+  position: relative;
   display: block;
   height: 100%;
   width: 100%;
+
+  //&:before {
+  //  content: '';
+  //  position: absolute;
+  //  width: 100%;
+  //  height: 70%;
+  //  top: 0;
+  //  left: 0;
+  //  right: 0;
+  //  bottom: 0;
+  //  margin: auto;
+  //  background: $clear-black;
+  //}
 
   &.is-mobile {
     display: flex;

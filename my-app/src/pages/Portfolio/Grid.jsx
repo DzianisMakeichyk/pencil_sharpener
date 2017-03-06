@@ -25,7 +25,7 @@ export default class PortfolioGrid extends React.Component {
     this.setState({
       isHovering: true,
     });
-    this.props.onHoverChange(this.props.project.name, this.props.project.background, true);
+    this.props.onHoverChange(this.props.project.slug, this.props.project.background, true);
   }
 
   handleMouseOut() {
@@ -49,7 +49,13 @@ export default class PortfolioGrid extends React.Component {
     //   this.state.isHovering && 'is_hover',
     // ]);
     // className={'portfolio_item ' + cx(hoverItem)};
-    var DescriptionOnHover = !this.state.isHovering && <img className="portfolio-svg" ref="skeletonImg" src={"img/pencil_wolf_white.svg"} alt={this.props.project.name}/>;
+    var DescriptionOnHover = !this.state.isHovering &&
+      <img
+        className={'portfolio-svg ' + this.props.project.logo.size}
+        ref="skeletonImg"
+        src={'img/logos/' + this.props.project.logo.svg + '.svg'}
+        alt={this.props.project.slug}
+      />;
     var DescriptionOutHover = this.state.isHovering &&
       <Motion
         defaultStyle={{
@@ -64,14 +70,14 @@ export default class PortfolioGrid extends React.Component {
             opacity: style.opacity,
           }}
         >
-          <h6 className="portfolio-box-name qanelas-bold">{this.props.project.title}</h6>
+          <h6 className="portfolio-box-name qanelas-bold">{this.props.project.name}</h6>
           <p className="project-mini-categories">{this.props.project.short_description}</p>
         </div>
         )}
       </Motion>;
 
     let visible = true;
-    if (this.props.currentProjectName !== null && this.props.currentProjectName !== this.props.project.name) {
+    if (this.props.currentProjectName !== null && this.props.currentProjectName !== this.props.project.slug) {
       visible = false;
     }
     return (
@@ -82,20 +88,20 @@ export default class PortfolioGrid extends React.Component {
         style={visible?{}:{visibility:'hidden'}}
       >
         <Link
-          to={routeMap.project_details.replace(':slug', this.props.project.name)}
+          to={routeMap.project_details.replace(':slug', this.props.project.slug)}
           className={classnames('animation-link', {'is-mobile':this.context.currentMedia <= 'Mobile' })}
         >
           {isMediaLessThan('Small', this.context.currentMedia) && (
             <div className={classnames({'portfolio-info-box':this.context.currentMedia <= 'Mobile' })}>
               <h6 className="portfolio-title qanelas-bold">
-                {this.props.project.title}
+                {this.props.project.name}
               </h6>
               <p className="project-mini-categories left">
                 {this.props.project.short_description}
               </p>
               <div className="relative">
                 <div className="back-image" ref="skeletonBox"></div>
-                <img className="portfolio-img" ref="skeletonImg" src={'img/project_grid/' + this.props.project.background + '.png'} alt={this.props.project.name}/>
+                <img className="portfolio-img" ref="skeletonImg" src={'img/project_grid/' + this.props.project.background + '.png'} alt={this.props.project.slug}/>
               </div>
               <ElementIcon />
             </div>

@@ -4,8 +4,8 @@ import { TimelineLite } from "gsap";
 import Menu from './Menu'
 import routeMap from '../routeMap.json';
 import MediaDetectElement from './web_modules/MediaDetectElement';
-import AudioWolf from './Pages/Elements/AudioIcon'
-import IEDocument from './Pages/IEDocument'
+import AudioWolf from './pages/Elements/AudioIcon'
+import IEDocument from './pages/IEDocument'
 import platform from 'platform'
 
 class Home extends Component {
@@ -148,24 +148,24 @@ class Home extends Component {
               </header>
               <main>
                 {this.props.children}
-                {/*{(this.props.location.pathname &&*/}
-                  {/*<div className="preloader">*/}
-                    {/*<p className="preloader-text qanelas-bold">*/}
-                      {/*Pencil Sharpener*/}
-                      {/*<svg version="1.1" x="0" y="0" viewBox="0 0 357 357" enableBackground="new 0 0 357 357" xmlSpace="preserve">*/}
-                        {/*<g>*/}
-                          {/*<g id="remove">*/}
-                            {/*<path d="M357,204H0v-51h357V204z" fill="#FFFFFF"/>*/}
-                          {/*</g>*/}
-                        {/*</g>*/}
-                      {/*</svg>*/}
-                      {/*it's*/}
-                      {/*<span className="preloader-color-text">*/}
-                      {/*&nbsp;{thing}*/}
-                    {/*</span>*/}
-                    {/*</p>*/}
-                  {/*</div>*/}
-                {/*)}*/}
+                {(this.props.location.pathname &&
+                  <div className="preloader">
+                    <p className="preloader-text qanelas-bold">
+                      Pencil Sharpener
+                      <svg version="1.1" x="0" y="0" viewBox="0 0 357 357" enableBackground="new 0 0 357 357" xmlSpace="preserve">
+                        <g>
+                          <g id="remove">
+                            <path d="M357,204H0v-51h357V204z" fill="#FFFFFF"/>
+                          </g>
+                        </g>
+                      </svg>
+                      it's
+                      <span className="preloader-color-text">
+                      &nbsp;{thing}
+                    </span>
+                    </p>
+                  </div>
+                )}
                 <MediaDetectElement onMediaChange={this.onMediaChange} />
               </main>
             </div>

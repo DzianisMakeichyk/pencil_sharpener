@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router';
 import routeMap from '../routeMap.json';
 import classnames from 'classnames';
-import Social from './Pages/Elements/Social';
+import Social from './pages/Elements/Social';
 import { Motion, spring } from 'react-motion';
 
 export default class Menu extends React.Component {
