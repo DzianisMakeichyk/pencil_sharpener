@@ -13,7 +13,7 @@ export default function ProjectDetails(props, context) {
     ));
 
     return (
-        <section className="height-auto project-shots">
+        <section className="height-auto project-shots project-box">
           <h3 className="project-name qanelas-bold">{currentProject.name}</h3>
             <div className="project-image-box">
               <i className="project-description">"{currentProject.description_part_1}"</i>
@@ -58,41 +58,50 @@ export default function ProjectDetails(props, context) {
           </ul>
           </div>
           {isMediaGreaterThan('Small', context.currentMedia) && (
-            <div>
-              <i className="project-description">"{currentProject.description_part_2}"</i>
-              <ul className="project-colors">
-                  {map(currentProject.color.name, (name) => (
-                    <li className="project-color-shot">
-                      <div className="project-color-circle" style={{ backgroundColor: '#'+name}}>
-                        <div className="project-inside-color-circle" style={{ backgroundColor: '#'+name}}></div>
-                      </div>
-                      <p className="project-color-name">
-                        #{name}
-                      </p>
-                    </li>
-                  ))}
-                </ul>
+            <i className="project-description">"{currentProject.description_part_2}"</i>
+          )}
+          {isMediaLessThan('Medium', context.currentMedia) && (
+            <div className="project-button-wrapper">
+            <Link
+              to={currentProject.button_link}
+              target="_blank"
+              className="project-button see-project qanelas-bold box-shadow"
+            >
+              <span className="project-button-text">
+                Zobacz project
+              </span>
+            </Link>
+            <Link
+              to={routeMap.project_details.replace(':slug', currentProject.button_next)}
+              className="project-button next qanelas-bold box-shadow"
+            >
+              <span className="project-button-text">
+                Następny
+              </span>
+            </Link>
             </div>
           )}
-          <div className="project-button-wrapper">
-          <Link
-            to={currentProject.button_link}
-            target="_blank"
-            className="project-button see-project qanelas-bold box-shadow"
-          >
-            <span className="project-button-text">
-              Zobacz project
-            </span>
-          </Link>
-          <Link
-            to={routeMap.project_details.replace(':slug', currentProject.button_next)}
-            className="project-button next qanelas-bold box-shadow"
-          >
-            <span className="project-button-text">
-              Następny
-            </span>
-          </Link>
+          {isMediaGreaterThan('Small', context.currentMedia) && (
+            <div>
+              <Link
+                to={currentProject.button_link}
+                target="_blank"
+                className="project-large-button position-left qanelas-bold"
+              >
+              <span className="">
+                See project
+              </span>
+              </Link>
+              <Link
+                to={routeMap.project_details.replace(':slug', currentProject.button_next)}
+                className="project-large-button position-right qanelas-bold"
+              >
+              <span className="">
+                Next project
+              </span>
+              </Link>
             </div>
+          )}
         </section>
     );
 }

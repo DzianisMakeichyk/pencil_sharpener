@@ -122,49 +122,6 @@
   }
 }
 
-.project-colors {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-
-  .project-color-shot {
-    width: 15%;
-    max-width: remcalc(120);
-    margin: remcalc(30) remcalc(50);
-
-    .project-color-circle {
-      position: relative;
-      padding: 50%;
-      border-radius: 50%;
-      display: block;
-      box-shadow: 0 1px 3px 0 rgba(0,0,0,.21);
-      transition: all .4s ease;
-      z-index: 99;
-
-      .project-inside-color-circle {
-        @include center($extend: false);
-        position: absolute;
-        width: 60%;
-        height: 60%;
-        border-radius: 50%;
-        z-index: 100;
-      }
-
-      &:hover {
-        box-shadow: 0 6px 30px 0 rgba(0,0,0,.2);
-      }
-    }
-
-    .project-color-name {
-      @include just-rythm(18);
-      text-align: center;
-      font-family: $robot-thin;
-      font-weight: $font-bold;
-      letter-spacing: 1px;
-    }
-  }
-}
-
 .project-shots {
   display: flex;
   flex-direction: column;
@@ -348,4 +305,13 @@
 .project-year {
   color: $gradi-green;
   font-weight: $font-semi-bold;
+}
+
+.project-box {
+  @include breakpoint(medium) {
+    position: relative;
+    margin: remcalc(55);
+    padding: remcalc(30) remcalc(20);
+    background: $clear-gray;
+  }
 }

@@ -13,9 +13,6 @@
     "srcImg": {
       "img" : ["makabra"]
     },
-    "color": {
-      "name" : [ "ffffff", "928f86", "910001", "300404", "060606"]
-    },
     "location": "Polska, Warszawa",
     "type": "Personal WebSite",
     "year": "2017",
@@ -38,9 +35,6 @@
     "description_part_2": "Stypendium z Wyboru to program stypendialny skierowany do studentów i absolwentów, którzy ukończyli studia nie później niż 12 miesięcy temu. Do 8 listopada można zgłaszać projekty związane z edukacją lub rozwojem zawodowym i zdobyć dofinansowanie na ich realizację. Uczestnicy mogą się zgłosić poprzez formularz na stronie stypendiumzwyboru.pl.",
     "srcImg": {
       "img" : ["stypendium"]
-    },
-    "color": {
-      "name" : ["ffffff", "b9b8b8", "2d8af3", "5351f4", "002351"]
     },
     "location": "Polska, Warszawa",
     "type": "Corporation WebSite",
@@ -65,9 +59,6 @@
     "srcImg": {
       "img" : ["portal_pracy"]
     },
-    "color": {
-      "name" : ["343838", "005f6b", "01dffc", "00dffc", "9b9b9b" ]
-    },
     "location": "Polska, Warszawa",
     "type": "Corporation WebSite",
     "year": "2016",
@@ -90,9 +81,6 @@
     "description_part_2": "W naszej agencji pracuje wielu zdolnych i doświadczonych ludzi, mamy bardzo dobrych grafików, koderów, programistów, pozycjonerów, specjalistów od social media i marketingu internetowego. Dzięki temu możesz mieć pewność, że otrzymasz od nas najpełniejszą, kompleksową usługę. Możemy stworzyć twój serwis internetowy oraz skutecznie pomóc w wypromowaniu twojej strony w Internecie.",
     "srcImg": {
       "img" : ["agencja"]
-    },
-    "color": {
-      "name" : ["ffffff", "e7d16c", "FBA933", "CD2129", "0D7CCD"]
     },
     "location": "Polska, Warszawa",
     "type": "Personal WebSite",
@@ -117,9 +105,6 @@
     "srcImg": {
       "img" : ["zaslepka"]
     },
-    "color": {
-      "name" : ["ffffff", "faf8ff", "3e10c4", "#f23e44"]
-    },
     "location": "Polska, Warszawa",
     "type": "WebSite",
     "year": "2015",
@@ -142,9 +127,6 @@
     "description_part_2": "Animowany baner z zegarkiem pokazującym aktualną godzinę",
     "srcImg": {
       "img" : ["baner"]
-    },
-    "color": {
-      "name" : ["ffffff", "333333", "fec042"]
     },
     "location": "Polska, Warszawa",
     "type": "WebSite",

@@ -116,3 +116,23 @@
     }
   }
 }
+
+.project-large-button {
+  @include just-rythm(28);
+  @include center($extend: false);
+  top: 44%;
+  text-decoration: underline;
+  color: $clear-white;
+
+ &.position-left {
+   left: remcalc(-100);
+   right: auto;
+   transform: rotate(-90deg);
+  }
+
+ &.position-right {
+   right: remcalc(-103);
+   left: auto;
+   transform: rotate(90deg);
+  }
+}

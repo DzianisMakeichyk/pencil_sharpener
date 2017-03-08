@@ -40,19 +40,19 @@ class Portfolio extends Component {
 
         return (
           <section className="height-auto vh-medium">
-              <ul className="grid-portfolio">
-                  {map(PortfolioGridList, (project) => (
-                      <PortfolioGrid
-                          key={project.slug}
-                          project={project}
-                          currentProjectName={this.state.currentProjectName}
-                          onHoverChange={this.handleHover.bind(this)}
-                      />
-                  ))}
-                {isMediaGreaterThan('Mobile', this.context.currentMedia) && (
-                  <div className={classnames('project-img grayscale ', {'is-hover':this.state.currentProjectName})} style={BackgroundProject} ></div>
-                )}
-              </ul>
+            <ul className="grid-portfolio">
+                {map(PortfolioGridList, (project) => (
+                    <PortfolioGrid
+                        key={project.slug}
+                        project={project}
+                        currentProjectName={this.state.currentProjectName}
+                        onHoverChange={this.handleHover.bind(this)}
+                    />
+                ))}
+              {isMediaGreaterThan('Mobile', this.context.currentMedia) && (
+                <div className={classnames('project-img grayscale ', {'is-hover':this.state.currentProjectName})} style={BackgroundProject} ></div>
+              )}
+            </ul>
             </section>
         );
     }
