@@ -101,7 +101,7 @@ export default class PortfolioGrid extends React.Component {
               </p>
               <div className="relative">
                 <div className="back-image" ref="skeletonBox"></div>
-                <img className="portfolio-img" ref="skeletonImg" src={'img/project_grid/' + this.props.project.background + '.png'} alt={this.props.project.slug}/>
+                <img className="portfolio-img grayscale" ref="skeletonImg" src={'img/project_grid/' + this.props.project.background + '.png'} alt={this.props.project.slug}/>
               </div>
               <ElementIcon />
             </div>

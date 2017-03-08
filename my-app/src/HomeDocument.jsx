@@ -147,6 +147,9 @@ class Home extends Component {
                 </nav>
               </header>
               <main>
+                <div className='stars'></div>
+                <div className='stars2'></div>
+                <div className='stars3'></div>
                 {this.props.children}
                 {(this.props.location.pathname &&
                   <div className="preloader">

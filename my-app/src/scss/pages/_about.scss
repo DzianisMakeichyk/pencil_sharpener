@@ -115,6 +115,7 @@
 .skill-one-shot {
   display: flex;
   font-family: $robot-thin;
+  z-index: 100;
 
   .skill-name {
     margin-right: remcalc(10);

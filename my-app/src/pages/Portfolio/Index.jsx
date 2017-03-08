@@ -50,7 +50,7 @@ class Portfolio extends Component {
                       />
                   ))}
                 {isMediaGreaterThan('Mobile', this.context.currentMedia) && (
-                  <div className={classnames('project-img', {'is-hover':this.state.currentProjectName})} style={BackgroundProject} ></div>
+                  <div className={classnames('project-img grayscale ', {'is-hover':this.state.currentProjectName})} style={BackgroundProject} ></div>
                 )}
               </ul>
             </section>

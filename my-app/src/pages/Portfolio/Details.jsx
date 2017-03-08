@@ -63,7 +63,9 @@ export default function ProjectDetails(props, context) {
               <ul className="project-colors">
                   {map(currentProject.color.name, (name) => (
                     <li className="project-color-shot">
-                      <div className="project-color-circle" style={{ backgroundColor: '#'+name}}></div>
+                      <div className="project-color-circle" style={{ backgroundColor: '#'+name}}>
+                        <div className="project-inside-color-circle" style={{ backgroundColor: '#'+name}}></div>
+                      </div>
                       <p className="project-color-name">
                         #{name}
                       </p>
