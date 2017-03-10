@@ -314,4 +314,9 @@
     padding: remcalc(30) remcalc(20);
     background: $clear-gray;
   }
+
+  @include breakpoint(large) {
+    margin: remcalc(55) auto;
+    max-width: remcalc(1200);
+  }
 }

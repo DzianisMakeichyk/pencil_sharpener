@@ -2,10 +2,28 @@ import React, { Component } from 'react';
 import isMediaGreaterThan from '../web_modules/isMediaGreaterThan';
 
 class Index extends Component {
+    constructor() {
+        super();
+
+        this.state = {
+            hello: false,
+        };
+    }
     static contextTypes = {
         currentMedia: React.PropTypes.string,
     };
+
+    onClick = () => {
+        this.setState({
+            hello: !this.state.hello
+        })
+        setTimeout(() =>
+          this.setState({
+            hello: !this.state.hello
+          }), 3000)
+    }
     render() {
+        console.log(this.state.hello);
         return (
             <section>
                 <div className="hello">
@@ -76,6 +94,7 @@ class Index extends Component {
                         </g>
                         )}
                     </svg>
+                    <button style={{color: '#fff', fontSize:20}} onClick={this.onClick}>welcome</button>
                 </div>
             </section>
         );
