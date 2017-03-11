@@ -15,6 +15,7 @@ const postcssRoundSubpixels = require('postcss-round-subpixels');
 const sass = require('gulp-sass');
 const sassLint = require('gulp-sass-lint');
 const sourceMaps = require('gulp-sourcemaps');
+const cssnano = require('gulp-cssnano');
 
 // Configuration
 const supportedBrowsers = 'last 3 versions';
@@ -42,6 +43,7 @@ gulp.task('scss-prod', function () {
             postcssFlexbugsFixes,
         ]))
         .pipe(plumber.stop())
+        .pipe(cssnano())
         .pipe(gulp.dest('public/css'));
 });
 
@@ -68,6 +70,7 @@ gulp.task('scss-dev', function () {
         ]))
         .pipe(sourceMaps.write())
         .pipe(plumber.stop())
+        .pipe(cssnano())
         .pipe(gulp.dest('public/css'));
 });
 

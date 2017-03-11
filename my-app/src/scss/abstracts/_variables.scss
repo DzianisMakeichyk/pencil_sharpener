@@ -12,14 +12,18 @@ $clear-black: #000;
 
 $gradi-green: #01e6ae;
 $gradi-blue: #00e1d9;
+$green: #49fc00;
 
 $ease-red: #FB797E;
 $ease-border-red: #F0797E;
 
 $black-blue: #090a0f;
+$purple: #b300fc;
 
 $gradient-blue-green-revers: linear-gradient(135deg, $gradi-green 23%, $gradi-blue 65%);
 $gradient-blue-green: linear-gradient(135deg, $gradi-blue 23%, $gradi-green 65%);
+
+$ease-out-quint: cubic-bezier(0.230,  1.000, 0.320, 1.000);
 
 $base-size: 16 !default;
 

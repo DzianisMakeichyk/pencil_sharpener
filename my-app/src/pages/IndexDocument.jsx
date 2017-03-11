@@ -12,22 +12,11 @@ class Index extends Component {
     static contextTypes = {
         currentMedia: React.PropTypes.string,
     };
-
-    onClick = () => {
-        this.setState({
-            hello: !this.state.hello
-        })
-        setTimeout(() =>
-          this.setState({
-            hello: !this.state.hello
-          }), 3000)
-    }
     render() {
-        console.log(this.state.hello);
         return (
             <section>
                 <div className="hello">
-                    <h1 className="hello-name">I`m Dzianis Makeichyk</h1>
+                    <h1 className="hello-name glitch dark" data-text="I`m Dzianis Makeichyk">I`m Dzianis Makeichyk</h1>
                     <svg className="hello-svg" viewBox="0 0 594.5 266.2" enableBackground="new 0 0 594.5 266.2;" xmlSpace="preserve">
                     <g>
                         <clipPath id="hello-cut">
@@ -94,7 +83,6 @@ class Index extends Component {
                         </g>
                         )}
                     </svg>
-                    <button style={{color: '#fff', fontSize:20}} onClick={this.onClick}>welcome</button>
                 </div>
             </section>
         );

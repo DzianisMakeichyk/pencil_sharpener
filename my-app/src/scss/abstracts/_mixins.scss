@@ -38,3 +38,9 @@
   -webkit-text-fill-color: transparent;
   text-fill-color: transparent;
 }
+
+@mixin black-background {
+  background: $clear-gray;
+  padding: remcalc(30) remcalc(20);
+  z-index: 100;
+}

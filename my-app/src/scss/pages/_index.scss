@@ -167,11 +167,13 @@ main {
   font-family: $robot-thin;
   @include just-rythm(12);
   text-align: left;
-  margin-bottom: remcalc(-5);
+  margin: auto auto remcalc(-35) remcalc(10);
+  line-height: 4;
 
   @include breakpoint(small) {
     @include just-rythm(26);
-    margin: auto auto remcalc(-25) remcalc(20);
+    line-height: 4;
+    margin: auto auto remcalc(-60) remcalc(20);
     font-weight: $font-thin;
   }
 }

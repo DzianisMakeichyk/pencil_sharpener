@@ -33,10 +33,7 @@
   }
 
   .project-img-list {
-    //@include breakpoint(medium) {
-    //  width: 45%;
-    //  height: 100%;
-    //}
+      max-width: 45%;
 
     .project-shot-img {
       display: block;
@@ -307,7 +304,7 @@
   font-weight: $font-semi-bold;
 }
 
-.project-box {
+.black-box {
   @include breakpoint(medium) {
     position: relative;
     margin: remcalc(55);

@@ -13,7 +13,7 @@ export default function ProjectDetails(props, context) {
     ));
 
     return (
-        <section className="height-auto project-shots project-box">
+        <section className="height-auto project-shots black-box box-shadow">
           <h3 className="project-name qanelas-bold">{currentProject.name}</h3>
             <div className="project-image-box">
               <i className="project-description">"{currentProject.description_part_1}"</i>
@@ -86,19 +86,26 @@ export default function ProjectDetails(props, context) {
               <Link
                 to={currentProject.button_link}
                 target="_blank"
-                className="project-large-button position-left qanelas-bold"
+                className="project-large-button glitch-btn position-left qanelas-bold"
               >
-              <span className="">
-                See project
-              </span>
+                <div className="label">See project</div>
+                <div className="mask"><span>See project</span></div>
+                <div className="mask"><span>See project</span></div>
+                <div className="mask"><span>See project</span></div>
+                <div className="mask"><span>See project</span></div>
+                <div className="mask"><span>See project</span></div>
+
               </Link>
               <Link
                 to={routeMap.project_details.replace(':slug', currentProject.button_next)}
-                className="project-large-button position-right qanelas-bold"
+                className="project-large-button glitch-btn position-right qanelas-bold"
               >
-              <span className="">
-                Next project
-              </span>
+                <div className="label">Next project</div>
+                <div className="mask"><span>Next project</span></div>
+                <div className="mask"><span>Next project</span></div>
+                <div className="mask"><span>Next project</span></div>
+                <div className="mask"><span>Next project</span></div>
+                <div className="mask"><span>Next project</span></div>
               </Link>
             </div>
           )}

@@ -29,7 +29,7 @@ class About extends Component {
                     <div className="relative">
                         <div className="back-image" ref="skeletonBox"></div>
                         <img
-                          src="../img/background.png"
+                          src="../img/dzianis_makeichyk.png"
                           className="about-image ease-box little"
                           alt="Dzianis Makeichyk"
                           role="presentation"
@@ -37,7 +37,7 @@ class About extends Component {
                         />
                     </div>
                     {isMediaGreaterThan('Mobile', this.context.currentMedia) && (
-                        <div className="skills-box ease-box">
+                        <div className="skills-box box-shadow">
                             {map(SkillOne, (skillsShot) => (
                               <SkillOneItem
                                 key={skillsShot.name}
@@ -47,7 +47,7 @@ class About extends Component {
                         </div>
                     )}
                 </div>
-                <div className="about-information ease-box">
+                <div className="about-information box-shadow">
                     <h2 className="about-name qanelas-bold">
                         <span className="green">
                             Dzianis
@@ -67,7 +67,10 @@ class About extends Component {
                         </div>
                     </div>
                     <p className="about-me">
-                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                        Nazywam się Dzianis Makeichyk i jestem Front-End Developerem. Zajmuję się tworzeniem stron internetowych, blogów, od responsywnego mailingu, banera, do layout wykonany na podstawie ReactJS. Zawsze dążę do tego, żeby każdy zbudowany przez mnie projekt był całkowicie optymalny od strony użytkowej oraz graficznej. Dzięki latom doświadczenia przy tworzeniu projektów internetowych oraz graficynych przyjołem i trzymam się politykę, że właściwa, intuicyjna nawigacja, inteligentna i przejrzysta grafika, sprawne działanie wszystkich elementów strony pomoga w maksynalnym dotarciu do potrzebnych informacji. Ze wszystkie te elementy dobrze zgrane sprawią, że Twoi odbiorcy szybciej dokonają zakupu, zamówią usługę, dopiszą się do newslettera czy wypełnią formularz kontaktowy. Dzięki temu Twoja strona skutecznie zareklamuje Ciebie jako godnego zaufania, wydajnego przedsiębiorcę i zwiększy Twoje zyski.
+                       <br />
+                       <br />
+                        Moje doświadczenie i umiejętności sprawiają, że mogę zaoferować Tobie i Twojej firmie kompleksowe rozwiązania w zakresie projektowania na potrzeby Internetu. Moją specjalnością jest tworzenie serwisów internetowych, zarówno dedykowanych, jak i bardziej standardowych. Jestem w stanie wykonać stronę internetową na każdą kieszeń, dostosuję się do Twoich potrzeb. Graficznie zaprojektuję projekt tak, aby były funkcjonalne, wyjątkowe i idealnie pasowały do Twojej firmy. Moim celem jest łączenie atrakcyjnego designu ze skutecznością strony, bo to klucz do sukcesu Twojej firmy!
                     </p>
                     <div className="about-cv">
                         <svg className="about-cv-svg" viewBox="0 0 60 60" xmlSpace="preserve" >
@@ -83,7 +86,7 @@ class About extends Component {
                     </div>
                 </div>
                 {isMediaLessThan('Small', this.context.currentMedia) && (
-                    <div className="skills-box ease-box">
+                    <div className="skills-box">
                       {map(SkillOne, (skillsShot) => (
                         <SkillOneItem
                           key={skillsShot.name}

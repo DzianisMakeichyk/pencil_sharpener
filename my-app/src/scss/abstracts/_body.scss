@@ -5,9 +5,19 @@ body {
   padding: 0;
   color: $clear-white;
 }
+main {
+  height: 100%;
+  background: radial-gradient(ellipse at bottom, $middle-black 0%, $black-blue 100%);
+  overflow: hidden;
+}
 
 a {
   text-decoration: none;
+}
+
+p,
+span {
+  line-height: 140%;
 }
 
 ul,

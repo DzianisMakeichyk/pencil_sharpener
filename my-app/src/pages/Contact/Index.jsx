@@ -96,7 +96,7 @@ class Contact extends Component {
     render() {
         return (
           <section className="height-auto contact">
-              <div className="about-information ease-box">
+              <div className="about-information box-shadow">
                   <h2 className="about-name qanelas-bold is-landscape-white">
                         <span className="green">
                             Dzianis

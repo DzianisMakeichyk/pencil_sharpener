@@ -37,8 +37,9 @@
   }
 
   .about-information {
-    font-family: $robot-thin;
+    @include black-background;
     margin: 0 auto auto;
+    font-family: $robot-thin;
 
     @include breakpoint(small) {
       flex: 1 1 50%;
@@ -106,6 +107,8 @@
   justify-content: space-between;
   flex-direction: column;
   width: 100%;
+  background: $clear-gray;
+  padding: remcalc(10) remcalc(20);
 
   @include breakpoint(small) {
     width: auto;

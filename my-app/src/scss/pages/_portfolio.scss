@@ -68,6 +68,11 @@
     max-width: remcalc(50);
   }
 
+  &.largest-width {
+    width: remcalc(115);
+    max-width: remcalc(115);
+  }
+
   &.medium-height {
     height: remcalc(20);
     max-height: remcalc(20);

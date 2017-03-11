@@ -23,6 +23,7 @@
     height: 100%;
     margin: remcalc(25) auto 0;
     max-height: remcalc(250);
+    @include black-background;
 
     @include breakpoint(small) {
       width: 40%;
@@ -66,6 +67,7 @@ label {
   width: calc(100% - 40px);
   margin: remcalc(30) auto;
   text-align: center;
+  @include black-background;
 
   @include breakpoint(small) {
     margin: 0 auto auto;

@@ -15,7 +15,7 @@ var FormElement = React.createClass({
     });
     return (
       <form
-        className="form ease-box"
+        className="form box-shadow"
         action="send_email.php"
         method="post"
         onSubmit={this._onSubmit}>

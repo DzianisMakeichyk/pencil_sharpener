@@ -5,8 +5,8 @@
     "short_description": "Pencil Sharpener",
     "background": "makabra",
     "logo": {
-      "svg": ["pencil_sharpener"],
-      "size": ["medium-width"]
+      "svg": ["pencil_wolf_text"],
+      "size": ["largest-width"]
     },
     "description_part_1": "FEST MAKABRA to nowy, ogólnopolski przegląd filmowy, prezentujący zagraniczne filmy z pogranicza horroru, thrillera, mrocznego fantasy i czarnej komedii. Większość filmów z programu zostanie wyświetlona w Polsce premierowo i będzie to jedyna okazja do obejrzenia ich na wielkim ekranie. Pierwsza edycja przeglądu filmowego FEST MAKABRA odbędzie się w kinach studyjnych i niezależnych w całej Polsce w lutym i marcu 2017 roku. Organizatorem wydarzenia jest dystrybutor filmów Kino Świat.",
     "description_part_2": "Większość filmów z programu zostanie wyświetlona w Polsce premierowo i będzie to jedyna okazja do obejrzenia ich na wielkim ekranie. Pierwsza edycja przeglądu filmowego Fest Makabra odbędzie się w kinach studyjnych i niezależnych na terenie całego kraju. Organizatorem wydarzenia jest dystrybutor filmów Kino Świat.",
@@ -51,8 +51,8 @@
     "short_description": "Pencil Sharpener",
     "background": "portal_pracy",
     "logo": {
-      "svg": ["pencil_sharpener"],
-      "size": ["medium-width"]
+      "svg": ["pencil_wolf_text"],
+      "size": ["largest-width"]
     },
     "description_part_1": "To grupa znanych portali branżowych. W obszarze działalności naszej firmy znajdują się serwisy rekrutacyjne, usługi doradcze i wizerunkowe, serwisy informacyjne i branżowe oraz inne usługi internetowe. Należą do nas: m.in. serwisy usługowe z zakresu rekrutacji i wizerunku oraz popularne serwisz szkoleniowe ",
     "description_part_2": "Istniejemy na rynku od 1998 r. i mamy status pioniera wśród portali rekrutacyjnych. 16 lat doświadczenia znajduje odzwierciedlenie w najlepszej obsłudze klienta i wysokiej efektywności naszych działań. Profesjonalizm, elastyczność i szybkość działania może potwierdzić ponad 11 tysięcy pracodawców, którzy znaleźli u nas idealnych kandydatów do pracy.",
@@ -74,8 +74,8 @@
     "short_description": "Agencja interaktywna łącząca kompetencje digital, performance marketing i Social Media",
     "background": "agencja",
     "logo": {
-      "svg": ["pencil_sharpener"],
-      "size": ["medium-width"]
+      "svg": ["pencil_wolf_text"],
+      "size": ["largest-width"]
     },
     "description_part_1": "Jesteśmy agencją interaktywną działającą na rynku od 2005 roku. Współpracujemy z małymi i dużymi firmami z kraju i zagranicy, w swoim dorobku mamy już ponad 1000 wykonanych stron internetowych dla wielu branż, fundacji, państwowych i prywatnych przedsiębiorstw. Od lat z powodzeniem działamy na rynku amerykańskim - najbardziej wymagającym rynku świata. Jesteśmy przekonani, że dogłębna analiza twojej firmy oraz twoich klientów jest kluczem do stworzenia najbardziej efektywnych materiałów promocyjnych, które pozwolą twojemu przedsiębiorstwu rozwinąć się jak nigdy dotąd",
     "description_part_2": "W naszej agencji pracuje wielu zdolnych i doświadczonych ludzi, mamy bardzo dobrych grafików, koderów, programistów, pozycjonerów, specjalistów od social media i marketingu internetowego. Dzięki temu możesz mieć pewność, że otrzymasz od nas najpełniejszą, kompleksową usługę. Możemy stworzyć twój serwis internetowy oraz skutecznie pomóc w wypromowaniu twojej strony w Internecie.",
@@ -97,8 +97,8 @@
     "short_description": "Zaślepka dla strony internetowej. Z aktualnym czasem przed rozpoczęciem działania oraz możliwością ...",
     "background": "zaslepka",
     "logo": {
-      "svg": ["pencil_sharpener"],
-      "size": ["medium-width"]
+      "svg": ["pencil_wolf_text"],
+      "size": ["largest-width"]
     },
     "description_part_1": "Uruchomienie strony internetowej to dopiero początek. Jeśli strona www ma ona generować wzrost zamówień oraz sprzedaży produktów i usług, należy zadbać o jej właściwy zasięg i dotarci...",
     "description_part_2": "Zaślepka dla strony internetowej. Z aktualnym czasem rozpoczęciem uruchomienia oraz możliwością kontaktu bądż subskrybcji na newslettera.",
@@ -135,6 +135,6 @@
       "body": ["HTML", "JQuery", "CSS", "Bootstrap"]
     },
     "button_link": "https://www.pencilsharpener.pl/works/zegar/index.html",
-    "button_next": " "
+    "button_next": "makabra"
   }
 ]
