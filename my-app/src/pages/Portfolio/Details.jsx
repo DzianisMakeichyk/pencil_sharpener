@@ -6,6 +6,7 @@ import map from 'lodash/map';
 import routeMap from '../../../routeMap.json';
 import isMediaGreaterThan from '../../web_modules/isMediaGreaterThan';
 import isMediaLessThan from '../../web_modules/isMediaLessThan';
+import classnames from 'classnames';
 
 export default function ProjectDetails(props, context) {
     const currentProject = find(projects, (project) => (
@@ -60,55 +61,42 @@ export default function ProjectDetails(props, context) {
           {isMediaGreaterThan('Small', context.currentMedia) && (
             <i className="project-description">"{currentProject.description_part_2}"</i>
           )}
-          {isMediaLessThan('Medium', context.currentMedia) && (
-            <div className="project-button-wrapper">
-            <Link
-              to={currentProject.button_link}
-              target="_blank"
-              className="project-button see-project qanelas-bold box-shadow"
+            <div
+              className={classnames({'project-box-btn':context.currentMedia >= 'Mobile' })}
             >
-              <span className="project-button-text">
-                Zobacz project
-              </span>
-            </Link>
-            <Link
-              to={routeMap.project_details.replace(':slug', currentProject.button_next)}
-              className="project-button next qanelas-bold box-shadow"
-            >
-              <span className="project-button-text">
-                Następny
-              </span>
-            </Link>
-            </div>
-          )}
-          {isMediaGreaterThan('Small', context.currentMedia) && (
-            <div>
-              <Link
-                to={currentProject.button_link}
-                target="_blank"
-                className="project-large-button glitch-btn position-left qanelas-bold"
+              <div
+                className={classnames({'project-btn-shot':context.currentMedia >= 'Mobile' })}
               >
-                <div className="label">See project</div>
-                <div className="mask"><span>See project</span></div>
-                <div className="mask"><span>See project</span></div>
-                <div className="mask"><span>See project</span></div>
-                <div className="mask"><span>See project</span></div>
-                <div className="mask"><span>See project</span></div>
+                <Link
+                  to={currentProject.button_link}
+                  target="_blank"
+                  className="glitch-btn qanelas-bold project-large-button position-left"
+                >
+                  <div className="label">See project</div>
+                  <div className="mask"><span>See project</span></div>
+                  <div className="mask"><span>See project</span></div>
+                  <div className="mask"><span>See project</span></div>
+                  <div className="mask"><span>See project</span></div>
+                  <div className="mask"><span>See project</span></div>
 
-              </Link>
-              <Link
-                to={routeMap.project_details.replace(':slug', currentProject.button_next)}
-                className="project-large-button glitch-btn position-right qanelas-bold"
+                </Link>
+              </div>
+              <div
+                className={classnames({'project-btn-shot':context.currentMedia >= 'Mobile' })}
               >
-                <div className="label">Next project</div>
-                <div className="mask"><span>Next project</span></div>
-                <div className="mask"><span>Next project</span></div>
-                <div className="mask"><span>Next project</span></div>
-                <div className="mask"><span>Next project</span></div>
-                <div className="mask"><span>Next project</span></div>
-              </Link>
+                <Link
+                  to={routeMap.project_details.replace(':slug', currentProject.button_next)}
+                  className="glitch-btn qanelas-bold project-large-button position-right"
+                >
+                  <div className="label">Next project</div>
+                  <div className="mask"><span>Next project</span></div>
+                  <div className="mask"><span>Next project</span></div>
+                  <div className="mask"><span>Next project</span></div>
+                  <div className="mask"><span>Next project</span></div>
+                  <div className="mask"><span>Next project</span></div>
+                </Link>
+              </div>
             </div>
-          )}
         </section>
     );
 }

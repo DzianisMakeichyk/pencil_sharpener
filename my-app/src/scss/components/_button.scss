@@ -118,21 +118,29 @@
 //}
 
 .project-large-button {
-  @include just-rythm(21);
-  @include center($extend: false);
-  top: 44%;
+  @include just-rythm(16);
   color: $clear-white;
 
+  @include breakpoint(medium) {
+    @include just-rythm(21);
+    @include center($extend: false);
+    top: 44%;
+  }
+
  &.position-left {
-   left: remcalc(-100);
-   right: auto;
-   transform: rotate(-90deg);
+   @include breakpoint(medium) {
+     left: remcalc(-100);
+     right: auto;
+     transform: rotate(-90deg);
+   }
   }
 
  &.position-right {
-   right: remcalc(-110);
-   left: auto;
-   transform: rotate(90deg);
+   @include breakpoint(medium) {
+     right: remcalc(-110);
+     left: auto;
+     transform: rotate(90deg);
+   }
   }
 }
 
@@ -173,6 +181,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   letter-spacing: .1em;
+  color: $clear-white;
   line-height: 1.4;
   text-transform: uppercase;
   z-index: 1;

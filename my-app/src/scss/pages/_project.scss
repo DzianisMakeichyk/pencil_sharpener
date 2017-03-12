@@ -33,7 +33,9 @@
   }
 
   .project-img-list {
+    @include breakpoint(medium) {
       max-width: 45%;
+    }
 
     .project-shot-img {
       display: block;
@@ -315,5 +317,20 @@
   @include breakpoint(large) {
     margin: remcalc(55) auto;
     max-width: remcalc(1200);
+  }
+}
+
+.project-box-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: remcalc(50);
+  padding-bottom: remcalc(25);
+
+  .project-btn-shot {
+    position: relative;
+    flex: 1 1 50%;
   }
 }
