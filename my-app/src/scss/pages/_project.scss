@@ -1,46 +1,23 @@
-.project-name {
-  @include just-rythm(30);
-  @include gradient-text;
-  max-width: remcalc(220);
-  margin: 0 auto 0 0;
-  padding: remcalc(20) 0 remcalc(10) 0;
-  text-transform: uppercase;
-  line-height: remcalc(30);
-  letter-spacing: .5px;
-
+.project {
   @include breakpoint(small) {
-    @include just-rythm(40);
-    line-height: remcalc(40);
-    max-width: remcalc(400);
-  }
-
-  @include breakpoint(medium) {
-    @include just-rythm(52);
-    line-height: remcalc(54);
+    display: flex;
+    flex-direction: row;
+    width: remcalc(2000);
+    max-width: remcalc(2000);
   }
 }
 
-.project-image-box {
-  width: 100%;
-  padding-bottom: remcalc(15);
+.project-name {
+  @include just-rythm(42);
+  @include gradient-text;
+  line-height: 37px;
+  margin: 0 auto remcalc(10) 0;
+  padding: remcalc(55) 0 0;
+  text-transform: uppercase;
+  letter-spacing: .5px;
 
-  @include breakpoint(medium) {
-    display: flex;
-  }
-
-  .project-description {
-    margin: auto remcalc(25) auto auto;
-  }
-
-  .project-img-list {
-    @include breakpoint(medium) {
-      max-width: 45%;
-    }
-
-    .project-shot-img {
-      display: block;
-      width: 100%;
-    }
+  @include breakpoint(small) {
+    padding: remcalc(20) 0 remcalc(10) 0;
   }
 }
 
@@ -49,10 +26,82 @@
   padding: remcalc(15) 0 remcalc(25);
   font-family: $robot-thin;
 
-  @include breakpoint(large) {
-    @include just-rythm(18);
+  @include breakpoint(small) {
+    order: 1;
   }
 }
+
+.project-image-box {
+  @include breakpoint(small) {
+  }
+
+  .project-image {
+    width: 100%;
+  }
+}
+
+.launch {
+  @include breakpoint(small) {
+  }
+}
+
+.project-description-wrapper {
+  @include breakpoint(small) {
+  }
+}
+
+
+.next {
+  @include breakpoint(small) {
+  }
+}
+
+.project-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto remcalc(15);
+
+  @include breakpoint(small) {
+  }
+
+  .project-technologies-shot {
+    max-width: remcalc(100);
+
+    .project-technologies-img {
+      width: 100%;
+    }
+  }
+}
+
+.number-of-project {
+  @include just-rythm(20);
+  font-family: $robot-thin;
+  font-weight: $font-bold;
+  width: 16.66%;
+
+  span {
+    @include just-rythm(90);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .type-box {
   margin: auto auto auto 0;
@@ -86,41 +135,6 @@
   }
 }
 
-.project-description-wrapper {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-
-  @include breakpoint(medium) {
-    flex-direction: row;
-    align-items: flex-end;
-    padding: remcalc(10) 0 remcalc(35);
-  }
-
-  .project-type {
-    width: 100%;
-  }
-
-  .project-technologies {
-    width: 100%;
-    margin: 0 auto remcalc(15) remcalc(25);
-
-    .project-technologies-shot {
-      margin-bottom: remcalc(15);
-
-      @include breakpoint(small) {
-        @include just-rythm(22);
-      }
-    }
-
-    .project-technologies-svg {
-      width: remcalc(11);
-      margin-right: remcalc(10);
-      fill: $gradi-green;
-    }
-  }
-}
-
 .project-shots {
   display: flex;
   flex-direction: column;
@@ -143,28 +157,6 @@
     margin-top: remcalc(20);
   }
 }
-
-//.project-technologies {
-//  @include just-rythm(14);
-//  display: flex;
-//  flex-direction: row;
-//
-//  .project-techno-body {
-//    flex: 1 1 50%;
-//    padding: 0 0 remcalc(15);
-//
-//    .techno-body-name {
-//      color: $middle-greay;
-//      font-weight: $font-semi-bold;
-//      margin: remcalc(5) 0;
-//    }
-//
-//    .body-name-shot {
-//      font-weight: $font-thin;
-//      margin: remcalc(2) 0;
-//    }
-//  }
-//}
 
 .project-arrows {
   align-items: flex-start;

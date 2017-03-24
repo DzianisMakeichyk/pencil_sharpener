@@ -9,15 +9,11 @@
       "size": ["largest-width"]
     },
     "description_part_1": "FEST MAKABRA to nowy, ogólnopolski przegląd filmowy, prezentujący zagraniczne filmy z pogranicza horroru, thrillera, mrocznego fantasy i czarnej komedii. Większość filmów z programu zostanie wyświetlona w Polsce premierowo i będzie to jedyna okazja do obejrzenia ich na wielkim ekranie. Pierwsza edycja przeglądu filmowego FEST MAKABRA odbędzie się w kinach studyjnych i niezależnych w całej Polsce w lutym i marcu 2017 roku. Organizatorem wydarzenia jest dystrybutor filmów Kino Świat.",
-    "description_part_2": "Większość filmów z programu zostanie wyświetlona w Polsce premierowo i będzie to jedyna okazja do obejrzenia ich na wielkim ekranie. Pierwsza edycja przeglądu filmowego Fest Makabra odbędzie się w kinach studyjnych i niezależnych na terenie całego kraju. Organizatorem wydarzenia jest dystrybutor filmów Kino Świat.",
     "srcImg": {
       "img" : ["makabra"]
     },
-    "location": "Polska, Warszawa",
-    "type": "Personal WebSite",
-    "year": "2017",
     "technologies": {
-      "name": ["HTML5", "SCSS", "JavaScript", "JQuery"]
+      "name": ["html", "SASS", "JavaScript", "JQuery"]
     },
     "button_link": "https://www.festmakabra.pl/",
     "button_next": "stypendium-z-wyboru"
@@ -32,13 +28,9 @@
       "size": ["medium-height"]
     },
     "description_part_1": "Projekt firmy Absolvent.pl. Stypendium z Wyboru to ogólnopolski program stypendialny stworzony po to, by pomagać zdolnym, kreatywnym i ambitnym studentom i młodym absolwentom w realizowaniu swoich marzeń edukacyjnych i zawodowych.",
-    "description_part_2": "Stypendium z Wyboru to program stypendialny skierowany do studentów i absolwentów, którzy ukończyli studia nie później niż 12 miesięcy temu. Do 8 listopada można zgłaszać projekty związane z edukacją lub rozwojem zawodowym i zdobyć dofinansowanie na ich realizację. Uczestnicy mogą się zgłosić poprzez formularz na stronie stypendiumzwyboru.pl.",
     "srcImg": {
       "img" : ["stypendium"]
     },
-    "location": "Polska, Warszawa",
-    "type": "Corporation WebSite",
-    "year": "2016",
     "technologies": {
       "name": ["ReactJs", "JavaScript", "SCSS", "Green Sock"]
     },
@@ -55,13 +47,9 @@
       "size": ["largest-width"]
     },
     "description_part_1": "To grupa znanych portali branżowych. W obszarze działalności naszej firmy znajdują się serwisy rekrutacyjne, usługi doradcze i wizerunkowe, serwisy informacyjne i branżowe oraz inne usługi internetowe. Należą do nas: m.in. serwisy usługowe z zakresu rekrutacji i wizerunku oraz popularne serwisz szkoleniowe ",
-    "description_part_2": "Istniejemy na rynku od 1998 r. i mamy status pioniera wśród portali rekrutacyjnych. 16 lat doświadczenia znajduje odzwierciedlenie w najlepszej obsłudze klienta i wysokiej efektywności naszych działań. Profesjonalizm, elastyczność i szybkość działania może potwierdzić ponad 11 tysięcy pracodawców, którzy znaleźli u nas idealnych kandydatów do pracy.",
     "srcImg": {
       "img" : ["portal_pracy"]
     },
-    "location": "Polska, Warszawa",
-    "type": "Corporation WebSite",
-    "year": "2016",
     "technologies": {
       "name": ["JADE", "Bootstrap", "SCSS", "JQuery"]
     },
@@ -78,13 +66,9 @@
       "size": ["largest-width"]
     },
     "description_part_1": "Jesteśmy agencją interaktywną działającą na rynku od 2005 roku. Współpracujemy z małymi i dużymi firmami z kraju i zagranicy, w swoim dorobku mamy już ponad 1000 wykonanych stron internetowych dla wielu branż, fundacji, państwowych i prywatnych przedsiębiorstw. Od lat z powodzeniem działamy na rynku amerykańskim - najbardziej wymagającym rynku świata. Jesteśmy przekonani, że dogłębna analiza twojej firmy oraz twoich klientów jest kluczem do stworzenia najbardziej efektywnych materiałów promocyjnych, które pozwolą twojemu przedsiębiorstwu rozwinąć się jak nigdy dotąd",
-    "description_part_2": "W naszej agencji pracuje wielu zdolnych i doświadczonych ludzi, mamy bardzo dobrych grafików, koderów, programistów, pozycjonerów, specjalistów od social media i marketingu internetowego. Dzięki temu możesz mieć pewność, że otrzymasz od nas najpełniejszą, kompleksową usługę. Możemy stworzyć twój serwis internetowy oraz skutecznie pomóc w wypromowaniu twojej strony w Internecie.",
     "srcImg": {
       "img" : ["agencja"]
     },
-    "location": "Polska, Warszawa",
-    "type": "Personal WebSite",
-    "year": "2016",
     "technologies": {
       "body": ["JADE", "Bootstrap", "JavaScript", "JQuery", "SCSS"]
     },
@@ -101,13 +85,9 @@
       "size": ["largest-width"]
     },
     "description_part_1": "Uruchomienie strony internetowej to dopiero początek. Jeśli strona www ma ona generować wzrost zamówień oraz sprzedaży produktów i usług, należy zadbać o jej właściwy zasięg i dotarci...",
-    "description_part_2": "Zaślepka dla strony internetowej. Z aktualnym czasem rozpoczęciem uruchomienia oraz możliwością kontaktu bądż subskrybcji na newslettera.",
     "srcImg": {
       "img" : ["zaslepka"]
     },
-    "location": "Polska, Warszawa",
-    "type": "WebSite",
-    "year": "2015",
     "technologies": {
       "name": ["JADE", "Bootstrap", "JavaScript", "JQuery", "SCSS"]
     },
@@ -124,13 +104,9 @@
       "size": ["large-height"]
     },
     "description_part_1": "EPOS od wielu lat związany jest ze światem sportu i na wielu międzynarodowych imprezach występuje w roli oficjalnego chronometrażysty. W ubiegłym roku EPOS został sponsorem największej profesjonalnej ligi driftingu w Polsce i jednej z największych w Europie - Drift Masters Grand Prix",
-    "description_part_2": "Animowany baner z zegarkiem pokazującym aktualną godzinę",
     "srcImg": {
       "img" : ["baner"]
     },
-    "location": "Polska, Warszawa",
-    "type": "WebSite",
-    "year": "2016",
     "technologies": {
       "body": ["HTML", "JQuery", "CSS", "Bootstrap"]
     },
