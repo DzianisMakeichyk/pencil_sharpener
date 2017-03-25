@@ -89,7 +89,7 @@ export default class PortfolioGrid extends React.Component {
       >
         <Link
           to={routeMap.project_details.replace(':slug', this.props.project.slug)}
-          className={classnames('animation-link', {'is-mobile':this.context.currentMedia <= 'Mobile' })}
+          className="animation-link"
         >
           {isMediaLessThan('Small', this.context.currentMedia) && (
             <div className={classnames({'portfolio-info-box':this.context.currentMedia <= 'Mobile' })}>
