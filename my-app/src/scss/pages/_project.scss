@@ -134,9 +134,21 @@
 }
 
 .project-button-wrapper {
-  @include breakpoint(small) {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+
+  .next {
+    order: 2;
+    @include breakpoint(small) {
+      order: 1;
+    }
+  }
+
+  .next {
+    order: 1;
+    @include breakpoint(small) {
+      order: 2;
+    }
   }
 }
