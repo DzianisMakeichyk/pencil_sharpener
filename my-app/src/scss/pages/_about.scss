@@ -1,34 +1,36 @@
 .about {
   display: flex;
-  flex-direction: column;
   padding: remcalc(70) remcalc(15) remcalc(25);
   overflow: hidden;
 
   @include breakpoint(small) {
-    flex-direction: row;
+    flex-direction: column;
     padding: remcalc(75) remcalc(25);
-    height: calc(100vh - 100px);
   }
 
   @include breakpoint(large) {
-    flex-direction: row;
     padding: remcalc(75) remcalc(40) 0 remcalc(45);
-    height: calc(100vh - 120px);
   }
 
-  .about-box-image {
+  .about-image-box {
     position: relative;
-    margin: 0 auto remcalc(20) auto;
+    margin: remcalc(10) auto;
     overflow: hidden;
 
     @include breakpoint(small) {
-      flex: 1 1 50%;
-      margin: 0 auto auto;
-      padding: 0 remcalc(25) 0 0;
+      margin: 0 auto;
+      padding: 0 0 remcalc(25) 0;
+    }
+
+    @include breakpoint(medium) {
+      width: 55%;
+      margin: auto 14.5% 0 auto;
+      padding: 0 0 remcalc(75) 0;
     }
 
     .about-image {
       width: 100%;
+      margin: auto auto remcalc(35);
 
       @include breakpoint(small) {
         margin: auto auto remcalc(25);
@@ -37,23 +39,37 @@
   }
 
   .about-information {
-    @include black-background;
     margin: 0 auto auto;
     font-family: $robot-thin;
 
     @include breakpoint(small) {
-      flex: 1 1 50%;
+      flex: 1 1 65%
     }
   }
 }
 
+.about-information-box {
+  @include breakpoint(small) {
+    display: flex;
+  }
+
+  @include breakpoint(medium) {
+    width: 82%;
+  }
+}
+
 .about-name {
+  @include just-rythm(28);
   letter-spacing: 1px;
 }
 
 .about-description {
   display: flex;
   margin: remcalc(15) auto;
+
+  @include breakpoint(small) {
+    @include just-rythm(18);
+  }
 
   .about-description-left {
     flex: 1 1 40%;
@@ -93,6 +109,10 @@
   }
 }
 
+.about-me {
+  text-align: justify;
+}
+
 /****************  Second ****************/
 
 .skills-title {
@@ -107,11 +127,11 @@
   justify-content: space-between;
   flex-direction: column;
   width: 100%;
-  background: $clear-gray;
   padding: remcalc(10) remcalc(20);
 
   @include breakpoint(small) {
-    width: auto;
+    height: 100%;
+    flex: 1 1 45%;
   }
 }
 
