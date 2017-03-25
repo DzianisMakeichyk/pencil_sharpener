@@ -21,10 +21,12 @@
 
 .list-menu{
   height: 50%;
-  margin: auto remcalc(35) auto auto;
+  margin: 50% auto 0;
+  text-align: center;
 
   @include breakpoint(small) {
     margin: auto auto auto remcalc(50);
+    text-align: left;
   }
 
   @include breakpoint(medium) {
@@ -36,13 +38,15 @@
   }
 
   @include breakpoint(extralarge) {
-    margin: auto remcalc(135) auto auto;
+    margin: 25% auto 0;
+    text-align: center;
   }
 
   .item-menu {
     position: relative;
     line-height: remcalc(36);
     letter-spacing: 1px;
+    margin: 0 auto remcalc(5);
 
     @include breakpoint(small) {
       margin: remcalc(10) 0;
@@ -68,9 +72,14 @@
         height: 2px;
         background-color: $gradi-green;
         margin: auto 0;
-        top: 43%;
-        right: -4%;
+        top: 38%;
+        right: 3%;
         transition: all .5s ease;
+
+        @include breakpoint(small) {
+          top: 43%;
+          right: -4%;
+        }
       }
     }
 
