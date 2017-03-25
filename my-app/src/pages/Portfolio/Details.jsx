@@ -14,49 +14,60 @@ export default function ProjectDetails(props, context) {
     ));
 
     return (
-        <section className="project mobile-height box-shadow">
-          {isMediaGreaterThan('Mobile', context.currentMedia) && (
-            <p className="number-of-project">
-              <span>1</span>/5
-            </p>
-          )}
-          <h2 className="project-name qanelas-bold">{currentProject.name}</h2>
-          <p className="project-description">"{currentProject.description_part_1}"</p>
-          <div className="project-image-box">
-            {map(currentProject.srcImg.img, (img)  => (
-              <img
-                className="project-image"
-                alt={img}
-                src={"../../img/project_grid/" + img + ".png"}
-              />
-            ))}
-          </div>
-          <Link
-            to={currentProject.button_link}
-            className="button-project launch qanelas-bold"
-          >
-            Launch Project
-          </Link>
-          <div className="project-description-wrapper">
-            <ul className="project-technologies">
-              {map(currentProject.technologies.name, (name) => (
-                <li className="project-technologies-shot">
-                  <img
-                    className="project-technologies-img"
-                    alt={name}
-                    src={"../../img/technologies/" + name + ".svg"}
-                  />
-                </li>
+        <section className="project height-auto">
+          <div className="project-first-box">
+            <div className="project-name-position">
+              {isMediaGreaterThan('Mobile', context.currentMedia) && (
+                <p className="number-of-project">
+                  <span>1</span>/5
+                </p>
+              )}
+              <h2 className="project-name qanelas-bold">{currentProject.name}</h2>
+            </div>
+            {isMediaLessThan('Small', context.currentMedia) && (
+              <p className="project-description">"{currentProject.description_part_1}"</p>
+            )}
+            <div className="project-image-box">
+              {map(currentProject.srcImg.img, (img)  => (
+                <img
+                  className="project-image"
+                  alt={img}
+                  src={"../../img/project_grid/" + img + ".png"}
+                />
               ))}
-            </ul>
+            </div>
           </div>
-          <Link
-            to={routeMap.project_details.replace(':slug', currentProject.button_next)}
-            target="_blank"
-            className="button-project next qanelas-bold"
-          >
-            Next project
-          </Link>
+          <ul className="project-technologies">
+            {map(currentProject.technologies.name, (name) => (
+              <li className="project-technologies-shot">
+                <img
+                  className="project-technologies-img"
+                  alt={name}
+                  src={"../../img/technologies/" + name + ".svg"}
+                />
+              </li>
+            ))}
+          </ul>
+          <div className="project-description-wrapper">
+            {isMediaGreaterThan('Mobile', context.currentMedia) && (
+              <p className="project-description">"{currentProject.description_part_1}"</p>
+            )}
+            <div className="project-button-wrapper">
+              <Link
+                to={routeMap.project_details.replace(':slug', currentProject.button_next)}
+                target="_blank"
+                className="button-project next qanelas-bold"
+              >
+                Next project
+              </Link>
+              <Link
+                to={currentProject.button_link}
+                className="button-project launch qanelas-bold"
+              >
+                Launch Project
+              </Link>
+            </div>
+          </div>
       </section>
     );
 }

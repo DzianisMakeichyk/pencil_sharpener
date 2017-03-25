@@ -1,9 +1,7 @@
 .project {
   @include breakpoint(small) {
     display: flex;
-    flex-direction: row;
-    width: remcalc(2000);
-    max-width: remcalc(2000);
+    flex-direction: column;
   }
 }
 
@@ -17,7 +15,13 @@
   letter-spacing: .5px;
 
   @include breakpoint(small) {
-    padding: remcalc(20) 0 remcalc(10) 0;
+    @include just-rythm(60);
+    margin: 0;
+    padding: 0;
+  }
+
+  @include breakpoint(large) {
+    @include just-rythm(70)
   }
 }
 
@@ -27,12 +31,23 @@
   font-family: $robot-thin;
 
   @include breakpoint(small) {
-    order: 1;
+    max-width: 50%;
+    margin: 0 auto 0 10%;
+    padding: remcalc(25) 0;
+  }
+
+  @include breakpoint(large) {
+    @include just-rythm(18);
   }
 }
 
 .project-image-box {
   @include breakpoint(small) {
+    margin-left: -23%;
+  }
+
+  @include breakpoint(large) {
+    margin-left: -15%;
   }
 
   .project-image {
@@ -40,19 +55,11 @@
   }
 }
 
-.launch {
-  @include breakpoint(small) {
-  }
-}
-
 .project-description-wrapper {
   @include breakpoint(small) {
-  }
-}
-
-
-.next {
-  @include breakpoint(small) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
@@ -64,13 +71,25 @@
   margin: 0 auto remcalc(15);
 
   @include breakpoint(small) {
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: nowrap;
   }
 
   .project-technologies-shot {
     max-width: remcalc(100);
 
+    @include breakpoint(small) {
+      margin: 0 auto remcalc(25);
+    }
+
     .project-technologies-img {
       width: 100%;
+      transition: all .5s ease;
+
+      &:hover {
+        transform: scale(1.2);
+      }
     }
   }
 }
@@ -79,15 +98,48 @@
   @include just-rythm(20);
   font-family: $robot-thin;
   font-weight: $font-bold;
-  width: 16.66%;
+
+  @include breakpoint(small) {
+    padding: 0;
+    margin: 0;
+  }
+
+  @include breakpoint(large) {
+    @include just-rythm(30);
+  }
 
   span {
-    @include just-rythm(90);
+    @include just-rythm(70);
+
+    @include breakpoint(large) {
+      @include just-rythm(90);
+    }
   }
 }
 
+.project-first-box {
+  @include breakpoint(small) {
+    display: flex;
+    align-items: center;
+    margin: remcalc(55) auto remcalc(15) 10%;
+  }
 
+  .project-name-position {
+    @include breakpoint(small) {
+      display: flex;
+      flex-direction: column;
+      margin-top: -5%;
+    }
+  }
+}
 
+.project-button-wrapper {
+  @include breakpoint(small) {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+}
 
 
 

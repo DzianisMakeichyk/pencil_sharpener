@@ -9,8 +9,7 @@ main {
   position: relative;
   height: 100%;
   background: radial-gradient(ellipse at bottom, $middle-black 0%, $black-blue 100%);
-  overflow-x: scroll;
-  overflow-y: hidden;
+  overflow: hidden;
 
   &.hello-pencil {
     @include breakpoint(small) {
@@ -92,13 +91,6 @@ section {
       }
     }
   }
-  &.mobile-height {
-    height: auto;
-
-    @include breakpoint(small) {
-      height: 100vh;
-    }
-  }
 
   &.is-mobile {
     padding: remcalc(15) 0;
@@ -119,6 +111,10 @@ section,
     left: 0;
     width: 100%;
     height: inherit;
+
+    &.col-project {
+      width: 200%;
+    }
   }
 
   .col {
@@ -129,6 +125,13 @@ section,
       height: inherit;
       outline: none;
       border-right: 1px solid $clear-gray;
+
+      &.col-project {
+        @include breakpoint(small) {
+          width: 8.33333%;
+        }
     }
+  }
+
   }
 }

@@ -95,11 +95,7 @@ class Home extends Component {
       const thing = things[Math.floor(Math.random()*things.length)];
       const isLoggedIn = (platform.name === 'IE' || platform.name === 'Microsoft Edge');
       const slugPage = routeMap.portfolio + '/' + this.props.params.slug;
-      var numbersOfColumns =
-        this.props.location.pathname === slugPage ?
-          new Array(12)
-          :
-          new Array(6);
+      var numbersOfColumns = new Array(6);
       const pageName = this.props.location.pathname;
       const pageBackName = pageName.replace('/','');
       console.log(pageBackName);
@@ -182,10 +178,7 @@ class Home extends Component {
                   </div>
                 )}
                 <MediaDetectElement onMediaChange={this.onMediaChange} />
-                <div className={classnames('grid-bg', {
-                  'bg-project': this.props.location.pathname === slugPage,
-                  })}
-                >
+                <div className="grid-bg">
                   {map(numbersOfColumns, () =>
                     <div className="col"></div>
                   )}
