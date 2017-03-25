@@ -19,7 +19,7 @@ export default function ProjectDetails(props, context) {
             <div className="project-name-position">
               {isMediaGreaterThan('Mobile', context.currentMedia) && (
                 <p className="number-of-project">
-                  <span>1</span>/5
+                  <span>{currentProject.number}</span>/6
                 </p>
               )}
               <h2 className="project-name qanelas-bold">{currentProject.name}</h2>
@@ -55,13 +55,13 @@ export default function ProjectDetails(props, context) {
             <div className="project-button-wrapper">
               <Link
                 to={routeMap.project_details.replace(':slug', currentProject.button_next)}
-                target="_blank"
                 className="button-project next qanelas-bold"
               >
                 Next project
               </Link>
               <Link
                 to={currentProject.button_link}
+                target="_blank"
                 className="button-project launch qanelas-bold"
               >
                 Launch Project
