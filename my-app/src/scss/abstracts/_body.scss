@@ -20,6 +20,7 @@ main {
         position: fixed;
         text-transform: uppercase;
         font-family: $ganelas-bold;
+        text-align: center;
         letter-spacing: remcalc(20);
         color: $clear-gray;
         user-select: none;
@@ -130,8 +131,7 @@ section,
         @include breakpoint(small) {
           width: 8.33333%;
         }
+      }
     }
-  }
-
   }
 }

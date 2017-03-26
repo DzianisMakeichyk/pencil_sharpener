@@ -73,7 +73,7 @@
       "img" : ["agencja"]
     },
     "technologies": {
-      "body": ["JADE", "Bootstrap", "JavaScript", "JQuery", "SASS"]
+      "name": ["JADE", "Bootstrap", "SASS", "JavaScript", "JQuery"]
     },
     "button_link": "https://www.pencilsharpener.pl/works/agencja/index.html",
     "button_next": "zaslepka",
@@ -93,7 +93,7 @@
       "img" : ["zaslepka"]
     },
     "technologies": {
-      "name": ["JADE", "Bootstrap", "JavaScript", "JQuery", "SASS"]
+      "name": ["JADE", "Bootstrap", "SASS", "JavaScript", "JQuery"]
     },
     "button_link": "https://www.pencilsharpener.pl/works/timer/index.html",
     "button_next": "baner",
@@ -113,7 +113,7 @@
       "img" : ["baner"]
     },
     "technologies": {
-      "body": ["HTML", "JQuery", "CSS", "Bootstrap"]
+      "name": ["html", "Bootstrap", "CSS", "JQuery"]
     },
     "button_link": "https://www.pencilsharpener.pl/works/zegar/index.html",
     "button_next": "makabra",

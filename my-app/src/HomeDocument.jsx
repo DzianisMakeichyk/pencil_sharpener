@@ -94,11 +94,10 @@ class Home extends Component {
       var things = ['rock', 'fun', 'more work'];
       const thing = things[Math.floor(Math.random()*things.length)];
       const isLoggedIn = (platform.name === 'IE' || platform.name === 'Microsoft Edge');
-      const slugPage = routeMap.portfolio + '/' + this.props.params.slug;
       var numbersOfColumns = new Array(6);
       const pageName = this.props.location.pathname;
       const pageBackName = pageName.replace('/','');
-      console.log(pageBackName);
+      console.log(this.props.location.pathname === routeMap.home);
       return (
         <div className="App">
           {isLoggedIn ? (

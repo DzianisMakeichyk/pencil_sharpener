@@ -117,7 +117,5 @@ export default class PortfolioGrid extends React.Component {
         </Link>
       </li>
     );
-
-    console.log(this.state.width);
   }
 }
