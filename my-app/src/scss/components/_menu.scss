@@ -57,6 +57,10 @@
       margin: remcalc(15) 0;
     }
 
+    &:nth-last-child {
+      margin-bottom: remcalc(25);
+    }
+
     &:before {
       content: '';
       position: absolute;
@@ -95,10 +99,6 @@
         right: -4%;
         transition: all .5s ease;
       }
-    }
-
-    &:nth-last-child {
-      margin-bottom: remcalc(25);
     }
 
     .text-menu {

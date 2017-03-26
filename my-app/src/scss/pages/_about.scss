@@ -127,11 +127,12 @@
   justify-content: space-between;
   flex-direction: column;
   width: 100%;
-  padding: remcalc(10) remcalc(20);
+  padding: remcalc(10) 0;
 
   @include breakpoint(small) {
     height: 100%;
     flex: 1 1 45%;
+    padding: remcalc(10) remcalc(20);
   }
 }
 
