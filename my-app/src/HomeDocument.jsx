@@ -91,7 +91,7 @@ class Home extends Component {
         // var classNameOther = is_click + ' burger-menu-other';
         // console.log(location.pathname);
         // console.log(location.pathname !== routeMap.home);
-      var things = ['rock', 'fun', 'more work'];
+      var things = ['rock', 'fun', 'more work', 'think big'];
       const thing = things[Math.floor(Math.random()*things.length)];
       const isLoggedIn = (platform.name === 'IE' || platform.name === 'Microsoft Edge');
       var numbersOfColumns = new Array(6);

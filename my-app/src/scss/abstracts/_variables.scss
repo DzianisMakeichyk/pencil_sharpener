@@ -30,16 +30,18 @@ $base-size: 16 !default;
 @font-face {
   font-family: 'qanelas_bold';
   font-style: normal;
-  src: url('../fonts/qanelassoft_extrabold.woff2') format('woff2'),
-  url('../fonts/qanelassoft_extrabold.woff') format('woff'),
+  src: url('../fonts/Qanelas-Black.woff2') format('woff2'),
+  url('../fonts/Qanelas-Black.woff') format('woff'),
+  url('../fonts/Qanelas-Black.ttf') format('truetype'),
   url('../fonts/qanelassoft_extrabold.svg#qanelas_soft_demoextrabold') format('svg');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'qanelas_light';
-  src: url('../fonts/qanelassoft_ultralight.woff2') format('woff2'),
-  url('../fonts/qanelassoft_ultralight.woff') format('woff'),
+  src: url('../fonts/Qanelas-UltraLight.woff2') format('woff2'),
+  url('../fonts/Qanelas-UltraLight.woff') format('woff'),
+  url('../fonts/Qanelas-UltraLight.ttf') format('truetype'),
   url('../fonts/qanelassoft_ultralight.svg#qanelas_soft_demoextrabold') format('svg');
   font-weight: normal;
   font-style: normal;
