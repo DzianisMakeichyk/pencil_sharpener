@@ -1,0 +1,216 @@
+@use postcss-cssnext;
+
+:root {
+  --size: 180px;
+  --gap: 5px;
+  --tdeg: 90deg;
+  --dr: 200ms;
+  --tf: ease-out;
+  --pr: 300px;
+  --fr: #000;
+  --bg: #fff;
+  --mn: #00BCD4;
+  --sc: #673AB7;
+}
+
+li {
+  margin: var(--gap);
+  position: relative;
+  width: var(--size);
+  height: var(--size);
+  display: inline-block;
+  vertical-align: top;
+  perspective: var(--pr);
+  transform-origin: 50% 50% calc(var(--size)/2);
+}
+
+.w {
+  font-size: initial;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  transform-style: preserve-3d;
+  transform-origin: 50% 50% -calc(var(--size)/2);
+  will-change: transform;
+  animation: var(--dr) var(--tf) 0ms 1 normal forwards paused;
+}
+
+.f,
+.b {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  color: white;
+  transition: none;
+}
+
+.f {
+  background-color: var(--mn);
+  background: linear-gradient(var(--mn), var(--sc));
+  transform: translate3d(0,0,0);
+
+  & > svg {
+    mix-blend-mode: luminosity;
+  }
+}
+
+.b {
+  padding: 1rem;
+  background-image: radial-gradient(circle, #333, #000 160%);
+  transform: translate3d(0,0,-1px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 0 20px 20px black;
+  text-align: center;
+}
+
+.in-top .b,
+.out-top .b {
+  transform-origin: 0% 100%;
+  transform: translate3d(0, -100%, 0) rotate3d(1,0,0,90deg);
+}
+
+.in-right .b,
+.out-right .b {
+  transform-origin: 0% 0%;
+  transform: translate3d(100%, 0, 0) rotate3d(0,1,0,90deg);
+}
+
+.in-bottom .b,
+.out-bottom .b {
+  transform-origin: 0% 0%;
+  transform: translate3d(0, 100%, 0) rotate3d(-1,0,0,90deg);
+}
+
+.in-left .b,
+.out-left .b {
+  transform-origin: 100% 0;
+  transform: translate3d(-100%,0,0) rotate3d(0,-1,0,90deg);
+}
+
+.in {
+  &-top .w    {animation-name: in-top; animation-play-state: running}
+  &-right .w  {animation-name: in-right; animation-play-state: running}
+  &-bottom .w {animation-name: in-bottom; animation-play-state: running}
+  &-left .w   {animation-name: in-left; animation-play-state: running}
+}
+
+.out {
+  &-top .w    {animation-name: out-top; animation-play-state: running}
+  &-right .w  {animation-name: out-right; animation-play-state: running}
+  &-bottom .w {animation-name: out-bottom; animation-play-state: running}
+  &-left .w   {animation-name: out-left; animation-play-state: running}
+}
+
+@keyframes in-top {
+  from  {transform: rotate3d(0,0,0,0deg)}
+  to    {transform: rotate3d(-1,0,0,var(--tdeg))}
+}
+@keyframes out-top {
+  from {transform: rotate3d(-1,0,0,var(--tdeg))}
+  to   {transform: rotate3d(0,0,0,0deg)}
+}
+
+@keyframes in-right {
+  from  {transform: rotate3d(0,0,0,0deg)}
+  to    {transform: rotate3d(0,-1,0,var(--tdeg))}
+}
+@keyframes out-right {
+  from  {transform: rotate3d(0,-1,0,var(--tdeg))}
+  to    {transform: rotate3d(0,0,0,0deg)}
+}
+
+@keyframes in-bottom {
+  from  {transform: rotate3d(0,0,0,0deg)}
+  to    {transform: rotate3d(1,0,0,var(--tdeg))}
+}
+@keyframes out-bottom {
+  from  {transform: rotate3d(1,0,0,var(--tdeg))}
+  to    {transform: rotate3d(0,0,0,0deg)}
+}
+
+@keyframes in-left {
+  from  {transform: rotate3d(0,0,0,0deg)}
+  to    {transform: rotate3d(0,1,0,var(--tdeg))}
+}
+@keyframes out-left {
+  from  {transform: rotate3d(0,1,0,var(--tdeg))}
+  to    {transform: rotate3d(0,0,0,0deg)}
+}
+
+/* ======= aesthetics ======= */
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 3rem 1.5rem;
+  font-size: 16px;
+  font-family: 'Sahitya', serif;
+  color: var(--fr);
+  background-color: var(--bg);
+  line-height: 1.618;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+header {
+  padding-bottom: 3rem;
+}
+
+h1 {
+  font-size: 2em;
+
+  & sup {
+    font-size: .7em;
+    color: var(--mn);
+  }
+}
+
+ul {
+  font-size: 0;
+  padding: 0;
+  max-width: calc((var(--size) + (var(--gap) * 2)) * 4);
+  margin: 0 auto;
+  list-style: none;
+
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+footer {
+  font-size: .75rem;
+  font-family: monospace;
+  padding-top: 3rem;
+
+  & a {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  & svg {fill: currentColor}
+}
+
+:any-link {
+  color: var(--mn);
+}
+
+.-center {
+  text-align: center;
+}
+
+.-neutral-mid {
+  color: color(var(--fr) tint(60%));
+}
