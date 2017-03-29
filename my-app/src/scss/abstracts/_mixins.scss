@@ -1,11 +1,3 @@
-@mixin back-box-shadow {
-  box-shadow: 0 0 remcalc(20) remcalc(5) $clear-black;
-}
-
-@mixin box-shadow {
-  box-shadow: 0 remcalc(12) remcalc(40) remcalc(-15) $clear-black;
-}
-
 @mixin center($extend: true) {
   @if $extend {
     @extend %center;

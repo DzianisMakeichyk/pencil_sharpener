@@ -1,4 +1,3 @@
-/* Breakpoints */
 @mixin breakpoint($point) {
   @if $point == small {
     @media only screen and (min-width: 768px) {
@@ -19,7 +18,6 @@
   }
 }
 
-/* React Viewports */
 .viewport {
   display: none;
   font-family: 'Mobile';
@@ -37,10 +35,9 @@
   }
 }
 
-/* Readjust Size and Line Height, keeping same margin */
 @mixin just-rythm($font) {
-  @if map-has-key($fonts, $font) { /* Check if font size exist */
-    $value: #{map-get($fonts, $font)}; /* Store size in variable */
+  @if map-has-key($fonts, $font) {
+    $value: #{map-get($fonts, $font)};
     font-size: ($font / $base-size) * 1rem;
     line-height: $value;
   }

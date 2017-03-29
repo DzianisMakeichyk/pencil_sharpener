@@ -23,10 +23,10 @@
 
   .not-found-home {
     @include just-rythm(22);
-    max-width: remcalc(200);
-    margin: 0 auto;
     left: 0;
     right: 0;
+    max-width: remcalc(200);
+    margin: 0 auto;
   }
 }
 

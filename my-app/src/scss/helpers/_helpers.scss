@@ -51,27 +51,31 @@
 
 .glitch {
   position: relative;
+
   &.dark {
-    &::before,
-    &::after {
+    &:before,
+    &:after {
       background: rgba(17, 17, 17, 0.2);
     }
   }
-  &::before,
-  &::after {
+
+  &:before,
+  &:after {
     content: attr(data-text);
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
   }
-  &::before {
+
+  &:before {
     left: 7px;
     text-shadow: -7px 0 $green;
     clip: rect(24px, 600px, 90px, 0);
     animation: glitch-anim-2 0.4s infinite linear alternate-reverse;
   }
-  &::after {
+
+  &:after {
     left: -15px;
     text-shadow: -5px 0 $purple;
     clip: rect(85px, 600px, 140px, 0);

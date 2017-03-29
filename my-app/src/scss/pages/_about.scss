@@ -116,10 +116,10 @@
 /****************  Second ****************/
 
 .skills-title {
-  text-align: center;
   @include just-rythm(22);
   font-family: $robot-thin;
   font-weight: $font-semi-bold;
+  text-align: center;
 }
 
 .skills-box {
@@ -177,9 +177,9 @@
         left: 0;
         top: 0;
         bottom: 0;
-        margin: auto;
         width: 100%;
         height: remcalc(4);
+        margin: auto;
         background: $gradi-green;
         transform: $skew-minus;
       }

@@ -49,7 +49,6 @@ $ninetyDeg: 90deg;
 }
 
 .funny-box-container {
-  font-size: initial;
   position: absolute;
   top: 0;
   right: 0;
@@ -81,8 +80,6 @@ $ninetyDeg: 90deg;
 }
 
 .funny-box-image {
-  //background-color: $mn;
-  //background: linear-gradient($mn, $sc);
   transform: translate3d(0, 0, 0);
 
   & > svg {
@@ -91,14 +88,14 @@ $ninetyDeg: 90deg;
 }
 
 .funny-box-text {
-  padding: 1rem;
-  background-image: radial-gradient(circle, $gray, $clear-black 160%);
-  transform: translate3d(0,0,-1px);
   display: flex;
   align-items: center;
   justify-content: center;
-  text-shadow: 0 20px 20px black;
   text-align: center;
+  padding: 1rem;
+  background-image: radial-gradient(circle, $gray, $clear-black 160%);
+  transform: translate3d(0,0,-1px);
+  text-shadow: 0 20px 20px black;
 }
 
 .in-top,

@@ -1,36 +1,28 @@
-main {
-  //background: $clear-gray;
-  //background-image: url("../img/stars.png");
-  //background-size: cover;
-  //background-repeat: no-repeat;
-  //background-position: center;
-}
-
 .header-container {
   left: 0;
   right: 0;
 }
 
 .burger-click-region {
-  cursor: pointer;
-  height: remcalc(28);
   position: relative;
   width: remcalc(30);
+  height: remcalc(28);
+  cursor: pointer;
   overflow-x: hidden;
 }
 
 .menu-burger {
-  left: 50%;
   position: absolute;
+  left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
 
   .burger-menu-piece {
-    background: $clear-gray;
-    display: block;
-    height: remcalc(3);
     position: relative;
+    display: block;
     width: remcalc(30);
+    height: remcalc(3);
+    background: $clear-gray;
     border-radius: remcalc(25);
 
     &:nth-child(1) {
@@ -44,11 +36,11 @@ main {
   }
 
   .burger-menu-other {
-    background: $middle-black;
-    display: block;
     position: absolute;
-    transition: background 1s ease;
+    display: block;
     width: remcalc(2);
+    background: $middle-black;
+    transition: background 1s ease;
   }
 }
 
@@ -60,23 +52,21 @@ main {
 
   &.is-click-menu {
     color: $clear-white;
-
   }
-
 }
 
 .header-wrap {
   position: relative;
 
   .header-container {
+    position: fixed;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 auto;
-    max-width: remcalc(1600);
-    padding-bottom: remcalc(15);
-    position: fixed;
     width: 100%;
+    max-width: remcalc(1600);
+    margin: 0 auto;
+    padding-bottom: remcalc(15);
     z-index: 1001;
 
     .burger-menu-piece {
@@ -164,24 +154,23 @@ main {
 }
 
 .hello-name {
-  font-family: $robot-thin;
   @include just-rythm(12);
+  font-family: $robot-thin;
   text-align: left;
-  margin: auto auto remcalc(-35) remcalc(10);
   line-height: 4;
+  margin: auto auto remcalc(-35) remcalc(10);
 
   @include breakpoint(small) {
     @include just-rythm(26);
+    font-weight: $font-thin;
     line-height: 4;
     margin: auto auto remcalc(-60) remcalc(20);
-    font-weight: $font-thin;
   }
 }
 
 .hello-svg {
   position: relative;
-  width: 100%;
-  //margin: auto auto remcalc(25);
+  width: 100%;;
 
   .hello-cut {
     width: 100%;

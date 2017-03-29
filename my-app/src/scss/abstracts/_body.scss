@@ -1,8 +1,8 @@
 body {
-  font-family: $ganelas-light;
-  font-weight: $font-thin;
   margin: 0;
   padding: 0;
+  font-family: $ganelas-light;
+  font-weight: $font-thin;
   color: $clear-white;
 }
 main {
@@ -18,8 +18,8 @@ main {
         @include just-rythm(155);
         content: attr(data-name);
         position: fixed;
-        text-transform: uppercase;
         font-family: $ganelas-bold;
+        text-transform: uppercase;
         text-align: center;
         letter-spacing: remcalc(20);
         color: $clear-gray;
@@ -67,8 +67,8 @@ section {
   z-index: 100;
 
   @include breakpoint(medium) {
-    flex-direction: row;
     height: calc(100vh - 50px);
+    flex-direction: row;
     justify-content: space-between;
     padding: remcalc(25);
   }
@@ -106,10 +106,10 @@ section,
 
 .grid-bg {
   @include breakpoint(small) {
-    display: block;
     position: absolute;
     top: 0;
     left: 0;
+    display: block;
     width: 100%;
     height: inherit;
 
@@ -122,10 +122,10 @@ section,
     @include breakpoint(small) {
       display: inline-block;
       width: 16.66667%;
-      overflow: hidden;
       height: inherit;
-      outline: none;
       border-right: 1px solid $clear-gray;
+      overflow: hidden;
+      outline: none;
 
       &.col-project {
         @include breakpoint(small) {
