@@ -29,27 +29,6 @@
     @include breakpoint(large) {
       margin: 0 remcalc(35) auto auto;
     }
-
-    .socials {
-      display: flex;
-      justify-content: space-around;
-      margin: remcalc(25) 0;
-
-      .icon-item {
-        width: remcalc(17);
-        height: remcalc(17);
-        fill: $clear-white;
-
-        @include breakpoint(medium) {
-          width: remcalc(20);
-          height: remcalc(20);
-        }
-
-        &:hover {
-          fill: $gradi-green;
-        }
-      }
-    }
   }
 }
 

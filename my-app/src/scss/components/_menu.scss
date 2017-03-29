@@ -19,7 +19,7 @@
   }
 }
 
-.list-menu{
+.list-menu {
   height: 50%;
   margin: 50% auto 0;
   text-align: center;
@@ -49,16 +49,8 @@
     margin: 0 auto remcalc(5);
 
     @include breakpoint(small) {
-      margin: remcalc(10) 0;
+      margin: 0 auto remcalc(15);
       line-height: remcalc(40);
-    }
-
-    @include breakpoint(large) {
-      margin: remcalc(15) 0;
-    }
-
-    &:nth-last-child {
-      margin-bottom: remcalc(25);
     }
 
     &:before {
@@ -73,7 +65,7 @@
         content: '';
         position: absolute;
         width: 100%;
-        height: 2px;
+        height: 3px;
         background-color: $gradi-green;
         margin: auto 0;
         top: 38%;
@@ -92,7 +84,7 @@
         content: '';
         position: absolute;
         width: 100%;
-        height: 2px;
+        height: 3px;
         background-color: $gradi-green;
         margin: auto 0;
         top: 43%;
@@ -108,17 +100,17 @@
       @include just-rythm(24);
 
       @include breakpoint(small) {
-        @include just-rythm(28);
+        @include just-rythm(30);
         display: block;
         margin-left: remcalc(15);
       }
 
       @include breakpoint(medium) {
-        @include just-rythm(32);
+        @include just-rythm(34);
       }
 
       @include breakpoint(large) {
-        @include just-rythm(36);
+        @include just-rythm(38);
       }
 
       @include breakpoint(extralarge) {
@@ -130,21 +122,23 @@
 }
 
 .socials {
-  a {
-    padding: 0 remcalc(10);
+  margin: remcalc(25) auto 0;
+
+  > a {
+    padding: 0 remcalc(30) 0 0;
 
     @include breakpoint(large) {
-      padding: 0 remcalc(15);
+      padding: 0 remcalc(35) 0 0;
     }
 
     .icon-item {
-      width: remcalc(15);
-      height: remcalc(15);
+      width: remcalc(17);
+      height: remcalc(17);
       fill: $clear-white;
 
       @include breakpoint(small) {
-        width: remcalc(16);
-        height: remcalc(16);
+        width: remcalc(18);
+        height: remcalc(18);
 
         &:hover {
           fill: $gradi-green;
@@ -157,8 +151,9 @@
       }
     }
 
-    &:nth-child(1) {
-      padding-left: 0;
+    &:nth-last-child(1) {
+      padding-right: 0;
+
     }
   }
 
