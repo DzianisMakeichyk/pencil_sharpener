@@ -54,17 +54,27 @@ export default function ProjectDetails(props, context) {
             )}
             <div className="project-button-wrapper">
               <Link
-                to={routeMap.project_details.replace(':slug', currentProject.button_next)}
-                className="button-project next qanelas-bold"
-              >
-                Next project
-              </Link>
-              <Link
                 to={currentProject.button_link}
                 target="_blank"
-                className="button-project launch qanelas-bold"
+                className="glitch-btn launch qanelas-bold"
               >
-                Launch Project
+                <div className="label">Launch Project</div>
+                <div className="mask"><span>Launch Project</span></div>
+                <div className="mask"><span>Launch Project</span></div>
+                <div className="mask"><span>Launch Project</span></div>
+                <div className="mask"><span>Launch Project</span></div>
+                <div className="mask"><span>Launch Project</span></div>
+              </Link>
+              <Link
+                to={routeMap.project_details.replace(':slug', currentProject.button_next)}
+                className="glitch-btn next qanelas-bold"
+              >
+                <div className="label">Next project</div>
+                <div className="mask"><span>Next project</span></div>
+                <div className="mask"><span>Next project</span></div>
+                <div className="mask"><span>Next project</span></div>
+                <div className="mask"><span>Next project</span></div>
+                <div className="mask"><span>Next project</span></div>
               </Link>
             </div>
           </div>
