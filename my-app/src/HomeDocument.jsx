@@ -177,11 +177,11 @@ class Home extends Component {
                   </div>
                 )}
                 <MediaDetectElement onMediaChange={this.onMediaChange} />
-                <div className="grid-bg">
-                  {map(numbersOfColumns, () =>
-                    <div className="col"></div>
-                  )}
-                </div>
+                {/*<div className="grid-bg">*/}
+                  {/*{map(numbersOfColumns, () =>*/}
+                    {/*<div className="col"></div>*/}
+                  {/*)}*/}
+                {/*</div>*/}
               </main>
             </div>
           )}

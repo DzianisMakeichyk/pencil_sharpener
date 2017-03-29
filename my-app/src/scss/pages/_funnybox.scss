@@ -1,27 +1,23 @@
-@use postcss-cssnext;
-
-:root {
-  --size: 180px;
-  --gap: 5px;
-  --tdeg: 90deg;
-  --dr: 200ms;
-  --tf: ease-out;
-  --pr: 300px;
-  --fr: #000;
-  --bg: #fff;
-  --mn: #00BCD4;
-  --sc: #673AB7;
-}
+$size: 180px;
+$gap: 5px;
+$tdeg: 90deg;
+$dr: 200ms;
+$tf: ease-out;
+$pr: 300px;
+$fr: #000;
+$bg: #fff;
+$mn: #00BCD4;
+$sc: #673AB7;
 
 li {
-  margin: var(--gap);
+  margin: $gap;
   position: relative;
-  width: var(--size);
-  height: var(--size);
+  width: $size;
+  height: $size;
   display: inline-block;
   vertical-align: top;
-  perspective: var(--pr);
-  transform-origin: 50% 50% calc(var(--size)/2);
+  perspective: $pr;
+  transform-origin: 50% 50% ($size/2);
 }
 
 .w {
@@ -33,9 +29,9 @@ li {
   left: 0;
   pointer-events: none;
   transform-style: preserve-3d;
-  transform-origin: 50% 50% -calc(var(--size)/2);
+  transform-origin: 50% 50% -($size/2);
   will-change: transform;
-  animation: var(--dr) var(--tf) 0ms 1 normal forwards paused;
+  animation: $dr $tf 0ms 1 normal forwards paused;
 }
 
 .f,
@@ -50,8 +46,8 @@ li {
 }
 
 .f {
-  background-color: var(--mn);
-  background: linear-gradient(var(--mn), var(--sc));
+  background-color: $mn;
+  background: linear-gradient($mn, $sc);
   transform: translate3d(0,0,0);
 
   & > svg {
@@ -111,37 +107,37 @@ li {
 
 @keyframes in-top {
   from  {transform: rotate3d(0,0,0,0deg)}
-  to    {transform: rotate3d(-1,0,0,var(--tdeg))}
+  to    {transform: rotate3d(-1,0,0,$tdeg)}
 }
 @keyframes out-top {
-  from {transform: rotate3d(-1,0,0,var(--tdeg))}
+  from {transform: rotate3d(-1,0,0,$tdeg)}
   to   {transform: rotate3d(0,0,0,0deg)}
 }
 
 @keyframes in-right {
   from  {transform: rotate3d(0,0,0,0deg)}
-  to    {transform: rotate3d(0,-1,0,var(--tdeg))}
+  to    {transform: rotate3d(0,-1,0,$tdeg)}
 }
 @keyframes out-right {
-  from  {transform: rotate3d(0,-1,0,var(--tdeg))}
+  from  {transform: rotate3d(0,-1,0,$tdeg)}
   to    {transform: rotate3d(0,0,0,0deg)}
 }
 
 @keyframes in-bottom {
   from  {transform: rotate3d(0,0,0,0deg)}
-  to    {transform: rotate3d(1,0,0,var(--tdeg))}
+  to    {transform: rotate3d(1,0,0,$tdeg)}
 }
 @keyframes out-bottom {
-  from  {transform: rotate3d(1,0,0,var(--tdeg))}
+  from  {transform: rotate3d(1,0,0,$tdeg)}
   to    {transform: rotate3d(0,0,0,0deg)}
 }
 
 @keyframes in-left {
   from  {transform: rotate3d(0,0,0,0deg)}
-  to    {transform: rotate3d(0,1,0,var(--tdeg))}
+  to    {transform: rotate3d(0,1,0,$tdeg)}
 }
 @keyframes out-left {
-  from  {transform: rotate3d(0,1,0,var(--tdeg))}
+  from  {transform: rotate3d(0,1,0,$tdeg)}
   to    {transform: rotate3d(0,0,0,0deg)}
 }
 
@@ -156,8 +152,8 @@ body {
   padding: 3rem 1.5rem;
   font-size: 16px;
   font-family: 'Sahitya', serif;
-  color: var(--fr);
-  background-color: var(--bg);
+  color: $fr;
+  background-color: $bg;
   line-height: 1.618;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -172,14 +168,14 @@ h1 {
 
   & sup {
     font-size: .7em;
-    color: var(--mn);
+    color: $mn;
   }
 }
 
 ul {
   font-size: 0;
   padding: 0;
-  max-width: calc((var(--size) + (var(--gap) * 2)) * 4);
+  max-width: (($size + ($gap * 2)) * 4);
   margin: 0 auto;
   list-style: none;
 
@@ -203,8 +199,8 @@ footer {
   & svg {fill: currentColor}
 }
 
-:any-link {
-  color: var(--mn);
+a {
+  color: $mn;
 }
 
 .-center {
@@ -212,5 +208,5 @@ footer {
 }
 
 .-neutral-mid {
-  color: color(var(--fr) tint(60%));
+  //color: color($fr tint(60%));
 }

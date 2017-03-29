@@ -1,78 +1,33 @@
 import React, { Component } from 'react';
 
-class FunnyBox extends Component {
-  classCallCheck(instance, Constructor) {
-  if (!(instance instanceof Constructor)) {
-    throw new TypeError("Cannot call a class as a function");
-  }
-}
+class FunnyBoxElement extends Component {
+  constructor() {
+    super();
 
-   DAH = (nodes) => {
-    var _this = this;
-
-    this.classCallCheck(this, this.DAH);
-
-    this.nodes = [];
-
-    Array.prototype.slice.call(nodes, 0).forEach(function (node) {
-      _this.nodes.push(new Node(node));
-    });
-
-    this.bindEvents();
+    this.state = {
+      width: 0,
+      height: 0,
+      left: 0,
+      top: 0,
+      direction: 0,
+      className: '',
+    };
   }
 
-  bindEvents = () => {
-    var _this2 = this;
-
-    ['resizeHandler'].forEach(function (fn) {
-      return _this2[fn] = _this2[fn].bind(_this2);
-    });
-    window.addEventListener('resize', this.resizeHandler, false);
-  };
-
-   resizeHandler = () => {
-    this.nodes.forEach(function (node) {
-      return node.update();
-    });
-  };
-
-   Node = (node) => {
-    this.classCallCheck(this, Node);
-
-    this.element = node;
-    this.bindEvents().update();
+  componentDidMount() {
+    this.update();
   }
 
-   update = () => {
-    // const bcr = this.element.getBoundingClientRect();
-    // this.l = bcr.left;
-    // this.t = bcr.top;
-    this.w = this.element.offsetWidth;
-    this.h = this.element.offsetHeight;
-    this.l = this.element.offsetLeft;
-    this.t = this.element.offsetTop;
-  };
-
-   bindEvents = () => {
-    var _this3 = this;
-
-    ['mouseEnterHandler', 'mouseOutHandler'].forEach(function (fn) {
-      return _this3[fn] = _this3[fn].bind(_this3);
-    });
-    this.element.addEventListener('mouseenter', this.mouseEnterHandler, false);
-    this.element.addEventListener('mouseout', this.mouseOutHandler, false);
-    return this;
-  };
-
-   mouseEnterHandler = (ev) => {
+  mouseEnterHandler = (ev) => {
     this.addClass(ev, 'in');
   };
 
-   mouseOutHandler = (ev) => {
+  mouseOutHandler = (ev) => {
+    console.log(ev);
     this.addClass(ev, 'out');
   };
 
-   addClass = (ev, state) => {
+  addClass = (ev, state) => {
     var direction = this.getDirection(ev);
     var class_suffix = '';
 
@@ -87,43 +42,69 @@ class FunnyBox extends Component {
         class_suffix = '-left';break;
     }
 
-    this.element.className = '';
-    this.element.classList.add(state + class_suffix);
+    this.setState({
+      className: state + class_suffix,
+    });
   };
 
-   getDirection = (ev) => {
-    var w = this.w,
-      h = this.h,
-      x = ev.pageX - this.l - w / 2 * (w > h ? h / w : 1),
-      y = ev.pageY - this.t - h / 2 * (h > w ? w / h : 1),
-      d = Math.round(Math.atan2(y, x) / 1.57079633 + 5) % 4;
+  getDirection = (ev) => {
+    const w = this.state.width,
+      h = this.state.height,
+      l = this.state.left,
+      t = this.state.top;
 
-    return d;
+    const x = ev.pageX - l - w / 2 * (w > h ? h / w : 1),
+      y = ev.pageY - t - h / 2 * (h > w ? w / h : 1);
+
+    return Math.round(Math.atan2(y, x) / 1.57079633 + 5) % 4;
   };
 
+  update = () => {
+    const box = this.refs.element.getBoundingClientRect();
+    this.setState({
+      left: box.left,
+      top: box.top,
+      width: box.right - box.left,
+      height: box.bottom - box.top,
+    });
+  };
 
   render() {
-    console.log(this.mouseEnterHandler());
+    console.log
+    return (<li
+      ref="element"
+      onMouseEnter={this.mouseEnterHandler}
+      onMouseLeave={this.mouseOutHandler}
+      className={this.state.className}
+    >
+      <div className='w'>
+        <div className='f'>
+          <svg viewBox='0 0 180 180'>
+            <image height='100%' preserveAspectRatio='xMidYMid slice' width='100%' xlinkHref={this.props.image}></image>
+          </svg>
+        </div>
+        <div className='b'>
+          <h3>
+            Angus Young
+          </h3>
+        </div>
+      </div>
+    </li>);
+  }
+}
+
+class FunnyBox extends Component {
+  render() {
     return (
      <div>
        <ul className='-center'>
-         <li
-           onMouseOver={this.mouseEnterHandler()}
-           onMouseLeave={this.mouseOutHandler()}
-         >
-           <div className='w'>
-             <div className='f'>
-               <svg viewBox='0 0 180 180'>
-                 <image height='100%' preserveAspectRatio='xMidYMid slice' width='100%' xlinkHref='https://s3-us-west-2.amazonaws.com/s.cdpn.io/9473/i-angus.png'></image>
-               </svg>
-             </div>
-             <div className='b'>
-               <h3>
-                 Angus Young
-               </h3>
-             </div>
-           </div>
-         </li>
+         <FunnyBoxElement image="https://s3-us-west-2.amazonaws.com/s.cdpn.io/9473/i-angus.png" />
+         <FunnyBoxElement image="https://s3-us-west-2.amazonaws.com/s.cdpn.io/9473/i-angus.png" />
+         <FunnyBoxElement image="https://s3-us-west-2.amazonaws.com/s.cdpn.io/9473/i-angus.png" />
+         <FunnyBoxElement image="https://s3-us-west-2.amazonaws.com/s.cdpn.io/9473/i-angus.png" />
+         <FunnyBoxElement image="https://s3-us-west-2.amazonaws.com/s.cdpn.io/9473/i-angus.png" />
+         <FunnyBoxElement image="https://s3-us-west-2.amazonaws.com/s.cdpn.io/9473/i-angus.png" />
+         <FunnyBoxElement image="https://s3-us-west-2.amazonaws.com/s.cdpn.io/9473/i-angus.png" />
          <li>
            <div className='w'>
              <div className='f'>
