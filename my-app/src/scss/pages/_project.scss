@@ -134,21 +134,34 @@
 }
 
 .project-button-wrapper {
-  display: flex;
-  flex-direction: column;
+  position: relative;
   margin: 0 auto;
+  height: remcalc(170);
 
-  .next {
-    order: 2;
+  @include breakpoint(small) {
+    height: auto;
+  }
+
+  .launch {
     @include breakpoint(small) {
-      order: 1;
+      width: remcalc(235);
+      top: remcalc(-70);
+    }
+
+    @include breakpoint(large) {
+      top: remcalc(-55);
     }
   }
 
   .next {
-    order: 1;
+    bottom: 0;
     @include breakpoint(small) {
-      order: 2;
+      width: remcalc(195);
+      bottom: remcalc(-40);
+    }
+
+    @include breakpoint(large) {
+      bottom: remcalc(-55);
     }
   }
 }
