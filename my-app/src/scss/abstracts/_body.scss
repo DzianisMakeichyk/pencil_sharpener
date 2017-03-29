@@ -6,9 +6,27 @@ body {
   color: $clear-white;
 }
 main {
+  position: relative;
   height: 100%;
   background: radial-gradient(ellipse at bottom, $middle-black 0%, $black-blue 100%);
   overflow: hidden;
+
+  &.hello-pencil {
+    @include breakpoint(small) {
+      &:before {
+        @include center($extend: false);
+        @include just-rythm(155);
+        content: attr(data-name);
+        position: fixed;
+        text-transform: uppercase;
+        font-family: $ganelas-bold;
+        text-align: center;
+        letter-spacing: remcalc(20);
+        color: $clear-gray;
+        user-select: none;
+      }
+    }
+  }
 }
 
 a {
@@ -39,12 +57,14 @@ h6
 }
 
 section {
+  position: relative;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   height: calc(100vh - 30px);
   padding: remcalc(15);
+  z-index: 100;
 
   @include breakpoint(medium) {
     flex-direction: row;
@@ -82,4 +102,36 @@ section,
 .header-container {
   max-width: remcalc(1600);
   margin: auto;
+}
+
+.grid-bg {
+  @include breakpoint(small) {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: inherit;
+
+    &.col-project {
+      width: 200%;
+    }
+  }
+
+  .col {
+    @include breakpoint(small) {
+      display: inline-block;
+      width: 16.66667%;
+      overflow: hidden;
+      height: inherit;
+      outline: none;
+      border-right: 1px solid $clear-gray;
+
+      &.col-project {
+        @include breakpoint(small) {
+          width: 8.33333%;
+        }
+      }
+    }
+  }
 }

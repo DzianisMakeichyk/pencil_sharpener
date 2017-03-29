@@ -7,6 +7,8 @@ import MediaDetectElement from './web_modules/MediaDetectElement';
 import AudioWolf from './pages/Elements/AudioIcon'
 import IEDocument from './pages/IEDocument'
 import platform from 'platform'
+import map from 'lodash/map';
+import classnames from 'classnames';
 
 class Home extends Component {
 
@@ -89,10 +91,13 @@ class Home extends Component {
         // var classNameOther = is_click + ' burger-menu-other';
         // console.log(location.pathname);
         // console.log(location.pathname !== routeMap.home);
-      var things = ['rock', 'fun', 'more work'];
+      var things = ['rock', 'fun', 'more work', 'think big'];
       const thing = things[Math.floor(Math.random()*things.length)];
       const isLoggedIn = (platform.name === 'IE' || platform.name === 'Microsoft Edge');
-
+      var numbersOfColumns = new Array(6);
+      const pageName = this.props.location.pathname;
+      const pageBackName = pageName.replace('/','');
+      console.log(this.props.location.pathname === routeMap.home);
       return (
         <div className="App">
           {isLoggedIn ? (
@@ -146,10 +151,12 @@ class Home extends Component {
                   )}
                 </nav>
               </header>
-              <main>
-                <div className='stars'></div>
-                <div className='stars2'></div>
-                <div className='stars3'></div>
+              <main
+                className={classnames({
+                  'hello-pencil': this.props.location.pathname !== routeMap.home,
+                })}
+                data-name={pageBackName}
+              >
                 {this.props.children}
                 {(this.props.location.pathname &&
                   <div className="preloader">
@@ -170,6 +177,11 @@ class Home extends Component {
                   </div>
                 )}
                 <MediaDetectElement onMediaChange={this.onMediaChange} />
+                <div className="grid-bg">
+                  {map(numbersOfColumns, () =>
+                    <div className="col"></div>
+                  )}
+                </div>
               </main>
             </div>
           )}
