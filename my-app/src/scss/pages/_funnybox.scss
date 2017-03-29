@@ -1,26 +1,54 @@
-$size: 180px;
-$gap: 5px;
-$tdeg: 90deg;
-$dr: 200ms;
-$tf: ease-out;
-$pr: 300px;
-$fr: #000;
-$bg: #fff;
-$mn: #00BCD4;
-$sc: #673AB7;
+$size-mobile: remcalc(230);
+$size-table: remcalc(180);
+$size-desktop: remcalc(220);
+$gap: remcalc(5);
+$ninetyDeg: 90deg;
 
-li {
-  margin: $gap;
-  position: relative;
-  width: $size;
-  height: $size;
-  display: inline-block;
-  vertical-align: top;
-  perspective: $pr;
-  transform-origin: 50% 50% ($size/2);
+.funny-box {
+  max-width: 80%;
+  margin: auto;
+  padding-top: remcalc(70);
+  text-align: center;
+
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+.funny-link-to {
+  margin: 0 auto remcalc(10);
+
+  @include breakpoint(large) {
+    margin: 0 auto remcalc(30);
+  }
 }
 
-.w {
+.funny-list {
+  position: relative;
+  display: inline-block;
+  width: $size-mobile;
+  height: $size-mobile;
+  margin: $gap;
+  vertical-align: top;
+  perspective: remcalc(300);
+  transform-origin: 50% 50% ($size-mobile/2);
+  z-index: 100;
+
+  @include breakpoint(small) {
+    width: $size-table;
+    height: $size-table;
+    transform-origin: 50% 50% ($size-mobile/2);
+  }
+
+  @include breakpoint(large) {
+    width: $size-desktop;
+    height: $size-desktop;
+    transform-origin: 50% 50% ($size-desktop/2);
+  }
+}
+
+.funny-box-container {
   font-size: initial;
   position: absolute;
   top: 0;
@@ -29,37 +57,43 @@ li {
   left: 0;
   pointer-events: none;
   transform-style: preserve-3d;
-  transform-origin: 50% 50% -($size/2);
+  transform-origin: 50% 50% (-$size-mobile / 2);
   will-change: transform;
-  animation: $dr $tf 0ms 1 normal forwards paused;
+  animation: 200ms ease-out 0ms 1 normal forwards paused;
+
+  @include breakpoint(small) {
+    transform-origin: 50% 50% (-$size-table / 2);
+  }
+  @include breakpoint(large) {
+    transform-origin: 50% 50% (-$size-desktop / 2);
+  }
 }
 
-.f,
-.b {
+.funny-box-image,
+.funny-box-text {
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  color: white;
+  color: $clear-white;
   transition: none;
 }
 
-.f {
-  background-color: $mn;
-  background: linear-gradient($mn, $sc);
-  transform: translate3d(0,0,0);
+.funny-box-image {
+  //background-color: $mn;
+  //background: linear-gradient($mn, $sc);
+  transform: translate3d(0, 0, 0);
 
   & > svg {
     mix-blend-mode: luminosity;
   }
 }
 
-.b {
+.funny-box-text {
   padding: 1rem;
-  background-image: radial-gradient(circle, #333, #000 160%);
+  background-image: radial-gradient(circle, $gray, $clear-black 160%);
   transform: translate3d(0,0,-1px);
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -67,146 +101,134 @@ li {
   text-align: center;
 }
 
-.in-top .b,
-.out-top .b {
-  transform-origin: 0% 100%;
-  transform: translate3d(0, -100%, 0) rotate3d(1,0,0,90deg);
+.in-top,
+.out-top {
+  .funny-box-text {
+    transform-origin: 0 100%;
+    transform: translate3d(0, -100%, 0) rotate3d(1, 0, 0, $ninetyDeg);
+  }
 }
 
-.in-right .b,
-.out-right .b {
-  transform-origin: 0% 0%;
-  transform: translate3d(100%, 0, 0) rotate3d(0,1,0,90deg);
+.in-right,
+.out-right {
+  .funny-box-text {
+    transform-origin: 0 0;
+    transform: translate3d(100%, 0, 0) rotate3d(0, 1, 0, $ninetyDeg);
+  }
 }
 
-.in-bottom .b,
-.out-bottom .b {
-  transform-origin: 0% 0%;
-  transform: translate3d(0, 100%, 0) rotate3d(-1,0,0,90deg);
+.in-bottom,
+.out-bottom {
+  .funny-box-text {
+    transform-origin: 0 0;
+    transform: translate3d(0, 100%, 0) rotate3d(-1, 0, 0, $ninetyDeg);
+  }
 }
 
-.in-left .b,
-.out-left .b {
-  transform-origin: 100% 0;
-  transform: translate3d(-100%,0,0) rotate3d(0,-1,0,90deg);
+.in-left,
+.out-left {
+  .funny-box-text {
+    transform-origin: 100% 0;
+    transform: translate3d(-100%, 0, 0) rotate3d(0, -1, 0, $ninetyDeg);
+  }
+}
+
+.in,
+.out {
+  &-top,
+  &-right,
+  &-bottom,
+  &-left {
+    .funny-box-container {
+      animation-play-state: running
+    }
+  }
 }
 
 .in {
-  &-top .w    {animation-name: in-top; animation-play-state: running}
-  &-right .w  {animation-name: in-right; animation-play-state: running}
-  &-bottom .w {animation-name: in-bottom; animation-play-state: running}
-  &-left .w   {animation-name: in-left; animation-play-state: running}
+  &-top {
+    .funny-box-container {
+    animation-name: in-top;
+    }
+  }
+
+  &-right {
+    .funny-box-container {
+      animation-name: in-right;
+    }
+  }
+
+  &-bottom {
+    .funny-box-container {
+      animation-name: in-bottom;
+    }
+  }
+
+  &-left {
+    .funny-box-container {
+      animation-name: in-left;
+    }
+  }
 }
 
 .out {
-  &-top .w    {animation-name: out-top; animation-play-state: running}
-  &-right .w  {animation-name: out-right; animation-play-state: running}
-  &-bottom .w {animation-name: out-bottom; animation-play-state: running}
-  &-left .w   {animation-name: out-left; animation-play-state: running}
-}
+  &-top {
+    .funny-box-container {
+      animation-name: out-top;
+    }
+  }
 
-@keyframes in-top {
-  from  {transform: rotate3d(0,0,0,0deg)}
-  to    {transform: rotate3d(-1,0,0,$tdeg)}
-}
-@keyframes out-top {
-  from {transform: rotate3d(-1,0,0,$tdeg)}
-  to   {transform: rotate3d(0,0,0,0deg)}
-}
+  &-right {
+    .funny-box-container {
+      animation-name: out-right;
+    }
+  }
 
-@keyframes in-right {
-  from  {transform: rotate3d(0,0,0,0deg)}
-  to    {transform: rotate3d(0,-1,0,$tdeg)}
-}
-@keyframes out-right {
-  from  {transform: rotate3d(0,-1,0,$tdeg)}
-  to    {transform: rotate3d(0,0,0,0deg)}
-}
+  &-bottom {
+    .funny-box-container {
+      animation-name: out-bottom;
+    }
+  }
 
-@keyframes in-bottom {
-  from  {transform: rotate3d(0,0,0,0deg)}
-  to    {transform: rotate3d(1,0,0,$tdeg)}
-}
-@keyframes out-bottom {
-  from  {transform: rotate3d(1,0,0,$tdeg)}
-  to    {transform: rotate3d(0,0,0,0deg)}
-}
-
-@keyframes in-left {
-  from  {transform: rotate3d(0,0,0,0deg)}
-  to    {transform: rotate3d(0,1,0,$tdeg)}
-}
-@keyframes out-left {
-  from  {transform: rotate3d(0,1,0,$tdeg)}
-  to    {transform: rotate3d(0,0,0,0deg)}
-}
-
-/* ======= aesthetics ======= */
-
-* {
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body {
-  padding: 3rem 1.5rem;
-  font-size: 16px;
-  font-family: 'Sahitya', serif;
-  color: $fr;
-  background-color: $bg;
-  line-height: 1.618;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-header {
-  padding-bottom: 3rem;
-}
-
-h1 {
-  font-size: 2em;
-
-  & sup {
-    font-size: .7em;
-    color: $mn;
+  &-left {
+    .funny-box-container {
+      animation-name: out-left;
+    }
   }
 }
 
-ul {
-  font-size: 0;
-  padding: 0;
-  max-width: (($size + ($gap * 2)) * 4);
-  margin: 0 auto;
-  list-style: none;
-
-  &::after {
-    content: '';
-    display: table;
-    clear: both;
+  @keyframes in-top {
+    from  {transform: rotate3d(0, 0, 0, 0deg)}
+    to    {transform: rotate3d(-1, 0, 0, $ninetyDeg)}
   }
-}
-
-footer {
-  font-size: .75rem;
-  font-family: monospace;
-  padding-top: 3rem;
-
-  & a {
-    display: inline-block;
-    vertical-align: middle;
+  @keyframes out-top {
+    from {transform: rotate3d(-1, 0, 0, $ninetyDeg)}
+    to   {transform: rotate3d(0, 0, 0, 0deg)}
   }
 
-  & svg {fill: currentColor}
-}
+  @keyframes in-right {
+    from  {transform: rotate3d(0, 0, 0, 0deg)}
+    to    {transform: rotate3d(0, -1, 0, $ninetyDeg)}
+  }
+  @keyframes out-right {
+    from  {transform: rotate3d(0, -1, 0, $ninetyDeg)}
+    to    {transform: rotate3d(0, 0, 0, 0deg)}
+  }
 
-a {
-  color: $mn;
-}
+  @keyframes in-bottom {
+    from  {transform: rotate3d(0, 0, 0, 0deg)}
+    to    {transform: rotate3d(1, 0, 0, $ninetyDeg)}
+  }
+  @keyframes out-bottom {
+    from  {transform: rotate3d(1, 0, 0, $ninetyDeg)}
+    to    {transform: rotate3d(0, 0, 0, 0deg)}
+  }
 
-.-center {
-  text-align: center;
-}
-
-.-neutral-mid {
-  //color: color($fr tint(60%));
-}
+  @keyframes in-left {
+    from  {transform: rotate3d(0, 0, 0, 0deg)}
+    to    {transform: rotate3d(0, 1, 0, $ninetyDeg)}
+  }
+  @keyframes out-left {
+    from  {transform: rotate3d(0, 1, 0, $ninetyDeg)}
+    to    {transform: rotate3d(0, 0, 0, 0deg)}
+  }
