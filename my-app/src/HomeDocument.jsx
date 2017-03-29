@@ -97,7 +97,6 @@ class Home extends Component {
       var numbersOfColumns = new Array(6);
       const pageName = this.props.location.pathname;
       const pageBackName = pageName.replace('/','');
-      console.log(this.props.location.pathname === routeMap.home);
       return (
         <div className="App">
           {isLoggedIn ? (

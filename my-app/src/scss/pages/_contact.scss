@@ -115,28 +115,28 @@ label {
   height: remcalc(25);
   padding: remcalc(15) remcalc(5);
   color: $space-white;
-  text-align: center;
   background: transparent;
+  text-align: center;
   border: none;
   border-bottom: 1px solid $gray;
   outline: none;
 
   &:focus + .form-focus {
-    transform: translate3d(0, 0, 0);
     -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
 }
 
 .form-error {
-  @include just-rythm(14);
   position: absolute;
-  left: 0;
-  right: 0;
-  bottom: remcalc(-4);
   display: none;
   margin: 0 auto;
   padding: remcalc(4);
   color: $ease-red;
+  @include just-rythm(14);
+  left: 0;
+  right: 0;
+  bottom: remcalc(-4);
   border-radius: remcalc(20);
 }
 
@@ -151,14 +151,14 @@ label {
 }
 
 .form-submit {
-  @include just-rythm(18);
-  position: relative;
   display: block;
+  position: relative;
   color: $clear-white;
   margin: 0 auto;
   padding: 0;
-  letter-spacing: 1px;
   background: transparent;
+  letter-spacing: 1px;
+  @include just-rythm(18);
   outline: none;
   border: none;
   cursor: pointer;
@@ -172,13 +172,13 @@ label {
   &:before {
     content: '';
     position: absolute;
-    top: 0;
-    right: -5%;
-    bottom: 0;
     width: 115%;
     height: 1px;
     margin: auto 0;
     background: $gradi-green;
+    top: 0;
+    bottom: 0;
+    right: -5%;
     transition: all .5s ease;
     z-index: -1;
   }
