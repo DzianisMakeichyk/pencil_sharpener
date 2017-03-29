@@ -1,0 +1,234 @@
+$size-mobile: remcalc(230);
+$size-table: remcalc(180);
+$size-desktop: remcalc(220);
+$gap: remcalc(5);
+$ninetyDeg: 90deg;
+
+.funny-box {
+  max-width: 80%;
+  margin: auto;
+  padding-top: remcalc(70);
+  text-align: center;
+
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+.funny-link-to {
+  margin: 0 auto remcalc(10);
+
+  @include breakpoint(large) {
+    margin: 0 auto remcalc(30);
+  }
+}
+
+.funny-list {
+  position: relative;
+  display: inline-block;
+  width: $size-mobile;
+  height: $size-mobile;
+  margin: $gap;
+  vertical-align: top;
+  perspective: remcalc(300);
+  transform-origin: 50% 50% ($size-mobile/2);
+  z-index: 100;
+
+  @include breakpoint(small) {
+    width: $size-table;
+    height: $size-table;
+    transform-origin: 50% 50% ($size-mobile/2);
+  }
+
+  @include breakpoint(large) {
+    width: $size-desktop;
+    height: $size-desktop;
+    transform-origin: 50% 50% ($size-desktop/2);
+  }
+}
+
+.funny-box-container {
+  font-size: initial;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  transform-style: preserve-3d;
+  transform-origin: 50% 50% (-$size-mobile / 2);
+  will-change: transform;
+  animation: 200ms ease-out 0ms 1 normal forwards paused;
+
+  @include breakpoint(small) {
+    transform-origin: 50% 50% (-$size-table / 2);
+  }
+  @include breakpoint(large) {
+    transform-origin: 50% 50% (-$size-desktop / 2);
+  }
+}
+
+.funny-box-image,
+.funny-box-text {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  color: $clear-white;
+  transition: none;
+}
+
+.funny-box-image {
+  //background-color: $mn;
+  //background: linear-gradient($mn, $sc);
+  transform: translate3d(0, 0, 0);
+
+  & > svg {
+    mix-blend-mode: luminosity;
+  }
+}
+
+.funny-box-text {
+  padding: 1rem;
+  background-image: radial-gradient(circle, $gray, $clear-black 160%);
+  transform: translate3d(0,0,-1px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 0 20px 20px black;
+  text-align: center;
+}
+
+.in-top,
+.out-top {
+  .funny-box-text {
+    transform-origin: 0 100%;
+    transform: translate3d(0, -100%, 0) rotate3d(1, 0, 0, $ninetyDeg);
+  }
+}
+
+.in-right,
+.out-right {
+  .funny-box-text {
+    transform-origin: 0 0;
+    transform: translate3d(100%, 0, 0) rotate3d(0, 1, 0, $ninetyDeg);
+  }
+}
+
+.in-bottom,
+.out-bottom {
+  .funny-box-text {
+    transform-origin: 0 0;
+    transform: translate3d(0, 100%, 0) rotate3d(-1, 0, 0, $ninetyDeg);
+  }
+}
+
+.in-left,
+.out-left {
+  .funny-box-text {
+    transform-origin: 100% 0;
+    transform: translate3d(-100%, 0, 0) rotate3d(0, -1, 0, $ninetyDeg);
+  }
+}
+
+.in,
+.out {
+  &-top,
+  &-right,
+  &-bottom,
+  &-left {
+    .funny-box-container {
+      animation-play-state: running
+    }
+  }
+}
+
+.in {
+  &-top {
+    .funny-box-container {
+    animation-name: in-top;
+    }
+  }
+
+  &-right {
+    .funny-box-container {
+      animation-name: in-right;
+    }
+  }
+
+  &-bottom {
+    .funny-box-container {
+      animation-name: in-bottom;
+    }
+  }
+
+  &-left {
+    .funny-box-container {
+      animation-name: in-left;
+    }
+  }
+}
+
+.out {
+  &-top {
+    .funny-box-container {
+      animation-name: out-top;
+    }
+  }
+
+  &-right {
+    .funny-box-container {
+      animation-name: out-right;
+    }
+  }
+
+  &-bottom {
+    .funny-box-container {
+      animation-name: out-bottom;
+    }
+  }
+
+  &-left {
+    .funny-box-container {
+      animation-name: out-left;
+    }
+  }
+}
+
+  @keyframes in-top {
+    from  {transform: rotate3d(0, 0, 0, 0deg)}
+    to    {transform: rotate3d(-1, 0, 0, $ninetyDeg)}
+  }
+  @keyframes out-top {
+    from {transform: rotate3d(-1, 0, 0, $ninetyDeg)}
+    to   {transform: rotate3d(0, 0, 0, 0deg)}
+  }
+
+  @keyframes in-right {
+    from  {transform: rotate3d(0, 0, 0, 0deg)}
+    to    {transform: rotate3d(0, -1, 0, $ninetyDeg)}
+  }
+  @keyframes out-right {
+    from  {transform: rotate3d(0, -1, 0, $ninetyDeg)}
+    to    {transform: rotate3d(0, 0, 0, 0deg)}
+  }
+
+  @keyframes in-bottom {
+    from  {transform: rotate3d(0, 0, 0, 0deg)}
+    to    {transform: rotate3d(1, 0, 0, $ninetyDeg)}
+  }
+  @keyframes out-bottom {
+    from  {transform: rotate3d(1, 0, 0, $ninetyDeg)}
+    to    {transform: rotate3d(0, 0, 0, 0deg)}
+  }
+
+  @keyframes in-left {
+    from  {transform: rotate3d(0, 0, 0, 0deg)}
+    to    {transform: rotate3d(0, 1, 0, $ninetyDeg)}
+  }
+  @keyframes out-left {
+    from  {transform: rotate3d(0, 1, 0, $ninetyDeg)}
+    to    {transform: rotate3d(0, 0, 0, 0deg)}
+  }

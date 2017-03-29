@@ -7,7 +7,7 @@ import BlogDocument from './pages/BlogDocument';
 import ContactDocument from './pages/Contact/Index';
 import AboutDocument from './pages/About/Index';
 import ProjectDetails from './pages/Portfolio/Details';
-import FunnyBox from './pages/FunnyBoxDocument';
+import FunnyBox from './pages/FunnyBox/Index';
 import NotFound from './pages/NotFoundDocument';
 import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 import routeMap from '../routeMap.json';
