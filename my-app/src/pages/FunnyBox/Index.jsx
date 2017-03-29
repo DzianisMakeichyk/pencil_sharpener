@@ -8,84 +8,84 @@ class FunnyBox extends Component {
      <section className="height-auto">
        <ul className="grid-portfolio funny-box">
          <FunnyBoxElement
-           linkBox="#"
-           nameBox="Hello"
-           imageBox="https://static.pexels.com/photos/6548/cold-snow-winter-mountain.jpeg"
+           linkBox="https://github.com/DzianisMakeichyk/mailling"
+           nameBox="Konstruktor maili"
+           imageBox="mail_black"
          />
          <FunnyBoxElement
            linkBox="#"
            nameBox="Hello"
-           imageBox="https://static.pexels.com/photos/6548/cold-snow-winter-mountain.jpeg"
+           imageBox="hello_typ"
          />
          <FunnyBoxElement
            linkBox="#"
            nameBox="Hello"
-           imageBox="https://static.pexels.com/photos/6548/cold-snow-winter-mountain.jpeg"
+           imageBox="hello_typ"
          />
          <FunnyBoxElement
            linkBox="#"
            nameBox="Hello"
-           imageBox="https://static.pexels.com/photos/6548/cold-snow-winter-mountain.jpeg"
+           imageBox="hello_typ"
          />
          <FunnyBoxElement
            linkBox="#"
            nameBox="Hello"
-           imageBox="https://static.pexels.com/photos/6548/cold-snow-winter-mountain.jpeg"
+           imageBox="hello_typ"
          />
          <FunnyBoxElement
            linkBox="#"
            nameBox="Hello"
-           imageBox="https://static.pexels.com/photos/6548/cold-snow-winter-mountain.jpeg"
+           imageBox="hello_typ"
          />
          <FunnyBoxElement
            linkBox="#"
            nameBox="Hello"
-           imageBox="https://static.pexels.com/photos/6548/cold-snow-winter-mountain.jpeg"
+           imageBox="hello_typ"
          />
          <FunnyBoxElement
            linkBox="#"
            nameBox="Hello"
-           imageBox="https://static.pexels.com/photos/6548/cold-snow-winter-mountain.jpeg"
+           imageBox="hello_typ"
          />
          <FunnyBoxElement
            linkBox="#"
            nameBox="Hello"
-           imageBox="https://static.pexels.com/photos/6548/cold-snow-winter-mountain.jpeg"
+           imageBox="hello_typ"
          />
          <FunnyBoxElement
            linkBox="#"
            nameBox="Hello"
-           imageBox="https://static.pexels.com/photos/6548/cold-snow-winter-mountain.jpeg"
+           imageBox="hello_typ"
          />
          <FunnyBoxElement
            linkBox="#"
            nameBox="Hello"
-           imageBox="https://static.pexels.com/photos/6548/cold-snow-winter-mountain.jpeg"
+           imageBox="hello_typ"
          />
          <FunnyBoxElement
            linkBox="#"
            nameBox="Hello"
-           imageBox="https://static.pexels.com/photos/6548/cold-snow-winter-mountain.jpeg"
+           imageBox="hello_typ"
          />
          <FunnyBoxElement
            linkBox="#"
            nameBox="Hello"
-           imageBox="https://static.pexels.com/photos/6548/cold-snow-winter-mountain.jpeg"
+           imageBox="hello_typ"
          />
          <FunnyBoxElement
            linkBox="#"
            nameBox="Hello"
-           imageBox="https://static.pexels.com/photos/6548/cold-snow-winter-mountain.jpeg"
+           imageBox="hello_typ"
          />
          <FunnyBoxElement
            linkBox="#"
            nameBox="Hello"
-           imageBox="https://static.pexels.com/photos/6548/cold-snow-winter-mountain.jpeg"
+           imageBox="hello_typ"
          />
          <FunnyBoxElement
            linkBox="#"
            nameBox="Hello"
-           imageBox="https://static.pexels.com/photos/6548/cold-snow-winter-mountain.jpeg"
+           imageBox="hello_typ"
          />
        </ul>
      </section>

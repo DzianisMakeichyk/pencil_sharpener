@@ -85,7 +85,7 @@ class FunnyBoxElement extends Component {
         <div className='funny-box-container'>
           <div className='funny-box-image'>
             <svg viewBox='0 0 180 180'>
-              <image height='100%' preserveAspectRatio='xMidYMid slice' width='100%' xlinkHref={this.props.imageBox}></image>
+              <image height='100%' preserveAspectRatio='xMidYMid slice' width='100%' xlinkHref={'../../img/funny_box/' + this.props.imageBox + '.png'}></image>
             </svg>
           </div>
           <div className='funny-box-text'>
