@@ -1,17 +1,14 @@
 .contact {
   display: flex;
   flex-direction: column;
-  padding: remcalc(45) remcalc(15);
+  height: auto;
+  padding: remcalc(105) remcalc(15) remcalc(25);
   font-family: $robot-thin;
 
   @include breakpoint(small) {
     flex-direction: row;
-    padding: remcalc(85) remcalc(25);
-  }
-
-  @include breakpoint(large) {
-    width: calc(100% - 80px);
-    padding: remcalc(100) remcalc(35);
+    height: 100vh;
+    padding: 0;
   }
 
   @include breakpoint(large) {
@@ -23,7 +20,6 @@
     height: 100%;
     margin: remcalc(25) auto 0;
     max-height: remcalc(250);
-    @include black-background;
 
     @include breakpoint(small) {
       width: 40%;
@@ -64,21 +60,23 @@ label {
 }
 
 .form {
-  width: calc(100% - 40px);
-  margin: remcalc(30) auto;
+  width: 100%;
+  max-width: remcalc(1200);
+  margin: 0 remcalc(40);
   text-align: center;
-  @include black-background;
-
-  @include breakpoint(small) {
-    margin: 0 auto auto;
-    width: 60%;
-  }
 }
 
 .form-group {
   height: remcalc(125);
   position: relative;
   overflow: hidden;
+
+  @include breakpoint(small) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+  }
 
   &:nth-child(4) {
     padding-bottom: remcalc(28);
@@ -99,12 +97,29 @@ label {
   &:last-child {
     margin-bottom: 0;
   }
+
+  > label {
+    @include breakpoint(small) {
+      flex: 1 1 35%;
+      text-align: left;
+    }
+  }
+
+  .form-control-wrapper {
+    @include breakpoint(small) {
+      position: relative;
+      flex: 1 1 65%;
+      width: 100%;
+      height: remcalc(80);
+      overflow: hidden;
+    }
+  }
 }
 
 .form-focus {
   position: absolute;
   left: 0;
-  bottom: 31%;
+  bottom: 29%;
   width: 100%;
   background: $gradi-green;
   height: 2px;
@@ -123,12 +138,12 @@ label {
   padding: remcalc(15) remcalc(5);
   width: 100%;
   height: remcalc(25);
-  background: $gray;
+  background: transparent;
   text-align: center;
   border: none;
+  border-bottom: 1px solid $gray;
   @include just-rythm(18);
   outline: none;
-  font-family: Arial, sans-serif;
   color: $space-white;
 
   &:focus + .form-focus {
@@ -146,7 +161,7 @@ label {
   @include just-rythm(14);
   left: 0;
   right: 0;
-  bottom: remcalc(12);
+  bottom: remcalc(-4);
   border-radius: remcalc(20);
 }
 
@@ -162,40 +177,46 @@ label {
 
 .form-submit {
   display: block;
+  position: relative;
+  color: $clear-white;
   margin: 0 auto;
   padding: 0;
-  width: remcalc(250);
-  height: remcalc(70);
-  border: 2px solid $gradi-green;
-  border-radius: remcalc(40);
   background: transparent;
-  color: $gradi-green;
   letter-spacing: 1px;
   @include just-rythm(18);
-  font-family: Arial, sans-serif;
   outline: none;
+  border: none;
   cursor: pointer;
-  -webkit-tap-highlight-color: transparent;
-  -webkit-transition: background-color 0.3s, color 0.3s, width 0.3s, border-width 0.3s, border-color 0.3s;
-  transition: background-color 0.3s, color 0.3s, width 0.3s, border-width 0.3s, border-color 0.3s;
-}
-.form-submit {
-  &:hover {
-    background-color: $gradi-green;
-    color: $clear-white;
+  transition: all .3s ease;
+
+  @include breakpoint(small) {
+    @include just-rythm(20);
+    margin: remcalc(65) auto 0;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 115%;
+    height: 1px;
+    margin: auto 0;
+    background: $gradi-green;
+    top: 0;
+    bottom: 0;
+    right: -5%;
+    transition: all .5s ease;
+    z-index: -1;
   }
 }
 
 .form-submit-disabled {
   cursor: not-allowed;
-  background: $ease-red;
-  border-color: $ease-border-red;
-  color: $clear-white;
+  transition: all .5s ease;
 
-  &:hover {
-    cursor: not-allowed;
-    background: $ease-red;
-    border-color: $ease-border-red;
-    color: $clear-white;
+  &:before {
+    content: '';
+    height: 2px;
+    background: $ease-border-red;
+    z-index: 100;
   }
 }

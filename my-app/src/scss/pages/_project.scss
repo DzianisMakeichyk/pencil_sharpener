@@ -1,46 +1,27 @@
-.project-name {
-  @include just-rythm(30);
-  @include gradient-text;
-  max-width: remcalc(220);
-  margin: 0 auto 0 0;
-  padding: remcalc(20) 0 remcalc(10) 0;
-  text-transform: uppercase;
-  line-height: remcalc(30);
-  letter-spacing: .5px;
-
+.project {
   @include breakpoint(small) {
-    @include just-rythm(40);
-    line-height: remcalc(40);
-    max-width: remcalc(400);
-  }
-
-  @include breakpoint(medium) {
-    @include just-rythm(52);
-    line-height: remcalc(54);
+    display: flex;
+    flex-direction: column;
   }
 }
 
-.project-image-box {
-  width: 100%;
-  padding-bottom: remcalc(15);
+.project-name {
+  @include just-rythm(42);
+  @include gradient-text;
+  line-height: 37px;
+  margin: 0 auto remcalc(10) 0;
+  padding: remcalc(55) 0 0;
+  text-transform: uppercase;
+  letter-spacing: .5px;
 
-  @include breakpoint(medium) {
-    display: flex;
+  @include breakpoint(small) {
+    @include just-rythm(60);
+    margin: 0;
+    padding: 0;
   }
 
-  .project-description {
-    margin: auto remcalc(25) auto auto;
-  }
-
-  .project-img-list {
-    @include breakpoint(medium) {
-      max-width: 45%;
-    }
-
-    .project-shot-img {
-      display: block;
-      width: 100%;
-    }
+  @include breakpoint(large) {
+    @include just-rythm(70)
   }
 }
 
@@ -49,288 +30,138 @@
   padding: remcalc(15) 0 remcalc(25);
   font-family: $robot-thin;
 
+  @include breakpoint(small) {
+    max-width: 50%;
+    margin: 0 auto 0 10%;
+    padding: remcalc(25) 0;
+  }
+
   @include breakpoint(large) {
     @include just-rythm(18);
   }
 }
 
-.type-box {
-  margin: auto auto auto 0;
-  text-align: left;
-
-  &:nth-last-child {
-    padding-bottom: remcalc(15);
+.project-image-box {
+  @include breakpoint(small) {
+    margin-left: -23%;
   }
 
-  .type-box-name {
-    letter-spacing: 1px;
-    @include just-rythm(18);
-    margin-bottom: 0;
-
-    @include breakpoint(small) {
-      @include just-rythm(22);
-    }
-
-    @include breakpoint(medium) {
-      margin-bottom: remcalc(5);
-    }
+  @include breakpoint(large) {
+    margin-left: -15%;
   }
 
-  .project-location {
-    @include just-rythm(14);
-    margin: 0;
-
-    @include breakpoint(medium) {
-      @include just-rythm(16);
-    }
+  .project-image {
+    width: 100%;
   }
 }
 
 .project-description-wrapper {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-
-  @include breakpoint(medium) {
-    flex-direction: row;
-    align-items: flex-end;
-    padding: remcalc(10) 0 remcalc(35);
-  }
-
-  .project-type {
-    width: 100%;
-  }
-
-  .project-technologies {
-    width: 100%;
-    margin: 0 auto remcalc(15) remcalc(25);
-
-    .project-technologies-shot {
-      margin-bottom: remcalc(15);
-
-      @include breakpoint(small) {
-        @include just-rythm(22);
-      }
-    }
-
-    .project-technologies-svg {
-      width: remcalc(11);
-      margin-right: remcalc(10);
-      fill: $gradi-green;
-    }
-  }
-}
-
-.project-shots {
-  display: flex;
-  flex-direction: column;
-  padding: remcalc(50) remcalc(15) 0;
-
-  @include breakpoint(small) {
-    padding: remcalc(70) remcalc(25) 0;
-  }
-}
-
-.project-shot-info {
-  font-family: $robot-thin;
-  margin: remcalc(25) auto remcalc(10);
-
-  @include breakpoint(small) {
-    @include just-rythm(28);
-  }
-
-  @include breakpoint(medium) {
-    margin-top: remcalc(20);
-  }
-}
-
-//.project-technologies {
-//  @include just-rythm(14);
-//  display: flex;
-//  flex-direction: row;
-//
-//  .project-techno-body {
-//    flex: 1 1 50%;
-//    padding: 0 0 remcalc(15);
-//
-//    .techno-body-name {
-//      color: $middle-greay;
-//      font-weight: $font-semi-bold;
-//      margin: remcalc(5) 0;
-//    }
-//
-//    .body-name-shot {
-//      font-weight: $font-thin;
-//      margin: remcalc(2) 0;
-//    }
-//  }
-//}
-
-.project-arrows {
-  align-items: flex-start;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
-  @include breakpoint(small) {
-    @include just-rythm(18);
-  }
-
-  .project-arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-
-    &.last {
-      left: 0;
-    }
-
-    &.next {
-      right: 0;
-    }
-  }
-
-  svg {
-    height: remcalc(38);
-    width: remcalc(60);
-
-    @include breakpoint(small) {
-      height: remcalc(48);
-      width: remcalc(64);
-    }
-  }
-}
-
-.project-position {
-  border: 2px solid $gradi-green;
-  height: remcalc(100);
-  left: 0;
-  margin: auto;
-  position: absolute;
-  right: 0;
-  text-align: left;
-  top: remcalc(30);
-  width: remcalc(100);
-
-  p {
-    @include just-rythm(18);
-    margin: 0;
-    padding: remcalc(10);
-  }
-}
-
-.project-button-arrows {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  padding: remcalc(20) 0;
-  text-align: center;
-  text-transform: uppercase;
-  border-top: 1px solid $ease-gray;
-}
-
-.project-button-one {
-  flex: 1 1 50%;
-
-  &:first-child {
-    border-right: 1px solid $ease-gray;
-  }
-
-  .project-button {
-    padding: remcalc(10) 0;
-    color: $clear-white;
-    transition: color ease .5s;
-
-    @include breakpoint(small) {
-      letter-spacing: 1px;
-    }
-
-    &:hover {
-      color: $gradi-green;
-
-      .project-arrows-svg {
-        fill: $gradi-green;
-      }
-    }
-
-    .project-arrows-svg {
-      vertical-align: text-top;
-      width: remcalc(15);
-      fill: $clear-white;
-      transition: fill ease .5s;
-
-      &.next {
-        margin: auto auto auto remcalc(20);
-      }
-
-      &.prev {
-        margin: auto remcalc(20) auto auto;
-      }
-    }
-  }
-}
-
-.project-button-to {
-  @include just-rythm(18);
-  @include gradient-text;
-  display: block;
-  width: 43%;
-  margin: 0 0 0 auto;
-  padding: remcalc(20) 0 remcalc(3);
-  border-bottom: 1px solid $gradi-blue;
-  color: $clear-white;
-  transition: background ease .6s;
-
-  @include breakpoint(small) {
-    margin: 0 auto 0 0;
-  }
-
-  @include breakpoint(medium) {
-    width: 32%;
-  }
-
-  &:hover {
-   @include gradient-revers-text;
-  }
-}
-
-.project-name-box {
   @include breakpoint(small) {
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
-.project-year {
-  color: $gradi-green;
-  font-weight: $font-semi-bold;
+.project-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto remcalc(15);
+
+  @include breakpoint(small) {
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  .project-technologies-shot {
+    max-width: remcalc(100);
+
+    @include breakpoint(small) {
+      margin: 0 auto remcalc(25);
+    }
+
+    .project-technologies-img {
+      width: 100%;
+      transition: all .5s ease;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
 }
 
-.black-box {
-  @include breakpoint(medium) {
-    position: relative;
-    margin: remcalc(55);
-    padding: remcalc(30) remcalc(20);
-    background: $clear-gray;
+.number-of-project {
+  @include just-rythm(20);
+  font-family: $robot-thin;
+  font-weight: $font-bold;
+
+  @include breakpoint(small) {
+    padding: 0;
+    margin: 0;
   }
 
   @include breakpoint(large) {
-    margin: remcalc(55) auto;
-    max-width: remcalc(1200);
+    @include just-rythm(30);
+  }
+
+  span {
+    @include just-rythm(70);
+
+    @include breakpoint(large) {
+      @include just-rythm(90);
+    }
   }
 }
 
-.project-box-btn {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  height: remcalc(50);
-  padding-bottom: remcalc(25);
+.project-first-box {
+  @include breakpoint(small) {
+    display: flex;
+    align-items: center;
+    margin: remcalc(55) auto remcalc(15) 10%;
+  }
 
-  .project-btn-shot {
-    position: relative;
-    flex: 1 1 50%;
+  .project-name-position {
+    @include breakpoint(small) {
+      display: flex;
+      flex-direction: column;
+      margin-top: -5%;
+    }
+  }
+}
+
+.project-button-wrapper {
+  position: relative;
+  margin: 0 auto;
+  height: remcalc(170);
+
+  @include breakpoint(small) {
+    height: auto;
+  }
+
+  .launch {
+    @include breakpoint(small) {
+      width: remcalc(235);
+      top: remcalc(-70);
+    }
+
+    @include breakpoint(large) {
+      top: remcalc(-55);
+    }
+  }
+
+  .next {
+    bottom: 0;
+    @include breakpoint(small) {
+      width: remcalc(195);
+      bottom: remcalc(-40);
+    }
+
+    @include breakpoint(large) {
+      bottom: remcalc(-55);
+    }
   }
 }

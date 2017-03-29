@@ -21,10 +21,12 @@
 
 .list-menu{
   height: 50%;
-  margin: auto remcalc(35) auto auto;
+  margin: 50% auto 0;
+  text-align: center;
 
   @include breakpoint(small) {
     margin: auto auto auto remcalc(50);
+    text-align: left;
   }
 
   @include breakpoint(medium) {
@@ -36,130 +38,66 @@
   }
 
   @include breakpoint(extralarge) {
-    margin: auto remcalc(135) auto auto;
+    margin: 15% auto 0;
+    text-align: center;
   }
 
   .item-menu {
+    position: relative;
     line-height: remcalc(36);
     letter-spacing: 1px;
+    margin: 0 auto remcalc(5);
 
     @include breakpoint(small) {
-      line-height: remcalc(40);
-      transform: $skew-minus;
       margin: remcalc(10) 0;
+      line-height: remcalc(40);
     }
 
     @include breakpoint(large) {
       margin: remcalc(15) 0;
     }
 
+    &:nth-last-child {
+      margin-bottom: remcalc(25);
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 0;
+      transition: all .5s ease;
+    }
+
+    &:hover {
       &:before {
         content: '';
         position: absolute;
-        width: 15%;
-        transition: width .5s ease;
-        top: remcalc(-2);
+        width: 100%;
+        height: 2px;
+        background-color: $gradi-green;
+        margin: auto 0;
+        top: 38%;
+        right: 3%;
+        transition: all .5s ease;
 
         @include breakpoint(small) {
-          height: 100%;
-        }
-
-        @include breakpoint(extralarge) {
-          width: 8%;
-        }
-      }
-
-    &:hover {
-      @include breakpoint(small) {
-        &:before {
-          content: '';
-          background: $gradient-blue-green;
+          top: 43%;
+          right: -4%;
         }
       }
     }
+
     &.is-active-page {
       &:before {
-        background: $gradient-blue-green;
-      }
-    }
-
-    &:nth-child(1) {
-      &:hover {
-        &:before {
-          width: 63%;
-
-          @include breakpoint(extralarge) {
-            width: 25%;
-          }
-        }
-      }
-    }
-
-    &:nth-child(2) {
-      &:hover {
-        &:before {
-          width: 110%;
-
-          @include breakpoint(extralarge) {
-            width: 35%;
-          }
-        }
-      }
-    }
-
-    &:nth-child(3) {
-      &:hover {
-        &:before {
-          width: 75%;
-
-          @include breakpoint(extralarge) {
-            width: 25%;
-          }
-        }
-      }
-    }
-
-    &:nth-child(4) {
-      &:hover {
-        &:before {
-          width: 65%;
-
-          @include breakpoint(extralarge) {
-            width: 20%;
-          }
-        }
-      }
-    }
-
-    &:nth-child(5) {
-      &:hover {
-        &:before {
-          width: 110%;
-
-          @include breakpoint(extralarge) {
-            width: 30%;
-          }
-        }
-      }
-    }
-
-    &:nth-child(6) {
-      &:hover {
-        &:before {
-          width: 88%;
-
-          @include breakpoint(extralarge) {
-            width: 30%;
-          }
-        }
-      }
-    }
-
-    &:nth-last-child(2) {
-      margin-bottom: remcalc(40);
-
-      @include breakpoint(large) {
-        margin-bottom: remcalc(56);
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: $gradi-green;
+        margin: auto 0;
+        top: 43%;
+        right: -4%;
+        transition: all .5s ease;
       }
     }
 
@@ -172,7 +110,6 @@
       @include breakpoint(small) {
         @include just-rythm(28);
         display: block;
-        transform: $skew-plus;
         margin-left: remcalc(15);
       }
 

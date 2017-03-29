@@ -22,18 +22,20 @@ var InputElement = React.createClass({
           onChange={this._onChange}
           />
         )}
-        {(item.id &&
-          <textarea
-            type="text"
-            className="form-control"
-            id={item.id}
-            value={item.value}
-            name={item.name}
-            onChange={this._onChange}
-          ></textarea>
-        )}
-        <span className="form-focus textarea"></span>
-        <span className="form-error">{item.errorMessage}</span>
+        <div className="form-control-wrapper">
+          {(item.id &&
+            <textarea
+              type="text"
+              className="form-control"
+              id={item.id}
+              value={item.value}
+              name={item.name}
+              onChange={this._onChange}
+            ></textarea>
+          )}
+          <span className="form-focus textarea"></span>
+          <span className="form-error">{item.errorMessage}</span>
+        </div>
       </div>
     );
   },

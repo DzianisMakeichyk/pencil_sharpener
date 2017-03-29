@@ -45,10 +45,6 @@
   overflow: hidden;
 }
 
-.box-shadow {
-  box-shadow: remcalc(-8) remcalc(8) remcalc(20) remcalc(-6) $clear-black;
-}
-
 .grayscale {
   filter: grayscale(1);
 }

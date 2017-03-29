@@ -44,3 +44,31 @@
   padding: remcalc(30) remcalc(20);
   z-index: 100;
 }
+
+
+$i: 6;
+$steps: $i;
+@while $i > 1 {
+  .mask:nth-child(#{$i}) {
+    top: ($i - 1) * 20%;
+    span {
+      top: -($i - 1) * 100%;
+    }
+  }
+  $i: $i - 1;
+}
+
+@mixin jitter($steps:10, $strX:10, $strY:10){
+  @keyframes jitter-#{$steps}-#{$strX}-#{$strY} {
+    $i: $steps;
+    @while $i > 0 {
+      #{$i/$steps*100}% {
+        $effectFalloff: 1-$i/$steps;
+        $x: (random($strX) - $strX/2) * $effectFalloff + px;
+        $y: (random($strY) - $strY/2) * $effectFalloff + px;
+        transform: translate($x, $y);
+      }
+      $i: $i - 1;
+    }
+  }
+}
