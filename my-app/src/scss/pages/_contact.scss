@@ -43,6 +43,10 @@ label {
   max-width: remcalc(1200);
   margin: 0 remcalc(40);
   text-align: center;
+
+  @include breakpoint(medium) {
+    margin: 0 auto;
+  }
 }
 
 .form-group {
