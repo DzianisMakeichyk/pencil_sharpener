@@ -15,7 +15,6 @@ class Index extends Component {
         meta: React.PropTypes.object,
     };
     render() {
-        console.log(this.context.meta[0].notFound);
         return (
           <div>
               <Helmet

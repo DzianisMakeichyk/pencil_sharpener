@@ -17,7 +17,6 @@ class Contact extends Component {
         meta: React.PropTypes.object,
     };
     componentDidMount() {
-        console.log(this.props.inputDatas);
         var inputDatas = this.props.inputDatas;
         this.setState( { inputDatas: inputDatas } );
         this._initialInputVerification();

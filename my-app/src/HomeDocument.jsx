@@ -92,8 +92,6 @@ class Home extends Component {
       // var classMainContainer = classnames({ 'black': location.pathname !== routeMap.home});
       var classNamePiece = 'burger-menu-piece ' + is_click;
       // var classNameOther = is_click + ' burger-menu-other';
-      // console.log(location.pathname);
-      // console.log(location.pathname !== routeMap.home);
       var things = ['rock', 'fun', 'more work', 'think big'];
       const thing = things[Math.floor(Math.random()*things.length)];
       const isLoggedIn = (platform.name === 'IE' || platform.name === 'Microsoft Edge');

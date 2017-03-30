@@ -4,7 +4,6 @@ import ComingSoon from './Elements/ComingSoonDocument';
 class App extends Component {
 
     render() {
-        console.log(this.context.currentMedia);
         return (
             <ComingSoon />
         );

@@ -22,7 +22,6 @@ class Portfolio extends Component {
   };
 
   handleHover(projectName, projectBackground, isHovering) {
-    console.log(projectBackground, isHovering);
     if (isHovering) {
       this.setState({
         currentProjectName: projectName,
