@@ -97,7 +97,7 @@ class Home extends Component {
       var things = ['rock', 'fun', 'more work', 'think big'];
       const thing = things[Math.floor(Math.random()*things.length)];
       const isLoggedIn = (platform.name === 'IE' || platform.name === 'Microsoft Edge');
-      var numbersOfColumns = new Array(6);
+      var numbersOfColumns = new Array(5);
       const pageName = this.props.location.pathname;
       const pageBackName = pageName.replace('/','');
       return (

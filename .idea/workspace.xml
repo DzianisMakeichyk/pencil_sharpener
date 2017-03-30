@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9ba51474-1a90-45f6-8028-585d625973e2" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/my-app/src/scss/components/_backGrid.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/src/metaTags.json" afterPath="$PROJECT_DIR$/my-app/src/metaTags.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/public/css/main.css" afterPath="$PROJECT_DIR$/my-app/public/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/src/HomeDocument.jsx" afterPath="$PROJECT_DIR$/my-app/src/HomeDocument.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/src/scss/abstracts/_body.scss" afterPath="$PROJECT_DIR$/my-app/src/scss/abstracts/_body.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/src/scss/main.scss" afterPath="$PROJECT_DIR$/my-app/src/scss/main.scss" />
     </list>
     <ignored path="pencil_sharpener.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,16 +36,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="_variables.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/my-app/src/scss/abstracts/_variables.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="91" column="10" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="IndexDocument.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/my-app/src/pages/IndexDocument.jsx">
           <provider selected="true" editor-type-id="text-editor">
@@ -88,12 +82,45 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="metaTags.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="metaTags.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/my-app/src/metaTags.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
               <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_index.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/my-app/src/scss/pages/_index.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="310">
+              <caret line="41" column="10" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_backGrid.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/my-app/src/scss/components/_backGrid.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HomeDocument.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/my-app/src/HomeDocument.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="720">
+              <caret line="99" column="40" selection-start-line="99" selection-start-column="40" selection-end-line="99" selection-end-column="40" />
+              <folding>
+                <element signature="e#688#2076#0" expanded="false" />
+                <element signature="e#2745#3010#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -108,16 +135,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FunnyBoxElement.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/my-app/src/pages/FunnyBox/components/FunnyBoxElement.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="87" column="150" selection-start-line="87" selection-start-column="150" selection-end-line="87" selection-end-column="150" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="Git.Settings">
@@ -126,7 +143,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/my-app/package.json" />
         <option value="$USER_HOME$/Downloads/abso_gsp 2/index.html" />
         <option value="$PROJECT_DIR$/my-app/src/pages/Portfolio/Details/Details.jsx" />
         <option value="$PROJECT_DIR$/my-app/src/web_modules/baseLinkTo.js" />
@@ -148,13 +164,11 @@
         <option value="$PROJECT_DIR$/my-app/public/.htaccess" />
         <option value="$PROJECT_DIR$/my-app/src/pages/FunnyBox/Index.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/my-app/src/scss/abstracts/_body.scss" />
         <option value="$PROJECT_DIR$/my-app/src/scss/abstracts/_functions.scss" />
         <option value="$PROJECT_DIR$/my-app/src/scss/abstracts/_mixins.scss" />
         <option value="$PROJECT_DIR$/my-app/src/scss/components/_button.scss" />
         <option value="$PROJECT_DIR$/my-app/src/scss/components/_menu.scss" />
         <option value="$PROJECT_DIR$/my-app/src/scss/components/_preloader.scss" />
-        <option value="$PROJECT_DIR$/my-app/src/scss/main.scss" />
         <option value="$PROJECT_DIR$/my-app/src/scss/helpers/_helpers.scss" />
         <option value="$PROJECT_DIR$/my-app/src/scss/pages/_about.scss" />
         <option value="$PROJECT_DIR$/my-app/src/scss/pages/_ie.scss" />
@@ -167,7 +181,6 @@
         <option value="$PROJECT_DIR$/my-app/src/pages/FunnyBox/components/FunnyBoxElement.jsx" />
         <option value="$PROJECT_DIR$/my-app/src/scss/pages/_funnybox.scss" />
         <option value="$USER_HOME$/Desktop/untitled folder 2/index.html" />
-        <option value="$PROJECT_DIR$/my-app/src/HomeDocument.jsx" />
         <option value="$PROJECT_DIR$/my-app/public/index.html" />
         <option value="$PROJECT_DIR$/my-app/src/pages/IndexDocument.jsx" />
         <option value="$PROJECT_DIR$/my-app/src/pages/About/Index.jsx" />
@@ -177,6 +190,10 @@
         <option value="$PROJECT_DIR$/my-app/src/pages/Portfolio/Index.jsx" />
         <option value="$PROJECT_DIR$/my-app/src/pages/Portfolio/Details.jsx" />
         <option value="$PROJECT_DIR$/my-app/src/metaTags.json" />
+        <option value="$PROJECT_DIR$/my-app/src/scss/main.scss" />
+        <option value="$PROJECT_DIR$/my-app/src/scss/abstracts/_body.scss" />
+        <option value="$PROJECT_DIR$/my-app/src/HomeDocument.jsx" />
+        <option value="$PROJECT_DIR$/my-app/src/scss/components/_backGrid.scss" />
       </list>
     </option>
   </component>
@@ -355,6 +372,58 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="scss" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pencil_sharpener" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pencil_sharpener" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="my-app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scss" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pencil_sharpener" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pencil_sharpener" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="my-app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scss" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -720,11 +789,18 @@
       <option name="project" value="LOCAL" />
       <updated>1490867851446</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="meta +1">
+      <created>1490871962951</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1490871962951</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="140267000" />
+    <option name="totallyTimeSpent" value="142542000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1070" y="-1080" width="1920" height="1080" extended-state="0" />
@@ -808,7 +884,8 @@
     <MESSAGE value="adSence and Yandex" />
     <MESSAGE value="Yandex up" />
     <MESSAGE value="meta" />
-    <option name="LAST_COMMIT_MESSAGE" value="meta" />
+    <MESSAGE value="meta +1" />
+    <option name="LAST_COMMIT_MESSAGE" value="meta +1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -824,14 +901,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/my-app/src/pages/Elements/AudioIcon.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="63" column="57" selection-start-line="63" selection-start-column="57" selection-end-line="63" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/my-app/src/logo.svg">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -932,26 +1001,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/scss/abstracts/_body.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="516">
-          <caret line="125" column="20" selection-start-line="125" selection-start-column="20" selection-end-line="125" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/my-app/src/scss/abstracts/_functions.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/scss/abstracts/_mixins.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1006,14 +1059,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/scss/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/my-app/src/scss/helpers/_helpers.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="381">
@@ -1034,14 +1079,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/scss/pages/_index.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
-          <caret line="172" column="14" selection-start-line="172" selection-start-column="14" selection-end-line="172" selection-end-column="14" />
           <folding />
         </state>
       </provider>
@@ -1150,18 +1187,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/HomeDocument.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="56" column="23" selection-start-line="56" selection-start-column="23" selection-end-line="56" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-            <element signature="e#688#2076#0" expanded="false" />
-            <element signature="e#2745#3010#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/my-app/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -1238,6 +1263,57 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/scss/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/scss/abstracts/_body.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="883">
+          <caret line="105" column="0" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/scss/pages/_index.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="41" column="10" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/HomeDocument.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="99" column="40" selection-start-line="99" selection-start-column="40" selection-end-line="99" selection-end-column="40" />
+          <folding>
+            <element signature="e#688#2076#0" expanded="false" />
+            <element signature="e#2745#3010#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/scss/abstracts/_mixins.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-122">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/scss/components/_backGrid.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
       </provider>

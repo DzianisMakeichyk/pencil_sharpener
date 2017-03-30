@@ -1,0 +1,86 @@
+.grid-bg {
+  @include breakpoint(small) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: inherit;
+
+    &.col-project {
+      width: 200%;
+    }
+  }
+
+  .col {
+    @include breakpoint(small) {
+      position: relative;
+      display: inline-block;
+      width: 16.66667%;
+      height: inherit;
+      border-right: 1px solid $clear-gray;
+      overflow: hidden;
+      outline: none;
+
+      &:after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: remcalc(-150);
+        width: 1px;
+        height: remcalc(75);
+        display: block;
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, $clear-white 75%, $clear-white 100%);
+        animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+        animation-fill-mode: forwards;
+      }
+
+      &:nth-child(1) {
+        &:after {
+          content: '';
+          animation: animatedLine 7s 8s infinite;
+        }
+      }
+
+      &:nth-child(2) {
+        &:after {
+          content: '';
+          animation: animatedLine 7s 14s infinite;
+        }
+      }
+
+      &:nth-child(3) {
+        &:after {
+          content: '';
+          animation: animatedLine 7s 10s infinite;
+        }
+      }
+
+      &:nth-child(4) {
+        &:after {
+          content: '';
+          animation: animatedLine 7s 6s infinite;
+        }
+      }
+
+      &:nth-child(5) {
+        &:after {
+          content: '';
+          animation: animatedLine 7s 11s infinite;
+        }
+      }
+    }
+  }
+}
+
+@keyframes animatedLine {
+  0% {
+    top: remcalc(-150);
+  }
+  60% {
+    top: calc(100% + 150px);
+  }
+  100% {
+    top: calc(100% + 150px);
+  }
+}

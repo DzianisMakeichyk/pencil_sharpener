@@ -103,35 +103,3 @@ section,
   max-width: remcalc(1600);
   margin: auto;
 }
-
-.grid-bg {
-  @include breakpoint(small) {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    width: 100%;
-    height: inherit;
-
-    &.col-project {
-      width: 200%;
-    }
-  }
-
-  .col {
-    @include breakpoint(small) {
-      display: inline-block;
-      width: 16.66667%;
-      height: inherit;
-      border-right: 1px solid $clear-gray;
-      overflow: hidden;
-      outline: none;
-
-      &.col-project {
-        @include breakpoint(small) {
-          width: 8.33333%;
-        }
-      }
-    }
-  }
-}
