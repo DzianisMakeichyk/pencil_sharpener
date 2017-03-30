@@ -26,82 +26,82 @@ class FunnyBox extends Component {
            <FunnyBoxElement
              linkBox="https://github.com/DzianisMakeichyk/mailling"
              nameBox="Konstruktor maili"
-             imageBox="mail_black"
+             imageBox="mail"
            />
            <FunnyBoxElement
              linkBox="#"
              nameBox="Hello"
-             imageBox="hello_typ"
+             imageBox="hello_white"
            />
            <FunnyBoxElement
              linkBox="#"
              nameBox="Hello"
-             imageBox="hello_typ"
+             imageBox="hello_white"
            />
            <FunnyBoxElement
              linkBox="#"
              nameBox="Hello"
-             imageBox="hello_typ"
+             imageBox="hello_white"
            />
            <FunnyBoxElement
              linkBox="#"
              nameBox="Hello"
-             imageBox="hello_typ"
+             imageBox="hello_white"
            />
            <FunnyBoxElement
              linkBox="#"
              nameBox="Hello"
-             imageBox="hello_typ"
+             imageBox="hello_white"
            />
            <FunnyBoxElement
              linkBox="#"
              nameBox="Hello"
-             imageBox="hello_typ"
+             imageBox="hello_white"
            />
            <FunnyBoxElement
              linkBox="#"
              nameBox="Hello"
-             imageBox="hello_typ"
+             imageBox="hello_white"
            />
            <FunnyBoxElement
              linkBox="#"
              nameBox="Hello"
-             imageBox="hello_typ"
+             imageBox="hello_white"
            />
            <FunnyBoxElement
              linkBox="#"
              nameBox="Hello"
-             imageBox="hello_typ"
+             imageBox="hello_white"
            />
            <FunnyBoxElement
              linkBox="#"
              nameBox="Hello"
-             imageBox="hello_typ"
+             imageBox="hello_white"
            />
            <FunnyBoxElement
              linkBox="#"
              nameBox="Hello"
-             imageBox="hello_typ"
+             imageBox="hello_white"
            />
            <FunnyBoxElement
              linkBox="#"
              nameBox="Hello"
-             imageBox="hello_typ"
+             imageBox="hello_white"
            />
            <FunnyBoxElement
              linkBox="#"
              nameBox="Hello"
-             imageBox="hello_typ"
+             imageBox="hello_white"
            />
            <FunnyBoxElement
              linkBox="#"
              nameBox="Hello"
-             imageBox="hello_typ"
+             imageBox="hello_white"
            />
            <FunnyBoxElement
              linkBox="#"
              nameBox="Hello"
-             imageBox="hello_typ"
+             imageBox="hello_white"
            />
          </ul>
        </section>
