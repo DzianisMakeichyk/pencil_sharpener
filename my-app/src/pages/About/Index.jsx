@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
-import isMediaGreaterThan from '../../web_modules/isMediaGreaterThan';
-import isMediaLessThan from '../../web_modules/isMediaLessThan';
 import SkillOne from './Skills/SkillsList.json';
 import SkillOneItem from './Skills/Index'
 import map from 'lodash/map';
 import { TimelineLite } from "gsap";
+import Helmet from 'react-helmet';
 
 
 class About extends Component {
 
     static contextTypes = {
         currentMedia: React.PropTypes.string,
+        meta: React.PropTypes.object,
     };
 
     componentDidMount = () => {
@@ -24,6 +24,18 @@ class About extends Component {
 
         return (
           <div>
+          <Helmet
+            title={this.context.meta[0].about.title}
+            meta={[
+                { name: 'description', content: this.context.meta[0].about.description },
+                { name: 'keywords', content: this.context.meta[0].about.keywords },
+                { name: 'twitter:title', content: this.context.meta[0].about.title },
+                { name: 'twitter:description', content: this.context.meta[0].about.description },
+                { property: 'og:title', content: this.context.meta[0].about.title },
+                { property: 'og:sitename', content: this.context.meta[0].about.site_name },
+                { property: 'og:description', content: this.context.meta[0].about.description },
+            ]}
+          />
             <section className="about height-auto">
                 <div className="about-image-box">
                     <div className="relative">

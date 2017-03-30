@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Validator from 'validatorjs';
 import FormElement from'./components/Form';
 import inputDatas from'./datas/InputDatas';
+import Helmet from 'react-helmet';
 
 
 class Contact extends Component {
@@ -12,6 +13,9 @@ class Contact extends Component {
             inputDatas: inputDatas,
         };
     }
+    static contextTypes = {
+        meta: React.PropTypes.object,
+    };
     componentDidMount() {
         console.log(this.props.inputDatas);
         var inputDatas = this.props.inputDatas;
@@ -94,15 +98,29 @@ class Contact extends Component {
 
     render() {
         return (
-          <section className="contact">
-              {/*<ProgressElement percent={this.state.progressPercent} />*/}
-              <FormElement
-                inputs={this.state.inputDatas}
-                onChangeInputHandler={this._onChangeInputHandler}
-                onSubmitFormHandler={this._onSubmitFormHandler}
-                percent={this.state.progressPercent}
+          <div>
+              <Helmet
+                title={this.context.meta[0].about.title}
+                meta={[
+                    { name: 'description', content: this.context.meta[0].contact.description },
+                    { name: 'keywords', content: this.context.meta[0].contact.keywords },
+                    { name: 'twitter:title', content: this.context.meta[0].contact.title },
+                    { name: 'twitter:description', content: this.context.meta[0].contact.description },
+                    { property: 'og:title', content: this.context.meta[0].contact.title },
+                    { property: 'og:sitename', content: this.context.meta[0].contact.site_name },
+                    { property: 'og:description', content: this.context.meta[0].contact.description },
+                ]}
               />
-          </section>
+              <section className="contact">
+                  {/*<ProgressElement percent={this.state.progressPercent} />*/}
+                  <FormElement
+                    inputs={this.state.inputDatas}
+                    onChangeInputHandler={this._onChangeInputHandler}
+                    onSubmitFormHandler={this._onSubmitFormHandler}
+                    percent={this.state.progressPercent}
+                  />
+              </section>
+          </div>
         );
     }
 }

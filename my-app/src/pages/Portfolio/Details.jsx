@@ -7,6 +7,7 @@ import routeMap from '../../../routeMap.json';
 import isMediaGreaterThan from '../../web_modules/isMediaGreaterThan';
 import isMediaLessThan from '../../web_modules/isMediaLessThan';
 import classnames from 'classnames';
+import Helmet from 'react-helmet';
 
 export default function ProjectDetails(props, context) {
     const currentProject = find(projects, (project) => (
@@ -14,6 +15,19 @@ export default function ProjectDetails(props, context) {
     ));
 
     return (
+      <div>
+        <Helmet
+          title={currentProject.name + context.meta[0].details.title}
+          meta={[
+            { name: 'description', content: context.meta[0].details.description },
+            { name: 'keywords', content: currentProject.name + context.meta[0].details.keywords },
+            { name: 'twitter:title', content: context.meta[0].details.title },
+            { name: 'twitter:description', content: context.meta[0].details.description },
+            { property: 'og:title', content: context.meta[0].details.title },
+            { property: 'og:sitename', content: context.meta[0].details.site_name },
+            { property: 'og:description', content: context.meta[0].details.description },
+          ]}
+        />
         <section className="project height-auto">
           <div className="project-first-box">
             <div className="project-name-position">
@@ -78,12 +92,14 @@ export default function ProjectDetails(props, context) {
               </Link>
             </div>
           </div>
-      </section>
+        </section>
+      </div>
     );
 }
 
 ProjectDetails.contextTypes = {
     router: React.PropTypes.object,
     currentMedia: React.PropTypes.string,
+    meta: React.PropTypes.object,
 };
 

@@ -3,6 +3,7 @@ import { Link } from 'react-router';
 import { TimelineLite } from "gsap";
 import Menu from './Menu'
 import routeMap from '../routeMap.json';
+import meta from './metaTags.json'
 import MediaDetectElement from './web_modules/MediaDetectElement';
 import AudioWolf from './pages/Elements/AudioIcon'
 import IEDocument from './pages/IEDocument'
@@ -55,10 +56,12 @@ class Home extends Component {
     };
     static childContextTypes = {
       currentMedia: React.PropTypes.string.isRequired,
+      meta: meta,
     };
     getChildContext() {
         return {
-            currentMedia: this.state.currentMedia,
+          currentMedia: this.state.currentMedia,
+          meta: meta,
         };
     }
     onMediaChange = (currentMedia) => {
@@ -83,14 +86,14 @@ class Home extends Component {
     };
 
     render() {
-        var is_click = this.state.menuVisible ? 'is-click-menu ' : '';
-        var classNameLogo = 'logo-name ' + is_click ;
-        // var classHeaderContainer = 'header-container ' + is_click + classnames({ 'black': location.pathname !== routeMap.home}) + classnames({ ' white': location.pathname !== routeMap.home });
-        // var classMainContainer = classnames({ 'black': location.pathname !== routeMap.home});
-        var classNamePiece = 'burger-menu-piece ' + is_click;
-        // var classNameOther = is_click + ' burger-menu-other';
-        // console.log(location.pathname);
-        // console.log(location.pathname !== routeMap.home);
+      var is_click = this.state.menuVisible ? 'is-click-menu ' : '';
+      var classNameLogo = 'logo-name ' + is_click ;
+      // var classHeaderContainer = 'header-container ' + is_click + classnames({ 'black': location.pathname !== routeMap.home}) + classnames({ ' white': location.pathname !== routeMap.home });
+      // var classMainContainer = classnames({ 'black': location.pathname !== routeMap.home});
+      var classNamePiece = 'burger-menu-piece ' + is_click;
+      // var classNameOther = is_click + ' burger-menu-other';
+      // console.log(location.pathname);
+      // console.log(location.pathname !== routeMap.home);
       var things = ['rock', 'fun', 'more work', 'think big'];
       const thing = things[Math.floor(Math.random()*things.length)];
       const isLoggedIn = (platform.name === 'IE' || platform.name === 'Microsoft Edge');
