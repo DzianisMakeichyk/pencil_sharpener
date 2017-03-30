@@ -45,7 +45,7 @@ export default function ProjectDetails(props, context) {
               {map(currentProject.srcImg.img, (img)  => (
                 <img
                   className="project-image"
-                  alt={img}
+                  alt={currentProject.name}
                   src={"../../img/project_grid/" + img + ".png"}
                 />
               ))}

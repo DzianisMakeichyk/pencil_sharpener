@@ -54,7 +54,9 @@ class About extends Component {
                         <h2 className="about-name qanelas-bold">
                             <span className="green">
                                 Dzianis
-                            </span> Makeichyk</h2>
+                            </span>
+                            Makeichyk
+                        </h2>
                         <div className="about-description">
                             <div className="about-description-left">
                                 <p className="green">Miasto:</p>

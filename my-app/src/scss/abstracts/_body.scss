@@ -56,6 +56,11 @@ h6
   z-index: 100;
 }
 
+h1 {
+  @include just-rythm(16);
+  line-height: 18px;
+}
+
 section {
   position: relative;
   display: flex;

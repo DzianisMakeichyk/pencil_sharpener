@@ -32,7 +32,7 @@ class Index extends Component {
               />
             <section>
                 <div className="hello">
-                    <h1 className="hello-name glitch dark" data-text="I`m Dzianis Makeichyk">I`m Dzianis Makeichyk</h1>
+                    <h3 className="hello-name glitch dark" data-text="I`m Dzianis Makeichyk">I`m Dzianis Makeichyk</h3>
                     <svg className="hello-svg" viewBox="0 0 594.5 266.2" enableBackground="new 0 0 594.5 266.2;" xmlSpace="preserve">
                     <g>
                         <clipPath id="hello-cut">

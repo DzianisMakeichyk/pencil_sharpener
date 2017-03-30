@@ -70,8 +70,8 @@ export default class PortfolioGrid extends React.Component {
             opacity: style.opacity,
           }}
         >
-          <h6 className="portfolio-box-name qanelas-bold">{this.props.project.name}</h6>
-          <p className="project-mini-categories">{this.props.project.short_description}</p>
+          <h4 className="portfolio-box-name qanelas-bold">{this.props.project.name}</h4>
+          <h5 className="project-mini-categories">{this.props.project.short_description}</h5>
         </div>
         )}
       </Motion>;
@@ -93,12 +93,12 @@ export default class PortfolioGrid extends React.Component {
         >
           {isMediaLessThan('Small', this.context.currentMedia) && (
             <div className={classnames({'portfolio-info-box':this.context.currentMedia <= 'Mobile' })}>
-              <h6 className="portfolio-title qanelas-bold">
+              <h4 className="portfolio-title qanelas-bold">
                 {this.props.project.name}
-              </h6>
-              <p className="project-mini-categories left">
+              </h4>
+              <h5 className="project-mini-categories left">
                 {this.props.project.short_description}
-              </p>
+              </h5>
               <div className="relative">
                 <div className="back-image" ref="skeletonBox"></div>
                 <img className="portfolio-img grayscale" ref="skeletonImg" src={'img/project_grid/' + this.props.project.background + '.png'} alt={this.props.project.slug}/>

@@ -109,7 +109,7 @@ class Home extends Component {
               <header className="header-wrap">
                 <nav>
                   <div className="header-container">
-                    <div className="pull-left">
+                    <h1 className="pull-left">
                       <Link
                         to="/"
                         className={classNameLogo}>Dzianis Makeichyk
@@ -117,7 +117,7 @@ class Home extends Component {
                       <span onClick={this.onPause}>
                         <AudioWolf />
                       </span>
-                    </div>
+                    </h1>
                     <div className="pull-right">
                       <div
                         ref="myMenu"
