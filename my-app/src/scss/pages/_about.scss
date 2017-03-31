@@ -43,18 +43,21 @@
     font-family: $robot-thin;
 
     @include breakpoint(small) {
-      flex: 1 1 65%
+      flex: 1 1 65%;
+      margin-top: -8%;
     }
   }
 }
 
 .about-information-box {
+  padding-bottom: remcalc(25);
+
   @include breakpoint(small) {
     display: flex;
   }
 
   @include breakpoint(medium) {
-    width: 82%;
+    width: 80%;
   }
 }
 
