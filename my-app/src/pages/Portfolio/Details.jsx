@@ -72,23 +72,23 @@ export default function ProjectDetails(props, context) {
                 target="_blank"
                 className="glitch-btn launch qanelas-bold"
               >
-                <div className="label">Launch Project</div>
-                <div className="mask"><span>Launch Project</span></div>
-                <div className="mask"><span>Launch Project</span></div>
-                <div className="mask"><span>Launch Project</span></div>
-                <div className="mask"><span>Launch Project</span></div>
-                <div className="mask"><span>Launch Project</span></div>
+                <div className="label">Zobać Projekt</div>
+                <div className="mask"><span>Zobać Projekt</span></div>
+                <div className="mask"><span>Zobać Projekt</span></div>
+                <div className="mask"><span>Zobać Projekt</span></div>
+                <div className="mask"><span>Zobać Projekt</span></div>
+                <div className="mask"><span>Zobać Projekt</span></div>
               </Link>
               <Link
                 to={routeMap.project_details.replace(':slug', currentProject.button_next)}
                 className="glitch-btn next qanelas-bold"
               >
-                <div className="label">Next project</div>
-                <div className="mask"><span>Next project</span></div>
-                <div className="mask"><span>Next project</span></div>
-                <div className="mask"><span>Next project</span></div>
-                <div className="mask"><span>Next project</span></div>
-                <div className="mask"><span>Next project</span></div>
+                <div className="label">Następny projekt</div>
+                <div className="mask"><span>Następny projekt</span></div>
+                <div className="mask"><span>Następny projekt</span></div>
+                <div className="mask"><span>Następny projekt</span></div>
+                <div className="mask"><span>Następny projekt</span></div>
+                <div className="mask"><span>Następny projekt</span></div>
               </Link>
             </div>
           </div>
