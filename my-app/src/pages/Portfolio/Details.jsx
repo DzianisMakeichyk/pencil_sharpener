@@ -70,7 +70,7 @@ export default function ProjectDetails(props, context) {
               <Link
                 to={currentProject.button_link}
                 target="_blank"
-                className="glitch-btn launch qanelas-bold"
+                className="glitch-btn launch"
               >
                 <div className="label">Zobać Projekt</div>
                 <div className="mask"><span>Zobać Projekt</span></div>
@@ -81,7 +81,7 @@ export default function ProjectDetails(props, context) {
               </Link>
               <Link
                 to={routeMap.project_details.replace(':slug', currentProject.button_next)}
-                className="glitch-btn next qanelas-bold"
+                className="glitch-btn next"
               >
                 <div className="label">Następny projekt</div>
                 <div className="mask"><span>Następny projekt</span></div>

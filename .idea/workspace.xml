@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9ba51474-1a90-45f6-8028-585d625973e2" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/my-app/src/pages/IndexDocument_en.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/public/img/hello.png" afterPath="$PROJECT_DIR$/my-app/public/img/hello.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/public/css/main.css" afterPath="$PROJECT_DIR$/my-app/public/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/src/Menu.jsx" afterPath="$PROJECT_DIR$/my-app/src/Menu.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/src/pages/IndexDocument.jsx" afterPath="$PROJECT_DIR$/my-app/src/pages/IndexDocument.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/src/pages/Portfolio/Details.jsx" afterPath="$PROJECT_DIR$/my-app/src/pages/Portfolio/Details.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/src/scss/pages/_project.scss" afterPath="$PROJECT_DIR$/my-app/src/scss/pages/_project.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/src/scss/components/_button.scss" afterPath="$PROJECT_DIR$/my-app/src/scss/components/_button.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/src/scss/components/_menu.scss" afterPath="$PROJECT_DIR$/my-app/src/scss/components/_menu.scss" />
     </list>
     <ignored path="pencil_sharpener.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -54,11 +59,61 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_project.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_project.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/my-app/src/scss/pages/_project.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="542">
-              <caret line="164" column="32" selection-start-line="164" selection-start-column="32" selection-end-line="164" selection-end-column="32" />
+            <state relative-caret-position="732">
+              <caret line="148" column="0" selection-start-line="148" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_button.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/my-app/src/scss/components/_button.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="80" column="3" selection-start-line="80" selection-start-column="3" selection-end-line="80" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IndexDocument_en.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/my-app/src/pages/IndexDocument_en.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="430">
+              <caret line="43" column="28" selection-start-line="40" selection-start-column="26" selection-end-line="43" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IndexDocument.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/my-app/src/pages/IndexDocument.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="261">
+              <caret line="34" column="114" selection-start-line="34" selection-start-column="114" selection-end-line="34" selection-end-column="114" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Menu.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/my-app/src/Menu.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="141">
+              <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_menu.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/my-app/src/scss/components/_menu.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="88" column="17" selection-start-line="88" selection-start-column="17" selection-end-line="88" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -67,8 +122,8 @@
       <file leaf-file-name="Details.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/my-app/src/pages/Portfolio/Details.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="90" column="73" selection-start-line="90" selection-start-column="73" selection-end-line="90" selection-end-column="73" />
+            <state relative-caret-position="501">
+              <caret line="83" column="42" selection-start-line="83" selection-start-column="42" selection-end-line="83" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -82,7 +137,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$USER_HOME$/Downloads/abso_gsp 2/index.html" />
         <option value="$PROJECT_DIR$/my-app/src/pages/Portfolio/Details/Details.jsx" />
         <option value="$PROJECT_DIR$/my-app/src/web_modules/baseLinkTo.js" />
         <option value="$USER_HOME$/Downloads/siemens_3/style.css" />
@@ -104,7 +158,6 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/my-app/src/scss/abstracts/_functions.scss" />
         <option value="$PROJECT_DIR$/my-app/src/scss/abstracts/_mixins.scss" />
-        <option value="$PROJECT_DIR$/my-app/src/scss/components/_button.scss" />
         <option value="$PROJECT_DIR$/my-app/src/scss/helpers/_helpers.scss" />
         <option value="$PROJECT_DIR$/my-app/src/scss/pages/_ie.scss" />
         <option value="$PROJECT_DIR$/my-app/src/scss/pages/_index.scss" />
@@ -119,9 +172,7 @@
         <option value="$PROJECT_DIR$/my-app/src/scss/components/_backGrid.scss" />
         <option value="$PROJECT_DIR$/my-app/src/pages/FunnyBox/Index.jsx" />
         <option value="$PROJECT_DIR$/my-app/src/scss/pages/_contact.scss" />
-        <option value="$PROJECT_DIR$/my-app/src/scss/components/_menu.scss" />
         <option value="$PROJECT_DIR$/my-app/src/scss/abstracts/_body.scss" />
-        <option value="$PROJECT_DIR$/my-app/src/pages/IndexDocument.jsx" />
         <option value="$PROJECT_DIR$/my-app/src/pages/Portfolio/Grid.jsx" />
         <option value="$PROJECT_DIR$/my-app/src/scss/pages/_portfolio.scss" />
         <option value="$PROJECT_DIR$/my-app/public/index.html" />
@@ -131,8 +182,12 @@
         <option value="$PROJECT_DIR$/my-app/src/pages/About/Index.jsx" />
         <option value="$PROJECT_DIR$/my-app/src/scss/components/_preloader.scss" />
         <option value="$PROJECT_DIR$/my-app/src/HomeDocument.jsx" />
-        <option value="$PROJECT_DIR$/my-app/src/pages/Portfolio/Details.jsx" />
         <option value="$PROJECT_DIR$/my-app/src/scss/pages/_project.scss" />
+        <option value="$PROJECT_DIR$/my-app/src/pages/IndexDocument.jsx" />
+        <option value="$PROJECT_DIR$/my-app/src/Menu.jsx" />
+        <option value="$PROJECT_DIR$/my-app/src/scss/components/_menu.scss" />
+        <option value="$PROJECT_DIR$/my-app/src/pages/Portfolio/Details.jsx" />
+        <option value="$PROJECT_DIR$/my-app/src/scss/components/_button.scss" />
       </list>
     </option>
   </component>
@@ -210,10 +265,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1070" />
-    <option name="y" value="-1080" />
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -240,7 +293,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -358,6 +410,32 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="scss" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pencil_sharpener" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pencil_sharpener" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="my-app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="pages" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -414,8 +492,49 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pencil_sharpener" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pencil_sharpener" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="my-app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pencil_sharpener" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pencil_sharpener" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="my-app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -429,15 +548,16 @@
     <property name="FullScreen" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/my-app/src/pages" />
+      <recent name="$PROJECT_DIR$/my-app/src/pages/Portfolio/Details" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/my-app/public/img" />
       <recent name="$PROJECT_DIR$/my-app/public/img/funny_box" />
       <recent name="$PROJECT_DIR$/my-app/public/fonts" />
       <recent name="$PROJECT_DIR$/my-app/public/img/technologies" />
       <recent name="$PROJECT_DIR$/my-app/public/img/logos" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/my-app/src/pages/Portfolio/Details" />
     </key>
   </component>
   <component name="RunManager">
@@ -505,6 +625,7 @@
       <workItem from="1490208347698" duration="4345000" />
       <workItem from="1490265765854" duration="45208000" />
       <workItem from="1490689690203" duration="6984000" />
+      <workItem from="1491046055681" duration="3438000" />
     </task>
     <task id="LOCAL-00001" summary="stars">
       <created>1488966165741</created>
@@ -772,34 +893,41 @@
       <option name="project" value="LOCAL" />
       <updated>1490957509626</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="pl projekt button">
+      <created>1490958511509</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1490958511509</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="150156000" />
+    <option name="totallyTimeSpent" value="154968000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1070" y="-1080" width="1920" height="1080" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3018598" sideWeight="0.5117994" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19169329" sideWeight="0.48820058" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19456366" sideWeight="0.48820058" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13960396" sideWeight="0.5042598" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960597" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40120482" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2009901" sideWeight="0.49574015" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2" sideWeight="0.49574015" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40120482" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -836,7 +964,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="beta 2.x.x&#10;fix mobile portfolio" />
     <MESSAGE value="beta 2.x.x&#10;fix  portfolio" />
     <MESSAGE value="beta 2.x.x&#10;fix  is-mobile" />
     <MESSAGE value="beta 2.x.x&#10;fix  svg names" />
@@ -861,7 +988,8 @@
     <MESSAGE value="add keywords" />
     <MESSAGE value="black background funnybox" />
     <MESSAGE value="preloader" />
-    <option name="LAST_COMMIT_MESSAGE" value="preloader" />
+    <MESSAGE value="pl projekt button" />
+    <option name="LAST_COMMIT_MESSAGE" value="pl projekt button" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -877,14 +1005,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/my-app/src/logo.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/my-app/src/pages/BlogDocument.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -903,7 +1023,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -983,13 +1102,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/scss/components/_button.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="102" column="10" selection-start-line="102" selection-start-column="10" selection-end-line="102" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/my-app/src/pages/Contact/components/Submit.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -1037,9 +1149,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1079,28 +1188,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/Menu.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1665">
-          <caret line="120" column="46" selection-start-line="120" selection-start-column="46" selection-end-line="120" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/my-app/src/scss/abstracts/_body.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="643">
           <caret line="56" column="1" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/pages/IndexDocument.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1115,7 +1206,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="172">
           <caret line="73" column="25" selection-start-line="73" selection-start-column="25" selection-end-line="73" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1123,14 +1213,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="532">
           <caret line="53" column="85" selection-start-line="53" selection-start-column="85" selection-end-line="53" selection-end-column="85" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/scss/components/_menu.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -1138,7 +1220,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1245">
           <caret line="85" column="27" selection-start-line="85" selection-start-column="27" selection-end-line="85" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1146,7 +1227,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="622">
           <caret line="110" column="87" selection-start-line="110" selection-start-column="87" selection-end-line="110" selection-end-column="87" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1170,7 +1250,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="88" column="0" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1178,7 +1257,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="257">
           <caret line="52" column="28" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1186,7 +1264,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="562">
           <caret line="74" column="243" selection-start-line="74" selection-start-column="243" selection-end-line="74" selection-end-column="243" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1194,7 +1271,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="74" column="19" selection-start-line="74" selection-start-column="19" selection-end-line="74" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1202,7 +1278,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1210,25 +1285,61 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="404">
           <caret line="162" column="46" selection-start-line="162" selection-start-column="46" selection-end-line="162" selection-end-column="46" />
-          <folding>
-            <element signature="e#688#2076#0" expanded="false" />
-            <element signature="e#2745#3010#0" expanded="false" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/pages/IndexDocument_en.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="43" column="28" selection-start-line="40" selection-start-column="26" selection-end-line="43" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/pages/IndexDocument.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="34" column="114" selection-start-line="34" selection-start-column="114" selection-end-line="34" selection-end-column="114" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/Menu.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/scss/components/_menu.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="88" column="17" selection-start-line="88" selection-start-column="17" selection-end-line="88" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/my-app/src/pages/Portfolio/Details.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="90" column="73" selection-start-line="90" selection-start-column="73" selection-end-line="90" selection-end-column="73" />
+        <state relative-caret-position="501">
+          <caret line="83" column="42" selection-start-line="83" selection-start-column="42" selection-end-line="83" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/my-app/src/scss/pages/_project.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="542">
-          <caret line="164" column="32" selection-start-line="164" selection-start-column="32" selection-end-line="164" selection-end-column="32" />
+        <state relative-caret-position="732">
+          <caret line="148" column="0" selection-start-line="148" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/scss/components/_button.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="80" column="3" selection-start-line="80" selection-start-column="3" selection-end-line="80" selection-end-column="3" />
           <folding />
         </state>
       </provider>
