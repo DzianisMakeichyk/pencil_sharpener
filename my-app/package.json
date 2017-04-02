@@ -4,6 +4,7 @@
   "private": true,
   "devDependencies": {
     "autoprefixer": "^6.5.3",
+    "axios": "^0.16.0",
     "bootstrap": "^3.3.7",
     "classnames": "^2.2.5",
     "gore-gulp": "^0.15.1",

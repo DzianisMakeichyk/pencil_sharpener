@@ -87,7 +87,11 @@ class About extends Component {
                                        M37.5,16V2l14,14H37.5z"/>
                                 </g>
                             </svg>
-                            <a href="#" className="about-download green qanelas-bold">pobierz CV</a>
+                            <a
+                              href="./img/CV_Dzianis_Makeichyk.pdf"
+                              target="_blank"
+                              className="about-download green qanelas-bold"
+                            >pobierz CV</a>
                         </div>
                     </div>
                     <div className="skills-box">

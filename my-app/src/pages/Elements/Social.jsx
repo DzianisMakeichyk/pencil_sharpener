@@ -57,7 +57,7 @@ class Social extends Component {
               </svg>
             </a>
             <a
-              href="https://www.vk.com/road66"
+              href="https://github.com/DzianisMakeichyk"
               target="_blank"
               title="github"
             >

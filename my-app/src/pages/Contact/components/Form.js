@@ -2,6 +2,7 @@ var React         = require('react');
 // var classSet      = require('../utils/classSet');
 var InputElement  = require('./Input');
 var SubmitElement = require('./Submit');
+var axios = require('axios');
 
 var FormElement = React.createClass({
   render: function() {
@@ -27,6 +28,14 @@ var FormElement = React.createClass({
   _onSubmit: function (e) {
     e.preventDefault();
     this.props.onSubmitFormHandler();
+    axios({
+      method: 'post',
+      url: './send_email.php',
+      data: {
+        firstName: 'Fred',
+        lastName: 'Flintstone'
+      }
+    });
   }
 });
 

@@ -95,7 +95,8 @@ export default class Menu extends React.Component {
                     onClick={this.handleClick}
                   >
                     <Link
-                      to={routeMap.blog}
+                      to="https://medium.com/@dzianismakeichyk"
+                      target="_blank"
                       className="text-menu"
                     >
                       Blog
