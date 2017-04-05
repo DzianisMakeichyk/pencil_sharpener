@@ -7,7 +7,7 @@ var datas = [
       rules: { name: [ "required", "regex:/^([a-zA-z]{3,10} [a-zA-z ]{3,})$/" ] },
       messages: { "required.name": 'Wpisz prawidłowe imię i nazwisko!', 'regex.name': 'Wpisz imię i nazwisko' }
     },
-    name: "email",
+    name: "name",
     pristine: true,
     hasError: false,
     errorMessage: ''

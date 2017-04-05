@@ -1,4 +1,7 @@
 <?php
+
+die('!');
+
 /*
  * Send email to your email box.
  *

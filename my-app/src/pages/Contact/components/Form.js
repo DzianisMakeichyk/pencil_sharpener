@@ -32,8 +32,9 @@ var FormElement = React.createClass({
       method: 'post',
       url: './send_email.php',
       data: {
-        firstName: 'Fred',
-        lastName: 'Flintstone'
+        name: '',
+        email: '',
+        message: '',
       }
     });
   }

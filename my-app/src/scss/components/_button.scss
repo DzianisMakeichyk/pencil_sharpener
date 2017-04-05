@@ -91,7 +91,13 @@
     background: rgba(black, 0);
   }
 
-  // glitch effect
+  .label {
+    text-align: center;
+
+    @include breakpoint(small) {
+      text-align: left;
+    }
+  }
   .mask {
     position: absolute;
     display: none;
