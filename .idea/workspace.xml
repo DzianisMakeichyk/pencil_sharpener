@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9ba51474-1a90-45f6-8028-585d625973e2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/my-app/public/img/hello copy.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/my-app/public/include/class.emailSender.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/public/css/main.css" afterPath="$PROJECT_DIR$/my-app/public/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/public/send_email.php" afterPath="$PROJECT_DIR$/my-app/public/send_email.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/src/pages/Contact/components/Form.js" afterPath="$PROJECT_DIR$/my-app/src/pages/Contact/components/Form.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/src/pages/Contact/components/send_email.php" afterPath="$PROJECT_DIR$/my-app/src/pages/Contact/components/send_email.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/src/pages/Contact/datas/InputDatas.js" afterPath="$PROJECT_DIR$/my-app/src/pages/Contact/datas/InputDatas.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/src/scss/components/_button.scss" afterPath="$PROJECT_DIR$/my-app/src/scss/components/_button.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/src/scss/pages/_project.scss" afterPath="$PROJECT_DIR$/my-app/src/scss/pages/_project.scss" />
     </list>
     <ignored path="pencil_sharpener.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -53,8 +45,8 @@
       <file leaf-file-name="Input.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/my-app/src/pages/Contact/components/Input.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+            <state relative-caret-position="450">
+              <caret line="30" column="31" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -63,8 +55,8 @@
       <file leaf-file-name="Form.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/my-app/src/pages/Contact/components/Form.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+            <state relative-caret-position="255">
+              <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -168,9 +160,9 @@
         <option value="$PROJECT_DIR$/my-app/public/send_email.php" />
         <option value="$USER_HOME$/Desktop/untitled folder/index_default.html" />
         <option value="$PROJECT_DIR$/my-app/src/pages/Contact/datas/InputDatas.js" />
-        <option value="$PROJECT_DIR$/my-app/src/pages/Contact/components/Form.js" />
         <option value="$PROJECT_DIR$/my-app/src/scss/components/_button.scss" />
         <option value="$PROJECT_DIR$/my-app/src/scss/pages/_project.scss" />
+        <option value="$PROJECT_DIR$/my-app/src/pages/Contact/components/Form.js" />
       </list>
     </option>
   </component>
@@ -726,7 +718,7 @@
       <workItem from="1491377507867" duration="394000" />
       <workItem from="1491379127044" duration="108000" />
       <workItem from="1491380892286" duration="669000" />
-      <workItem from="1491415430283" duration="1065000" />
+      <workItem from="1491415430283" duration="2836000" />
     </task>
     <task id="LOCAL-00001" summary="stars">
       <created>1488966165741</created>
@@ -1015,11 +1007,18 @@
       <option name="project" value="LOCAL" />
       <updated>1491140346552</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="fix button&#10;add mail php">
+      <created>1491416915313</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1491416915314</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="162414000" />
+    <option name="totallyTimeSpent" value="164185000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -1079,7 +1078,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="beta 2.x.x&#10;fix  svg names" />
     <MESSAGE value="beta 2.x.x&#10;fix fonts" />
     <MESSAGE value="beta 2.x.x&#10;fix padding skills" />
     <MESSAGE value="beta 2.x.x&#10;funny box work!" />
@@ -1104,7 +1102,8 @@
     <MESSAGE value="pl projekt button" />
     <MESSAGE value="new front page" />
     <MESSAGE value="add CV&#10;add git link" />
-    <option name="LAST_COMMIT_MESSAGE" value="add CV&#10;add git link" />
+    <MESSAGE value="fix button&#10;add mail php" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix button&#10;add mail php" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1424,14 +1423,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/pages/Contact/components/Input.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/my-app/src/pages/Contact/datas/InputDatas.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
@@ -1474,10 +1465,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/pages/Contact/components/Input.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="31" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/my-app/src/pages/Contact/components/Form.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+        <state relative-caret-position="255">
+          <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
           <folding />
         </state>
       </provider>

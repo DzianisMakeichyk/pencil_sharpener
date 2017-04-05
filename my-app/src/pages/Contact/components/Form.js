@@ -14,6 +14,7 @@ var FormElement = React.createClass({
                 item={item}
                 onChangeInputHandler={props.onChangeInputHandler} />;
     });
+    console.log(this.props)
     return (
       <form
         className="form"
@@ -28,14 +29,16 @@ var FormElement = React.createClass({
   _onSubmit: function (e) {
     e.preventDefault();
     this.props.onSubmitFormHandler();
+    this.props.inputs.map( function ( value ) {
     axios({
       method: 'post',
       url: './send_email.php',
       data: {
-        name: '',
-        email: '',
-        message: '',
+        name: value,
+        email: value,
+        message: value,
       }
+    });
     });
   }
 });
