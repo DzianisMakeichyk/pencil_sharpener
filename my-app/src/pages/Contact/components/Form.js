@@ -29,16 +29,17 @@ var FormElement = React.createClass({
   _onSubmit: function (e) {
     e.preventDefault();
     this.props.onSubmitFormHandler();
-    this.props.inputs.map( function ( value ) {
+    const data = {};
+    this.props.inputs.forEach((input) => {
+      if (input.name) {
+        data[input.name] = input.value;
+      }
+    });
+    console.log(data);
     axios({
       method: 'post',
       url: './send_email.php',
-      data: {
-        name: value,
-        email: value,
-        message: value,
-      }
-    });
+      data: data,
     });
   }
 });
