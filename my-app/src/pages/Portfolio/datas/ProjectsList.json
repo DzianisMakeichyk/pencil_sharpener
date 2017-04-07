@@ -15,7 +15,7 @@
     "technologies": {
       "name": ["html", "SASS", "JavaScript", "JQuery"]
     },
-    "button_link": "https://www.festmakabra.pl/",
+    "button_link": "https://festmakabra.pl/",
     "button_next": "stypendium-z-wyboru",
     "number": "1"
   },
@@ -35,7 +35,7 @@
     "technologies": {
       "name": ["ReactJs", "JavaScript", "SASS", "Green_Sock"]
     },
-    "button_link": "https://www.stypendiumzwyboru.pl",
+    "button_link": "https://stypendiumzwyboru.pl",
     "button_next": "portal-pracy",
     "number": "2"
   },
@@ -75,7 +75,7 @@
     "technologies": {
       "name": ["JADE", "Bootstrap", "SASS", "JavaScript", "JQuery"]
     },
-    "button_link": "https://www.pencilsharpener.pl/works/agencja/index.html",
+    "button_link": "./works/agencja/index.html",
     "button_next": "zaslepka",
     "number": "4"
   },
@@ -95,7 +95,7 @@
     "technologies": {
       "name": ["JADE", "Bootstrap", "SASS", "JavaScript", "JQuery"]
     },
-    "button_link": "https://www.pencilsharpener.pl/works/timer/index.html",
+    "button_link": "./works/timer/index.html",
     "button_next": "baner",
     "number": "5"
   },
@@ -115,7 +115,7 @@
     "technologies": {
       "name": ["html", "Bootstrap", "CSS", "JQuery"]
     },
-    "button_link": "https://www.pencilsharpener.pl/works/zegar/index.html",
+    "button_link": "./works/zegar/index.html",
     "button_next": "makabra",
     "number": "6"
   }
