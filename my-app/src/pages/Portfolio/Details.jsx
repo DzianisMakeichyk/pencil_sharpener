@@ -67,8 +67,8 @@ export default function ProjectDetails(props, context) {
               <p className="project-description">"{currentProject.description_part_1}"</p>
             )}
             <div className="project-button-wrapper">
-              <Link
-                to={currentProject.button_link}
+              <a
+                href={currentProject.button_link}
                 target="_blank"
                 className="glitch-btn launch"
               >
@@ -78,7 +78,7 @@ export default function ProjectDetails(props, context) {
                 <div className="mask"><span>Zobać Projekt</span></div>
                 <div className="mask"><span>Zobać Projekt</span></div>
                 <div className="mask"><span>Zobać Projekt</span></div>
-              </Link>
+              </a>
               <Link
                 to={routeMap.project_details.replace(':slug', currentProject.button_next)}
                 className="glitch-btn next"

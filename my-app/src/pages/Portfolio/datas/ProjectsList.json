@@ -75,7 +75,7 @@
     "technologies": {
       "name": ["JADE", "Bootstrap", "SASS", "JavaScript", "JQuery"]
     },
-    "button_link": "./works/agencja/index.html",
+    "button_link": "../works/agencja/index.html",
     "button_next": "zaslepka",
     "number": "4"
   },
@@ -95,7 +95,7 @@
     "technologies": {
       "name": ["JADE", "Bootstrap", "SASS", "JavaScript", "JQuery"]
     },
-    "button_link": "./works/timer/index.html",
+    "button_link": "../works/timer/index.html",
     "button_next": "baner",
     "number": "5"
   },
@@ -115,7 +115,7 @@
     "technologies": {
       "name": ["html", "Bootstrap", "CSS", "JQuery"]
     },
-    "button_link": "./works/zegar/index.html",
+    "button_link": "../works/zegar/index.html",
     "button_next": "makabra",
     "number": "6"
   }
