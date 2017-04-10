@@ -14,7 +14,6 @@ var FormElement = React.createClass({
                 item={item}
                 onChangeInputHandler={props.onChangeInputHandler} />;
     });
-    console.log(this.props)
     return (
       <form
         className="form"
@@ -35,7 +34,6 @@ var FormElement = React.createClass({
         data[input.name] = input.value;
       }
     });
-    console.log(data);
     axios({
       method: 'post',
       url: './send_email.php',

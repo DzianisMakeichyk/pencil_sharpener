@@ -97,29 +97,15 @@ class Contact extends Component {
 
     render() {
         return (
-          <div>
-              <Helmet
-                title={this.context.meta[0].about.title}
-                meta={[
-                    { name: 'description', content: this.context.meta[0].contact.description },
-                    { name: 'keywords', content: this.context.meta[0].contact.keywords },
-                    { name: 'twitter:title', content: this.context.meta[0].contact.title },
-                    { name: 'twitter:description', content: this.context.meta[0].contact.description },
-                    { property: 'og:title', content: this.context.meta[0].contact.title },
-                    { property: 'og:sitename', content: this.context.meta[0].contact.site_name },
-                    { property: 'og:description', content: this.context.meta[0].contact.description },
-                ]}
+          <section className="contact">
+              {/*<ProgressElement percent={this.state.progressPercent} />*/}
+              <FormElement
+                inputs={this.state.inputDatas}
+                onChangeInputHandler={this._onChangeInputHandler}
+                onSubmitFormHandler={this._onSubmitFormHandler}
+                percent={this.state.progressPercent}
               />
-              <section className="contact">
-                  {/*<ProgressElement percent={this.state.progressPercent} />*/}
-                  <FormElement
-                    inputs={this.state.inputDatas}
-                    onChangeInputHandler={this._onChangeInputHandler}
-                    onSubmitFormHandler={this._onSubmitFormHandler}
-                    percent={this.state.progressPercent}
-                  />
-              </section>
-          </div>
+          </section>
         );
     }
 }
