@@ -9,7 +9,6 @@ class About extends Component {
 
     static contextTypes = {
         currentMedia: React.PropTypes.string,
-        meta: React.PropTypes.object,
     };
 
     componentDidMount = () => {
@@ -19,6 +18,7 @@ class About extends Component {
         .to(this.refs.skeletonImg, .1, { x:-100+'%', y:0 }, 'firstStep')
         .to(this.refs.skeletonImg, 1.2, { x:0+'%', y:0 }, 'secondStep', '+=.6')
     };
+
     render() {
         return (
           <section className="about height-auto">

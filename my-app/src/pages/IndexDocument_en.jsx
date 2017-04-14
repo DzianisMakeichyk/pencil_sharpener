@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import isMediaGreaterThan from '../web_modules/isMediaGreaterThan';
-import Helmet from 'react-helmet';
 
 class Index extends Component {
     constructor() {
@@ -12,23 +11,10 @@ class Index extends Component {
     }
     static contextTypes = {
         currentMedia: React.PropTypes.string,
-        meta: React.PropTypes.object,
     };
     render() {
         return (
           <div>
-              <Helmet
-                title={this.context.meta[0].home.title}
-                meta={[
-                    { name: 'description', content: this.context.meta[0].home.description },
-                    { name: 'keywords', content: this.context.meta[0].home.keywords },
-                    { name: 'twitter:title', content: this.context.meta[0].home.title },
-                    { name: 'twitter:description', content: this.context.meta[0].home.description },
-                    { property: 'og:title', content: this.context.meta[0].home.title },
-                    { property: 'og:sitename', content: this.context.meta[0].home.site_name },
-                    { property: 'og:description', content: this.context.meta[0].home.description },
-                ]}
-              />
             <section>
                 <div className="hello">
                     <h3 className="hello-name glitch dark" data-text="I`m Dzianis Makeichyk">I`m Dzianis Makeichyk</h3>

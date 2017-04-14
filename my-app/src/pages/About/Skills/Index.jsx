@@ -11,17 +11,18 @@ class SkillsItem extends Component {
     };
   };
 
-  handleMouseOver() {
+  handleMouseOver = () => {
     this.setState({
       isHoveringSkill: true,
     });
-  }
+  };
 
-  handleMouseOut() {
+  handleMouseOut = () => {
     this.setState({
       isHoveringSkill: false,
     });
-  }
+  };
+
   componentDidMount = () => {
   const skeletonAnimation = new TimelineLite();
   skeletonAnimation.to(this.refs.lineChart, 1.5, { width: this.props.skillsShot.percent + '%'}, '+=.5', 'secondStep')
@@ -31,8 +32,8 @@ class SkillsItem extends Component {
     return (
       <div
         className="skill-one-shot"
-        onMouseOver={this.handleMouseOver.bind(this)}
-        onMouseOut={this.handleMouseOut.bind(this)}
+        onMouseOver={this.handleMouseOver}
+        onMouseOut={this.handleMouseOut}
       >
         <p className="skill-name">{this.props.skillsShot.name}</p>
         <div className="skill-chart-line">

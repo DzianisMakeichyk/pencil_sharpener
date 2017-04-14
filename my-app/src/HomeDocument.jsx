@@ -3,7 +3,6 @@ import { Link } from 'react-router';
 import { TimelineLite } from "gsap";
 import Menu from './Menu'
 import routeMap from '../routeMap.json';
-import meta from './metaTags.json'
 import MediaDetectElement from './web_modules/MediaDetectElement';
 import AudioWolf from './pages/Elements/AudioIcon'
 import IEDocument from './pages/IEDocument'
@@ -17,60 +16,65 @@ class Home extends Component {
     super(props);
 
     this.state = {
-        menuVisible: false,
-        currentMedia: '',
-        audioPlaying: true,
+      menuVisible: false,
+      currentMedia: '',
+      audioPlaying: true,
     };
- }
-    handleClick = () => {
-        const menuAnimation = new TimelineLite();
-        if (!this.state.menuVisible) {
-            menuAnimation.to(this.refs.firstLine, .3, { x: 27 }, 'first_step')
-              .to(this.refs.firstLine, .3, { y: -5 }, 'second_step')
-              .to(this.refs.firstLine, .3, { y: 16, opacity: 0 }, 'third_step')
-              .to(this.refs.secondLine, .3, { x: 4, y: -1, rotation: 45 }, 'third_step')
-              .to(this.refs.thirdLine, .3, { x: 4, y: -9, rotation: -45 }, 'third_step')
+  }
 
-        } else {
-            menuAnimation.to(this.refs.thirdLine, .3, { scaleX: 1, width: 3, x: 14 }, 'first_step')
-              .to(this.refs.secondLine, .3, { scaleX: 0, y: -5 }, 'first_step')
-              .to(this.refs.firstLine, .1, { scaleX: 0, x: 0, y: 0 }, 'first_step')
-              .to(this.refs.secondLine, .1, { scaleX: 0, x: 0, y: 0, rotation: 0 }, 'first_step')
-              .to(this.refs.thirdLine, .3, { y: -20 }, 'second_step')
-              .to(this.refs.thirdLine, .3, { y: 0, rotation: 0 }, 'third_step')
-              .to(this.refs.firstLine, .3, { scaleX: 1, opacity: 1 }, 'third_step')
-              .to(this.refs.secondLine, .3, { scaleX: 1, delay: .1, }, 'third_step')
-              .to(this.refs.thirdLine, .3, { x: 0, width: 30, delay: .15, }, 'third_step')
-        }
-        this.setState({
-            menuVisible: !this.state.menuVisible,
-        });
+  handleClick = () => {
+      const menuAnimation = new TimelineLite();
+      if (!this.state.menuVisible) {
+        menuAnimation.to(this.refs.firstLine, .3, { x: 27 }, 'first_step')
+          .to(this.refs.firstLine, .3, { y: -5 }, 'second_step')
+          .to(this.refs.firstLine, .3, { y: 16, opacity: 0 }, 'third_step')
+          .to(this.refs.secondLine, .3, { x: 4, y: -1, rotation: 45 }, 'third_step')
+          .to(this.refs.thirdLine, .3, { x: 4, y: -9, rotation: -45 }, 'third_step')
+
+      } else {
+        menuAnimation.to(this.refs.thirdLine, .3, { scaleX: 1, width: 3, x: 14 }, 'first_step')
+          .to(this.refs.secondLine, .3, { scaleX: 0, y: -5 }, 'first_step')
+          .to(this.refs.firstLine, .1, { scaleX: 0, x: 0, y: 0 }, 'first_step')
+          .to(this.refs.secondLine, .1, { scaleX: 0, x: 0, y: 0, rotation: 0 }, 'first_step')
+          .to(this.refs.thirdLine, .3, { y: -20 }, 'second_step')
+          .to(this.refs.thirdLine, .3, { y: 0, rotation: 0 }, 'third_step')
+          .to(this.refs.firstLine, .3, { scaleX: 1, opacity: 1 }, 'third_step')
+          .to(this.refs.secondLine, .3, { scaleX: 1, delay: .1, }, 'third_step')
+          .to(this.refs.thirdLine, .3, { x: 0, width: 30, delay: .15, }, 'third_step')
+      }
+      this.setState({
+        menuVisible: !this.state.menuVisible,
+      });
     };
 
     static propTypes = {
-        routeMap: React.PropTypes.object,
-        location: React.PropTypes.object.isRequired,
+      routeMap: React.PropTypes.object,
+      location: React.PropTypes.object.isRequired,
     };
+
     static contextTypes = {
-        router: React.PropTypes.object,
+      router: React.PropTypes.object,
     };
+
     static childContextTypes = {
       currentMedia: React.PropTypes.string.isRequired,
-      meta: meta,
     };
+
     getChildContext() {
-        return {
-          currentMedia: this.state.currentMedia,
-          meta: meta,
-        };
+      return {
+        currentMedia: this.state.currentMedia,
+      };
     }
+
     onMediaChange = (currentMedia) => {
-        this.setState({ currentMedia });
+      this.setState({ currentMedia });
     };
+
     componentDidMount() {
       this.audioEl =  new Audio('/audio/ambient.mp3');
       this.audioEl.play();
     }
+
     onPause = () => {
       if ( this.state.audioPlaying === true ){
         this.audioEl.pause();
@@ -98,6 +102,7 @@ class Home extends Component {
       var numbersOfColumns = new Array(5);
       const pageName = this.props.location.pathname;
       const pageBackName = pageName.replace('/','');
+
       return (
         <div className="App">
           {isLoggedIn ? (
@@ -146,7 +151,7 @@ class Home extends Component {
                     <Menu
                       routeMap={routeMap}
                       location={this.props.location}
-                      onToggle={this.handleClick.bind(this)}
+                      onToggle={this.handleClick}
                     />
                   )}
                 </nav>

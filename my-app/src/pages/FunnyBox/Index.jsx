@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 import FunnyBoxElement from './components/FunnyBoxElement';
 
 class FunnyBox extends Component {
-  static contextTypes = {
-    meta: React.PropTypes.object,
-  };
+
   render() {
     return (
      <section className="height-auto">

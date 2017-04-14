@@ -84,6 +84,5 @@ export default function ProjectDetails(props, context) {
 ProjectDetails.contextTypes = {
     router: React.PropTypes.object,
     currentMedia: React.PropTypes.string,
-    meta: React.PropTypes.object,
 };
 

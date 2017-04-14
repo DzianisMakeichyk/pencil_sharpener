@@ -17,10 +17,9 @@ class Portfolio extends Component {
 
   static contextTypes = {
     currentMedia: React.PropTypes.string,
-    meta: React.PropTypes.object,
   };
 
-  handleHover(projectName, projectBackground, isHovering) {
+  handleHover = (projectName, projectBackground, isHovering) => {
     if (isHovering) {
       this.setState({
         currentProjectName: projectName,
@@ -33,7 +32,7 @@ class Portfolio extends Component {
         currentProjectBackground: null,
       });
     }
-  }
+  };
 
     render() {
       var BackgroundProject = {backgroundImage: 'url("./img/project_grid/' + this.state.currentProjectBackground +'.png")'};
@@ -46,7 +45,7 @@ class Portfolio extends Component {
                         key={project.slug}
                         project={project}
                         currentProjectName={this.state.currentProjectName}
-                        onHoverChange={this.handleHover.bind(this)}
+                        onHoverChange={this.handleHover}
                     />
                 ))}
               {isMediaGreaterThan('Mobile', this.context.currentMedia) && (

@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 import { Link } from 'react-router';
 
 class NotFound extends Component {
-  static contextTypes = {
-    meta: React.PropTypes.object,
-  };
   render() {
     return (
       <div className="not-found">

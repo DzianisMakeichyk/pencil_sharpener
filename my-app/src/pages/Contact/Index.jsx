@@ -13,15 +13,14 @@ class Contact extends Component {
             inputDatas: inputDatas,
         };
     }
-    static contextTypes = {
-        meta: React.PropTypes.object,
-    };
+
     componentDidMount() {
         var inputDatas = this.props.inputDatas;
         this.setState( { inputDatas: inputDatas } );
         this._initialInputVerification();
 
     };
+
     _initialInputVerification() {
 
         var self = this;
@@ -31,6 +30,7 @@ class Contact extends Component {
         this._calculatePercent();
 
     };
+
     _resetInputDatas() {
 
         var inputDatas = this.state.inputDatas.map( function ( item ) {
@@ -43,6 +43,7 @@ class Contact extends Component {
         this._initialInputVerification();
 
     };
+
     _calculatePercent() {
 
         var total = this.state.inputDatas.length;
@@ -57,6 +58,7 @@ class Contact extends Component {
         this.setState( { progressPercent: progressPercent } );
 
     };
+
     _setAndValidateInput( index, value, noMorePristine ) {
 
         var pristine = noMorePristine ? false : true;
@@ -80,12 +82,14 @@ class Contact extends Component {
         this.setState( { inputDatas: inputDatas } );
 
     };
+
     _onChangeInputHandler = ( index, value ) => {
 
         this._setAndValidateInput( index, value, true );
         this._calculatePercent();
 
     };
+
     _onSubmitFormHandler = () => {
 
         if ( this.state.progressPercent >= 100 ) {

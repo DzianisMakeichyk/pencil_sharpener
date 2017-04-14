@@ -21,19 +21,19 @@ export default class PortfolioGrid extends React.Component {
     currentMedia: React.PropTypes.string,
   };
 
-  handleMouseOver() {
+  handleMouseOver = () => {
     this.setState({
       isHovering: true,
     });
     this.props.onHoverChange(this.props.project.slug, this.props.project.background, true);
-  }
+  };
 
-  handleMouseOut() {
+  handleMouseOut = () => {
     this.setState({
       isHovering: false,
     });
     this.props.onHoverChange(this.props.project.name, this.props.project.background, false);
-  }
+  };
 
   componentDidMount = () => {
     const skeletonAnimation = new TimelineLite();
@@ -49,6 +49,10 @@ export default class PortfolioGrid extends React.Component {
     //   this.state.isHovering && 'is_hover',
     // ]);
     // className={'portfolio_item ' + cx(hoverItem)};
+    let visible = true;
+    if (this.props.currentProjectName !== null && this.props.currentProjectName !== this.props.project.slug) {
+      visible = false;
+    }
     var DescriptionOnHover = !this.state.isHovering &&
       <img
         className={'portfolio-svg ' + this.props.project.logo.size}
@@ -76,15 +80,11 @@ export default class PortfolioGrid extends React.Component {
         )}
       </Motion>;
 
-    let visible = true;
-    if (this.props.currentProjectName !== null && this.props.currentProjectName !== this.props.project.slug) {
-      visible = false;
-    }
     return (
       <li
         className="portfolio-item"
-        onMouseEnter={this.handleMouseOver.bind(this)}
-        onMouseLeave={this.handleMouseOut.bind(this)}
+        onMouseEnter={this.handleMouseOver}
+        onMouseLeave={this.handleMouseOut}
         style={visible?{}:{visibility:'hidden'}}
       >
         <Link

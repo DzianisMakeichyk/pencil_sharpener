@@ -9,10 +9,11 @@ class Index extends Component {
             hello: false,
         };
     }
+
     static contextTypes = {
         currentMedia: React.PropTypes.string,
-        meta: React.PropTypes.object,
     };
+
     render() {
         return (
           <section>
