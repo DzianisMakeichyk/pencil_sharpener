@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 import find from 'lodash/find';
 import projects from './datas/ProjectsList.json';
 import map from 'lodash/map';
-import routeMap from '../../../routeMap.json';
+import routeMap from '../../../resources/lang/pl/routeMap.json';
 import isMediaGreaterThan from '../../web_modules/isMediaGreaterThan';
 import isMediaLessThan from '../../web_modules/isMediaLessThan';
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
-import routeMap from '../routeMap.json';
+import routeMap from '../resources/lang/pl/routeMap.json';
 import classnames from 'classnames';
 import Social from './pages/Elements/Social';
 import { Motion, spring } from 'react-motion';

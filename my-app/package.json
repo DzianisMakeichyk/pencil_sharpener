@@ -23,6 +23,7 @@
     "postcss-flexbugs-fixes": "^2.1.0",
     "postcss-round-subpixels": "^1.2.0",
     "react-helmet": "^5.0.2",
+    "react-intl": "^2.2.3",
     "react-motion": "^0.4.7",
     "react-router-transition": "0.0.6",
     "react-scripts": "0.8.3",

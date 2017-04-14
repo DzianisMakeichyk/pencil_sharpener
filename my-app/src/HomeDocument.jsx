@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router';
 import { TimelineLite } from "gsap";
 import Menu from './Menu'
-import routeMap from '../routeMap.json';
+import routeMap from '../resources/lang/pl/routeMap.json';
 import MediaDetectElement from './web_modules/MediaDetectElement';
 import AudioWolf from './pages/Elements/AudioIcon'
 import IEDocument from './pages/IEDocument'

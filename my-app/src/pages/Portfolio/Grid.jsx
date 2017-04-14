@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router';
 import isMediaGreaterThan from '../../web_modules/isMediaGreaterThan';
 import isMediaLessThan from '../../web_modules/isMediaLessThan';
-import routeMap from '../../../routeMap.json';
+import routeMap from '../../../resources/lang/pl/routeMap.json';
 import { Motion, spring } from 'react-motion';
 import classnames from 'classnames';
 import ElementIcon from '../Elements/IconSvg';
