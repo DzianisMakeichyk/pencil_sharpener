@@ -57,12 +57,12 @@ export default function ProjectDetails(props, context) {
               target="_blank"
               className="glitch-btn launch"
             >
-              <div className="label">Zobać Projekt</div>
-              <div className="mask"><span>Zobać Projekt</span></div>
-              <div className="mask"><span>Zobać Projekt</span></div>
-              <div className="mask"><span>Zobać Projekt</span></div>
-              <div className="mask"><span>Zobać Projekt</span></div>
-              <div className="mask"><span>Zobać Projekt</span></div>
+              <div className="label">Zobacz projekt</div>
+              <div className="mask"><span>Zobacz projekt</span></div>
+              <div className="mask"><span>Zobacz projekt</span></div>
+              <div className="mask"><span>Zobacz projekt</span></div>
+              <div className="mask"><span>Zobacz projekt</span></div>
+              <div className="mask"><span>Zobacz projekt</span></div>
             </a>
             <Link
               to={routeMap.project_details.replace(':slug', currentProject.button_next)}
