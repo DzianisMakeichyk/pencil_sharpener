@@ -33,7 +33,7 @@ ReactDOM.render((
           <Route path={routeMapPL.funny_box} component={FunnyBox} />
           /* <Route path={routeMapPL.index} component={IndexDocument} /> */
         </Route>
-        <Route path="*" component={NotFound} />
+        {/*<Route path="*" component={NotFound} />*/}
       </Router>
     </IntlProvider>
     <IntlProvider defaultLocale="en" locale="en" messages={enMessages}>
@@ -48,7 +48,7 @@ ReactDOM.render((
           <Route path={routeMapEN.funny_box} component={FunnyBox} />
           /* <Route path={routeMapEN.index} component={IndexDocument} /> */
         </Route>
-        <Route path="*" component={NotFound} />
+        {/*<Route path="*" component={NotFound} />*/}
       </Router>
     </IntlProvider>
   </div>
