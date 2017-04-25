@@ -120,7 +120,7 @@ class Home extends Component {
                   <div className="header-container">
                     <h1 className="pull-left">
                       <Link
-                        to="/"
+                        to={this.state.routeMap.home}
                         className={classNameLogo}>Dzianis Makeichyk
                       </Link>
                       <span onClick={this.onPause}>

@@ -56,7 +56,7 @@ export default class Menu extends React.Component {
                     onClick={this.handleClick}
                   >
                     <Link
-                      to="/"
+                      to={routeMap.home}
                       className="text-menu"
                     >
                       Home
