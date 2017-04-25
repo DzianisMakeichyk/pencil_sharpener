@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="9ba51474-1a90-45f6-8028-585d625973e2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/resources/lang/pl/routeMap.json" afterPath="$PROJECT_DIR$/my-app/resources/lang/pl/routeMap.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/src/HomeDocument.jsx" afterPath="$PROJECT_DIR$/my-app/src/HomeDocument.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/src/index.js" afterPath="$PROJECT_DIR$/my-app/src/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/src/pages/IndexDocument_en.jsx" afterPath="$PROJECT_DIR$/my-app/src/pages/IndexDocument_en.jsx" />
     </list>
     <ignored path="pencil_sharpener.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,10 +37,28 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/my-app/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state relative-caret-position="615">
+              <caret line="41" column="29" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
+                <marker date="1493119709000" expanded="true" signature="1052:2769" ph="&lt;div/&gt;" />
+                <marker date="1493119709000" expanded="true" signature="1062:1907" ph="&lt;IntlProvider/&gt;" />
+                <marker date="1493119709000" expanded="true" signature="1136:1887" ph="&lt;Router/&gt;" />
+                <marker date="1493119709000" expanded="true" signature="1912:2760" ph="&lt;IntlProvider/&gt;" />
+                <marker date="1493119709000" expanded="true" signature="1986:2740" ph="&lt;Router/&gt;" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IndexDocument_en.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/my-app/src/pages/IndexDocument_en.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="232">
+              <caret line="22" column="22" selection-start-line="22" selection-start-column="25" selection-end-line="31" selection-end-column="29" />
+              <folding>
+                <marker date="1493120770000" expanded="true" signature="708:2573" ph="&lt;g/&gt;" />
+                <marker date="1493120770000" expanded="true" signature="744:2383" ph="&lt;clipPath/&gt;" />
               </folding>
             </state>
           </provider>
@@ -48,8 +67,30 @@
       <file leaf-file-name="en.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/my-app/resources/lang/en/en.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="75">
+              <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HomeDocument.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/my-app/src/HomeDocument.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1235">
+              <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Menu.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/my-app/src/Menu.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -58,21 +99,11 @@
       <file leaf-file-name="pl.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/my-app/resources/lang/pl/pl.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
+            <state relative-caret-position="105">
               <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HomeDocument.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/my-app/src/HomeDocument.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2400">
-              <caret line="170" column="22" selection-start-line="170" selection-start-column="22" selection-end-line="170" selection-end-column="22" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -87,19 +118,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Grid.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/my-app/src/pages/Portfolio/Grid.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="59" column="43" selection-start-line="59" selection-start-column="43" selection-end-line="59" selection-end-column="43" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routeMap.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="routeMap.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/my-app/resources/lang/pl/routeMap.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
@@ -109,11 +128,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routeMap.json" pinned="false" current-in-tab="false">
+      <file leaf-file-name="routeMap.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/my-app/resources/lang/en/routeMap.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+            <state relative-caret-position="120">
+              <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -144,7 +163,6 @@
         <option value="$PROJECT_DIR$/my-app/src/scss/pages/_about.scss" />
         <option value="$PROJECT_DIR$/my-app/src/scss/components/_preloader.scss" />
         <option value="$PROJECT_DIR$/my-app/src/scss/components/_menu.scss" />
-        <option value="$PROJECT_DIR$/my-app/src/Menu.jsx" />
         <option value="$PROJECT_DIR$/my-app/src/pages/Contact/components/send_email.php" />
         <option value="$PROJECT_DIR$/my-app/public/send_email.php" />
         <option value="$USER_HOME$/Desktop/untitled folder/index_default.html" />
@@ -159,7 +177,6 @@
         <option value="$PROJECT_DIR$/my-app/src/pages/Portfolio/Details.jsx" />
         <option value="$PROJECT_DIR$/my-app/src/scss/pages/_project.scss" />
         <option value="$PROJECT_DIR$/my-app/public/img/logos/pencil_wolf_text.svg" />
-        <option value="$PROJECT_DIR$/my-app/src/pages/IndexDocument_en.jsx" />
         <option value="$PROJECT_DIR$/my-app/src/pages/About/Index.jsx" />
         <option value="$PROJECT_DIR$/my-app/src/pages/About/Skills/Index.jsx" />
         <option value="$PROJECT_DIR$/my-app/src/pages/Contact/Index.jsx" />
@@ -173,11 +190,13 @@
         <option value="$PROJECT_DIR$/my-app/src/pages/Portfolio/Grid.jsx" />
         <option value="$PROJECT_DIR$/my-app/resources/lang/en/en.jsx" />
         <option value="$PROJECT_DIR$/my-app/resources/lang/pl/pl.jsx" />
-        <option value="$PROJECT_DIR$/my-app/resources/lang/en/routeMap.json" />
-        <option value="$PROJECT_DIR$/my-app/src/HomeDocument.jsx" />
         <option value="$PROJECT_DIR$/my-app/public/index.html" />
-        <option value="$PROJECT_DIR$/my-app/src/index.js" />
         <option value="$PROJECT_DIR$/my-app/resources/lang/pl/routeMap.json" />
+        <option value="$PROJECT_DIR$/my-app/src/index.js" />
+        <option value="$PROJECT_DIR$/my-app/resources/lang/en/routeMap.json" />
+        <option value="$PROJECT_DIR$/my-app/src/pages/IndexDocument_en.jsx" />
+        <option value="$PROJECT_DIR$/my-app/src/Menu.jsx" />
+        <option value="$PROJECT_DIR$/my-app/src/HomeDocument.jsx" />
       </list>
     </option>
   </component>
@@ -566,14 +585,7 @@
       <workItem from="1492167726686" duration="2351000" />
       <workItem from="1492173365233" duration="5762000" />
       <workItem from="1492760359701" duration="400000" />
-      <workItem from="1493119490310" duration="94000" />
-    </task>
-    <task id="LOCAL-00006" summary="beta 2.x.x&#10;start portfolio add technologies">
-      <created>1490446913727</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1490446913727</updated>
+      <workItem from="1493119490310" duration="2491000" />
     </task>
     <task id="LOCAL-00007" summary="beta 2.x.x&#10;menu">
       <created>1490448473022</created>
@@ -911,11 +923,18 @@
       <option name="project" value="LOCAL" />
       <updated>1493119533873</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="bug 2 app">
+      <created>1493119588070</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1493119588071</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="184162000" />
+    <option name="totallyTimeSpent" value="186559000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1070" y="-1080" width="1920" height="1080" extended-state="0" />
@@ -1010,8 +1029,14 @@
           <line>123</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/my-app/src/HomeDocument.jsx</url>
+          <line>167</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="3" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1247,31 +1272,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/pages/IndexDocument.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/pages/IndexDocument_en.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="67" selection-start-line="1" selection-start-column="67" selection-end-line="1" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/my-app/src/pages/NotFoundDocument.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="1" column="36" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/Menu.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="133" column="15" selection-start-line="133" selection-start-column="15" selection-end-line="133" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -1296,39 +1300,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/resources/lang/en/en.jsx">
+    <entry file="file://$PROJECT_DIR$/my-app/resources/lang/pl/routeMap.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state relative-caret-position="120">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/resources/lang/pl/pl.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/my-app/src/pages/Portfolio/Grid.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
+        <state relative-caret-position="645">
           <caret line="59" column="43" selection-start-line="59" selection-start-column="43" selection-end-line="59" selection-end-column="43" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/resources/lang/en/routeMap.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1340,25 +1326,77 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/HomeDocument.jsx">
+    <entry file="file://$PROJECT_DIR$/my-app/resources/lang/en/en.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2400">
-          <caret line="170" column="22" selection-start-line="170" selection-start-column="22" selection-end-line="170" selection-end-column="22" />
+        <state relative-caret-position="75">
+          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/resources/lang/pl/pl.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/pages/IndexDocument.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="15" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/my-app/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="615">
+          <caret line="41" column="29" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+            <marker date="1493119709000" expanded="true" signature="1052:2769" ph="&lt;div/&gt;" />
+            <marker date="1493119709000" expanded="true" signature="1062:1907" ph="&lt;IntlProvider/&gt;" />
+            <marker date="1493119709000" expanded="true" signature="1136:1887" ph="&lt;Router/&gt;" />
+            <marker date="1493119709000" expanded="true" signature="1912:2760" ph="&lt;IntlProvider/&gt;" />
+            <marker date="1493119709000" expanded="true" signature="1986:2740" ph="&lt;Router/&gt;" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/resources/lang/pl/routeMap.json">
+    <entry file="file://$PROJECT_DIR$/my-app/src/pages/IndexDocument_en.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="22" column="22" selection-start-line="22" selection-start-column="25" selection-end-line="31" selection-end-column="29" />
+          <folding>
+            <marker date="1493120770000" expanded="true" signature="708:2573" ph="&lt;g/&gt;" />
+            <marker date="1493120770000" expanded="true" signature="744:2383" ph="&lt;clipPath/&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/Menu.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/HomeDocument.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1235">
+          <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/resources/lang/en/routeMap.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />

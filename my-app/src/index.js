@@ -9,6 +9,7 @@ import plReactIntlLocaleData from 'react-intl/locale-data/pl';
 import { addLocaleData, IntlProvider } from 'react-intl';
 import HomeDocument from './HomeDocument';
 import IndexDocument from './pages/IndexDocument';
+import IndexDocument_en from './pages/IndexDocument_en';
 import PortfolioDocument from './pages/Portfolio/Index';
 import BlogDocument from './pages/BlogDocument';
 import ContactDocument from './pages/Contact/Index';
@@ -39,7 +40,7 @@ ReactDOM.render((
     <IntlProvider defaultLocale="en" locale="en" messages={enMessages}>
       <Router history={browserHistory}>
         <Route path={routeMapEN.home} component={HomeDocument}>
-          <IndexRoute component={IndexDocument} />
+          <IndexRoute component={IndexDocument_en} />
           <Route path={routeMapEN.portfolio} component={PortfolioDocument} />
           <Route path={routeMapEN.about} component={AboutDocument} />
           <Route path={routeMapEN.blog} component={BlogDocument} />
