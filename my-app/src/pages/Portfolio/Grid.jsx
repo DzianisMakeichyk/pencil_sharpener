@@ -57,7 +57,7 @@ export default class PortfolioGrid extends React.Component {
       <img
         className={'portfolio-svg ' + this.props.project.logo.size}
         ref="skeletonImg"
-        src={'img/logos/' + this.props.project.logo.svg + '.svg'}
+        src={'/img/logos/' + this.props.project.logo.svg + '.svg'}
         alt={this.props.project.slug}
       />;
     var DescriptionOutHover = this.state.isHovering &&
@@ -101,7 +101,7 @@ export default class PortfolioGrid extends React.Component {
               </h5>
               <div className="relative">
                 <div className="back-image" ref="skeletonBox"></div>
-                <img className="portfolio-img grayscale" ref="skeletonImg" src={'img/project_grid/' + this.props.project.background + '.png'} alt={this.props.project.slug}/>
+                <img className="portfolio-img grayscale" ref="skeletonImg" src={'/img/project_grid/' + this.props.project.background + '.png'} alt={this.props.project.slug}/>
               </div>
               <ElementIcon />
             </div>

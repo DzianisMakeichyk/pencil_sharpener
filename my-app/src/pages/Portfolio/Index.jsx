@@ -35,7 +35,7 @@ class Portfolio extends Component {
   };
 
     render() {
-      var BackgroundProject = {backgroundImage: 'url("./img/project_grid/' + this.state.currentProjectBackground +'.png")'};
+      var BackgroundProject = {backgroundImage: 'url("/img/project_grid/' + this.state.currentProjectBackground +'.png")'};
 
         return (
           <section className="height-auto vh-medium">
