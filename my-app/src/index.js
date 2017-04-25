@@ -15,7 +15,7 @@ import ContactDocument from './pages/Contact/Index';
 import AboutDocument from './pages/About/Index';
 import ProjectDetails from './pages/Portfolio/Details';
 import FunnyBox from './pages/FunnyBox/Index';
-import NotFound from './pages/NotFoundDocument';
+// import NotFound from './pages/NotFoundDocument';
 
 addLocaleData(plReactIntlLocaleData);
 
