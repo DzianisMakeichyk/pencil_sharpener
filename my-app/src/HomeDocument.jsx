@@ -25,14 +25,14 @@ class Home extends Component {
   static childContextTypes = {
     routeMap: React.PropTypes.object,
   };
- constructor(props) {
+ constructor(props, context) {
     super(props);
 
     this.state = {
       menuVisible: false,
       currentMedia: '',
       audioPlaying: true,
-      routeMap: this.props.intl === 'pl' ? plRouteMap : enRouteMap,
+      routeMap: context.intl.locale === 'pl' ? plRouteMap : enRouteMap,
     };
   }
 
