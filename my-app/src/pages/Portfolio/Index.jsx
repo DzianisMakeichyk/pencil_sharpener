@@ -46,6 +46,7 @@ class Portfolio extends Component {
                         project={project}
                         currentProjectName={this.state.currentProjectName}
                         onHoverChange={this.handleHover}
+                        route={this.props.route}
                     />
                 ))}
               {isMediaGreaterThan('Mobile', this.context.currentMedia) && (

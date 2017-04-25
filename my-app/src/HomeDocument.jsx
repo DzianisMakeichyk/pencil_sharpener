@@ -95,7 +95,6 @@ class Home extends Component {
     };
 
     render() {
-      console.log(this);
       var is_click = this.state.menuVisible ? 'is-click-menu ' : '';
       var classNameLogo = 'logo-name ' + is_click ;
       // var classHeaderContainer = 'header-container ' + is_click + classnames({ 'black': location.pathname !== routeMap.home}) + classnames({ ' white': location.pathname !== routeMap.home });

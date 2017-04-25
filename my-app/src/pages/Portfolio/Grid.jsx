@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router';
 import isMediaGreaterThan from '../../web_modules/isMediaGreaterThan';
 import isMediaLessThan from '../../web_modules/isMediaLessThan';
-import routeMap from '../../../resources/lang/pl/routeMap.json';
+// import routeMap from '../../../resources/lang/pl/routeMap.json';
 import { Motion, spring } from 'react-motion';
 import classnames from 'classnames';
 import ElementIcon from '../Elements/IconSvg';
@@ -19,6 +19,7 @@ export default class PortfolioGrid extends React.Component {
 
   static contextTypes = {
     currentMedia: React.PropTypes.string,
+    routeMap: React.PropTypes.object,
   };
 
   handleMouseOver = () => {
@@ -44,6 +45,8 @@ export default class PortfolioGrid extends React.Component {
   };
 
   render() {
+    const routeMap = this.props.route;
+    const slug = this.props.project.slug;
     // var filtersClass = this.props.project.filters + ("portfolio-item-wrap");
     // var hoverItem = cx([
     //   this.state.isHovering && 'is_hover',
@@ -53,6 +56,7 @@ export default class PortfolioGrid extends React.Component {
     if (this.props.currentProjectName !== null && this.props.currentProjectName !== this.props.project.slug) {
       visible = false;
     }
+    console.log(routeMap.path);
     var DescriptionOnHover = !this.state.isHovering &&
       <img
         className={'portfolio-svg ' + this.props.project.logo.size}
@@ -88,7 +92,7 @@ export default class PortfolioGrid extends React.Component {
         style={visible?{}:{visibility:'hidden'}}
       >
         <Link
-          to={routeMap.project_details.replace(':slug', this.props.project.slug)}
+          to={routeMap.path + '/' + slug}
           className="animation-link"
         >
           {isMediaLessThan('Small', this.context.currentMedia) && (
