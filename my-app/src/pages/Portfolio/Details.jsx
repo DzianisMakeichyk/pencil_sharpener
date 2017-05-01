@@ -5,6 +5,7 @@ import projects from './datas/ProjectsList.json';
 import map from 'lodash/map';
 import isMediaGreaterThan from '../../web_modules/isMediaGreaterThan';
 import isMediaLessThan from '../../web_modules/isMediaLessThan';
+import { FormattedMessage, intlShape } from 'react-intl';
 
 export default function ProjectDetails(props, context) {
     const currentProject = find(projects, (project) => (
@@ -56,23 +57,47 @@ export default function ProjectDetails(props, context) {
               target="_blank"
               className="glitch-btn launch"
             >
-              <div className="label">Zobacz projekt</div>
-              <div className="mask"><span>Zobacz projekt</span></div>
-              <div className="mask"><span>Zobacz projekt</span></div>
-              <div className="mask"><span>Zobacz projekt</span></div>
-              <div className="mask"><span>Zobacz projekt</span></div>
-              <div className="mask"><span>Zobacz projekt</span></div>
+              <div className="label">
+                <FormattedMessage id="see_project" />
+              </div>
+              <div className="mask">
+                <FormattedMessage id="see_project" />
+              </div>
+              <div className="mask">
+                <FormattedMessage id="see_project" />
+              </div>
+              <div className="mask">
+                <FormattedMessage id="see_project" />
+              </div>
+              <div className="mask">
+                <FormattedMessage id="see_project" />
+              </div>
+              <div className="mask">
+                <FormattedMessage id="see_project" />
+              </div>
             </a>
             <Link
               to={props.location.pathname.replace(props.params.slug, currentProject.button_next)}
               className="glitch-btn next"
             >
-              <div className="label">Następny projekt</div>
-              <div className="mask"><span>Następny projekt</span></div>
-              <div className="mask"><span>Następny projekt</span></div>
-              <div className="mask"><span>Następny projekt</span></div>
-              <div className="mask"><span>Następny projekt</span></div>
-              <div className="mask"><span>Następny projekt</span></div>
+              <div className="label">
+                <FormattedMessage id="next_project" />
+              </div>
+              <div className="mask">
+                <FormattedMessage id="next_project" />
+              </div>
+              <div className="mask">
+                <FormattedMessage id="next_project" />
+              </div>
+              <div className="mask">
+                <FormattedMessage id="next_project" />
+              </div>
+              <div className="mask">
+                <FormattedMessage id="next_project" />
+              </div>
+              <div className="mask">
+                <FormattedMessage id="next_project" />
+              </div>
             </Link>
           </div>
         </div>
@@ -81,7 +106,8 @@ export default function ProjectDetails(props, context) {
 }
 
 ProjectDetails.contextTypes = {
-    router: React.PropTypes.object,
-    currentMedia: React.PropTypes.string,
+  router: React.PropTypes.object,
+  currentMedia: React.PropTypes.string,
+  intl: intlShape.isRequired,
 };
 
