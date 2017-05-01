@@ -127,7 +127,7 @@ export default class Menu extends React.Component {
                       to={routeMap.contact}
                       className="text-menu"
                     >
-                      Kontakt
+                      <FormattedMessage id="contact" />
                     </Link>
                   </li>
                   <Social />
