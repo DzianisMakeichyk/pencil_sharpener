@@ -3,7 +3,6 @@ import { Link } from 'react-router';
 import find from 'lodash/find';
 import projects from './datas/ProjectsList.json';
 import map from 'lodash/map';
-import routeMap from '../../../resources/lang/pl/routeMap.json';
 import isMediaGreaterThan from '../../web_modules/isMediaGreaterThan';
 import isMediaLessThan from '../../web_modules/isMediaLessThan';
 
@@ -65,7 +64,7 @@ export default function ProjectDetails(props, context) {
               <div className="mask"><span>Zobacz projekt</span></div>
             </a>
             <Link
-              to={routeMap.project_details.replace(':slug', currentProject.button_next)}
+              to={props.location.pathname.replace(props.params.slug, currentProject.button_next)}
               className="glitch-btn next"
             >
               <div className="label">Następny projekt</div>
