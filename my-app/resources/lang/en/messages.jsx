@@ -1,7 +1,7 @@
-/*
 import { defineMessages } from 'react-intl';
-/!* eslint-disable max-len *!/
+
+/* eslint-disable max-len */
 export default defineMessages({
-  all: 'Wszystkie'
+  about: 'About'
 })
-*/
+/* eslint-enable max-len */

@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router';
-// import routeMap from '../resources/lang/pl/routeMap.json';
 import classnames from 'classnames';
 import Social from './pages/Elements/Social';
 import { Motion, spring } from 'react-motion';
+import { FormattedMessage, intlShape } from 'react-intl';
 
 export default class Menu extends React.Component {
 
@@ -14,6 +14,7 @@ export default class Menu extends React.Component {
 
   static contextTypes = {
     router: React.PropTypes.object,
+    intl: intlShape.isRequired,
   };
 
   handleClick = () => {
@@ -86,7 +87,7 @@ export default class Menu extends React.Component {
                       to={routeMap.about}
                       className="text-menu"
                     >
-                      O mnie
+                      <FormattedMessage id="about" />
                     </Link>
                   </li>
                   <li
@@ -139,4 +140,3 @@ export default class Menu extends React.Component {
     )
   }
 }
-

@@ -9,7 +9,7 @@ import AudioWolf from './pages/Elements/AudioIcon'
 import IEDocument from './pages/IEDocument'
 import platform from 'platform'
 import map from 'lodash/map';
-import classnames from 'classnames';
+// import classnames from 'classnames';
 
 class Home extends Component {
 
@@ -24,6 +24,7 @@ class Home extends Component {
 
   static childContextTypes = {
     routeMap: React.PropTypes.object,
+    messages: React.PropTypes.object,
   };
  constructor(props, context) {
     super(props);
