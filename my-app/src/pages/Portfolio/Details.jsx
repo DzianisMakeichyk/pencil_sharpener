@@ -11,6 +11,15 @@ export default function ProjectDetails(props, context) {
     const currentProject = find(projects, (project) => (
         project.slug === context.router.params.slug
     ));
+    const languesLocation = context.intl.locale;
+    const currentDescription = currentProject.description;
+
+  let DescriptionLocation = '';
+    if (languesLocation === 'en') {
+      DescriptionLocation = <p className="project-description">"{currentDescription.en}</p>
+      } else {
+      DescriptionLocation = <p className="project-description">"{currentDescription.pl}</p>
+      }
 
     return (
       <section className="project height-auto">
@@ -24,7 +33,9 @@ export default function ProjectDetails(props, context) {
             <h2 className="project-name qanelas-bold">{currentProject.name}</h2>
           </div>
           {isMediaLessThan('Small', context.currentMedia) && (
-            <p className="project-description">"{currentProject.description_part_1}"</p>
+            <div>
+              {DescriptionLocation}
+            </div>
           )}
           <div className="project-image-box">
             {map(currentProject.srcImg.img, (img)  => (
@@ -49,7 +60,9 @@ export default function ProjectDetails(props, context) {
         </ul>
         <div className="project-description-wrapper">
           {isMediaGreaterThan('Mobile', context.currentMedia) && (
-            <p className="project-description">"{currentProject.description_part_1}"</p>
+            <div>
+              {DescriptionLocation}
+            </div>
           )}
           <div className="project-button-wrapper">
             <a

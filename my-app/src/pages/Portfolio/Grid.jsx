@@ -55,7 +55,6 @@ export default class PortfolioGrid extends React.Component {
     if (this.props.currentProjectName !== null && this.props.currentProjectName !== this.props.project.slug) {
       visible = false;
     }
-    console.log(routeMap.path);
     var DescriptionOnHover = !this.state.isHovering &&
       <img
         className={'portfolio-svg ' + this.props.project.logo.size}

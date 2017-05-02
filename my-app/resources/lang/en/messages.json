@@ -6,12 +6,12 @@
   "phone_number": "Phone number",
   "poland": "Poland",
   "warsaw": "Warsaw",
-  "my_name_is": "Nazywam się",
-  "and_i_am": "i jestem",
-  "front_end_developer": "Front-End Developerem",
+  "my_name_is": "My name is",
+  "and_i_am": "i'am",
+  "front_end_developer": "Front-End Developer",
   "about_me_part_one": "Zajmuję się tworzeniem stron internetowych, blogów, od responsywnego mailingu, banera, do layout wykonany na podstawie ReactJS. Zawsze dążę do tego, żeby każdy zbudowany przez mnie projekt był całkowicie optymalny od strony użytkowej oraz graficznej. Dzięki latom doświadczenia przy tworzeniu projektów internetowych oraz graficynych przyjołem i trzymam się politykę, że właściwa, intuicyjna nawigacja, inteligentna i przejrzysta grafika, sprawne działanie wszystkich elementów strony pomoga w maksynalnym dotarciu do potrzebnych informacji. Ze wszystkie te elementy dobrze zgrane sprawią, że Twoi odbiorcy szybciej dokonają zakupu, zamówią usługę, dopiszą się do newslettera czy wypełnią formularz kontaktowy. Dzięki temu Twoja strona skutecznie zareklamuje Ciebie jako godnego zaufania, wydajnego przedsiębiorcę i zwiększy Twoje zyski.",
   "about_me_part_two": "Moje doświadczenie i umiejętności sprawiają, że mogę zaoferować Tobie i Twojej firmie kompleksowe rozwiązania w zakresie projektowania na potrzeby Internetu. Moją specjalnością jest tworzenie serwisów internetowych, zarówno dedykowanych, jak i bardziej standardowych. Jestem w stanie wykonać stronę internetową na każdą kieszeń, dostosuję się do Twoich potrzeb. Graficznie zaprojektuję projekt tak, aby były funkcjonalne, wyjątkowe i idealnie pasowały do Twojej firmy. Moim celem jest łączenie atrakcyjnego designu ze skutecznością strony, bo to klucz do sukcesu Twojej firmy!",
-  "download_cv": "pobierz CV",
-  "see_project": "Zobacz projekt",
-  "next_project": "Następny projekt"
+  "download_cv": "Download CV",
+  "see_project": "See project",
+  "next_project": "Next project"
 }
