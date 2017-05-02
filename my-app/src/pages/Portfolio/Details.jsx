@@ -19,7 +19,7 @@ export default function ProjectDetails(props, context) {
       DescriptionLocation = <p className="project-description">"{currentDescription.en}</p>
       } else {
       DescriptionLocation = <p className="project-description">"{currentDescription.pl}</p>
-      }
+    }
 
     return (
       <section className="project height-auto">
