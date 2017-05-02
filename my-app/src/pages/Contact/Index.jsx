@@ -1,25 +1,36 @@
 import React, { Component } from 'react';
 import Validator from 'validatorjs';
 import FormElement from'./components/Form';
-import inputDatas from'./datas/InputDatas';
-import Helmet from 'react-helmet';
+import inputDatasPl from'./datas/InputDatas';
+import inputDatasEn from'./datas/InputDatasEn';
+import { intlShape } from 'react-intl';
 
 
 class Contact extends Component {
+
+    static contextTypes = {
+        intl: intlShape.isRequired,
+    };
     constructor() {
         super();
-
         this.state = {
-            inputDatas: inputDatas,
-        };
+            inputDatas: '',
+        }
     }
 
     componentDidMount() {
         var inputDatas = this.props.inputDatas;
         this.setState( { inputDatas: inputDatas } );
         this._initialInputVerification();
-
     };
+
+    componentWillMount() {
+        if (this.context.intl.locale === 'en') {
+            this.state.inputDatas = inputDatasEn;
+        } else {
+            this.state.inputDatas = inputDatasPl;
+        }
+    }
 
     _initialInputVerification() {
 
@@ -100,9 +111,9 @@ class Contact extends Component {
     };
 
     render() {
+        console.log(this.state.inputDatas);
         return (
           <section className="contact">
-              {/*<ProgressElement percent={this.state.progressPercent} />*/}
               <FormElement
                 inputs={this.state.inputDatas}
                 onChangeInputHandler={this._onChangeInputHandler}

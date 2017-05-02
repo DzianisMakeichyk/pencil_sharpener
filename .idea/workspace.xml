@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9ba51474-1a90-45f6-8028-585d625973e2" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/my-app/src/pages/Contact/datas/InputDatasEn.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/resources/lang/en/messages.json" afterPath="$PROJECT_DIR$/my-app/resources/lang/en/messages.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/src/pages/Portfolio/Details.jsx" afterPath="$PROJECT_DIR$/my-app/src/pages/Portfolio/Details.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/src/pages/Portfolio/Grid.jsx" afterPath="$PROJECT_DIR$/my-app/src/pages/Portfolio/Grid.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/src/pages/Portfolio/datas/ProjectsList.json" afterPath="$PROJECT_DIR$/my-app/src/pages/Portfolio/datas/ProjectsList.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/src/pages/Contact/Index.jsx" afterPath="$PROJECT_DIR$/my-app/src/pages/Contact/Index.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/src/pages/Contact/datas/InputDatas.js" afterPath="$PROJECT_DIR$/my-app/src/pages/Contact/datas/InputDatas.js" />
     </list>
     <ignored path="pencil_sharpener.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -55,33 +54,61 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Menu.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/my-app/src/Menu.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="19" column="2" selection-start-line="19" selection-start-column="2" selection-end-line="21" selection-end-column="4" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ProjectsList.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/my-app/src/pages/Portfolio/datas/ProjectsList.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
+            <state relative-caret-position="478">
               <caret line="125" column="16" selection-start-line="125" selection-start-column="5" selection-end-line="125" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Details.jsx" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/my-app/src/pages/Portfolio/Details.jsx">
+      <file leaf-file-name="InputDatas.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/my-app/src/pages/Contact/datas/InputDatas.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="480">
-              <caret line="34" column="52" selection-start-line="34" selection-start-column="52" selection-end-line="34" selection-end-column="52" />
+              <caret line="32" column="60" selection-start-line="32" selection-start-column="60" selection-end-line="32" selection-end-column="60" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Index.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/my-app/src/pages/Contact/Index.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="45" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InputDatasEn.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/my-app/src/pages/Contact/datas/InputDatasEn.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="32" column="41" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Index.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/my-app/src/pages/Portfolio/Index.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="19" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Details.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/my-app/src/pages/Portfolio/Details.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -97,7 +124,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/my-app/src/scss/main.scss" />
         <option value="$PROJECT_DIR$/my-app/src/scss/components/_backGrid.scss" />
         <option value="$PROJECT_DIR$/my-app/src/scss/pages/_contact.scss" />
         <option value="$PROJECT_DIR$/my-app/src/metaTags.json" />
@@ -108,17 +134,14 @@
         <option value="$PROJECT_DIR$/my-app/src/pages/Contact/components/send_email.php" />
         <option value="$PROJECT_DIR$/my-app/public/send_email.php" />
         <option value="$USER_HOME$/Desktop/untitled folder/index_default.html" />
-        <option value="$PROJECT_DIR$/my-app/src/pages/Contact/datas/InputDatas.js" />
         <option value="$PROJECT_DIR$/my-app/src/scss/components/_button.scss" />
         <option value="$PROJECT_DIR$/my-app/src/scss/pages/_portfolio.scss" />
         <option value="$PROJECT_DIR$/my-app/src/pages/Contact/components/Submit.js" />
         <option value="$PROJECT_DIR$/my-app/src/pages/Contact/components/SorryModal.jsx" />
-        <option value="$PROJECT_DIR$/my-app/src/pages/Contact/components/Form.js" />
         <option value="$PROJECT_DIR$/my-app/src/pages/NotFoundDocument.jsx" />
         <option value="$PROJECT_DIR$/my-app/src/scss/pages/_project.scss" />
         <option value="$PROJECT_DIR$/my-app/public/img/logos/pencil_wolf_text.svg" />
         <option value="$PROJECT_DIR$/my-app/src/pages/About/Skills/Index.jsx" />
-        <option value="$PROJECT_DIR$/my-app/src/pages/Contact/Index.jsx" />
         <option value="$PROJECT_DIR$/my-app/src/pages/Contact/components/Input.js" />
         <option value="$PROJECT_DIR$/my-app/src/pages/Elements/AudioIcon.jsx" />
         <option value="$PROJECT_DIR$/my-app/src/pages/Elements/Social.jsx" />
@@ -148,6 +171,10 @@
         <option value="$PROJECT_DIR$/my-app/src/pages/Portfolio/Grid.jsx" />
         <option value="$PROJECT_DIR$/my-app/resources/lang/en/messages.json" />
         <option value="$PROJECT_DIR$/my-app/src/pages/Portfolio/Details.jsx" />
+        <option value="$PROJECT_DIR$/my-app/src/pages/Contact/components/Form.js" />
+        <option value="$PROJECT_DIR$/my-app/src/pages/Contact/Index.jsx" />
+        <option value="$PROJECT_DIR$/my-app/src/pages/Contact/datas/InputDatas.js" />
+        <option value="$PROJECT_DIR$/my-app/src/pages/Contact/datas/InputDatasEn.js" />
       </list>
     </option>
   </component>
@@ -347,6 +374,32 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Portfolio" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pencil_sharpener" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pencil_sharpener" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="my-app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Contact" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -377,7 +430,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
+              <option name="myItemId" value="datas" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -406,6 +459,7 @@
       <recent name="$PROJECT_DIR$/my-app/public" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/my-app/src/pages/Contact/datas" />
       <recent name="$PROJECT_DIR$/my-app/src/pages" />
       <recent name="$PROJECT_DIR$/my-app/src/pages/Portfolio/Details" />
     </key>
@@ -496,14 +550,7 @@
       <workItem from="1492760359701" duration="400000" />
       <workItem from="1493119490310" duration="6815000" />
       <workItem from="1493128198611" duration="1051000" />
-      <workItem from="1493625713852" duration="12830000" />
-    </task>
-    <task id="LOCAL-00018" summary="funny box">
-      <created>1490786729100</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1490786729100</updated>
+      <workItem from="1493625713852" duration="18067000" />
     </task>
     <task id="LOCAL-00019" summary="funny box">
       <created>1490786772199</created>
@@ -841,11 +888,18 @@
       <option name="project" value="LOCAL" />
       <updated>1493641616302</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="en project">
+      <created>1493716131346</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1493716131347</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="204764000" />
+    <option name="totallyTimeSpent" value="210001000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -905,7 +959,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="add keywords" />
     <MESSAGE value="black background funnybox" />
     <MESSAGE value="preloader" />
     <MESSAGE value="pl projekt button" />
@@ -930,7 +983,8 @@
     <MESSAGE value="en contact" />
     <MESSAGE value="en about" />
     <MESSAGE value="en portfolio" />
-    <option name="LAST_COMMIT_MESSAGE" value="en portfolio" />
+    <MESSAGE value="en project" />
+    <option name="LAST_COMMIT_MESSAGE" value="en project" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -957,7 +1011,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/my-app/public/img/funny_box/mail_black.png" />
     <entry file="file://$PROJECT_DIR$/my-app/public/img/funny_box/hello_white_1.png" />
     <entry file="file://$PROJECT_DIR$/my-app/public/img/funny_box/hello_white.png">
       <provider selected="true" editor-type-id="images">
@@ -1004,13 +1057,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/pages/Contact/Index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1305">
-          <caret line="91" column="4" selection-start-line="91" selection-start-column="4" selection-end-line="91" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/my-app/src/pages/Contact/utils/classSet.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1040,13 +1086,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/my-app/src/pages/Elements/Social.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/pages/FunnyBox/Index.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
@@ -1107,14 +1146,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="232">
           <caret line="22" column="22" selection-start-line="22" selection-start-column="25" selection-end-line="31" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/pages/IndexDocument.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="32" column="28" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
           <folding />
         </state>
       </provider>
@@ -1246,60 +1277,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/pages/Contact/datas/InputDatas.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="47" column="6" selection-start-line="47" selection-start-column="6" selection-end-line="47" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/my-app/resources/lang/pl/messages.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/pages/Portfolio/Index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-278">
-          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/Menu.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="19" column="2" selection-start-line="19" selection-start-column="2" selection-end-line="21" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/pages/Contact/components/Form.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="27" column="10" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/pages/Contact/components/Input.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-113">
-          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/pages/Contact/components/Submit.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1320,21 +1301,103 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/pages/Contact/components/Input.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/pages/Contact/components/Submit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/Menu.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/pages/IndexDocument.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="32" column="28" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/pages/FunnyBox/Index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/my-app/src/pages/Portfolio/datas/ProjectsList.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
+        <state relative-caret-position="478">
           <caret line="125" column="16" selection-start-line="125" selection-start-column="5" selection-end-line="125" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/pages/Contact/components/Form.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/pages/Portfolio/Index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="19" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/my-app/src/pages/Portfolio/Details.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="34" column="52" selection-start-line="34" selection-start-column="52" selection-end-line="34" selection-end-column="52" />
+        <state relative-caret-position="210">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/pages/Contact/Index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="45" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/pages/Contact/datas/InputDatas.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="60" selection-start-line="32" selection-start-column="60" selection-end-line="32" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/pages/Contact/datas/InputDatasEn.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="32" column="41" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
     </entry>
