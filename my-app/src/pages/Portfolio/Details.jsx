@@ -33,9 +33,9 @@ export default function ProjectDetails(props, context) {
             <h2 className="project-name qanelas-bold">{currentProject.name}</h2>
           </div>
           {isMediaLessThan('Small', context.currentMedia) && (
-            <div>
+            <span>
               {DescriptionLocation}
-            </div>
+            </span>
           )}
           <div className="project-image-box">
             {map(currentProject.srcImg.img, (img)  => (
@@ -60,9 +60,9 @@ export default function ProjectDetails(props, context) {
         </ul>
         <div className="project-description-wrapper">
           {isMediaGreaterThan('Mobile', context.currentMedia) && (
-            <div>
+            <span>
               {DescriptionLocation}
-            </div>
+            </span>
           )}
           <div className="project-button-wrapper">
             <a
