@@ -1,0 +1,30 @@
+.switch_languages {
+  display: flex;
+  justify-content: space-around;
+
+  .switch_point {
+    position: relative;
+    font-family: $robot-thin;
+    color: $clear-white;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -2px;
+      width: 100%;
+      height: 1px;
+      margin: 0 auto;
+      background: $gradi-green;
+      transition: bottom .5s ease;
+    }
+
+    &:hover {
+      &:before {
+        content: '';
+        bottom: 50%;
+      }
+    }
+  }
+}

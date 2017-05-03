@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router';
 import classnames from 'classnames';
 import Social from './pages/Elements/Social';
+import SwitchLanguages from './pages/Elements/SwitchLanguages';
 import { Motion, spring } from 'react-motion';
 import { FormattedMessage, intlShape } from 'react-intl';
 
@@ -131,6 +132,9 @@ export default class Menu extends React.Component {
                     </Link>
                   </li>
                   <Social />
+                  <SwitchLanguages
+                    routeMap={routeMap}
+                  />
                 </ul>
               )}
             </Motion>
