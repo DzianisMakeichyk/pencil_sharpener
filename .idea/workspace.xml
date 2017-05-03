@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9ba51474-1a90-45f6-8028-585d625973e2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/resources/lang/en/messages.json" afterPath="$PROJECT_DIR$/my-app/resources/lang/en/messages.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/resources/lang/pl/messages.json" afterPath="$PROJECT_DIR$/my-app/resources/lang/pl/messages.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/src/pages/Portfolio/datas/ProjectsList.json" afterPath="$PROJECT_DIR$/my-app/src/pages/Portfolio/datas/ProjectsList.json" />
     </list>
     <ignored path="pencil_sharpener.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -57,11 +56,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="messages.json" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/my-app/resources/lang/en/messages.json">
+      <file leaf-file-name="ProjectsList.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/my-app/src/pages/Portfolio/datas/ProjectsList.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="428" selection-start-line="12" selection-start-column="428" selection-end-line="12" selection-end-column="428" />
+            <state relative-caret-position="165">
+              <caret line="96" column="22" selection-start-line="96" selection-start-column="5" selection-end-line="96" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Details.jsx" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/my-app/src/pages/Portfolio/Details.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="78">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Grid.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/my-app/src/pages/Portfolio/Grid.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="79" column="87" selection-start-line="79" selection-start-column="70" selection-end-line="79" selection-end-column="87" />
               <folding />
             </state>
           </provider>
@@ -107,7 +128,6 @@
         <option value="$PROJECT_DIR$/my-app/src/index.js" />
         <option value="$PROJECT_DIR$/my-app/src/scss/abstracts/_body.scss" />
         <option value="$PROJECT_DIR$/my-app/src/pages/About/Index.jsx" />
-        <option value="$PROJECT_DIR$/my-app/src/pages/Portfolio/datas/ProjectsList.json" />
         <option value="$PROJECT_DIR$/my-app/src/pages/Portfolio/Grid.jsx" />
         <option value="$PROJECT_DIR$/my-app/src/pages/Contact/components/Form.js" />
         <option value="$PROJECT_DIR$/my-app/src/pages/Contact/Index.jsx" />
@@ -126,6 +146,7 @@
         <option value="$PROJECT_DIR$/my-app/src/scss/components/_switchLanguages.scss" />
         <option value="$PROJECT_DIR$/my-app/resources/lang/pl/messages.json" />
         <option value="$PROJECT_DIR$/my-app/resources/lang/en/messages.json" />
+        <option value="$PROJECT_DIR$/my-app/src/pages/Portfolio/datas/ProjectsList.json" />
       </list>
     </option>
   </component>
@@ -417,41 +438,15 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lang" />
+              <option name="myItemId" value="pages" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="pl" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pencil_sharpener" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pencil_sharpener" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my-app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lang" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="en" />
+              <option name="myItemId" value="Portfolio" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -589,14 +584,7 @@
       <workItem from="1492760359701" duration="400000" />
       <workItem from="1493119490310" duration="6815000" />
       <workItem from="1493128198611" duration="1051000" />
-      <workItem from="1493625713852" duration="27310000" />
-    </task>
-    <task id="LOCAL-00026" summary="adSence and Yandex">
-      <created>1490821818894</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1490821818895</updated>
+      <workItem from="1493625713852" duration="28317000" />
     </task>
     <task id="LOCAL-00027" summary="Yandex up">
       <created>1490859692090</created>
@@ -934,11 +922,18 @@
       <option name="project" value="LOCAL" />
       <updated>1493822436155</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="add en index">
+      <created>1493824240518</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1493824240518</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="219244000" />
+    <option name="totallyTimeSpent" value="220251000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -1127,14 +1122,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/pages/Portfolio/Grid.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="56" column="5" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/my-app/src/pages/Contact/components/Input.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -1164,16 +1151,6 @@
         <state relative-caret-position="150">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="19" selection-end-column="4" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/pages/Portfolio/Details.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="62" column="17" selection-start-line="62" selection-start-column="17" selection-end-line="62" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1237,14 +1214,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/pages/Portfolio/datas/ProjectsList.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
-          <caret line="125" column="16" selection-start-line="125" selection-start-column="5" selection-end-line="125" selection-end-column="16" />
           <folding />
         </state>
       </provider>
@@ -1451,16 +1420,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/pages/Elements/SwitchLanguages.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/my-app/resources/lang/pl/messages.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -1474,6 +1433,42 @@
         <state relative-caret-position="180">
           <caret line="12" column="428" selection-start-line="12" selection-start-column="428" selection-end-line="12" selection-end-column="428" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/pages/Elements/SwitchLanguages.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/pages/Portfolio/datas/ProjectsList.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="96" column="22" selection-start-line="96" selection-start-column="5" selection-end-line="96" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/pages/Portfolio/Grid.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="79" column="87" selection-start-line="79" selection-start-column="70" selection-end-line="79" selection-end-column="87" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/pages/Portfolio/Details.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
