@@ -1,11 +1,27 @@
 .switch_languages {
   display: flex;
-  justify-content: space-around;
 
   .switch_point {
     position: relative;
+    margin: 0 auto;
     font-family: $robot-thin;
     color: $clear-white;
+
+    @include breakpoint(small) {
+      @include just-rythm(18);
+      margin: 0 auto auto remcalc(15);
+    }
+
+    @include breakpoint(large) {
+      @include just-rythm(20);
+
+    }
+
+    @include breakpoint(extralarge) {
+      @include just-rythm(22);
+      margin: 0 auto;
+
+    }
 
     &:before {
       content: '';
@@ -23,7 +39,7 @@
     &:hover {
       &:before {
         content: '';
-        bottom: 50%;
+        z-index: -1;
       }
     }
   }
