@@ -6,6 +6,7 @@ import { Motion, spring } from 'react-motion';
 import classnames from 'classnames';
 import ElementIcon from '../Elements/IconSvg';
 import { TimelineLite } from "gsap";
+import { intlShape } from 'react-intl';
 
 export default class PortfolioGrid extends React.Component {
 
@@ -19,6 +20,7 @@ export default class PortfolioGrid extends React.Component {
   static contextTypes = {
     currentMedia: React.PropTypes.string,
     routeMap: React.PropTypes.object,
+    intl: intlShape.isRequired,
   };
 
   handleMouseOver = () => {
@@ -43,14 +45,20 @@ export default class PortfolioGrid extends React.Component {
       .to(this.refs.skeletonImg, 1, { x:0+'%', y:0 }, 'secondStep', '+=.6');
   };
 
+  componentWillMount = () => {
+    const languesLocation = this.context.intl.locale;
+    const ShortDescription = this.props.project.short_description;
+
+    if (languesLocation === 'en') {
+      this.CurrentDescription = ShortDescription.en
+    } else {
+      this.CurrentDescription = ShortDescription.pl
+    }
+  };
+
   render() {
     const routeMap = this.props.route;
     const slug = this.props.project.slug;
-    // var filtersClass = this.props.project.filters + ("portfolio-item-wrap");
-    // var hoverItem = cx([
-    //   this.state.isHovering && 'is_hover',
-    // ]);
-    // className={'portfolio_item ' + cx(hoverItem)};
     let visible = true;
     if (this.props.currentProjectName !== null && this.props.currentProjectName !== this.props.project.slug) {
       visible = false;
@@ -77,7 +85,7 @@ export default class PortfolioGrid extends React.Component {
           }}
         >
           <h4 className="portfolio-box-name qanelas-bold">{this.props.project.name}</h4>
-          <h5 className="project-mini-categories">{this.props.project.short_description}</h5>
+          <h5 className="project-mini-categories">{this.CurrentDescription}</h5>
         </div>
         )}
       </Motion>;
@@ -99,7 +107,7 @@ export default class PortfolioGrid extends React.Component {
                 {this.props.project.name}
               </h4>
               <h5 className="project-mini-categories left">
-                {this.props.project.short_description}
+                {this.CurrentDescription}
               </h5>
               <div className="relative">
                 <div className="back-image" ref="skeletonBox"></div>

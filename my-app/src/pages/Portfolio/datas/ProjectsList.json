@@ -2,7 +2,10 @@
   {
     "slug": "makabra",
     "name": "Fest Makabra",
-    "short_description": "Pencil Sharpener",
+    "short_description": {
+      "pl": ["Pencil Sharpener"],
+      "en": ["Pencil Sharpener"]
+    },
     "background": "makabra",
     "logo": {
       "svg": ["pencil_wolf_text"],
@@ -25,7 +28,10 @@
   {
     "slug": "stypendium-z-wyboru",
     "name": "Stypendium z wyboru",
-    "short_description": "Absolvent.pl",
+    "short_description": {
+      "pl": ["Absolvent.pl"],
+      "en": ["Absolvent.pl"]
+    },
     "background": "stypendium",
     "logo": {
       "svg": ["absolvent"],
@@ -48,7 +54,10 @@
   {
     "slug": "portal-pracy",
     "name": "Portal Pracy",
-    "short_description": "Pencil Sharpener",
+    "short_description": {
+      "pl": ["Pencil Sharpener"],
+      "en": ["Pencil Sharpener"]
+    },
     "background": "portal_pracy",
     "logo": {
       "svg": ["pencil_wolf_text"],
@@ -71,7 +80,10 @@
   {
     "slug": "agencja-interaktywna",
     "name": "Agencja Interaktywna",
-    "short_description": "Agencja interaktywna łącząca kompetencje digital, performance marketing i Social Media",
+    "short_description": {
+      "pl": ["Agencja interaktywna łącząca kompetencje digital, performance marketing i Social Media"],
+      "en": ["Interactive agency combining digital, performance and social media competences"]
+    },
     "background": "agencja",
     "logo": {
       "svg": ["pencil_wolf_text"],
@@ -94,7 +106,10 @@
   {
     "slug": "zaslepka",
     "name": "Zaślepka",
-    "short_description": "Zaślepka dla strony internetowej. Z aktualnym czasem przed rozpoczęciem działania oraz możliwością ...",
+    "short_description": {
+      "pl": ["Zaślepka dla strony internetowej. Z aktualnym czasem przed rozpoczęciem działania oraz możliwością..."],
+      "en": ["Insert on the page. With the current time before the action and the possibility of..."]
+    },
     "background": "zaslepka",
     "logo": {
       "svg": ["pencil_wolf_text"],
@@ -117,7 +132,10 @@
   {
     "slug": "baner",
     "name": "Epos Drift Master",
-    "short_description": "Idealia.pl",
+    "short_description": {
+      "pl": ["Idealia.pl"],
+      "en": ["Idealia.pl"]
+    },
     "background": "baner",
     "logo": {
       "svg": ["idealia"],
