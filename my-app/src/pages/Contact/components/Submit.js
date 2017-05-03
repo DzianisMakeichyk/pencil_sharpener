@@ -22,4 +22,4 @@ module.exports = SubmitElement;
 
 SubmitElement.contextTypes = {
   intl: intlShape.isRequired,
-}
+};
