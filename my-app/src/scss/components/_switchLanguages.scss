@@ -39,7 +39,7 @@
     &:hover {
       &:before {
         content: '';
-        z-index: -1;
+        bottom: 50%;
       }
     }
   }
