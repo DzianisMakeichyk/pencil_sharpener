@@ -38,7 +38,7 @@
   }
 
   @include breakpoint(extralarge) {
-    margin: 15% auto 0;
+    margin: 10% auto 0;
     text-align: center;
   }
 
@@ -51,6 +51,14 @@
     @include breakpoint(small) {
       margin: 0 auto remcalc(15);
       line-height: remcalc(40);
+    }
+
+    @include breakpoint(large) {
+      margin: 0 auto remcalc(20);
+    }
+
+    @include breakpoint(extalarge) {
+      margin: 0 auto remcalc(30);
     }
 
     &:before {
@@ -122,7 +130,7 @@
 }
 
 .socials {
-  margin: remcalc(25) auto 0;
+  margin: remcalc(25) auto remcalc(35);
 
   > a {
     padding: 0 remcalc(30) 0 0;

@@ -1,0 +1,9 @@
+{
+  "home": "/",
+  "portfolio": "/pl/portfolio",
+  "about": "/pl/o-mnie",
+  "blog": "/blog",
+  "contact": "/pl/kontakt",
+  "funny_box": "/pl/funny-box",
+  "project_details": "/pl/portfolio/:slug"
+}

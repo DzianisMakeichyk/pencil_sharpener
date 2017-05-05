@@ -1,5 +1,6 @@
 var React    = require('react');
 var classSet = require('../utils/classSet');
+var { intlShape } = require('react-intl');
 
 var SubmitElement = React.createClass({
   render: function() {
@@ -8,7 +9,7 @@ var SubmitElement = React.createClass({
       'form-submit': true,
       'form-submit-disabled': !done
     });
-    var label = done ? 'A teraz tak!' : 'Jeszcze nie';
+    var label = done ? this.context.intl.messages.now_yes : this.context.intl.messages.nope;
     return (
       <div className="form-group">
         <button type="submit" className={classes}>{label}</button>
@@ -18,3 +19,7 @@ var SubmitElement = React.createClass({
 });
 
 module.exports = SubmitElement;
+
+SubmitElement.contextTypes = {
+  intl: intlShape.isRequired,
+};

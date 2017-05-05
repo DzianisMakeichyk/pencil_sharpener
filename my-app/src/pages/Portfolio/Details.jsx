@@ -3,14 +3,23 @@ import { Link } from 'react-router';
 import find from 'lodash/find';
 import projects from './datas/ProjectsList.json';
 import map from 'lodash/map';
-import routeMap from '../../../routeMap.json';
 import isMediaGreaterThan from '../../web_modules/isMediaGreaterThan';
 import isMediaLessThan from '../../web_modules/isMediaLessThan';
+import { FormattedMessage, intlShape } from 'react-intl';
 
 export default function ProjectDetails(props, context) {
     const currentProject = find(projects, (project) => (
         project.slug === context.router.params.slug
     ));
+    const languesLocation = context.intl.locale;
+    const currentDescription = currentProject.description;
+
+  let DescriptionLocation = '';
+    if (languesLocation === 'en') {
+      DescriptionLocation = <p className="project-description">"{currentDescription.en}</p>
+      } else {
+      DescriptionLocation = <p className="project-description">"{currentDescription.pl}</p>
+    }
 
     return (
       <section className="project height-auto">
@@ -24,7 +33,9 @@ export default function ProjectDetails(props, context) {
             <h2 className="project-name qanelas-bold">{currentProject.name}</h2>
           </div>
           {isMediaLessThan('Small', context.currentMedia) && (
-            <p className="project-description">"{currentProject.description_part_1}"</p>
+            <span>
+              {DescriptionLocation}
+            </span>
           )}
           <div className="project-image-box">
             {map(currentProject.srcImg.img, (img)  => (
@@ -49,7 +60,9 @@ export default function ProjectDetails(props, context) {
         </ul>
         <div className="project-description-wrapper">
           {isMediaGreaterThan('Mobile', context.currentMedia) && (
-            <p className="project-description">"{currentProject.description_part_1}"</p>
+            <span>
+              {DescriptionLocation}
+            </span>
           )}
           <div className="project-button-wrapper">
             <a
@@ -57,23 +70,47 @@ export default function ProjectDetails(props, context) {
               target="_blank"
               className="glitch-btn launch"
             >
-              <div className="label">Zobacz projekt</div>
-              <div className="mask"><span>Zobacz projekt</span></div>
-              <div className="mask"><span>Zobacz projekt</span></div>
-              <div className="mask"><span>Zobacz projekt</span></div>
-              <div className="mask"><span>Zobacz projekt</span></div>
-              <div className="mask"><span>Zobacz projekt</span></div>
+              <div className="label">
+                <FormattedMessage id="see_project" />
+              </div>
+              <div className="mask">
+                <FormattedMessage id="see_project" />
+              </div>
+              <div className="mask">
+                <FormattedMessage id="see_project" />
+              </div>
+              <div className="mask">
+                <FormattedMessage id="see_project" />
+              </div>
+              <div className="mask">
+                <FormattedMessage id="see_project" />
+              </div>
+              <div className="mask">
+                <FormattedMessage id="see_project" />
+              </div>
             </a>
             <Link
-              to={routeMap.project_details.replace(':slug', currentProject.button_next)}
+              to={props.location.pathname.replace(props.params.slug, currentProject.button_next)}
               className="glitch-btn next"
             >
-              <div className="label">Następny projekt</div>
-              <div className="mask"><span>Następny projekt</span></div>
-              <div className="mask"><span>Następny projekt</span></div>
-              <div className="mask"><span>Następny projekt</span></div>
-              <div className="mask"><span>Następny projekt</span></div>
-              <div className="mask"><span>Następny projekt</span></div>
+              <div className="label">
+                <FormattedMessage id="next_project" />
+              </div>
+              <div className="mask">
+                <FormattedMessage id="next_project" />
+              </div>
+              <div className="mask">
+                <FormattedMessage id="next_project" />
+              </div>
+              <div className="mask">
+                <FormattedMessage id="next_project" />
+              </div>
+              <div className="mask">
+                <FormattedMessage id="next_project" />
+              </div>
+              <div className="mask">
+                <FormattedMessage id="next_project" />
+              </div>
             </Link>
           </div>
         </div>
@@ -82,7 +119,8 @@ export default function ProjectDetails(props, context) {
 }
 
 ProjectDetails.contextTypes = {
-    router: React.PropTypes.object,
-    currentMedia: React.PropTypes.string,
+  router: React.PropTypes.object,
+  currentMedia: React.PropTypes.string,
+  intl: intlShape.isRequired,
 };
 

@@ -108,3 +108,8 @@ section,
   max-width: remcalc(1600);
   margin: auto;
 }
+
+::selection {
+  color: $gradi-green;
+  background: $black-blue;
+}

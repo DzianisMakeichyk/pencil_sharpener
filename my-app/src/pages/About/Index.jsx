@@ -3,12 +3,14 @@ import SkillOne from './Skills/SkillsList.json';
 import SkillOneItem from './Skills/Index'
 import map from 'lodash/map';
 import { TimelineLite } from "gsap";
+import { FormattedMessage, intlShape } from 'react-intl';
 
 
 class About extends Component {
 
     static contextTypes = {
         currentMedia: React.PropTypes.string,
+        intl: intlShape.isRequired,
     };
 
     componentDidMount = () => {
@@ -44,23 +46,40 @@ class About extends Component {
                       </h2>
                       <div className="about-description">
                           <div className="about-description-left">
-                              <p className="green">Miasto:</p>
-                              <p className="green">Mail:</p>
-                              <p className="green">Telefon:</p>
+                              <p className="green">
+                                  <FormattedMessage id="city" />:
+                              </p>
+                              <p className="green">
+                                  <FormattedMessage id="email" />:
+                              </p>
+                              <p className="green">
+                                  <FormattedMessage id="phone_number" />:
+                              </p>
                               <p className="green">NIP:</p>
                           </div>
                           <div className="about-description-right">
-                              <p className="description-shot">Polska, Warszawa</p>
+                              <p className="description-shot">
+                                  <FormattedMessage id="poland" />,&nbsp;
+                                  <FormattedMessage id="warsaw" />
+                              </p>
                               <a href="mailto:dzianis@pencilsharpener.pl" className="description-shot">dzianis@pencilsharpener.pl</a>
                               <p className="description-shot"> +48 79767075</p>
                               <p className="description-shot">527-277-32-56</p>
                           </div>
                       </div>
                       <p className="about-me">
-                          Nazywam się <strong>Dzianis Makeichyk</strong> i jestem <strong>Front-End Developerem</strong>. Zajmuję się tworzeniem stron internetowych, blogów, od responsywnego mailingu, banera, do layout wykonany na podstawie ReactJS. Zawsze dążę do tego, żeby każdy zbudowany przez mnie projekt był całkowicie optymalny od strony użytkowej oraz graficznej. Dzięki latom doświadczenia przy tworzeniu projektów internetowych oraz graficynych przyjołem i trzymam się politykę, że właściwa, intuicyjna nawigacja, inteligentna i przejrzysta grafika, sprawne działanie wszystkich elementów strony pomoga w maksynalnym dotarciu do potrzebnych informacji. Ze wszystkie te elementy dobrze zgrane sprawią, że Twoi odbiorcy szybciej dokonają zakupu, zamówią usługę, dopiszą się do newslettera czy wypełnią formularz kontaktowy. Dzięki temu Twoja strona skutecznie zareklamuje Ciebie jako godnego zaufania, wydajnego przedsiębiorcę i zwiększy Twoje zyski.
+                          <FormattedMessage id="my_name_is" />&nbsp;
+                          <strong>
+                              Dzianis Makeichyk
+                          </strong>&nbsp;
+                            <FormattedMessage id="and_i_am" />&nbsp;
+                          <strong>
+                            <FormattedMessage id="front_end_developer" />
+                          </strong>.&nbsp;
+                          <FormattedMessage id="about_me_part_one" />
                          <br />
                          <br />
-                          Moje doświadczenie i umiejętności sprawiają, że mogę zaoferować Tobie i Twojej firmie kompleksowe rozwiązania w zakresie projektowania na potrzeby Internetu. Moją specjalnością jest tworzenie serwisów internetowych, zarówno dedykowanych, jak i bardziej standardowych. Jestem w stanie wykonać stronę internetową na każdą kieszeń, dostosuję się do Twoich potrzeb. Graficznie zaprojektuję projekt tak, aby były funkcjonalne, wyjątkowe i idealnie pasowały do Twojej firmy. Moim celem jest łączenie atrakcyjnego designu ze skutecznością strony, bo to klucz do sukcesu Twojej firmy!
+                          <FormattedMessage id="about_me_part_two" />
                       </p>
                       <div className="about-cv">
                           <svg className="about-cv-svg" viewBox="0 0 60 60" xmlSpace="preserve" >
@@ -76,7 +95,9 @@ class About extends Component {
                             href="./img/CV_Dzianis_Makeichyk.pdf"
                             target="_blank"
                             className="about-download green qanelas-bold"
-                          >pobierz CV</a>
+                          >
+                            <FormattedMessage id="download_cv" />
+                          </a>
                       </div>
                   </div>
                   <div className="skills-box">

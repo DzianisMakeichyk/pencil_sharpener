@@ -2,23 +2,38 @@ import React, { Component } from 'react';
 import { Link } from 'react-router';
 import { TimelineLite } from "gsap";
 import Menu from './Menu'
-import routeMap from '../routeMap.json';
+import plRouteMap from '../resources/lang/pl/routeMap.json';
+import enRouteMap from '../resources/lang/en/routeMap.json';
 import MediaDetectElement from './web_modules/MediaDetectElement';
 import AudioWolf from './pages/Elements/AudioIcon'
 import IEDocument from './pages/IEDocument'
 import platform from 'platform'
 import map from 'lodash/map';
-import classnames from 'classnames';
+// import classnames from 'classnames';
 
 class Home extends Component {
 
- constructor(props) {
+  static propTypes = {
+    location: React.PropTypes.object.isRequired,
+  };
+
+  static contextTypes = {
+    intl: React.PropTypes.any,
+    router: React.PropTypes.object,
+  };
+
+  static childContextTypes = {
+    routeMap: React.PropTypes.object,
+    messages: React.PropTypes.object,
+  };
+ constructor(props, context) {
     super(props);
 
     this.state = {
       menuVisible: false,
       currentMedia: '',
       audioPlaying: true,
+      routeMap: context.intl.locale === 'pl' ? plRouteMap : enRouteMap,
     };
   }
 
@@ -45,15 +60,6 @@ class Home extends Component {
       this.setState({
         menuVisible: !this.state.menuVisible,
       });
-    };
-
-    static propTypes = {
-      routeMap: React.PropTypes.object,
-      location: React.PropTypes.object.isRequired,
-    };
-
-    static contextTypes = {
-      router: React.PropTypes.object,
     };
 
     static childContextTypes = {
@@ -114,7 +120,7 @@ class Home extends Component {
                   <div className="header-container">
                     <h1 className="pull-left">
                       <Link
-                        to="/"
+                        to={this.state.routeMap.home}
                         className={classNameLogo}>Dzianis Makeichyk
                       </Link>
                       <span onClick={this.onPause}>
@@ -149,19 +155,20 @@ class Home extends Component {
                   </div>
                   {(this.state.menuVisible &&
                     <Menu
-                      routeMap={routeMap}
+                      routeMap={this.state.routeMap}
                       location={this.props.location}
                       onToggle={this.handleClick}
                     />
                   )}
                 </nav>
               </header>
-              <main
-                className={classnames({
-                  'hello-pencil': this.props.location.pathname !== routeMap.home,
-                })}
-                data-name={pageBackName}
-              >
+              <main>
+              {/*<main*/}
+                {/*/!*className={classnames({*!/*/}
+                  {/*/!*'hello-pencil': this.props.location.pathname !== routeMap.home,*!/*/}
+                {/*/!*})}*!/*/}
+                {/*/!*data-name={pageBackName}*!/*/}
+              {/*>*/}
                 {this.props.children}
                 <MediaDetectElement onMediaChange={this.onMediaChange} />
                 <div className="grid-bg">

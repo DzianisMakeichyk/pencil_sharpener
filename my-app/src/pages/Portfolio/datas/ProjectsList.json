@@ -2,13 +2,19 @@
   {
     "slug": "makabra",
     "name": "Fest Makabra",
-    "short_description": "Pencil Sharpener",
+    "short_description": {
+      "pl": ["Pencil Sharpener"],
+      "en": ["Pencil Sharpener"]
+    },
     "background": "makabra",
     "logo": {
       "svg": ["pencil_wolf_text"],
       "size": ["largest-width"]
     },
-    "description_part_1": "FEST MAKABRA to nowy, ogólnopolski przegląd filmowy, prezentujący zagraniczne filmy z pogranicza horroru, thrillera, mrocznego fantasy i czarnej komedii. Większość filmów z programu zostanie wyświetlona w Polsce premierowo i będzie to jedyna okazja do obejrzenia ich na wielkim ekranie. Pierwsza edycja przeglądu filmowego FEST MAKABRA odbędzie się w kinach studyjnych i niezależnych w całej Polsce w lutym i marcu 2017 roku. Organizatorem wydarzenia jest dystrybutor filmów Kino Świat.",
+    "description": {
+      "pl": ["FEST MAKABRA to nowy, ogólnopolski przegląd filmowy, prezentujący zagraniczne filmy z pogranicza horroru, thrillera, mrocznego fantasy i czarnej komedii. Większość filmów z programu zostanie wyświetlona w Polsce premierowo i będzie to jedyna okazja do obejrzenia ich na wielkim ekranie. Pierwsza edycja przeglądu filmowego FEST MAKABRA odbędzie się w kinach studyjnych i niezależnych w całej Polsce w lutym i marcu 2017 roku. Organizatorem wydarzenia jest dystrybutor filmów Kino Świat."],
+      "en": ["FEST MAKABRA is a new, nationwide fest featuring foreign horror films, thriller, dark fantasy and black comedy. Most of the films from the program will be premiere in Poland and it will be the only opportunity to watch them on the big screen. The first edition of the FEST MAKABRA fest review will take place in study cinemas throughout Poland in February and March 2017. The event organizer is the distributor of Kino Świat movies."]
+    },
     "srcImg": {
       "img" : ["makabra"]
     },
@@ -22,13 +28,19 @@
   {
     "slug": "stypendium-z-wyboru",
     "name": "Stypendium z wyboru",
-    "short_description": "Absolvent.pl",
+    "short_description": {
+      "pl": ["Absolvent.pl"],
+      "en": ["Absolvent.pl"]
+    },
     "background": "stypendium",
     "logo": {
       "svg": ["absolvent"],
       "size": ["medium-height"]
     },
-    "description_part_1": "Projekt firmy Absolvent.pl. Stypendium z Wyboru to ogólnopolski program stypendialny stworzony po to, by pomagać zdolnym, kreatywnym i ambitnym studentom i młodym absolwentom w realizowaniu swoich marzeń edukacyjnych i zawodowych.",
+    "description": {
+      "pl": ["Projekt firmy Absolvent.pl. Stypendium z Wyboru to ogólnopolski program stypendialny stworzony po to, by pomagać zdolnym, kreatywnym i ambitnym studentom i młodym absolwentom w realizowaniu swoich marzeń edukacyjnych i zawodowych."],
+      "en": ["Absolvent.pl project. 'The Electoral Scholarship' is a nationwide fellowship program designed to help talented, creative and ambitious students and young graduates realize their educational and professional dreams."]
+    },
     "srcImg": {
       "img" : ["stypendium"]
     },
@@ -42,13 +54,19 @@
   {
     "slug": "portal-pracy",
     "name": "Portal Pracy",
-    "short_description": "Pencil Sharpener",
+    "short_description": {
+      "pl": ["Pencil Sharpener"],
+      "en": ["Pencil Sharpener"]
+    },
     "background": "portal_pracy",
     "logo": {
       "svg": ["pencil_wolf_text"],
       "size": ["largest-width"]
     },
-    "description_part_1": "To grupa znanych portali branżowych. W obszarze działalności naszej firmy znajdują się serwisy rekrutacyjne, usługi doradcze i wizerunkowe, serwisy informacyjne i branżowe oraz inne usługi internetowe. Należą do nas: m.in. serwisy usługowe z zakresu rekrutacji i wizerunku oraz popularne serwisz szkoleniowe ",
+    "description": {
+      "pl": ["To grupa znanych portali branżowych. W obszarze działalności naszej firmy znajdują się serwisy rekrutacyjne, usługi doradcze i wizerunkowe, serwisy informacyjne i branżowe oraz inne usługi internetowe. Należą do nas: m.in. serwisy usługowe z zakresu rekrutacji i wizerunku oraz popularne serwisz szkoleniowe"],
+      "en": ["This is a group of well-known industry portals. This services include recruitment services, consultancy and image services, information and industry services and other online services. These include: Services for recruitment and image and popular training services"]
+    },
     "srcImg": {
       "img" : ["portal_pracy"]
     },
@@ -62,13 +80,19 @@
   {
     "slug": "agencja-interaktywna",
     "name": "Agencja Interaktywna",
-    "short_description": "Agencja interaktywna łącząca kompetencje digital, performance marketing i Social Media",
+    "short_description": {
+      "pl": ["Agencja interaktywna łącząca kompetencje digital, performance marketing i Social Media"],
+      "en": ["Interactive agency combining digital, performance and social media competences"]
+    },
     "background": "agencja",
     "logo": {
       "svg": ["pencil_wolf_text"],
       "size": ["largest-width"]
     },
-    "description_part_1": "Jesteśmy agencją interaktywną działającą na rynku od 2005 roku. Współpracujemy z małymi i dużymi firmami z kraju i zagranicy, w swoim dorobku mamy już ponad 1000 wykonanych stron internetowych dla wielu branż, fundacji, państwowych i prywatnych przedsiębiorstw. Od lat z powodzeniem działamy na rynku amerykańskim - najbardziej wymagającym rynku świata. Jesteśmy przekonani, że dogłębna analiza twojej firmy oraz twoich klientów jest kluczem do stworzenia najbardziej efektywnych materiałów promocyjnych, które pozwolą twojemu przedsiębiorstwu rozwinąć się jak nigdy dotąd",
+    "description": {
+      "pl": ["Jesteśmy agencją interaktywną działającą na rynku od 2005 roku. Współpracujemy z małymi i dużymi firmami z kraju i zagranicy, w swoim dorobku mamy już ponad 1000 wykonanych stron internetowych dla wielu branż, fundacji, państwowych i prywatnych przedsiębiorstw. Od lat z powodzeniem działamy na rynku amerykańskim - najbardziej wymagającym rynku świata. Jesteśmy przekonani, że dogłębna analiza twojej firmy oraz twoich klientów jest kluczem do stworzenia najbardziej efektywnych materiałów promocyjnych, które pozwolą twojemu przedsiębiorstwu rozwinąć się jak nigdy dotąd."],
+      "en": ["We are an interactive agency active on the market since 2005. We cooperate with small and large companies from home and abroad, we have already over 1000 made websites for many industries, foundations, state and private companies. For years we have been successfully operating in the US market - the most demanding market in the world. We believe that in-depth analysis of your business and your customers is the key to creating the most effective promotional materials that will allow your business to grow as never before."]
+    },
     "srcImg": {
       "img" : ["agencja"]
     },
@@ -82,13 +106,19 @@
   {
     "slug": "zaslepka",
     "name": "Zaślepka",
-    "short_description": "Zaślepka dla strony internetowej. Z aktualnym czasem przed rozpoczęciem działania oraz możliwością ...",
+    "short_description": {
+      "pl": ["Zaślepka dla strony internetowej. Z aktualnym czasem przed rozpoczęciem działania oraz możliwością..."],
+      "en": ["Insert on the page. With the current time before the action and the possibility of..."]
+    },
     "background": "zaslepka",
     "logo": {
       "svg": ["pencil_wolf_text"],
       "size": ["largest-width"]
     },
-    "description_part_1": "Uruchomienie strony internetowej to dopiero początek. Jeśli strona www ma ona generować wzrost zamówień oraz sprzedaży produktów i usług, należy zadbać o jej właściwy zasięg i dotarci...",
+    "description": {
+      "pl": ["Pozwalająca na stworzenie estetycznej i interesującej zaślepki na stronę, informującej odwiedzających o rychłym uruchomieniu pełnej wersji serwisu/bloga. Narzędzie to jest jednak bardziej rozbudowane, niż mogłoby się wydawać, bo oferuje nam szereg różnych opcji: samodzielny wybór obrazu tła, kolorystyki, logotypu, czcionek, itp; możliwość zbierania adresów mailowych od użytkowników, itd. "],
+      "en": ["Allowing to create an aesthetic and interesting insert on the page, informing visitors about the soon launch of the full version of the site / blog. However, this tool is more elaborate than it might seem, because it offers us a number of different options: self-selecting background image, color, logo, font, etc; Possibility to collect email addresses from users"]
+    },
     "srcImg": {
       "img" : ["zaslepka"]
     },
@@ -102,13 +132,19 @@
   {
     "slug": "baner",
     "name": "Epos Drift Master",
-    "short_description": "Idealia.pl",
+    "short_description": {
+      "pl": ["Idealia.pl"],
+      "en": ["Idealia.pl"]
+    },
     "background": "baner",
     "logo": {
       "svg": ["idealia"],
       "size": ["large-height"]
     },
-    "description_part_1": "EPOS od wielu lat związany jest ze światem sportu i na wielu międzynarodowych imprezach występuje w roli oficjalnego chronometrażysty. W ubiegłym roku EPOS został sponsorem największej profesjonalnej ligi driftingu w Polsce i jednej z największych w Europie - Drift Masters Grand Prix",
+    "description": {
+      "pl": ["EPOS od wielu lat związany jest ze światem sportu i na wielu międzynarodowych imprezach występuje w roli oficjalnego chronometrażysty. W ubiegłym roku EPOS został sponsorem największej profesjonalnej ligi driftingu w Polsce i jednej z największych w Europie - Drift Masters Grand Prix."],
+      "en": ["EPOS has for many years been involved in the world of sport and at many international events it acts as an official sponsor. Last year, EPOS sponsored the biggest professional drifting league in Poland and one of Europe's biggest Drift Masters Grand Prix."]
+    },
     "srcImg": {
       "img" : ["baner"]
     },

@@ -35,7 +35,7 @@ class Portfolio extends Component {
   };
 
     render() {
-      var BackgroundProject = {backgroundImage: 'url("./img/project_grid/' + this.state.currentProjectBackground +'.png")'};
+      var BackgroundProject = {backgroundImage: 'url("/img/project_grid/' + this.state.currentProjectBackground +'.png")'};
 
         return (
           <section className="height-auto vh-medium">
@@ -46,6 +46,7 @@ class Portfolio extends Component {
                         project={project}
                         currentProjectName={this.state.currentProjectName}
                         onHoverChange={this.handleHover}
+                        route={this.props.route}
                     />
                 ))}
               {isMediaGreaterThan('Mobile', this.context.currentMedia) && (

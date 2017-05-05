@@ -1,11 +1,11 @@
 var datas = [
   {
     id: "name",
-    label: "Imię i Nazwisko",
+    label: "Name and Surname",
     value: "",
     validation: {
       rules: { name: [ "required", "regex:/^([a-zA-z]{3,10} [a-zA-z ]{3,})$/" ] },
-      messages: { "required.name": 'Wpisz prawidłowe imię i nazwisko!', 'regex.name': 'Wpisz imię i nazwisko' }
+      messages: { "required.name": 'Required field must not be left blank', 'regex.name': 'Required field must not be left blank' }
     },
     name: "name",
     pristine: true,
@@ -18,7 +18,7 @@ var datas = [
     value: "",
     validation: {
       rules: { email: [ "required", "email" ] },
-      messages: { "required.email": 'Wpisz swój adres e-mail!', 'email.email': 'Nieprawidłowa forma e-mail' }
+      messages: { "required.email": 'Required field must not be left blank', 'email.email': 'Incorrect email address' }
     },
     name: "email",
     pristine: true,
@@ -27,11 +27,11 @@ var datas = [
   },
   {
     id: "title",
-    label: "Treść",
+    label: "Matter",
     value: "",
     validation: {
       rules: { title: [ "required", "regex:/^([a-zA-z]{3,200})$/" ] },
-      messages: { "required.title": 'Wpisz prawidłowy temat!', 'regex.title': 'Wpisz temat' }
+      messages: { "required.title": 'Required field must not be left blank', 'regex.title': 'Required field must not be left blank' }
     },
     name: "message",
     pristine: true,
@@ -40,11 +40,11 @@ var datas = [
   },
   {
     id: "lang",
-    label: "Potężny język programowania?",
+    label: "Powerful programming language?",
     value: "",
     validation: {
       rules: { lang: [ "required", "regex:/^javascript$/" ] },
-      messages: { "required.lang": 'Wpisz język!', 'regex.lang': 'Podpowiedź: zaczyna się z "java" i konczy się "script"' }
+      messages: { "required.lang": 'Required field must not be left blank', 'regex.lang': 'Hint: starts with "java" and ends with "script"' }
     },
     pristine: true,
     hasError: false,

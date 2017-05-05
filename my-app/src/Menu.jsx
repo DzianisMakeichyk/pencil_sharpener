@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router';
-import routeMap from '../routeMap.json';
 import classnames from 'classnames';
 import Social from './pages/Elements/Social';
+import SwitchLanguages from './pages/Elements/SwitchLanguages';
 import { Motion, spring } from 'react-motion';
+import { FormattedMessage, intlShape } from 'react-intl';
 
 export default class Menu extends React.Component {
 
@@ -14,12 +15,14 @@ export default class Menu extends React.Component {
 
   static contextTypes = {
     router: React.PropTypes.object,
+    intl: intlShape.isRequired,
   };
 
   handleClick = () => {
     this.props.onToggle();
   };
   render() {
+    const routeMap = this.props.routeMap;
     return (
       <Motion
         defaultStyle={{
@@ -51,12 +54,12 @@ export default class Menu extends React.Component {
                   }}>
                   <li
                     className={classnames('item-menu', {
-                      'is-active-page': this.props.location.pathname === this.props.routeMap.home,
+                      'is-active-page': this.props.location.pathname === routeMap.home,
                     })}
                     onClick={this.handleClick}
                   >
                     <Link
-                      to="/"
+                      to={routeMap.home}
                       className="text-menu"
                     >
                       Home
@@ -64,7 +67,7 @@ export default class Menu extends React.Component {
                   </li>
                   <li
                     className={classnames('item-menu', {
-                      'is-active-page': this.props.location.pathname === this.props.routeMap.portfolio || +'/' + this.context.router.params.slug,
+                      'is-active-page': this.props.location.pathname === routeMap.portfolio || +'/' + this.context.router.params.slug,
                     })}
                     onClick={this.handleClick}
                   >
@@ -77,7 +80,7 @@ export default class Menu extends React.Component {
                   </li>
                   <li
                     className={classnames('item-menu', {
-                      'is-active-page': this.props.location.pathname === this.props.routeMap.about,
+                      'is-active-page': this.props.location.pathname === routeMap.about,
                     })}
                     onClick={this.handleClick}
                   >
@@ -85,12 +88,12 @@ export default class Menu extends React.Component {
                       to={routeMap.about}
                       className="text-menu"
                     >
-                      O mnie
+                      <FormattedMessage id="about" />
                     </Link>
                   </li>
                   <li
                     className={classnames('item-menu', {
-                      'is-active-page': this.props.location.pathname === this.props.routeMap.blog,
+                      'is-active-page': this.props.location.pathname === routeMap.blog,
                     })}
                     onClick={this.handleClick}
                   >
@@ -104,7 +107,7 @@ export default class Menu extends React.Component {
                   </li>
                   <li
                     className={classnames('item-menu', {
-                      'is-active-page': this.props.location.pathname === this.props.routeMap.funnybox,
+                      'is-active-page': this.props.location.pathname === routeMap.funnybox,
                     })}
                     onClick={this.handleClick}
                   >
@@ -117,7 +120,7 @@ export default class Menu extends React.Component {
                   </li>
                   <li
                     className={classnames('item-menu', {
-                      'is-active-page': this.props.location.pathname === this.props.routeMap.contact,
+                      'is-active-page': this.props.location.pathname === routeMap.contact,
                     })}
                     onClick={this.handleClick}
                   >
@@ -125,10 +128,13 @@ export default class Menu extends React.Component {
                       to={routeMap.contact}
                       className="text-menu"
                     >
-                      Kontakt
+                      <FormattedMessage id="contact" />
                     </Link>
                   </li>
                   <Social />
+                  <SwitchLanguages
+                    routeMap={routeMap}
+                  />
                 </ul>
               )}
             </Motion>
@@ -138,4 +144,3 @@ export default class Menu extends React.Component {
     )
   }
 }
-

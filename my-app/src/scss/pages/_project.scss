@@ -33,7 +33,7 @@
   @include breakpoint(small) {
     max-width: 50%;
     margin: 0 auto 0 10%;
-    padding: remcalc(25) 0;
+    padding: 0 0 remcalc(25) 0;
   }
 
   @include breakpoint(large) {
@@ -142,6 +142,12 @@
 
   @include breakpoint(small) {
     height: auto;
+    left: remcalc(-195);
+  }
+
+  @include breakpoint(large) {
+    top: remcalc(0);
+    left: remcalc(-295);
   }
 
   .launch {
@@ -150,11 +156,6 @@
     @include breakpoint(small) {
       width: remcalc(215);
       top: remcalc(-70);
-      left: remcalc(-135);
-    }
-
-    @include breakpoint(large) {
-      top: remcalc(-55);
     }
   }
 
@@ -166,12 +167,7 @@
     @include breakpoint(small) {
       width: remcalc(236);
       bottom: remcalc(-40);
-      left: remcalc(-135);
       margin-bottom: 0;
-    }
-
-    @include breakpoint(large) {
-      bottom: remcalc(-55);
     }
   }
 }
