@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Motion, spring } from 'react-motion';
-import { Link } from 'react-router';
 import { intlShape } from 'react-intl';
 
 class SwitchLanguages extends Component {
@@ -33,14 +32,14 @@ class SwitchLanguages extends Component {
                 opacity: style.opacity,
                 transform: `translateY(${style.y}px)`,
               }}>
-              <Link
-                to={CurrentLocation === 'en' ? 'Polski' : 'English'}
+              <a
+                href={CurrentLocation === 'en' ? './' : './en'}
                 className="switch_point"
               >
                 <span>
                   {CurrentLocation === 'en' ? 'Polski' : 'English'}
                 </span>
-              </Link>
+              </a>
             </div>
           )}
         </Motion>
