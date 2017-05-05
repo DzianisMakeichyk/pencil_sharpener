@@ -44,7 +44,7 @@
 }
 
 .glitch-btn {
-  @include just-rythm(22);
+  @include just-rythm(18);
   position: absolute;
   display: inline-block;
   color: $clear-white;
@@ -53,6 +53,10 @@
   text-transform: uppercase;
   user-select: none;
   z-index: 1;
+
+  @include breakpoint(small) {
+    @include just-rythm(22);
+  }
 
   $hoverDur: .8s;
   transition: all $hoverDur $ease-out-quint;

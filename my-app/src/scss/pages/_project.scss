@@ -66,20 +66,22 @@
 .project-technologies {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
+  width: 100%;
   align-items: center;
   margin: 0 auto remcalc(30);
 
   @include breakpoint(small) {
     width: 100%;
-    justify-content: space-between;
     flex-wrap: nowrap;
   }
 
   .project-technologies-shot {
-    max-width: remcalc(100);
+    max-width: remcalc(50);
+    margin: 0 auto;
 
     @include breakpoint(small) {
+      max-width: remcalc(100);
       margin: 0 auto remcalc(25);
     }
 
