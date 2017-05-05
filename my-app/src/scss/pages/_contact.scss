@@ -199,3 +199,18 @@ label {
     z-index: 100;
   }
 }
+
+.alternative_contact {
+  display: flex;
+  flex-direction: column;
+
+  .alternative_contact_box {
+    margin: 0 auto remcalc(40);
+
+    .alternative_contact_svg {
+      width: 100%;
+      max-width: remcalc(100);
+
+    }
+  }
+}
