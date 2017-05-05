@@ -6,7 +6,7 @@
 }
 
 .project-name {
-  @include just-rythm(42);
+  @include just-rythm(36);
   @include gradient-text;
   margin: 0 auto remcalc(10) 0;
   padding: remcalc(55) 0 0;
