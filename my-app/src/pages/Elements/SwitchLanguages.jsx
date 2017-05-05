@@ -4,17 +4,13 @@ import { intlShape } from 'react-intl';
 
 class SwitchLanguages extends Component {
 
-  static propTypes = {
-    routeMap: React.PropTypes.object,
-  };
-
   static contextTypes = {
     intl: intlShape.isRequired,
   };
 
   render() {
     const CurrentLocation = this.context.intl.locale;
-    console.log(this)
+
     return (
       <div>
         <Motion
