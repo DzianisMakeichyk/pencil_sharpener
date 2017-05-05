@@ -33,7 +33,7 @@ class SwitchLanguages extends Component {
                 transform: `translateY(${style.y}px)`,
               }}>
               <a
-                href={CurrentLocation === 'en' ? './' : './en'}
+                href={CurrentLocation === 'en' ? '/' : '/en'}
                 className="switch_point"
               >
                 <span>

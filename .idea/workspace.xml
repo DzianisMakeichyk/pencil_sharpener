@@ -47,8 +47,8 @@
       <file leaf-file-name="SwitchLanguages.jsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/my-app/src/pages/Elements/SwitchLanguages.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+            <state relative-caret-position="165">
+              <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -627,14 +627,7 @@
       <workItem from="1493119490310" duration="6815000" />
       <workItem from="1493128198611" duration="1051000" />
       <workItem from="1493625713852" duration="30155000" />
-      <workItem from="1493974147276" duration="385000" />
-    </task>
-    <task id="LOCAL-00030" summary="main animation rain">
-      <created>1490874502162</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1490874502162</updated>
+      <workItem from="1493974147276" duration="918000" />
     </task>
     <task id="LOCAL-00031" summary="white funny box">
       <created>1490875893334</created>
@@ -972,11 +965,18 @@
       <option name="project" value="LOCAL" />
       <updated>1493829352544</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL-00079" summary="add en beta">
+      <created>1493975308656</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1493975308657</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="222474000" />
+    <option name="totallyTimeSpent" value="223007000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1070" y="-1080" width="1920" height="1080" extended-state="0" />
@@ -1036,7 +1036,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="new front page" />
     <MESSAGE value="add CV&#10;add git link" />
     <MESSAGE value="fix button&#10;add mail php" />
     <MESSAGE value="form" />
@@ -1061,7 +1060,8 @@
     <MESSAGE value="en contact page" />
     <MESSAGE value="en contact page form" />
     <MESSAGE value="add en index" />
-    <option name="LAST_COMMIT_MESSAGE" value="add en index" />
+    <MESSAGE value="add en beta" />
+    <option name="LAST_COMMIT_MESSAGE" value="add en beta" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1458,8 +1458,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/my-app/src/pages/Elements/SwitchLanguages.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+        <state relative-caret-position="165">
+          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
