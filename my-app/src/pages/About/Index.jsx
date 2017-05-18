@@ -92,7 +92,7 @@ class About extends Component {
                               </g>
                           </svg>
                           <a
-                            href="./img/CV_Dzianis_Makeichyk.pdf"
+                            href="/img/CV_Dzianis_Makeichyk.pdf"
                             target="_blank"
                             className="about-download green qanelas-bold"
                           >

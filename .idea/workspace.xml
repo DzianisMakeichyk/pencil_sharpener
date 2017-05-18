@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9ba51474-1a90-45f6-8028-585d625973e2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/public/img/project_grid/agencja.png" afterPath="$PROJECT_DIR$/my-app/public/img/project_grid/agencja.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/public/img/project_grid/baner.png" afterPath="$PROJECT_DIR$/my-app/public/img/project_grid/baner.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/public/img/project_grid/makabra.png" afterPath="$PROJECT_DIR$/my-app/public/img/project_grid/makabra.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/public/img/project_grid/portal_pracy.png" afterPath="$PROJECT_DIR$/my-app/public/img/project_grid/portal_pracy.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/public/img/project_grid/stypendium.png" afterPath="$PROJECT_DIR$/my-app/public/img/project_grid/stypendium.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/public/img/project_grid/zaslepka.png" afterPath="$PROJECT_DIR$/my-app/public/img/project_grid/zaslepka.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/src/pages/Portfolio/datas/ProjectsList.json" afterPath="$PROJECT_DIR$/my-app/src/pages/Portfolio/datas/ProjectsList.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/src/pages/About/Index.jsx" afterPath="$PROJECT_DIR$/my-app/src/pages/About/Index.jsx" />
     </list>
     <ignored path="pencil_sharpener.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -58,12 +52,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProjectsList.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ProjectsList.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/my-app/src/pages/Portfolio/datas/ProjectsList.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="27" column="3" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
+            <state relative-caret-position="525">
+              <caret line="56" column="26" selection-start-line="56" selection-start-column="26" selection-end-line="56" selection-end-column="26" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Index.jsx" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/my-app/src/pages/About/Index.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="75" column="34" selection-start-line="75" selection-start-column="34" selection-end-line="75" selection-end-column="34" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -164,7 +170,6 @@
         <option value="$PROJECT_DIR$/my-app/resources/lang/en/pl.json" />
         <option value="$PROJECT_DIR$/my-app/src/index.js" />
         <option value="$PROJECT_DIR$/my-app/src/scss/abstracts/_body.scss" />
-        <option value="$PROJECT_DIR$/my-app/src/pages/About/Index.jsx" />
         <option value="$PROJECT_DIR$/my-app/src/pages/Contact/components/Form.js" />
         <option value="$PROJECT_DIR$/my-app/src/pages/Contact/datas/InputDatas.js" />
         <option value="$PROJECT_DIR$/my-app/src/pages/Contact/datas/InputDatasEn.js" />
@@ -189,6 +194,7 @@
         <option value="$PROJECT_DIR$/my-app/resources/lang/pl/messages.json" />
         <option value="$PROJECT_DIR$/my-app/resources/lang/en/messages.json" />
         <option value="$PROJECT_DIR$/my-app/src/pages/Portfolio/datas/ProjectsList.json" />
+        <option value="$PROJECT_DIR$/my-app/src/pages/About/Index.jsx" />
       </list>
     </option>
   </component>
@@ -266,10 +272,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1070" />
-    <option name="y" value="-1080" />
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -296,7 +300,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -697,7 +701,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -813,21 +817,8 @@
       <workItem from="1493625713852" duration="30155000" />
       <workItem from="1493974147276" duration="6819000" />
       <workItem from="1494230939969" duration="1019000" />
-      <workItem from="1494885457232" duration="1043000" />
-    </task>
-    <task id="LOCAL-00038" summary="preloader">
-      <created>1490957509626</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1490957509626</updated>
-    </task>
-    <task id="LOCAL-00039" summary="pl projekt button">
-      <created>1490958511509</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1490958511509</updated>
+      <workItem from="1494885457232" duration="1115000" />
+      <workItem from="1495111463220" duration="170000" />
     </task>
     <task id="LOCAL-00040" summary="new front page">
       <created>1491071638486</created>
@@ -1158,24 +1149,38 @@
       <option name="project" value="LOCAL" />
       <updated>1494231902993</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="fix locla links and kracien png">
+      <created>1494920025673</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1494920025673</updated>
+    </task>
+    <task id="LOCAL-00088" summary="fix locla links and kracien png">
+      <created>1494920050281</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1494920050282</updated>
+    </task>
+    <option name="localTasksCounter" value="89" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="230970000" />
+    <option name="totallyTimeSpent" value="231212000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1070" y="-1080" width="1920" height="1080" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3018598" sideWeight="0.5117994" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10756124" sideWeight="0.48820058" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3397711" sideWeight="0.48820058" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13960396" sideWeight="0.5042598" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960597" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17524752" sideWeight="0.49574015" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40963855" sideWeight="0.49574015" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1222,7 +1227,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="&quot;zobacz&quot;" />
     <MESSAGE value="fix logo name in portfolio grid" />
     <MESSAGE value="no google analit" />
     <MESSAGE value="fix" />
@@ -1247,7 +1251,8 @@
     <MESSAGE value="fix mobile button" />
     <MESSAGE value="fix mobile" />
     <MESSAGE value="fix en about" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix en about" />
+    <MESSAGE value="fix locla links and kracien png" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix locla links and kracien png" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1495,13 +1500,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/pages/About/Index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="5" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/my-app/src/pages/Portfolio/Grid.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-255">
@@ -1544,9 +1542,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="24" column="31" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1640,9 +1635,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/my-app/src/pages/Portfolio/datas/ProjectsList.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="27" column="3" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
+        <state relative-caret-position="525">
+          <caret line="56" column="26" selection-start-line="56" selection-start-column="26" selection-end-line="56" selection-end-column="26" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/pages/About/Index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="75" column="34" selection-start-line="75" selection-start-column="34" selection-end-line="75" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
