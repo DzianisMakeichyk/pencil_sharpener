@@ -63,7 +63,9 @@ class About extends Component {
                                   <FormattedMessage id="warsaw" />
                               </p>
                               <a href="mailto:dzianis@pencilsharpener.pl" className="description-shot">dzianis@pencilsharpener.pl</a>
-                              <p className="description-shot"> +48 79767075</p>
+                              <p>
+                              <a href="tel:+48797657075" className="description-shot"> +48 797657075</a>
+                              </p>
                               <p className="description-shot">527-277-32-56</p>
                           </div>
                       </div>
